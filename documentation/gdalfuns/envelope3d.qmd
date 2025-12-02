@@ -1,0 +1,10 @@
+---
+title: "envelope3d"
+---
+
+    envelope3d(geom)
+
+### Parameters
+* `geom`: the geometry. This can either be a GDAL AbstractGeometry or a {{< gmtref GMTdataset type=gmttype >}} (or vector of it), or a Matrix
+
+Computes and returns the bounding envelope (3D) for this geometry

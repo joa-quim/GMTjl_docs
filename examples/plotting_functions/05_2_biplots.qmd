@@ -1,0 +1,24 @@
+# PCAs 
+
+## Examples
+
+
+The classic analysis of the _Iris_ dataset.
+
+
+```{julia}
+using GMT
+
+biplot(TESTSDIR * "iris.dat", show=true)
+```
+
+
+Plot a 6 cm fig with included observarion numbers.
+
+
+```{julia}
+using GMT
+
+biplot(TESTSDIR * "iris.dat", figsize=6, obsnumbers=true, show=true)
+```
+

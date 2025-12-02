@@ -1,0 +1,6 @@
+title: GMT Cross-Reference
+author: GMT.jl
+version: 1.0.0
+contributes:
+  shortcodes:
+    - gmtref.lua

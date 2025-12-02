@@ -1,0 +1,7 @@
+---
+title: "Examples"
+---
+
+Explore various examples showcasing GMT.jl capabilities across different plotting types and techniques.
+
+{{< include _examples_cards.qmd >}}

@@ -1,0 +1,20 @@
+---
+title: "flipdim"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `flipdim` function.
+
+## Methods
+
+```julia
+# 1 method for generic function "flipdim" from GMT:
+ [1] flipdim(A, dim)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

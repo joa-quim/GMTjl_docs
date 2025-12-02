@@ -1,0 +1,65 @@
+---
+title: "Documentation"
+---
+
+Browse through the different sections below to learn about the various modules, utilities, and features available.
+
+::: {.grid}
+
+::: {.g-col-6 .g-col-md-4}
+::: {.card .h-100}
+### [Modules](documentation/modules.qmd)
+Complete reference for all GMT plotting and processing modules like `plot`, `coast`, `grdimage`, and more.
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4}
+::: {.card .h-100}
+### [GMT.jl Types](documentation/general/types.html)
+Essential data types: GMTgrid, GMTimage, GMTdataset, GMTcpt, GMTps, and GMTfv with complete field descriptions.
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4}
+::: {.card .h-100}
+### [GMT.jl Extensions](documentation/extensions.html)
+High-level plotting functions and data access utilities: earthregions, pcolor, quiver, weather data, and geophysical tools.
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4}
+::: {.card .h-100}
+### [GDAL Functions](documentation/gdalfuns.html)
+Geospatial data processing functions using GDAL/OGR for format conversion, projections, and geometric operations.
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4}
+::: {.card .h-100}
+### [Solids](documentation/solids.html)
+Functions for creating and manipulating 3D geometric solids, platonic shapes, and mesh structures.
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4}
+::: {.card .h-100}
+### [Image Processing](documentation/imgproc.html)
+Image processing functions including morphological operations, filtering, segmentation, and color space conversions.
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4}
+::: {.card .h-100}
+### [Common Features](documentation/common_features.html)
+Learn about colors, pens, fonts, symbols, and other features used across GMT functions.
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4}
+::: {.card .h-100}
+### [Alphabetical List](documentation/alphabetical.html)
+Complete alphabetical listing of all 308 documented functions with quick links and category information.
+:::
+:::
+
+:::

@@ -1,0 +1,22 @@
+---
+title: "importPROJ4"
+---
+
+# importPROJ4
+
+**Category:** GDAL Functions
+
+Documentation for the `importPROJ4` function.
+
+## Methods
+
+```julia
+# 1 method for generic function "importPROJ4" from GMT.Gdal:
+ [1] importPROJ4(projstr::AbstractString; kwargs...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1902
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

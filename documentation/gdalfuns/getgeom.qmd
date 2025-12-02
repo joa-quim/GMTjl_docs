@@ -1,0 +1,26 @@
+---
+title: "getgeom"
+---
+
+# getgeom
+
+**Category:** GDAL Functions
+
+Documentation for the `getgeom` function.
+
+## Methods
+
+```julia
+# 3 methods for generic function "getgeom" from GMT.Gdal:
+ [1] getgeom(feature::GMT.Gdal.Feature)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:2080
+ [2] getgeom(geom::GMT.Gdal.AbstractGeometry, i::Integer)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:2090
+ [3] getgeom(feature::GMT.Gdal.Feature, i::Integer)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:2085
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

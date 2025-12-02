@@ -1,0 +1,22 @@
+---
+title: "hspan"
+---
+
+# hspan
+
+**Category:** Modules
+
+Documentation for the `hspan` function.
+
+## Methods
+
+```julia
+# 1 method for generic function "hband" from GMT:
+ [1] hband(mat::Matrix{<:Real}; height, percent, first, kw...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1513
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

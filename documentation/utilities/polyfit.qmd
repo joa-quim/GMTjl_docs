@@ -1,0 +1,28 @@
+---
+title: "polyfit"
+---
+
+
+```
+p = polyfit(x, y, n=length(x)-1; xscale=1)
+```
+
+Returns the coefficients for a polynomial p(x) of degree `n` that is the least-squares best fit for the data in y. The coefficients in p are in ascending powers, and the length of p is n+1.
+
+The `xscale` parameter is useful when needing to get coeficients in different x units. For example when converting months or seconds into years.
+
+
+## Methods
+
+```julia
+# 4 methods for generic function "polyfit" from GMT:
+ [1] polyfit(x, y, n::Int64; xscale)
+ [2] polyfit(D::GMTdataset, n::Int64; xscale)
+ [3] polyfit(x, y; ...)
+ [4] polyfit(D::GMTdataset; ...)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

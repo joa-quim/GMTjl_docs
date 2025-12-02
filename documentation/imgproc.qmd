@@ -1,0 +1,59 @@
+# Image Processing Functions
+
+Functions for processing and analyzing images including morphological operations, filtering, segmentation, and color space conversions.
+
+## Binary Image Operations
+
+- [binarize](imgproc/binarize.html) - Convert image to binary
+- [bwareaopen](imgproc/bwareaopen.html) - Remove small objects from binary image
+- [bwconncomp](imgproc/bwconncomp.html) - Find connected components in binary image
+- [bwdist](imgproc/bwdist.html) - Distance transform of binary image
+- [bwhitmiss](imgproc/bwhitmiss.html) - Binary hit-miss transform
+- [bwperim](imgproc/bwperim.html) - Find perimeter of objects in binary image
+- [bwskell](imgproc/bwskell.html) - Skeletonize binary image
+- [cc2bw](imgproc/cc2bw.html) - Convert connected components to binary image
+
+## Morphological Operations
+
+- [imdilate](imgproc/imdilate.html) - Dilate image
+- [imerode](imgproc/imerode.html) - Erode image
+- [imopen](imgproc/imopen.html) - Morphologically open image
+- [imclose](imgproc/imclose.html) - Morphologically close image
+- [imtophat](imgproc/imtophat.html) - Top-hat filtering
+- [imbothat](imgproc/imbothat.html) - Bottom-hat filtering
+- [immorphgrad](imgproc/immorphgrad.html) - Morphological gradient
+- [strel](imgproc/strel.html) - Create morphological structuring element
+
+## Image Filtering & Enhancement
+
+- [imfilter](imgproc/imfilter.html) - Filter image
+- [imrankfilter](imgproc/imrankfilter.html) - Rank filter for images
+- [imsobel](imgproc/imsobel.html) - Sobel edge detection
+- [graydist](imgproc/graydist.html) - Gray-weighted distance transform
+- [padarray](imgproc/padarray.html) - Pad array with values
+
+## Image Reconstruction & Segmentation
+
+- [imfill](imgproc/imfill.html) - Fill image regions
+- [imreconstruct](imgproc/imreconstruct.html) - Morphological reconstruction
+- [imsegment](imgproc/imsegment.html) - Segment image
+- [isodata](imgproc/isodata.html) - ISODATA thresholding algorithm
+
+## Regional Extrema & Geodesic Operations
+
+- [imregionalmax](imgproc/imregionalmax.html) - Regional maxima
+- [imregionalmin](imgproc/imregionalmin.html) - Regional minima
+- [imhmin](imgproc/imhmin.html) - H-minima transform
+- [imhmax](imgproc/imhmax.html) - H-maxima transform
+- [imhdome](imgproc/imhdome.html) - H-dome transform
+- [fillsinks](imgproc/fillsinks.html) - Fill sinks in surface
+
+## Color Space Conversions
+
+- [rgb2gray](imgproc/rgb2gray.html) - Convert RGB to grayscale
+- [rgb2lab](imgproc/rgb2lab.html) - Convert RGB to Lab color space
+- [rgb2ycbcr](imgproc/rgb2ycbcr.html) - Convert RGB to YCbCr color space
+
+## Image Utilities
+
+- [imcomplement](imgproc/imcomplement.html) - Complement image

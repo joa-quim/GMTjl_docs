@@ -1,0 +1,23 @@
+---
+title: "pol2cart"
+---
+
+
+```
+x, y = pol2cart(theta, rho; deg=false)
+```
+
+Transform polar to Cartesian coordinates. Angles are in radians by default. Use `deg=true` if angles are in degrees. Input can be scalar, vectors or matrices.
+
+
+## Methods
+
+```julia
+# 1 method for generic function "pol2cart" from GMT:
+ [1] pol2cart(theta, rho; deg)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

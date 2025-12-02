@@ -1,0 +1,28 @@
+---
+title: "grdseamount"
+---
+
+# grdseamount
+
+```
+grdseamount(cmd0::String="", arg1=nothing; kwargs...)
+```
+
+Create synthetic seamounts (Gaussian, parabolic, polynomial, cone or disc; circular or elliptical).
+
+::: {.callout-warning}
+This GMT supplements module has not yet received the proper attention to port the original manual.
+:::
+
+
+## Methods
+
+```julia
+# 2 methods for generic function "grdseamount" from GMT:
+ [1] grdseamount(cmd0::String; kwargs...)
+ [2] grdseamount(arg1; kwargs...)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)

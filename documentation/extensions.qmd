@@ -1,0 +1,1935 @@
+---
+title: "GMT.jl Extensions"
+---
+
+<style>
+.grid {
+  gap: 3px;
+}
+</style>
+
+GMT.jl provides additional high-level plotting functions and data access utilities that extend GMT's core capabilities with Julia-specific features.
+
+## Quick Links
+
+- [Plotting Extensions](#plotting-extensions) - High-level plotting and visualization
+- [Data Processing](#data-processing) - Smoothing, filtering, and statistical analysis
+- [Data Conversion](#data-conversion) - Format and coordinate transformations
+- [Data Manipulation](#data-manipulation) - Grid and data operations
+- [Data Access](#data-access) - Geographic data and remote datasets
+- [Geographic Utilities](#geographic-utilities) - Geographic and geospatial tools
+- [Geophysical](#geophysical) - Geophysical and Earth science applications
+- [Table Operations](#table-operations) - DataFrame-style table joins
+- [Miscellaneous](#miscellaneous) - Other utilities
+
+---
+## Plotting Extensions
+
+High-level plotting functions for common visualization tasks.
+
+::: {.grid}
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[ablines](utilities/ablines.html)
+[![](modules/assets/ablines_logo.jpg){.card-img-top}](utilities/ablines.html)
+
+::: {.card-body}
+Creates a straight line(s) defined by Y = a + b * X.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[anaglyph](utilities/anaglyph.html)
+[![](modules/assets/anaglyph_logo.jpg){.card-img-top}](utilities/anaglyph.html)
+
+::: {.card-body}
+Create 3D anaglyph images
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[append2fig](utilities/append2fig.html)
+[![](modules/assets/append2fig_logo.jpg){.card-img-top}](utilities/append2fig.html)
+
+::: {.card-body}
+Append elements to existing figure
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[coastlinesproj](utilities/coastlinesproj.html)
+[![](modules/assets/coastlinesproj_logo.jpg){.card-img-top}](utilities/coastlinesproj.html)
+
+::: {.card-body}
+Project coastlines to map
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[colorzones](utilities/colorzones.html)
+[![](modules/assets/colorzones_logo.jpg){.card-img-top}](utilities/colorzones.html)
+
+::: {.card-body}
+Apply color palettes to segmented data
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[cubeplot](utilities/cubeplot.html)
+[![](modules/assets/cubeplot_logo.jpg){.card-img-top}](utilities/cubeplot.html)
+
+::: {.card-body}
+3D cube plotting
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[earthregions](utilities/earthregions.html)
+[![](modules/assets/earthregions_logo.jpg){.card-img-top}](utilities/earthregions.html)
+
+::: {.card-body}
+Plot or extract named geographic regions
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[graticules](utilities/graticules.html)
+[![](modules/assets/graticules_logo.jpg){.card-img-top}](utilities/graticules.html)
+
+::: {.card-body}
+Create map graticules
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[hlines](utilities/hlines.html)
+[![](modules/assets/hlines_logo.jpg){.card-img-top}](utilities/hlines.html)
+
+::: {.card-body}
+Plot horizontal reference lines
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[imagesc](utilities/imagesc.html)
+[![](modules/assets/imagesc_logo.jpg){.card-img-top}](utilities/imagesc.html)
+
+::: {.card-body}
+Scaled image display.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[imshow](utilities/imshow.html)
+[![](modules/assets/imshow_logo.jpg){.card-img-top}](utilities/imshow.html)
+
+::: {.card-body}
+Display the created figures.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[leepacific](utilities/leepacific.html)
+[![](modules/assets/leepacific_logo.jpg){.card-img-top}](utilities/leepacific.html)
+
+::: {.card-body}
+Lee's Pacific projection utilities.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[lelandshade](utilities/lelandshade.html)
+[![](modules/assets/lelandshade_logo.jpg){.card-img-top}](utilities/lelandshade.html)
+
+::: {.card-body}
+Lee's landshading utilities.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[linearfitxy](utilities/linearfitxy.html)
+[![](modules/assets/linearfitxy_logo.jpg){.card-img-top}](utilities/linearfitxy.html)
+
+::: {.card-body}
+Plot data with fitted line.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[logo](utilities/gmtlogo.html)
+[![](modules/assets/gmtlogo_logo.jpg){.card-img-top}](utilities/gmtlogo.html)
+
+::: {.card-body}
+Plot the GMT & Julia logos.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[pcolor](utilities/pcolor.html)
+[![](modules/assets/pcolor_logo.jpg){.card-img-top}](utilities/pcolor.html)
+
+::: {.card-body}
+Pseudocolor plot with scaled colors.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[piechart](utilities/piechart.html)
+[![](modules/assets/piechart_logo.jpg){.card-img-top}](utilities/piechart.html)
+
+::: {.card-body}
+Create pie charts.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[plotlinefit](utilities/plotlinefit.html)
+[![](modules/assets/plotlinefit_logo.jpg){.card-img-top}](utilities/plotlinefit.html)
+
+::: {.card-body}
+Plot data with linear fit.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[plotyy](utilities/plotyy.html)
+[![](modules/assets/plotyy_logo.jpg){.card-img-top}](utilities/plotyy.html)
+
+::: {.card-body}
+Dual y-axis plots.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[polygonlevels](utilities/polygonlevels.html)
+[![](modules/assets/polygonlevels_logo.jpg){.card-img-top}](utilities/polygonlevels.html)
+
+::: {.card-body}
+Create polygons from contour levels.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[qqplot](utilities/qqplot.html)
+[![](modules/assets/qqplot_logo.jpg){.card-img-top}](utilities/qqplot.html)
+
+::: {.card-body}
+Quantile-quantile plots.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[quiver](utilities/quiver.html)
+[![](modules/assets/quiver_logo.jpg){.card-img-top}](utilities/quiver.html)
+
+::: {.card-body}
+Vector field plots with arrows
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[radar](utilities/radar.html)
+[![](modules/assets/radar_logo.jpg){.card-img-top}](utilities/radar.html)
+
+::: {.card-body}
+Create radar/spider plots
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[rasterzones](utilities/rasterzones.html)
+[![](modules/assets/rasterzones_logo.jpg){.card-img-top}](utilities/rasterzones.html)
+
+::: {.card-body}
+Create rasterized zone maps
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[scatter3](utilities/scatter3.html)
+[![](modules/assets/scatter3_logo.jpg){.card-img-top}](utilities/scatter3.html)
+
+::: {.card-body}
+3D scatter plots
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[trisurf](utilities/trisurf.html)
+[![](modules/assets/trisurf_logo.jpg){.card-img-top}](utilities/trisurf.html)
+
+::: {.card-body}
+Triangulated surface plots
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[vband](utilities/vband.html)
+[![](modules/assets/vband_logo.jpg){.card-img-top}](utilities/vband.html)
+
+::: {.card-body}
+Plot vertical bands/shaded regions
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[vlines](utilities/vlines.html)
+[![](modules/assets/vlines_logo.jpg){.card-img-top}](utilities/vlines.html)
+
+::: {.card-body}
+Plot vertical reference lines
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[worldrectangular](utilities/worldrectangular.html)
+[![](modules/assets/worldrectangular_logo.jpg){.card-img-top}](utilities/worldrectangular.html)
+
+::: {.card-body}
+World in rectangular projection
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[worldrectcoast](utilities/worldrectcoast.html)
+[![](modules/assets/worldrectcoast_logo.jpg){.card-img-top}](utilities/worldrectcoast.html)
+
+::: {.card-body}
+World coastlines rectangular.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[worldrectgrid](utilities/worldrectgrid.html)
+[![](modules/assets/worldrectgrid_logo.jpg){.card-img-top}](utilities/worldrectgrid.html)
+
+::: {.card-body}
+World graticules rectangular.
+:::
+:::
+:::
+
+:::
+
+## Data Processing
+
+Functions for data smoothing, filtering, and statistical analysis.
+
+::: {.grid}
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[autocor](utilities/autocor.html)
+[![](modules/assets/autocor_logo.jpg){.card-img-top}](utilities/autocor.html)
+
+::: {.card-body}
+Autocorrelation function.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[autocov](utilities/autocov.html)
+[![](modules/assets/autocov_logo.jpg){.card-img-top}](utilities/autocov.html)
+
+::: {.card-body}
+Autocovariance function.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[conv](utilities/conv.html)
+[![](modules/assets/conv_logo.jpg){.card-img-top}](utilities/conv.html)
+
+::: {.card-body}
+Convolution.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[crop](utilities/crop.html)
+[![](modules/assets/crop_logo.jpg){.card-img-top}](utilities/crop.html)
+
+::: {.card-body}
+Crop grids or images.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[delrows](utilities/delrows.html)
+[![](modules/assets/delrows_logo.jpg){.card-img-top}](utilities/delrows.html)
+
+::: {.card-body}
+Delete rows from dataset.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[findpeaks](utilities/findpeaks.html)
+[![](modules/assets/findpeaks_logo.jpg){.card-img-top}](utilities/findpeaks.html)
+
+::: {.card-body}
+Find peaks in data.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[flipdim](utilities/flipdim.html)
+[![](modules/assets/flipdim_logo.jpg){.card-img-top}](utilities/flipdim.html)
+
+::: {.card-body}
+Flip array dimensions.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[fliplr](utilities/fliplr.html)
+[![](modules/assets/fliplr_logo.jpg){.card-img-top}](utilities/fliplr.html)
+
+::: {.card-body}
+Flip left-right.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[flipud](utilities/flipud.html)
+[![](modules/assets/flipud_logo.jpg){.card-img-top}](utilities/flipud.html)
+
+::: {.card-body}
+Flip up-down.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[gunique](utilities/gunique.html)
+[![](modules/assets/gunique_logo.jpg){.card-img-top}](utilities/gunique.html)
+
+::: {.card-body}
+Get unique elements with indices.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[hampel](utilities/hampel.html)
+[![](modules/assets/hampel_logo.jpg){.card-img-top}](utilities/hampel.html)
+
+::: {.card-body}
+Hampel outlier filter.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[isoutlier](utilities/isoutlier.html)
+[![](modules/assets/isoutlier_logo.jpg){.card-img-top}](utilities/isoutlier.html)
+
+::: {.card-body}
+Identify outliers.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[kmeans](utilities/kmeans.html)
+[![](modules/assets/kmeans_logo.jpg){.card-img-top}](utilities/kmeans.html)
+
+::: {.card-body}
+K-means clustering.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[lowess](utilities/lowess.html)
+[![](modules/assets/lowess_logo.jpg){.card-img-top}](utilities/lowess.html)
+
+::: {.card-body}
+Locally weighted regression smoothing.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mad](utilities/mad.html)
+[![](modules/assets/mad_logo.jpg){.card-img-top}](utilities/mad.html)
+
+::: {.card-body}
+Median absolute deviation.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[nanmean](utilities/nanmean.html)
+[![](modules/assets/nanmean_logo.jpg){.card-img-top}](utilities/nanmean.html)
+
+::: {.card-body}
+Mean ignoring NaNs
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[nanstd](utilities/nanstd.html)
+[![](modules/assets/nanstd_logo.jpg){.card-img-top}](utilities/nanstd.html)
+
+::: {.card-body}
+Standard deviation ignoring NaNs
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[pca](utilities/pca.html)
+[![](modules/assets/pca_logo.jpg){.card-img-top}](utilities/pca.html)
+
+::: {.card-body}
+Principal component analysis
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[polyfit](utilities/polyfit.html)
+[![](modules/assets/polyfit_logo.jpg){.card-img-top}](utilities/polyfit.html)
+
+::: {.card-body}
+Polynomial fitting
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[polyval](utilities/polyval.html)
+[![](modules/assets/polyval_logo.jpg){.card-img-top}](utilities/polyval.html)
+
+::: {.card-body}
+Evaluate polynomial
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[rescale](utilities/rescale.html)
+[![](modules/assets/rescale_logo.jpg){.card-img-top}](utilities/rescale.html)
+
+::: {.card-body}
+Rescale data
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[sortslicesperm](utilities/sortslicesperm.html)
+[![](modules/assets/sortslicesperm_logo.jpg){.card-img-top}](utilities/sortslicesperm.html)
+
+::: {.card-body}
+Sort with permutation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[squeeze](utilities/squeeze.html)
+[![](modules/assets/squeeze_logo.jpg){.card-img-top}](utilities/squeeze.html)
+
+::: {.card-body}
+Remove singleton dimensions
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[stats](utilities/stats.html)
+[![](modules/assets/stats_logo.jpg){.card-img-top}](utilities/stats.html)
+
+::: {.card-body}
+Statistical summary
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[whittaker](utilities/whittaker.html)
+[![](modules/assets/whittaker_logo.jpg){.card-img-top}](utilities/whittaker.html)
+
+::: {.card-body}
+Whittaker-Henderson smoothing
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[xcorr](utilities/xcorr.html)
+[![](modules/assets/xcorr_logo.jpg){.card-img-top}](utilities/xcorr.html)
+
+::: {.card-body}
+Cross-correlation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[xcov](utilities/xcov.html)
+[![](modules/assets/xcov_logo.jpg){.card-img-top}](utilities/xcov.html)
+
+::: {.card-body}
+Cross-covariance
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[zscores](utilities/zscores.html)
+[![](modules/assets/zscores_logo.jpg){.card-img-top}](utilities/zscores.html)
+
+::: {.card-body}
+Compute z-scores
+:::
+:::
+:::
+
+:::
+
+## Data Conversion
+
+Functions for format and coordinate transformations.
+
+::: {.grid}
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[ISOtime2unix](utilities/ISOtime2unix.html)
+[![](modules/assets/ISOtime2unix_logo.jpg){.card-img-top}](utilities/ISOtime2unix.html)
+
+::: {.card-body}
+ISO time to Unix time
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[ODE2ds](utilities/ODE2ds.html)
+[![](modules/assets/ODE2ds_logo.jpg){.card-img-top}](utilities/ODE2ds.html)
+
+::: {.card-body}
+ODE solution to dataset
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[cart2pol](utilities/cart2pol.html)
+[![](modules/assets/cart2pol_logo.jpg){.card-img-top}](utilities/cart2pol.html)
+
+::: {.card-body}
+Cartesian to polar coordinates
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[cart2sph](utilities/cart2sph.html)
+[![](modules/assets/cart2sph_logo.jpg){.card-img-top}](utilities/cart2sph.html)
+
+::: {.card-body}
+Cartesian to spherical coordinates
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[date2doy](utilities/date2doy.html)
+[![](modules/assets/date2doy_logo.jpg){.card-img-top}](utilities/date2doy.html)
+
+::: {.card-body}
+Date to day-of-year
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[df2ds](utilities/df2ds.html)
+[![](modules/assets/df2ds_logo.jpg){.card-img-top}](utilities/df2ds.html)
+
+::: {.card-body}
+DataFrame to GMTdataset
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[doy2date](utilities/doy2date.html)
+[![](modules/assets/doy2date_logo.jpg){.card-img-top}](utilities/doy2date.html)
+
+::: {.card-body}
+Day-of-year to date
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[ds2df](utilities/ds2df.html)
+[![](modules/assets/ds2df_logo.jpg){.card-img-top}](utilities/ds2df.html)
+
+::: {.card-body}
+GMTdataset to DataFrame
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[grid2tri](utilities/grid2tri.html)
+[![](modules/assets/grid2tri_logo.jpg){.card-img-top}](utilities/grid2tri.html)
+
+::: {.card-body}
+Grid to triangulation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[ind2bool](utilities/ind2bool.html)
+[![](modules/assets/ind2bool_logo.jpg){.card-img-top}](utilities/ind2bool.html)
+
+::: {.card-body}
+Indices to boolean
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[ind2rgb](utilities/ind2rgb.html)
+[![](modules/assets/ind2rgb_logo.jpg){.card-img-top}](utilities/ind2rgb.html)
+
+::: {.card-body}
+Indexed to RGB image
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mat2ds](utilities/mat2ds.html)
+[![](modules/assets/mat2ds_logo.jpg){.card-img-top}](utilities/mat2ds.html)
+
+::: {.card-body}
+Matrix to GMTdataset
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mat2grid](utilities/mat2grid.html)
+[![](modules/assets/mat2grid_logo.jpg){.card-img-top}](utilities/mat2grid.html)
+
+::: {.card-body}
+Matrix to GMT grid
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mat2img](utilities/mat2img.html)
+[![](modules/assets/mat2img_logo.jpg){.card-img-top}](utilities/mat2img.html)
+
+::: {.card-body}
+Matrix to GMT image
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[pol2cart](utilities/pol2cart.html)
+[![](modules/assets/pol2cart_logo.jpg){.card-img-top}](utilities/pol2cart.html)
+
+::: {.card-body}
+Polar to Cartesian
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[sph2cart](utilities/sph2cart.html)
+[![](modules/assets/sph2cart_logo.jpg){.card-img-top}](utilities/sph2cart.html)
+
+::: {.card-body}
+Spherical to Cartesian
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[tern2cart](utilities/tern2cart.html)
+[![](modules/assets/tern2cart_logo.jpg){.card-img-top}](utilities/tern2cart.html)
+
+::: {.card-body}
+Ternary to Cartesian
+:::
+:::
+:::
+
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[xyzw2cube](utilities/xyzw2cube.html)
+[![](modules/assets/xyzw2cube_logo.jpg){.card-img-top}](utilities/xyzw2cube.html)
+
+::: {.card-body}
+Table to data cube
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[yeardecimal](utilities/yeardecimal.html)
+[![](modules/assets/yeardecimal_logo.jpg){.card-img-top}](utilities/yeardecimal.html)
+
+::: {.card-body}
+Decimal year conversion
+:::
+:::
+:::
+
+:::
+
+## Data Manipulation
+
+Functions for grid and data operations.
+
+::: {.grid}
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[cubeslice](utilities/slicecube.html)
+[![](modules/assets/slicecube_logo.jpg){.card-img-top}](utilities/slicecube.html)
+
+::: {.card-body}
+Slice data cubes
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[fields](utilities/fields.html)
+[![](modules/assets/fields_logo.jpg){.card-img-top}](utilities/fields.html)
+
+::: {.card-body}
+Get structure fields
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[fileparts](utilities/fileparts.html)
+[![](modules/assets/fileparts_logo.jpg){.card-img-top}](utilities/fileparts.html)
+
+::: {.card-body}
+Parse file paths
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[getbyattrib](utilities/getbyattrib.html)
+[![](modules/assets/getbyattrib_logo.jpg){.card-img-top}](utilities/getbyattrib.html)
+
+::: {.card-body}
+Get data by attribute
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[getregion](utilities/getregion.html)
+[![](modules/assets/getregion_logo.jpg){.card-img-top}](utilities/getregion.html)
+
+::: {.card-body}
+Get data region
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[gridit](utilities/gridit.html)
+[![](modules/assets/gridit_logo.jpg){.card-img-top}](utilities/gridit.html)
+
+::: {.card-body}
+Grid scattered data
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[groupby](utilities/groupby.html)
+[![](modules/assets/groupby_logo.jpg){.card-img-top}](utilities/groupby.html)
+
+::: {.card-body}
+Group data by values
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[info](utilities/info.html)
+[![](modules/assets/info_logo.jpg){.card-img-top}](utilities/info.html)
+
+::: {.card-body}
+Get data information
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[isclockwise](utilities/isclockwise.html)
+[![](modules/assets/isclockwise_logo.jpg){.card-img-top}](utilities/isclockwise.html)
+
+::: {.card-body}
+Check polygon orientation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[isnodata](utilities/isnodata.html)
+[![](modules/assets/isnodata_logo.jpg){.card-img-top}](utilities/isnodata.html)
+
+::: {.card-body}
+Check for no-data values
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[makeDCWs](utilities/makeDCWs.html)
+[![](modules/assets/makeDCWs_logo.jpg){.card-img-top}](utilities/makeDCWs.html)
+
+::: {.card-body}
+Make DCW polygons
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[meshgrid](utilities/meshgrid.html)
+[![](modules/assets/meshgrid_logo.jpg){.card-img-top}](utilities/meshgrid.html)
+
+::: {.card-body}
+Create coordinate arrays
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mksymbol](utilities/mksymbol.html)
+[![](modules/assets/mksymbol_logo.jpg){.card-img-top}](utilities/mksymbol.html)
+
+::: {.card-body}
+Make custom symbols
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[peaks](utilities/peaks.html)
+[![](modules/assets/peaks_logo.jpg){.card-img-top}](utilities/peaks.html)
+
+::: {.card-body}
+Generate peaks function
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[pow](utilities/pow.html)
+[![](modules/assets/pow_logo.jpg){.card-img-top}](utilities/pow.html)
+
+::: {.card-body}
+Power function
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[quadbounds](utilities/quadbounds.html)
+[![](modules/assets/quadbounds_logo.jpg){.card-img-top}](utilities/quadbounds.html)
+
+::: {.card-body}
+Quadtree bounds
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[quadkey](utilities/quadkey.html)
+[![](modules/assets/quadkey_logo.jpg){.card-img-top}](utilities/quadkey.html)
+
+::: {.card-body}
+Quadtree key
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[randinpolygon](utilities/randinpolygon.html)
+[![](modules/assets/randinpolygon_logo.jpg){.card-img-top}](utilities/randinpolygon.html)
+
+::: {.card-body}
+Random points in polygon
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[slicecube](utilities/slicecube.html)
+[![](modules/assets/slicecube_logo.jpg){.card-img-top}](utilities/slicecube.html)
+
+::: {.card-body}
+Slice through cube
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[spatialjoin](utilities/spatialjoin.html)
+[![](modules/assets/spatialjoin_logo.jpg){.card-img-top}](utilities/spatialjoin.html)
+
+::: {.card-body}
+Spatial join operations
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[stackgrids](utilities/stackgrids.html)
+[![](modules/assets/stackgrids_logo.jpg){.card-img-top}](utilities/stackgrids.html)
+
+::: {.card-body}
+Stack multiple grids
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[texture_img](utilities/texture_img.html)
+[![](modules/assets/texture_img_logo.jpg){.card-img-top}](utilities/texture_img.html)
+
+::: {.card-body}
+Apply texture to image
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[togglemask](utilities/togglemask.html)
+[![](modules/assets/togglemask_logo.jpg){.card-img-top}](utilities/togglemask.html)
+
+::: {.card-body}
+Toggle mask values
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[vector_attrib](utilities/vector_attrib.html)
+[![](modules/assets/vector_attrib_logo.jpg){.card-img-top}](utilities/vector_attrib.html)
+
+::: {.card-body}
+Vector attributes
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[zonal_statistics](utilities/zonal_stats.html)
+[![](modules/assets/zonal_stats_logo.jpg){.card-img-top}](utilities/zonal_stats.html)
+
+::: {.card-body}
+Zonal statistics (alias)
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[zonal_stats](utilities/zonal_stats.html)
+[![](modules/assets/zonal_stats_logo.jpg){.card-img-top}](utilities/zonal_stats.html)
+
+::: {.card-body}
+Zonal statistics
+:::
+:::
+:::
+
+:::
+
+## Data Access
+
+Functions for accessing geographic datasets and remote data sources.
+
+::: {.grid}
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[ecmwf](utilities/ecmwf.html)
+[![](modules/assets/ecmwf_logo.jpg){.card-img-top}](utilities/ecmwf.html)
+
+::: {.card-body}
+Access ECMWF weather data
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[era5time](utilities/era5time.html)
+[![](modules/assets/era5time_logo.jpg){.card-img-top}](utilities/era5time.html)
+
+::: {.card-body}
+ERA5 time information
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[era5vars](utilities/era5vars.html)
+[![](modules/assets/era5vars_logo.jpg){.card-img-top}](utilities/era5vars.html)
+
+::: {.card-body}
+ERA5 variable information
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[gadm](utilities/gadm.html)
+[![](modules/assets/gadm_logo.jpg){.card-img-top}](utilities/gadm.html)
+
+::: {.card-body}
+Access GADM administrative boundaries
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[gmtread](utilities/gmtread.html)
+[![](modules/assets/gmtread_logo.jpg){.card-img-top}](utilities/gmtread.html)
+
+::: {.card-body}
+Read GMT data files
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[gmtwrite](utilities/gmtwrite.html)
+[![](modules/assets/gmtwrite_logo.jpg){.card-img-top}](utilities/gmtwrite.html)
+
+::: {.card-body}
+Write GMT data files
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[lasread](utilities/lazread.html)
+[![](modules/assets/lazread_logo.jpg){.card-img-top}](utilities/lazread.html)
+
+::: {.card-body}
+Read LAS point cloud
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[laswrite](utilities/lazwrite.html)
+[![](modules/assets/lazwrite_logo.jpg){.card-img-top}](utilities/lazwrite.html)
+
+::: {.card-body}
+Write LAS point cloud
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[lazinfo](utilities/lazinfo.html)
+[![](modules/assets/lazinfo_logo.jpg){.card-img-top}](utilities/lazinfo.html)
+
+::: {.card-body}
+LAZ file information
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[lazread](utilities/lazread.html)
+[![](modules/assets/lazread_logo.jpg){.card-img-top}](utilities/lazread.html)
+
+::: {.card-body}
+Read LAZ point cloud
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[lazwrite](utilities/lazwrite.html)
+[![](modules/assets/lazwrite_logo.jpg){.card-img-top}](utilities/lazwrite.html)
+
+::: {.card-body}
+Write LAZ point cloud
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[listecmwfvars](utilities/listecmwfvars.html)
+[![](modules/assets/listecmwfvars_logo.jpg){.card-img-top}](utilities/listecmwfvars.html)
+
+::: {.card-body}
+List ECMWF variables
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[maregrams](utilities/maregrams.html)
+[![](modules/assets/maregrams_logo.jpg){.card-img-top}](utilities/maregrams.html)
+
+::: {.card-body}
+Plot tidal mareograms
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mbgetdata](utilities/mbgetdata.html)
+[![](modules/assets/mbgetdata_logo.jpg){.card-img-top}](utilities/mbgetdata.html)
+
+::: {.card-body}
+Get MB-System data
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mbimport](utilities/mbimport.html)
+[![](modules/assets/mbimport_logo.jpg){.card-img-top}](utilities/mbimport.html)
+
+::: {.card-body}
+Import MB-System data
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mblevitus](utilities/mblevitus.html)
+[![](modules/assets/mblevitus_logo.jpg){.card-img-top}](utilities/mblevitus.html)
+
+::: {.card-body}
+Levitus database access
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mbsvplist](utilities/mbsvplist.html)
+[![](modules/assets/mbsvplist_logo.jpg){.card-img-top}](utilities/mbsvplist.html)
+
+::: {.card-body}
+Sound velocity profiles
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[meteostat](utilities/meteostat.html)
+[![](modules/assets/meteostat_logo.jpg){.card-img-top}](utilities/meteostat.html)
+
+::: {.card-body}
+Meteostat weather data
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mosaic](utilities/mosaic.html)
+[![](modules/assets/mosaic_logo.jpg){.card-img-top}](utilities/mosaic.html)
+
+::: {.card-body}
+Create image mosaics from tiles
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[pastplates](utilities/pastplates.html)
+[![](modules/assets/pastplates_logo.jpg){.card-img-top}](utilities/pastplates.html)
+
+::: {.card-body}
+Tectonic plate reconstructions
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[remotegrid](utilities/remotegrid.html)
+[![](modules/assets/remotegrid_logo.jpg){.card-img-top}](utilities/remotegrid.html)
+
+::: {.card-body}
+Access remote grid datasets
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[sealand](utilities/sealand.html)
+[![](modules/assets/sealand_logo.jpg){.card-img-top}](utilities/sealand.html)
+
+::: {.card-body}
+Mask grid/image by land/sea
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[weather](utilities/weather.html)
+[![](modules/assets/weather_logo.jpg){.card-img-top}](utilities/weather.html)
+
+::: {.card-body}
+Weather data and forecasts
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[wmsinfo](utilities/wmsinfo.html)
+[![](modules/assets/wmsinfo_logo.jpg){.card-img-top}](utilities/wmsinfo.html)
+
+::: {.card-body}
+WMS service information
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[wmsread](utilities/wmsread.html)
+[![](modules/assets/wmsread_logo.jpg){.card-img-top}](utilities/wmsread.html)
+
+::: {.card-body}
+Fetch Web Map Service data
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[wmstest](utilities/wmstest.html)
+[![](modules/assets/wmstest_logo.jpg){.card-img-top}](utilities/wmstest.html)
+
+::: {.card-body}
+Test WMS service
+:::
+:::
+:::
+
+:::
+
+## Geographic Utilities
+
+Specialized geographic and geospatial tools.
+
+::: {.grid}
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[cpt4dcw](utilities/cpt4dcw.html)
+[![](modules/assets/cpt4dcw_logo.jpg){.card-img-top}](utilities/cpt4dcw.html)
+
+::: {.card-body}
+Color palette for DCW
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[geocoder](utilities/geocoder.html)
+[![](modules/assets/geocoder_logo.jpg){.card-img-top}](utilities/geocoder.html)
+
+::: {.card-body}
+Geocoding utilities
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[geodetic2enu](utilities/geodetic2enu.html)
+[![](modules/assets/geodetic2enu_logo.jpg){.card-img-top}](utilities/geodetic2enu.html)
+
+::: {.card-body}
+Geodetic to ENU coordinates
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[getprovider](utilities/getprovider.html)
+[![](modules/assets/getprovider_logo.jpg){.card-img-top}](utilities/getprovider.html)
+
+::: {.card-body}
+Get tile provider info.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[inpolygon](utilities/inpolygon.html)
+[![](modules/assets/inpolygon_logo.jpg){.card-img-top}](utilities/inpolygon.html)
+
+::: {.card-body}
+Test points in polygon.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[inwhichpolygon](utilities/inwhichpolygon.html)
+[![](modules/assets/inwhichpolygon_logo.jpg){.card-img-top}](utilities/inwhichpolygon.html)
+
+::: {.card-body}
+Find containing polygon.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[mapsize2region](utilities/mapsize2region.html)
+[![](modules/assets/mapsize2region_logo.jpg){.card-img-top}](utilities/mapsize2region.html)
+
+::: {.card-body}
+Map size to region.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[orbits](utilities/orbits.html)
+[![](modules/assets/orbits_logo.jpg){.card-img-top}](utilities/orbits.html)
+
+::: {.card-body}
+Satellite orbit calculations.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[regiongeog](utilities/regiongeog.html)
+[![](modules/assets/regiongeog_logo.jpg){.card-img-top}](utilities/regiongeog.html)
+
+::: {.card-body}
+Geographic region utilities.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[terramar](utilities/sealand.html)
+[![](modules/assets/sealand_logo.jpg){.card-img-top}](utilities/sealand.html)
+
+::: {.card-body}
+Land/sea utilities.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[vecangles](utilities/vecangles.html)
+[![](modules/assets/vecangles_logo.jpg){.card-img-top}](utilities/vecangles.html)
+
+::: {.card-body}
+Vector angle calculations.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[whereami](utilities/whereami.html)
+[![](modules/assets/whereami_logo.jpg){.card-img-top}](utilities/whereami.html)
+
+::: {.card-body}
+Location information.
+:::
+:::
+:::
+
+:::
+
+## Geophysical
+
+Specialized functions for geophysical and Earth science applications.
+
+::: {.grid}
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[okada](utilities/okada.html)
+[![](modules/assets/okada_logo.jpg){.card-img-top}](utilities/okada.html)
+
+::: {.card-body}
+Okada deformation model.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[parkergrav](utilities/parkergrav.html)
+[![](modules/assets/parkergrav_logo.jpg){.card-img-top}](utilities/parkergrav.html)
+
+::: {.card-body}
+Calculate gravity anomalies.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[parkermag](utilities/parkermag.html)
+[![](modules/assets/parkermag_logo.jpg){.card-img-top}](utilities/parkermag.html)
+
+::: {.card-body}
+Calculate magnetic anomalies.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[seismicity](utilities/seismicity.html)
+[![](modules/assets/seismicity_logo.jpg){.card-img-top}](utilities/seismicity.html)
+
+::: {.card-body}
+Plot earthquake data.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[stereonet](utilities/stereonet.html)
+[![](modules/assets/stereonet_logo.jpg){.card-img-top}](utilities/stereonet.html)
+
+::: {.card-body}
+Stereonets for structural geology.
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[streamlines](utilities/streamlines.html)
+[![](modules/assets/streamlines_logo.jpg){.card-img-top}](utilities/streamlines.html)
+
+::: {.card-body}
+Compute and plot streamlines.
+:::
+:::
+:::
+
+:::
+
+## Table Operations
+
+DataFrame-style operations for GMT datasets.
+
+::: {.grid}
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[Gantijoin](utilities/Gantijoin.html)
+[![](modules/assets/Gantijoin_logo.jpg){.card-img-top}](utilities/Gantijoin.html)
+
+::: {.card-body}
+Anti join operation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[Gcrossjoin](utilities/Gcrossjoin.html)
+[![](modules/assets/Gcrossjoin_logo.jpg){.card-img-top}](utilities/Gcrossjoin.html)
+
+::: {.card-body}
+Cross join operation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[Ginnerjoin](utilities/Ginnerjoin.html)
+[![](modules/assets/Ginnerjoin_logo.jpg){.card-img-top}](utilities/Ginnerjoin.html)
+
+::: {.card-body}
+Inner join operation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[Gleftjoin](utilities/Gleftjoin.html)
+[![](modules/assets/Gleftjoin_logo.jpg){.card-img-top}](utilities/Gleftjoin.html)
+
+::: {.card-body}
+Left join operation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[Gouterjoin](utilities/Gouterjoin.html)
+[![](modules/assets/Gouterjoin_logo.jpg){.card-img-top}](utilities/Gouterjoin.html)
+
+::: {.card-body}
+Outer join operation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[Grightjoin](utilities/Grightjoin.html)
+[![](modules/assets/Grightjoin_logo.jpg){.card-img-top}](utilities/Grightjoin.html)
+
+::: {.card-body}
+Right join operation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[Gsemijoin](utilities/Gsemijoin.html)
+[![](modules/assets/Gsemijoin_logo.jpg){.card-img-top}](utilities/Gsemijoin.html)
+
+::: {.card-body}
+Semi join operation
+:::
+:::
+:::
+
+:::
+
+## Miscellaneous
+
+Other utility functions.
+
+::: {.grid}
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[bezier](utilities/bezier.html)
+[![](modules/assets/bezier_logo.jpg){.card-img-top}](utilities/bezier.html)
+
+::: {.card-body}
+Bezier curve generation
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[circfit](utilities/circfit.html)
+[![](modules/assets/circfit_logo.jpg){.card-img-top}](utilities/circfit.html)
+
+::: {.card-body}
+Fit circle to points
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[linspace](utilities/linspace.html)
+[![](modules/assets/linspace_logo.jpg){.card-img-top}](utilities/linspace.html)
+
+::: {.card-body}
+Linearly spaced vector
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[logspace](utilities/logspace.html)
+[![](modules/assets/logspace_logo.jpg){.card-img-top}](utilities/logspace.html)
+
+::: {.card-body}
+Logarithmically spaced vector
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[magic](utilities/magic.html)
+[![](modules/assets/magic_logo.jpg){.card-img-top}](utilities/magic.html)
+
+::: {.card-body}
+Magic square generation
+:::
+:::
+:::
+
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[resetGMT](utilities/resetGMT.html)
+[![](modules/assets/resetGMT_logo.jpg){.card-img-top}](utilities/resetGMT.html)
+
+::: {.card-body}
+Reset GMT session
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[theme](utilities/theme.html)
+[![](modules/assets/theme_logo.jpg){.card-img-top}](utilities/theme.html)
+
+::: {.card-body}
+Set plot theme
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[tic](utilities/tic.html)
+[![](modules/assets/tic_logo.jpg){.card-img-top}](utilities/tic.html)
+
+::: {.card-body}
+Start timer
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[toc](utilities/toc.html)
+[![](modules/assets/toc_logo.jpg){.card-img-top}](utilities/toc.html)
+
+::: {.card-body}
+Stop timer
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[uniqueind](utilities/uniqueind.html)
+[![](modules/assets/uniqueind_logo.jpg){.card-img-top}](utilities/uniqueind.html)
+
+::: {.card-body}
+Unique with indices
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[upGMT](utilities/upGMT.html)
+[![](modules/assets/upGMT_logo.jpg){.card-img-top}](utilities/upGMT.html)
+
+::: {.card-body}
+Update GMT
+:::
+:::
+:::
+
+:::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[vizpdf](utilities/vizpdf.html)
+[![](modules/assets/vizpdf_logo.jpg){.card-img-top}](utilities/vizpdf.html)
+
+::: {.card-body}
+Visualize PDF
+:::
+:::
+:::
+
+:::

@@ -1,0 +1,28 @@
+---
+title: "gdalrasterize"
+---
+
+# gdalrasterize
+
+**Category:** GDAL Functions
+
+Documentation for the `gdalrasterize` function.
+
+## Methods
+
+```julia
+# 4 methods for generic function "gdalrasterize" from GMT.Gdal:
+ [1] gdalrasterize(dataset::GMT.Gdal.AbstractDataset, options::Vector{String}; dest, gdataset, save, layout)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1681
+ [2] gdalrasterize(dataset::GMT.Gdal.AbstractDataset; ...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1681
+ [3] gdalrasterize(dataset::GDtype, options::Vector{String}; dest, gdataset, save, layout)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1679
+ [4] gdalrasterize(dataset::GDtype; ...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1679
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

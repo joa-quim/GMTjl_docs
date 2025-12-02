@@ -1,0 +1,31 @@
+---
+title: "isclockwise"
+---
+
+
+```
+isclockwise(poly::Matrix{<:AbstractFloat}, view=(0.0,0.0,1.0)) -> Bool
+```
+
+Return true if the 2D/3D `poly` is clockwise when seen from the `view` direction.
+
+### Example
+
+```julia
+poly = [0.0 0.0 0.0; 0.0 0.0 1.0; 0.0 1.0 1.0; 0.0 1.0 0.0; 0.0 0.0 0.0]
+isclockwise(poly, (1.0,0.1,0.0))
+```
+
+
+## Methods
+
+```julia
+# 2 methods for generic function "isclockwise" from GMT:
+ [1] isclockwise(poly::Matrix{<:AbstractFloat}, view)
+ [2] isclockwise(poly::Matrix{<:AbstractFloat})
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

@@ -1,0 +1,185 @@
+---
+title: "Tutorials"
+page-layout: full
+---
+
+<style>
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.card-title {
+  margin-top: 0.5rem;
+  display: block;
+}
+</style>
+
+
+Step-by-step tutorials for common GMT.jl workflows and advanced techniques.
+
+::: {.grid}
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**ISC seismicity**](tutorials/ISC/isc.jl.html){.card-title .stretched-link}
+[![](tutorials/ISC/japan_quakes.png){.card-img-top}](tutorials/ISC/isc.jl.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Landsat 8**](tutorials/Landsat8/histogram_stretch.html){.card-title .stretched-link}
+[![](tutorials/Landsat8/tilelogo.jpg){.card-img-top}](tutorials/Landsat8/histogram_stretch.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Coastlines**](tutorials/coast/coastlines.html){.card-title .stretched-link}
+[![](tutorials/coast/tilelogo.png){.card-img-top}](tutorials/coast/coastlines.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**US Choropleths**](tutorials/choropleths/choropleths.html){.card-title .stretched-link}
+[![](tutorials/choropleths/tilelogo.png){.card-img-top}](tutorials/choropleths/choropleths.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**@dlakelan choropleths**](tutorials/dlakelan/GMTMaps.html){.card-title .stretched-link}
+[![](tutorials/dlakelan/tilelogo.png){.card-img-top}](tutorials/dlakelan/GMTMaps.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Longest Sail**](tutorials/longest_sail/longestsail.html){.card-title .stretched-link}
+[![](tutorials/longest_sail/tilelogo.png){.card-img-top}](tutorials/longest_sail/longestsail.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Geospatial vector**](tutorials/vector_shp/vector_shp.html){.card-title .stretched-link}
+[![](tutorials/vector_shp/tilelogo.png){.card-img-top}](tutorials/vector_shp/vector_shp.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Texture Shading**](tutorials/texture_shading/texture.html){.card-title .stretched-link}
+[![](tutorials/texture_shading/tilelogo.png){.card-img-top}](tutorials/texture_shading/texture.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Mosaics**](tutorials/mosaics/mosaics.html){.card-title .stretched-link}
+[![](tutorials/mosaics/tilelogo.jpg){.card-img-top}](tutorials/mosaics/mosaics.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Insets**](tutorials/insets/insets.html){.card-title .stretched-link}
+[![](tutorials/insets/tilelogo.jpg){.card-img-top}](tutorials/insets/insets.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Remote Grids**](tutorials/remote_datasets/remote_datasets.html){.card-title .stretched-link}
+[![](tutorials/remote_datasets/tilelogo.jpg){.card-img-top}](tutorials/remote_datasets/remote_datasets.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Blender**](tutorials/blender_shading/blender_rt.html){.card-title .stretched-link}
+[![](tutorials/blender_shading/tilelogo.jpg){.card-img-top}](tutorials/blender_shading/blender_rt.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Signal**](tutorials/signal/signal.html){.card-title .stretched-link}
+[![](tutorials/signal/tilelogo.jpg){.card-img-top}](tutorials/signal/signal.html)
+
+::: {.card-body}
+:::
+:::
+:::
+
+:::

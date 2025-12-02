@@ -1,0 +1,20 @@
+---
+title: "terramar"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `terramar` function.
+
+## Methods
+
+```julia
+# 1 method for generic function "terramar" from GMT:
+ [1] terramar(f1::Function, arg1, t1::NamedTuple, f2::Function, arg2, t2::NamedTuple; kw...)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

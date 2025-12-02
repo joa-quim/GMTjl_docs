@@ -1,0 +1,25 @@
+---
+title: "grid2img"
+---
+
+# grid2img
+
+```
+I = grid2img(G::GMTgrid{<:Unsigned})
+```
+
+Converts a GMTgrid of type Unsigned into a GMTimage. Data array is not copied nor its type is changed.
+
+
+## Methods
+
+```julia
+# 1 method for generic function "grid2img" from GMT:
+ [1] grid2img(G::GMTgrid{<:Unsigned})
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\utils_types.jl:2427
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

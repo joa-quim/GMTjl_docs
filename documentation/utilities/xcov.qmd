@@ -1,0 +1,47 @@
+---
+title: "xcov"
+---
+
+
+```
+xcov(x, y, [lags]; demean=true)
+```
+
+Compute the cross covariance function (CCF) between real-valued vectors or matrices `x` and `y`, optionally specifying the `lags`. `demean` specifies whether the respective means of `x` and `y` should be subtracted from them before computing their CCF.
+
+If both x and y are vectors, return a vector of the same length as lags. Otherwise, compute cross covariances between each pairs of columns in x and y.
+
+### Kwargs
+
+  * `demean`: Specifies whether the respective means of x and y should be subtracted from them before  computing their cross covariance.
+  * `lags`: When left unspecified and `maxlags=0`, the lags used are the integers from  `-min(size(x,1)-1, 10*log10(size(x,1))) to min(size(x,1), 10*log10(size(x,1)))`
+  * `maxlags`: limits the lag range from `-maxlag` to `maxlag`.
+
+```
+xcov(x::AbstractVecOrMat{<:Real}; demean::Bool=true, lags::AbstractVector{<:Integer}=Int[], maxlags=0)
+```
+
+Compute the autocovariance of a vector or matrix x optionally specifying the lags at which to compute the autocovariance.
+
+If x is a vector, return a vector of the same length as lags. If x is a matrix, return a matrix of size (length(lags), size(x,2)), where each column in the result corresponds to a column in x.
+
+The output is not normalized. See `xcorr` for a function with normalization.
+
+
+## Methods
+
+```julia
+# 7 methods for generic function "xcov" from GMT:
+ [1] xcov(x::AbstractMatrix{<:Real}; demean, lags, maxlags)
+ [2] xcov(x::AbstractVector{<:Real}; demean, lags, maxlags)
+ [3] xcov(x::AbstractVecOrMat{<:Real}; demean, lags, maxlags)
+ [4] xcov(x::AbstractMatrix{<:Real}, y::AbstractMatrix{<:Real}; lags, demean, maxlags)
+ [5] xcov(x::AbstractVector{<:Real}, y::AbstractMatrix{<:Real}; lags, demean, maxlags)
+ [6] xcov(x::AbstractMatrix{<:Real}, y::AbstractVector{<:Real}; lags, demean, maxlags)
+ [7] xcov(x::AbstractVector{<:Real}, y::AbstractVector{<:Real}; demean, lags, maxlags)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

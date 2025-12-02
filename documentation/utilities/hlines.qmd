@@ -1,0 +1,46 @@
+# hlines
+
+```julia
+hlines(arg; decorated=(...), xmin=NaN, xmax=NaN, percent=false, kwargs...)
+```
+
+Plots one or a collection of horizontal lines with eventual decorations
+
+- `xmin` & `xmax`: Limit the horizontal lines to start a `xmin` and/or end at `xmax`
+
+- `percent`: If true the `xmin` & `xmax` are interpreted as fractions of the figure height.
+
+{{< include ../common_opts/opt_B.md >}}
+
+{{< include ../common_opts/opt_J.md >}}
+
+{{< include ../common_opts/opt_R.md >}}
+
+{{< include ../common_opts/opt_pen.md >}}
+
+{{< include ../common_opts/opt_U.md >}}
+
+{{< include ../common_opts/opt_V.md >}}
+
+{{< include ../common_opts/opt_X.md >}}
+
+{{< include ../common_opts/opt_Y.md >}}
+
+{{< include ../common_opts/opt_save_fig.md >}}
+
+Examples
+--------
+
+
+```{julia}
+using GMT
+
+plot(rand(5,3))
+hlines!([0.2, 0.6], pen=(1, :red), show=true)
+```
+
+
+See Also
+--------
+
+{{< gmtref vlines >}}, {{< gmtref plot >}}

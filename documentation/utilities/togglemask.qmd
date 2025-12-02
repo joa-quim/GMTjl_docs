@@ -1,0 +1,24 @@
+---
+title: "togglemask"
+---
+
+
+```
+I = togglemask(I::Union{GMTimage{<:Bool, 2}, GMTimage{<:UInt8, 2}}) -> GMTimage
+```
+
+Convert between UInt8 and Boolean representations of the mask images. A new object is returned with a copy of the input data.
+
+
+## Methods
+
+```julia
+# 2 methods for generic function "togglemask" from GMT:
+ [1] togglemask(I::GMTimage{<:UInt8, 2})
+ [2] togglemask(I::GMTimage{<:Bool, 2})
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

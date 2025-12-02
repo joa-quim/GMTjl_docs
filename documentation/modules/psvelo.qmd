@@ -1,0 +1,37 @@
+---
+title: "psvelo"
+---
+
+# psvelo
+
+```
+velo(cmd0::String="", arg1=nothing; kwargs...)
+```
+
+Plot velocity vectors, crosses, and wedges.
+
+See full GMT docs at [`velo`](http://docs.generic-mapping-tools.org/latest/supplements/seis/velo.html)
+
+```julia
+    velo(mat2ds([0. -8 0 0 4 6 0.5; -8 5 3 3 0 0 0.5], ["4x6", "3x3"]), pen=(0.6,:red), fill_wedges=:green, outlines=true, Se="0.2/0.39/18", arrow="0.3c+p1p+e+gred", region=(-15,10,-10,10), show=1)
+```
+
+
+## Methods
+
+```julia
+# 4 methods for generic function "velo" from GMT:
+ [1] velo(cmd0::String; ...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\geodesy\psvelo.jl:12
+ [2] velo(; ...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\geodesy\psvelo.jl:12
+ [3] velo(arg1; kw...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\geodesy\psvelo.jl:49
+ [4] velo(cmd0::String, arg1; first, kwargs...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\geodesy\psvelo.jl:12
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

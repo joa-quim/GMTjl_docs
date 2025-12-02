@@ -1,0 +1,44 @@
+---
+title: "readgeom"
+---
+
+# readgeom
+
+```
+readgeom(wkt::String; gdataset::Bool=false)
+```
+
+  * `wkt`: A string with the a geometry encoded as a WKT string
+  * `gdataset`: If set to `true` forces the return of a GDAL dataset instead of a GMT type.
+
+### Returns
+
+A GMTdataset or a GDAL dataset
+
+### Examples
+
+```julia
+D = readgeom("POLYGON ((0 0, 0 10, 10 10, 10 0, 0 0))")
+```
+
+```
+D = readgeom(wkt::Vector{String})
+```
+
+Return a vector of GMTdatasets from a vector of WKT strings.
+
+
+## Methods
+
+```julia
+# 2 methods for generic function "readgeom" from GMT:
+ [1] readgeom(wkt::Vector{String})
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal_utils.jl:1132
+ [2] readgeom(wkt::String; gdataset)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal_utils.jl:1123
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

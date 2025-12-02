@@ -1,0 +1,34 @@
+---
+title: "3D Solids Functions"
+---
+
+Functions for creating, manipulating, and visualizing 3D geometric solids and mesh structures.
+
+## Basic 3D Shapes
+
+- [cube](utilities/cube.html) - Create a 3D cube
+- [cylinder](utilities/cylinder.html) - Create a 3D cylinder
+- [sphere](utilities/sphere.html) - Create a 3D sphere
+- [torus](utilities/torus.html) - Create a 3D torus
+- [ellipse3D](utilities/ellipse3D.html) - Create a 3D ellipse
+
+## Platonic Solids
+
+- [tetrahedron](utilities/tetrahedron.html) - Create a tetrahedron (4 faces)
+- [octahedron](utilities/octahedron.html) - Create an octahedron (8 faces)
+- [dodecahedron](utilities/dodecahedron.html) - Create a dodecahedron (12 faces)
+- [icosahedron](utilities/icosahedron.html) - Create an icosahedron (20 faces)
+
+## 3D Mesh Operations
+
+- [extrude](utilities/extrude.html) - Extrude a 2D shape into 3D
+- [revolve](utilities/revolve.html) - Create 3D solid by revolution
+- [loft](utilities/loft.html) - Create 3D surface by lofting through curves
+- [replicant](utilities/replicant.html) - Replicate 3D objects
+- [flatfv](utilities/flatfv.html) - Create flat face-vertex mesh
+- [fv2fv](utilities/fv2fv.html) - Convert between face-vertex formats
+
+## Grid & Surface to Mesh
+
+- [grid2tri](utilities/grid2tri.html) - Convert grid to triangulated mesh
+- [surf2fv](utilities/surf2fv.html) - Convert surface to face-vertex representation

@@ -1,0 +1,24 @@
+---
+title: "boxes"
+---
+
+# boxes
+
+**Category:** Modules
+
+Documentation for the `boxes` function.
+
+## Methods
+
+```julia
+# 2 methods for generic function "boxes" from GMT:
+ [1] boxes(X::Union{AbstractVector{<:Real}, Matrix{<:Real}}, Y::Union{AbstractVector{<:Real}, Matrix{<:Real}}, d::Dict{Symbol, Any})
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pcolor.jl:268
+ [2] boxes(X::Union{AbstractVector{<:Real}, Matrix{<:Real}}, Y::Union{AbstractVector{<:Real}, Matrix{<:Real}}; kwargs...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pcolor.jl:265
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

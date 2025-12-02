@@ -1,0 +1,44 @@
+---
+title: "gdalgrid"
+---
+
+# gdalgrid
+
+```
+G = gdalgrid(indata, options=String[]; dest="/vsimem/tmp", method::StrSymb="", kw...)
+```
+
+### Parameters
+
+  * `indata`: The source dataset. It can be a file name, a GMTdataset, a Mx3 matrix or a GDAL dataset
+  * `method`: The interpolation method name. One of "invdist", "invdistnn", "average", "nearest", "linear",           "minimum", "maximum", "range", "count", "average*distance", "average*distance_pts".
+  * `options`: List of options. The accepted options are the ones of the gdal_grid utility.           This list can be in the form of a vector of strings, or joined in a single string.
+  * `kwargs`: The `kwargs` may also contain the GMT region (-R), inc (-I) and `save=fname` options.
+
+### Returns
+
+A GMTgrid or a GDAL dataset (or nothing if file was writen on disk). To force the return of a GDAL dataset use the option `gdataset=true`.
+
+
+## Methods
+
+```julia
+# 6 methods for generic function "gdalgrid" from GMT.Gdal:
+ [1] gdalgrid(ds::GMT.Gdal.IDataset, opts::Vector{String}; dest, gdataset)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1676
+ [2] gdalgrid(ds::GMT.Gdal.IDataset; ...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1676
+ [3] gdalgrid(dataset::GMT.Gdal.Dataset, options::Vector{String}; dest, gdataset, save)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1666
+ [4] gdalgrid(dataset::GMT.Gdal.Dataset; ...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1666
+ [5] gdalgrid(indata; ...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal_tools.jl:291
+ [6] gdalgrid(indata, opts::Union{String, Vector{String}}; dest, method, kwargs...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal_tools.jl:291
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

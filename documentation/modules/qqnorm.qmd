@@ -1,0 +1,25 @@
+---
+title: "qqnorm"
+---
+
+# qqnorm
+
+```
+qqnorm(x; qqline=:identity, kwargs...)
+```
+
+The qqnorm is a `qqplot` shorthand for comparing a distribution to the normal distribution. If the distributions are similar the points will be on a straight line.
+
+
+## Methods
+
+```julia
+# 1 method for generic function "qqnorm" from GMT:
+ [1] qqnorm(x; qqline, first, kw...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\statplots.jl:968
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

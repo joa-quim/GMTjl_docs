@@ -1,0 +1,89 @@
+---
+title: "Geophysics"
+page-layout: full
+---
+
+<style>
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.card-title {
+  margin-top: 0.5rem;
+  display: block;
+}
+</style>
+
+# Geophysics Examples
+
+Specialized geophysics applications and examples using GMT.jl.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .h-100}
+[**Seismology**](geophysics/seismicity/01_focalmec.html){.card-title .stretched-link}
+[![](geophysics/seismicity/tillelogo.jpg){.card-img-top}](geophysics/seismicity/01_focalmec.html)
+
+::: {.card-body}
+Focal mechanisms, seismicity plots, and earthquake data visualization
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .h-100}
+[**Earth Tides**](geophysics/earthtides/01_earthtides.html){.card-title .stretched-link}
+[![](geophysics/earthtides/tillelogo.png){.card-img-top}](geophysics/earthtides/01_earthtides.html)
+
+::: {.card-body}
+Computing and visualizing Earth tide effects
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .h-100}
+[**Weather Maps**](geophysics/weather/01_weather.html){.card-title .stretched-link}
+[![](geophysics/weather/tillelogo.jpg){.card-img-top}](geophysics/weather/01_weather.html)
+
+::: {.card-body}
+Meteorological data visualization and weather mapping
+:::
+:::
+:::
+
+:::

@@ -1,0 +1,22 @@
+---
+title: "fliplr"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `fliplr` function.
+
+## Methods
+
+```julia
+# 3 methods for generic function "fliplr" from GMT:
+ [1] fliplr(I::GMTimage)
+ [2] fliplr(G::GMTgrid)
+ [3] fliplr(A)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

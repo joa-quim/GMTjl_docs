@@ -1,0 +1,22 @@
+---
+title: "vspan"
+---
+
+# vspan
+
+**Category:** Modules
+
+Documentation for the `vspan` function.
+
+## Methods
+
+```julia
+# 1 method for generic function "vband" from GMT:
+ [1] vband(mat::Matrix{<:Real}; width, percent, first, kw...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1517
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

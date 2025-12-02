@@ -1,0 +1,48 @@
+---
+title: "Map Projections"
+---
+
+# GMT.jl Map Projection Examples
+
+Explore various map projection types and coordinate systems available in GMT.jl.
+
+## Examples
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [The true Hello World](projections/01_hello.html)
+A foundational example demonstrating basic projection functionality with the orthographic projection.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [GMT Map Projections](projections/02_proj_examples.html)
+Comprehensive guide showcasing 30+ different cartographic projection examples including conic, azimuthal, cylindrical, and miscellaneous projections.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Best Rectangular World Map Projection](projections/best_rectangular.html)
+Demonstrates optimal rectangular projection methods for global visualizations.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Mixing UTM and Geographic Axes](projections/ex28.html)
+Shows how to combine UTM and geographic coordinate system annotations on the same map.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Lee Oblated Stereographic Projection](projections/leepacific.html)
+Examples utilizing the Lee oblated stereographic projection method for Pacific region mapping.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Spilhaus Projection](projections/spilhaus.html)
+Demonstrates this unique ocean-focused map projection type ideal for oceanographic applications.
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Stereonets](projections/stereonet.html)
+Stereographic net visualizations commonly used in structural geology and geophysics applications.
+:::
+
+:::

@@ -1,0 +1,88 @@
+# GDAL Utility Functions
+
+Functions for working with geospatial data using GDAL/OGR capabilities.
+
+## Core GDAL Tools
+
+- [gdaltranslate](gdalfuns/gdaltranslate.html) - Convert raster data between different formats
+- [gdalwarp](gdalfuns/gdalwarp.html) - Image reprojection and warping
+- [gdaldem](gdalfuns/gdaldem.html) - Tools to analyze and visualize DEMs
+- [ogr2ogr](gdalfuns/ogr2ogr.html) - Convert vector data between file formats
+
+## Geometric Operations
+
+- [arccircle](gdalfuns/arccircle.html) - Create circular arcs
+- [arcellipse](gdalfuns/arcellipse.html) - Create elliptical arcs
+- [boundary](gdalfuns/boundary.html) - Compute geometry boundary
+- [buffer](gdalfuns/buffer.html) - Create buffer around geometry
+- [buffergeo](gdalfuns/buffergeo.html) - Geographic buffer operations
+- [centroid](gdalfuns/centroid.html) - Compute centroid of geometry
+- [circgeo](gdalfuns/circgeo.html) - Geographic circles
+- [concavehull](gdalfuns/concavehull.html) - Compute concave hull
+- [convexhull](gdalfuns/convexhull.html) - Compute convex hull
+- [delaunay](gdalfuns/delaunay.html) - Delaunay triangulation
+- [envelope](gdalfuns/envelope.html) - Compute bounding envelope
+- [envelope3d](gdalfuns/envelope3d.html) - Compute 3D bounding envelope
+- [polygonize](gdalfuns/polygonize.html) - Convert raster to polygons
+- [polyunion](gdalfuns/polyunion.html) - Union of polygons
+- [simplify](gdalfuns/simplify.html) - Simplify geometry
+
+## Spatial Relationships
+
+- [contains](gdalfuns/contains.html) - Test if geometry contains another
+- [crosses](gdalfuns/crosses.html) - Test if geometries cross
+- [disjoint](gdalfuns/disjoint.html) - Test if geometries are disjoint
+- [equals](gdalfuns/equals.html) - Test if geometries are equal
+- [intersects](gdalfuns/intersects.html) - Test if geometries intersect
+- [overlaps](gdalfuns/overlaps.html) - Test if geometries overlap
+- [touches](gdalfuns/touches.html) - Test if geometries touch
+- [within](gdalfuns/within.html) - Test if geometry is within another
+
+## Distance & Area Calculations
+
+- [distance](gdalfuns/distance.html) - Compute distance between geometries
+- [geodesicarea](gdalfuns/geodesicarea.html) - Compute geodesic area
+- [geomarea](gdalfuns/geomarea.html) - Compute geometry area
+- [geomlength](gdalfuns/geomlength.html) - Compute geometry length
+
+## Geodetic Operations
+
+- [geod](gdalfuns/geod.html) - Geodesic calculations
+- [geodesic](gdalfuns/geodesic.html) - Geodesic line operations
+- [invgeod](gdalfuns/invgeod.html) - Inverse geodesic calculations
+- [loxodrome](gdalfuns/loxodrome.html) - Loxodrome (rhumb line) calculations
+- [loxodrome_direct](gdalfuns/loxodrome_direct.html) - Direct loxodrome problem
+- [loxodrome_inverse](gdalfuns/loxodrome_inverse.html) - Inverse loxodrome problem
+
+## Projection & Coordinate Functions
+
+- [epsg2proj](gdalfuns/epsg2proj.html) - Convert EPSG code to PROJ string
+- [epsg2wkt](gdalfuns/epsg2wkt.html) - Convert EPSG code to WKT
+- [lonlat2xy](gdalfuns/lonlat2xy.html) - Convert lon/lat to projected coordinates
+- [proj2wkt](gdalfuns/proj2wkt.html) - Convert PROJ string to WKT
+- [setproj!](gdalfuns/setproj.html) - Set projection for data
+- [wkt2proj](gdalfuns/wkt2proj.html) - Convert WKT to PROJ string
+- [xy2lonlat](gdalfuns/xy2lonlat.html) - Convert projected coordinates to lon/lat
+
+## Set Operations
+
+- [difference](gdalfuns/difference.html) - Compute difference of geometries
+- [intersection](gdalfuns/intersection.html) - Compute intersection of geometries
+- [symdifference](gdalfuns/symdifference.html) - Compute symmetric difference
+
+## Data Processing
+
+- [dither](gdalfuns/dither.html) - Apply dithering to image
+- [fillnodata](gdalfuns/fillnodata.html) - Fill nodata values in raster
+
+## GMT Integration
+
+- [gd2gmt](gdalfuns/gd2gmt.html) - Convert GDAL dataset to GMT object
+- [gdalshade](gdalfuns/gdalshade.html) - Create shaded relief
+- [gdalread](gdalfuns/gdalread.html) - Read geospatial data with GDAL
+- [gdalwrite](gdalfuns/gdalwrite.html) - Write geospatial data with GDAL
+- [gmt2gd](gdalfuns/gmt2gd.html) - Convert GMT object to GDAL dataset
+
+## Miscellaneous
+
+- [pointalongline](gdalfuns/pointalongline.html) - Get point at distance along line

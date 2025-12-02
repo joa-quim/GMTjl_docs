@@ -1,0 +1,137 @@
+# Plotting Functions
+
+A collection of examples demonstrating GMT.jl plotting functions.
+
+<style>
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,.125);
+  height: 100%;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+</style>
+
+::: {.grid}
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Line Plots**](01_lines.html){.card-title .stretched-link}
+[![](01_lines_thumb.png){.card-img-top}](01_lines.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Filled Curves**](02_1filledlines.html){.card-title .stretched-link}
+[![](02_1filledlines_thumb.png){.card-img-top}](02_1filledlines.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Stairs**](02_2stairs.html){.card-title .stretched-link}
+[![](02_2stairs_thumb.png){.card-img-top}](02_2stairs.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Stems**](02_2stems.html){.card-title .stretched-link}
+[![](02_2stems_thumb.png){.card-img-top}](02_2stems.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Plotyy**](02_plotyy.html){.card-title .stretched-link}
+[![](02_plotyy_thumb.png){.card-img-top}](02_plotyy.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Radar Plots**](035_radars.html){.card-title .stretched-link}
+[![](035_radars_thumb.png){.card-img-top}](035_radars.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Bar Plots**](03_bars.html){.card-title .stretched-link}
+[![](03_bars_thumb.png){.card-img-top}](03_bars.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Scatters**](040_scatter.html){.card-title .stretched-link}
+[![](040_scatter_thumb.png){.card-img-top}](040_scatter.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Statistical Plots**](05_1_stats.html){.card-title .stretched-link}
+[![](05_1_stats_thumb.png){.card-img-top}](05_1_stats.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**PCAs & Biplots**](05_2_biplots.html){.card-title .stretched-link}
+[![](05_2_biplots_thumb.png){.card-img-top}](05_2_biplots.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Error Bars**](05_error_bars.html){.card-title .stretched-link}
+[![](05_error_bars_thumb.png){.card-img-top}](05_error_bars.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Spirals**](06_spirals.html){.card-title .stretched-link}
+[![](06_spirals_thumb.png){.card-img-top}](06_spirals.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Symbols & Linestyles**](07_symbols.html){.card-title .stretched-link}
+[![](../symbols.png){.card-img-top}](07_symbols.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Patterns & Transparency**](08_rectangles.html){.card-title .stretched-link}
+[![](08_rectangles_thumb.png){.card-img-top}](08_rectangles.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Histograms**](10_histograms.html){.card-title .stretched-link}
+[![](10_histograms_thumb.png){.card-img-top}](10_histograms.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Plot3D**](50_plot3.html){.card-title .stretched-link}
+[![](50_plot3_thumb.png){.card-img-top}](50_plot3.html)
+:::
+:::
+
+:::

@@ -1,0 +1,11 @@
+---
+title: "setproj"
+---
+
+    setproj!(type, proj)
+
+Set a referencing system to the `type` object. This object can be a {{< gmtref GMTgrid type=gmttype >}}, a {{< gmtref GMTimage type=gmttype >}},
+a {{< gmtref GMTdataset type=gmttype >}} or an `AbstractDataset`.
+
+- `proj` Is either a Proj4 string or a WKT. Alternatively, it can also be another grid, image or dataset
+         type, in which case its referencing system is copied into `type`

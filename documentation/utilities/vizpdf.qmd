@@ -1,0 +1,20 @@
+---
+title: "vizpdf"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `vizpdf` function.
+
+## Methods
+
+```julia
+# 1 method for generic function "vizpdf" from GMT:
+ [1] vizpdf(args...; kwargs...)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

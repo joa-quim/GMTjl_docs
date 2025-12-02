@@ -1,0 +1,33 @@
+---
+title: "translate"
+---
+
+
+```
+FV = translate(FV::GMTfv; dx=0.0, dy=0.0, dz=0.0) -> GMTfv
+```
+
+Translate the FacesVertices object by dx, dy and dz.
+
+The *insitu* version `translate!()` does it in-place.
+
+### Args
+
+  * `FV::GMTfv`: FacesVertices object
+
+### Kwargs
+
+  * `dx, dy, dz`: The amount of offset to apply to the x, y and z  FV.verts components.
+
+
+## Methods
+
+```julia
+# 1 method for generic function "translate" from GMT:
+ [1] translate(FV::GMTfv; dx, dy, dz, insitu)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

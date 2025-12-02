@@ -1,0 +1,60 @@
+# imshow
+
+```julia
+imshow(arg1; kw...)
+
+or
+
+viz(arg1; kw...)
+```
+
+keywords: GMT, Julia, automatic visualization
+
+The second form shown above means that `viz` is an alias of `imshow`.
+
+`imshow`, or `viz`, is a front end to the {{< gmtref grdimage >}}, {{< gmtref grdview >}}, {{< gmtref plot >}} and [plot3]
+programs that accepts {{< gmtref GMTgrid type=gmttype >}}, {{< gmtref GMTimage type=gmttype >}}, {{< gmtref GMTdataset type=gmttype >}} as well as plain matrices
+or strings with file names of grids or images. The normal options of the {{< gmtref grdimage >}}
+and {{< gmtref grdview >}} programs also apply here but some clever guessing of suitable necessary parameters is done
+if they are not provided. Contrary to other image producing modules the "show' keyword is not necessary to
+display the image. Here it is set by default. If user wants to use *imshow* to create layers of a more complex
+fig he can use *show=false* for the intermediate layers.
+
+This module uses an internal logic to decide whether use {{< gmtref grdimage >}}, {{< gmtref grdview >}} or {{< gmtref plot >}}.
+Namely, when the `view` option is used {{< gmtref grdview >}} is choosed and a default vertical scale is assigned.
+However, sometimes we want a rotated plot, optionally tilted, but not 3D view. In that case use the option `flat=true`,
+which forces the use of {{< gmtref grdimage >}}.
+
+The `kw` keyword/values are used to pass options to {{< gmtref grdimage >}}, etc..., modules. But other than this, we can
+also use them to call a subset of GMT.jl modules. For example ``viz(..., coast=true, colorbar=true)``, or a full set of
+of {{< gmtref coast >}} options like ``imshow(..., coast=(land=:tomato, ocean=:blue, shore=0.5))``.
+
+Examples
+--------
+
+Plot vertical shaded illuminated view of the Mexican hat
+
+
+```{julia}
+using GMT
+
+G = gmt("grdmath -R-15/15/-15/15 -I0.3 X Y HYPOT DUP 2 MUL PI MUL 8 DIV COS EXCH NEG 10 DIV EXP MUL =");
+imshow(G, shade="+a45")
+```
+
+
+Same as above but add automatic contours
+
+
+```{julia}
+using GMT	# Hide
+G = gmt("grdmath -R-15/15/-15/15 -I0.3 X Y HYPOT DUP 2 MUL PI MUL 8 DIV COS EXCH NEG 10 DIV EXP MUL =");	# Hide
+
+imshow(G, shade="+a45", contour=true)
+```
+
+
+See Also
+--------
+
+{{< gmtref grdimage >}}, {{< gmtref grdview >}}, {{< gmtref plot >}}, [plot3]

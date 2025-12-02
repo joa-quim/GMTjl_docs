@@ -1,0 +1,11 @@
+---
+title: "linspace"
+---
+
+**Category:** Utilities
+
+Documentation for the `linspace` function.
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)

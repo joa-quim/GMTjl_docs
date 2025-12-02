@@ -1,0 +1,45 @@
+---
+title: "Common Features"
+---
+
+Colors, pens, fonts, symbols, and other features used across GMT functions.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Arrows Control](common_features/arrows_control.html)
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Color](common_features/color.html)
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Decorated](common_features/decorated.html)
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Fonts](common_features/fonts.html)
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Justify](common_features/justify.html)
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Pens](common_features/pens.html)
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Symbols](common_features/symbols.html)
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Themes](common_features/themes.html)
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### [Units](common_features/units.html)
+:::
+
+:::

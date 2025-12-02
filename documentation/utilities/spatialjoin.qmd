@@ -1,0 +1,20 @@
+---
+title: "spatialjoin"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `spatialjoin` function.
+
+## Methods
+
+```julia
+# 1 method for generic function "spatialjoin" from GMT:
+ [1] spatialjoin(D1::GMTdataset, D2::Vector{<:GMTdataset}; pred, kind, kwargs...)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

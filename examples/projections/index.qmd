@@ -1,0 +1,78 @@
+---
+title: "Map Projections"
+---
+
+Explore various map projection types and coordinate systems available in GMT.jl.
+
+<style>
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,.125);
+  height: 100%;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+</style>
+
+## Examples
+
+::: {.grid}
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**The true Hello World**](01_hello.html){.card-title .stretched-link}
+[![](01_hello_thumb.jpg){.card-img-top}](01_hello.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**GMT Map Projections**](02_proj_examples.html){.card-title .stretched-link}
+[![](02_proj_examples_thumb.jpg){.card-img-top}](02_proj_examples.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Best Rectangular World Map**](best_rectangular.html){.card-title .stretched-link}
+[![](best_rectangular_thumb.jpg){.card-img-top}](best_rectangular.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Mixing UTM and Geographic Axes**](ex28.html){.card-title .stretched-link}
+[![](ex28_thumb.jpg){.card-img-top}](ex28.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Lee Oblated Stereographic**](leepacific.html){.card-title .stretched-link}
+[![](leepacific_thumb.jpg){.card-img-top}](leepacific.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Spilhaus Projection**](spilhaus.html){.card-title .stretched-link}
+[![](spilhaus_thumb.jpg){.card-img-top}](spilhaus.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Stereonets**](stereonet.html){.card-title .stretched-link}
+[![](stereonet_thumb.jpg){.card-img-top}](stereonet.html)
+:::
+:::
+
+:::

@@ -1,0 +1,22 @@
+---
+title: "flipud"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `flipud` function.
+
+## Methods
+
+```julia
+# 3 methods for generic function "flipud" from GMT:
+ [1] flipud(I::GMTimage)
+ [2] flipud(G::GMTgrid)
+ [3] flipud(A)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

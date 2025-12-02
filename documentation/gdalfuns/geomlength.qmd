@@ -1,0 +1,10 @@
+---
+title: "geomlength"
+---
+
+    geomlength(geom)
+
+### Parameters
+* `geom`: the geometry. This can either be a GDAL AbstractGeometry or a {{< gmtref GMTdataset type=gmttype >}} (or vector of it), or a Matrix
+
+Returns the length of the geometry, or 0.0 for unsupported geometry types.

@@ -1,0 +1,23 @@
+---
+title: "zscores"
+---
+
+
+```
+z = zscores(x::AbstractArray{T}) -> AbstractArray{Float64}
+```
+
+Compute the z-scores of an array `x` with mean `μ` and standard deviation `σ`. z-scores are the signed number of standard deviations above the mean that an observation lies, i.e. $(x - μ) / σ$.
+
+
+## Methods
+
+```julia
+# 1 method for generic function "zscores" from GMT:
+ [1] zscores(x::AbstractArray{T}) where T<:Real
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

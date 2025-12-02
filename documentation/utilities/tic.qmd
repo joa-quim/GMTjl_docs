@@ -1,0 +1,20 @@
+---
+title: "tic"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `tic` function.
+
+## Methods
+
+```julia
+# 1 method for generic function "tic" from GMT:
+ [1] tic()
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

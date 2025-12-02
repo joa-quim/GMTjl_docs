@@ -1,0 +1,24 @@
+---
+title: "mksymbol"
+---
+
+
+```
+mksymbol(f::Function, cmd0::String="", arg1=nothing; kwargs...)
+```
+
+
+## Methods
+
+```julia
+# 4 methods for generic function "mksymbol" from GMT:
+ [1] mksymbol(f::Function, cmd0::String; ...)
+ [2] mksymbol(f::Function, arg1; kw...)
+ [3] mksymbol(f::Function, cmd0::String, arg1; kwargs...)
+ [4] mksymbol(f::Function; ...)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

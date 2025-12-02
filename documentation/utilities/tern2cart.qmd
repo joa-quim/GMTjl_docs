@@ -1,0 +1,26 @@
+---
+title: "tern2cart"
+---
+
+
+```
+tern2cart(abcz::Matrix{<:Real}, reverse::Bool=false)
+```
+
+Converts ternary to cartesian units.
+
+`abcz` is either a Mx3 (a,b,c) or Mx4 (a,b,c,z) matrix
+
+
+## Methods
+
+```julia
+# 2 methods for generic function "tern2cart" from GMT:
+ [1] tern2cart(abcz::Matrix{<:Real}, reverse::Bool)
+ [2] tern2cart(abcz::Matrix{<:Real})
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

@@ -1,0 +1,24 @@
+---
+title: "gdalbuildvrt"
+---
+
+# gdalbuildvrt
+
+**Category:** GDAL Functions
+
+Documentation for the `gdalbuildvrt` function.
+
+## Methods
+
+```julia
+# 2 methods for generic function "gdalbuildvrt" from GMT.Gdal:
+ [1] gdalbuildvrt(datasets::Vector{<:GMT.Gdal.AbstractDataset}, options::Vector{String}; dest, save)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1693
+ [2] gdalbuildvrt(datasets::Vector{<:GMT.Gdal.AbstractDataset}; ...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1693
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

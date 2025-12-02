@@ -1,0 +1,25 @@
+---
+title: "upGMT"
+---
+
+
+```
+upGMT(up=false)
+```
+
+Check if a new GMT (C binaries) version is available. If yes, use `upGMT(true)` to update it.
+
+
+## Methods
+
+```julia
+# 3 methods for generic function "upGMT" from GMT:
+ [1] upGMT(up::Bool, auto::Bool)
+ [2] upGMT(up::Bool)
+ [3] upGMT()
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

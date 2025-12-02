@@ -1,0 +1,15 @@
+---
+title: "General Information"
+---
+
+# General Information
+
+Welcome to the GMT.jl general information section. These pages provide essential background and tutorials for getting started with GMT.jl.
+
+## Contents
+
+- [Introduction](general/introduction.html) - Getting started with GMT.jl
+- [Quick Learn](general/quick_learn.html) - Quick tutorial to learn the basics
+- [Modules Overview](general/modules.html) - Understanding GMT modules
+- [Monolithic Mode](general/monolitic.html) - Using GMT in monolithic mode
+- [GMT.jl Types](general/types.html) - Important data types used in GMT.jl

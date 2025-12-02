@@ -1,0 +1,12 @@
+# hotspotter
+
+Create CVA grid from seamount locations.
+
+
+::: {.callout-warning}
+This GMT supplements module has not yet been ported to the long verbose syntax.
+To use it, you will need to use the {{< gmtref monolithic type=general text="Monolithic" >}} mode.
+:::
+
+Please open a [Feature Request](https://github.com/GenericMappingTools/GMT.jl/issues) if you would like
+to see this module ported to the long verbose syntax, or better yet, consider contributing the port yourself!

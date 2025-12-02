@@ -1,0 +1,21 @@
+---
+title: "toc"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `toc` function.
+
+## Methods
+
+```julia
+# 2 methods for generic function "toc" from GMT:
+ [1] toc()
+ [2] toc(V)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

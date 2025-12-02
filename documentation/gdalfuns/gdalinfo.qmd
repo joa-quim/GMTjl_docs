@@ -1,0 +1,32 @@
+---
+title: "gdalinfo"
+---
+
+# gdalinfo
+
+**Category:** GDAL Functions
+
+Documentation for the `gdalinfo` function.
+
+## Methods
+
+```julia
+# 6 methods for generic function "gdalinfo" from GMT.Gdal:
+ [1] gdalinfo(ds::GMT.Gdal.IDataset, opts::Vector{String})
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1641
+ [2] gdalinfo(ds::GMT.Gdal.IDataset)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1641
+ [3] gdalinfo(fname::AbstractString, opts)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1642
+ [4] gdalinfo(fname::AbstractString)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1642
+ [5] gdalinfo(ds::GMT.Gdal.AbstractDataset, options::Vector{String})
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1633
+ [6] gdalinfo(ds::GMT.Gdal.AbstractDataset)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1633
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

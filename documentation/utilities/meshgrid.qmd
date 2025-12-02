@@ -1,0 +1,22 @@
+---
+title: "meshgrid"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `meshgrid` function.
+
+## Methods
+
+```julia
+# 3 methods for generic function "meshgrid" from GMT:
+ [1] meshgrid(vx::AbstractVector{T}, vy::AbstractVector{T}, vz::AbstractVector{T}) where T
+ [2] meshgrid(vx::AbstractVector{T}, vy::AbstractVector{T}) where T
+ [3] meshgrid(v::AbstractVector)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

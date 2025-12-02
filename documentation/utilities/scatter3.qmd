@@ -1,0 +1,18 @@
+---
+title: "scatter3"
+---
+
+`GMT.scatter3` is a `Function`.
+
+```
+# 9 methods for generic function "scatter3" from GMT:
+ [1] scatter3(cmd0::String; ...)
+ [2] scatter3(cmd0::String, arg1; kw...)
+ [3] scatter3(f1::Function, f2::Function, f3::Function, range_t; first, kw...)
+ [4] scatter3(f1::Function, f2::Function, f3::Function; ...)
+ [5] scatter3(f1::Function, f2::Function; ...)
+ [6] scatter3(f1::Function, f2::Function, range_t; first, kw...)
+ [7] scatter3(arg1::AbstractArray, arg2::AbstractArray, arg3::AbstractArray; kw...)
+ [8] scatter3(; ...)
+ [9] scatter3(arg; kw...)
+```

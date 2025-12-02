@@ -1,0 +1,32 @@
+---
+title: "inbbox"
+---
+
+# inbbox
+
+```
+inout = inbbox(x::Real, y::Real, bbox) -> Bool
+```
+
+Find out if points `x,y` are inside a bounding box.
+
+  * `x, y`: point coordinates.
+  * `bbox` is a 4-element array (vector, matrix or tuple) with xmin, xmax, ymin, ymax.
+
+### Returns
+
+`true` for points inside the bounding box and `false` for those outside
+
+
+## Methods
+
+```julia
+# 1 method for generic function "inbbox" from GMT:
+ [1] inbbox(x::Real, y::Real, bbox)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\spatial_funs.jl:637
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

@@ -1,0 +1,231 @@
+---
+pagetitle: "Welcome to GMT.jl"
+page-layout: full
+section-divs: false
+toc: false
+editor: source
+---
+
+:::{.column-page}
+![](/assets/GMTjl_banner.png)
+:::
+
+
+<style>
+/* Remove top spacing for banner */
+#quarto-content main { 
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+#quarto-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+main.content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+.page-columns {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+body.quarto-light main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.column-page:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.column-page img {
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.card-title {
+  margin-top: 0.5rem;
+  display: block;
+}
+
+/* Navigation buttons */
+.nav-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  min-height: auto;
+  height: auto;
+  line-height: 1.2;
+  border-radius: 20px;
+  padding: 8px 12px !important;
+  text-align: center;
+  cursor: pointer;
+  transition: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-button:hover {
+  transform: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-button .card-title {
+  margin: 0;
+  line-height: 1.2;
+  color: white;
+  font-size: 0.95rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-button .stretched-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* Large centered navigation button */
+.nav-button-large {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 4px !important;
+  text-align: center;
+  cursor: pointer;
+  transition: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  min-height: auto;
+  height: auto;
+  line-height: 1.2;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.nav-button-large:hover {
+  transform: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-button-large a {
+  margin: 0;
+  line-height: 1.2;
+  color: white !important;
+  font-weight: 600;
+  font-size: 1.4rem !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+</style>
+
+# Welcome to GMT.jl
+
+GMT is a data processing and visualization package for the [Julia](https://julialang.org/) programming
+language, with high performance and extensibility. It provides the ability for drawing simple and very
+complex static vector graphics as well as conversion to the most common raster formats (PNG, JPG, GeoTIFF, etc...).
+Although it is a package more tailored for Earth Sciences, it can also be used for a general purpose plotting
+of 2 and 3D (perspective, not volumetric) graphics.
+
+<div style="margin-top: 0.5rem; margin-bottom: 0rem;">
+
+::: {.grid}
+
+::: {.g-col-6 .g-col-lg-3}
+::: {.card .nav-button}
+[**Introduction**](documentation/general/introduction.qmd){.card-title .stretched-link title="Getting started with GMT.jl: data structures, wrapper functions, and how to interface between GMT and Julia."}
+:::
+:::
+
+::: {.g-col-6 .g-col-lg-3}
+::: {.card .nav-button}
+[**Quick learn**](documentation/general/quick_learn.qmd){.card-title .stretched-link title="Quick tutorial with practical examples for GMT users and newcomers to start using GMT.jl immediately."}
+:::
+:::
+
+::: {.g-col-6 .g-col-lg-3}
+::: {.card .nav-button}
+[**Interoperability**](Interoperability.qmd){.card-title .stretched-link title="Use GMT.jl with DataFrames, DifferentialEquations, Rasters, and more"}
+:::
+:::
+
+::: {.g-col-6 .g-col-lg-3}
+::: {.card .nav-button}
+[**Comparison with other packages**](comp_other_pkgs.qmd){.card-title .stretched-link title="See how GMT.jl compares to Plots, Makie, and other packages"}
+:::
+:::
+
+:::
+
+</div>
+
+
+## Installation and use
+
+Use the Julia's inbuilt package manager to install GMT.
+
+```julia
+] add GMT
+using GMT
+```
+
+<div style="margin-top: 0rem; margin-bottom: 0rem;">
+
+::: {.grid}
+
+::: {.g-col-12}
+::: {.card .nav-button-large}
+[**Browse the complete documentation**](documentation.qmd){.card-title .stretched-link}
+:::
+:::
+
+:::
+</div>
+
+
+## First Steps - Example Gallery
+
+
+{{< include _examples_cards.qmd >}}
+
+
+## Getting Help
+
+1. Use the REPL `?` help mode
+1. Visit the [Julia Discourse](https://discourse.julialang.org/) with questions tagged `GMT`
+1. For technical issues and bug reports, open an issue in the [GMT.jl GitHub repository](https://github.com/GenericMappingTools/GMT.jl)
+

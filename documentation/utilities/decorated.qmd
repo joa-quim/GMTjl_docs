@@ -1,0 +1,30 @@
+# decorated
+
+```julia
+decorated(;kwargs...)
+```
+
+Create decorated lines with symbols or text labels. See [Line decorations](../common_features/decorated.html) for complete documentation on decoration options.
+
+There are two types of decorated lines:
+
+1. **Lines decorated with symbols** - Front lines with triangles, boxes, circles, etc.
+2. **Lines decorated with text** - Quoted lines with text labels
+
+Both types are specified using the `decorated=(...)` keyword with a named tuple.
+
+## Quick Examples
+
+Front line with triangles:
+```julia
+decorated=(dist="2c", symbol=:triangle, size="0.5c")
+```
+
+Decorated line with symbols:
+```julia
+decorated=(dist="5c", symbol=:circle, size="0.3c", dec2=true)
+```
+
+For complete documentation including all placement methods and formatting options, see [Line decorations](../common_features/decorated.html).
+
+{{< include ../common_opts/opt_save_fig.md >}}

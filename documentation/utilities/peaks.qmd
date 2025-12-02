@@ -1,0 +1,21 @@
+---
+title: "peaks"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `peaks` function.
+
+## Methods
+
+```julia
+# 2 methods for generic function "peaks" from GMT:
+ [1] peaks(n::Int64; N, grid, pixreg)
+ [2] peaks(; ...)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

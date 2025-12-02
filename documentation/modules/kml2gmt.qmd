@@ -1,0 +1,56 @@
+---
+title: "kml2gmt"
+---
+
+# kml2gmt
+
+```
+kml2gmt(cmd0::String="", arg1=nothing, kwargs...)
+```
+
+kml2gmt - Extract GMT table data from Google Earth KML files
+
+See full GMT docs at [`kml2gmt`](http://docs.generic-mapping-tools.org/latest/kml2gmt.html)
+
+## Parameters
+
+  * **F** | **feature_type** :: [Type => Str]        $Arg = s|l|p$
+
+    Specify a particular feature type to output. Choose from points (s), line (l), or polygon (p).   By default we output all geometries.
+  * **Z** | **altitudes** :: [Type => Bool]
+
+    Output the altitude coordinates as GMT z coordinates [Default will output just longitude and latitude].   (http://docs.generic-mapping-tools.org/latest/kml2gmt.html#z)
+  * **V** | **verbose** :: [Type => Bool or Str]		$Arg = [level]$
+
+    Select verbosity level, which will send progress reports to stderr.
+  * **bo** | **binary_out** :: [Type => Str]			$Arg = [ncols][type][w][+L|+B]$
+
+    Select native binary output.
+  * **do** | **nodata_out** :: [Type => Str or Number]     $Arg = nodata$
+
+    Examine all output columns and if any item equals NAN substitute it with   the chosen missing data value.
+  * **yx** :: [Type => Str or Bool or []]     $Arg = [i|o]$
+
+    Swap 1st and 2nd column on input and/or output.
+
+To see the full documentation type: $@? kml2gmt$
+
+
+## Methods
+
+```julia
+# 4 methods for generic function "kml2gmt" from GMT:
+ [1] kml2gmt(cmd0::String; ...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\kml2gmt.jl:26
+ [2] kml2gmt(; ...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\kml2gmt.jl:26
+ [3] kml2gmt(arg1; kw...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\kml2gmt.jl:35
+ [4] kml2gmt(cmd0::String, arg1; kwargs...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\kml2gmt.jl:26
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

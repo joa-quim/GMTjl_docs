@@ -1,0 +1,38 @@
+---
+title: "mgd77magref"
+---
+
+# mgd77magref
+
+```
+magref(cmd0::String="", arg1=nothing; kwargs...)
+```
+
+Evaluate the IGRF or CM4 magnetic field models.
+
+To see the full documentation type: $@? magref$
+
+### Example
+
+```julia
+	G = magref(R=:d, onetime=2020);
+	viz(G, coast=true)
+```
+
+
+## Methods
+
+```julia
+# 3 methods for generic function "magref" from GMT:
+ [1] magref(; kwargs...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\mgd77\magref.jl:16
+ [2] magref(cmd0::String; kwargs...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\mgd77\magref.jl:14
+ [3] magref(arg1; kwargs...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\mgd77\magref.jl:15
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

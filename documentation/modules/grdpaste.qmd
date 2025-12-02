@@ -1,0 +1,55 @@
+# grdpaste
+
+```julia
+    grdpaste(cmd0::String="", arg1=nothing, arg2=nothing, kwargs...)
+```
+
+Join two grids along their common edge
+
+
+Description
+-----------
+
+Combines *ingrid_a* and *ingrid_b* into *outgrid* by pasting them together along their common edge.
+Files *ingrid_a* and *ingrid_b* must have the same grid spacings and registration, and must have one
+edge in common. If in doubt, check with {{< gmtref grdinfo >}} and use {{< gmtref grdcut >}} and/or
+{{< gmtref grdsample >}} if necessary to prepare the edge joint. **Note**: For geographical grids, you may
+have to use **colinfo** to handle periodic longitudes unless the input grids are properly recognized
+as such via their meta-data. For stitching multiple grids, see {{< gmtref grdblend >}} instead.
+
+
+Required Arguments
+------------------
+
+*ingrid_a* : -- A grid file name or a {{< gmtref GMTgrid type=gmttype >}}
+
+*ingrid_b* : -- The other of two grids to be pasted together.
+
+
+Optional Arguments
+------------------
+
+{{< include ../common_opts/opt_-Grid.md >}}
+
+{{< include ../common_opts/opt_V.md >}}
+
+{{< include ../common_opts/opt_f.md >}}
+
+Examples
+--------
+
+Suppose file_a.nc is 150E - 180E and 0 - 30N, and file_b.nc is 150E - 180E, -30S - 0,
+then you can make outfile.nc which will be 150 - 180 and -30S - 30N by:
+
+```julia
+    G = grdpaste("file_a.nc", "file_b.nc", colinfo=:g);
+```
+
+See Also
+--------
+
+{{< gmtref grdblend >}},
+{{< gmtref grdclip >}},
+{{< gmtref grdcut >}},
+{{< gmtref grdinfo >}},
+{{< gmtref grdsample >}}

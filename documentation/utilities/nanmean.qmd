@@ -1,0 +1,21 @@
+---
+title: "nanmean"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `nanmean` function.
+
+## Methods
+
+```julia
+# 2 methods for generic function "nanmean" from GMT:
+ [1] nanmean(x, y)
+ [2] nanmean(x)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

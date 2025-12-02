@@ -1,0 +1,20 @@
+---
+title: "fileparts"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `fileparts` function.
+
+## Methods
+
+```julia
+# 1 method for generic function "fileparts" from GMT:
+ [1] fileparts(fn::String)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

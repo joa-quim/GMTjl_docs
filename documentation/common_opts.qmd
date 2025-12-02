@@ -1,0 +1,353 @@
+---
+title: "Common Options"
+---
+
+# Common Options
+
+Shared options and parameters used across multiple GMT functions.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Auto Legend Info](common_opts/auto_legend_info.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Contour Notes](common_opts/contour_notes.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Create Cpt](common_opts/create_cpt.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Explain Acoast](common_opts/explain_Acoast.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Explain Ccontours](common_opts/explain_Ccontours.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Explain F Box](common_opts/explain_F_box.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Explain Fft](common_opts/explain_fft.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Explain Float](common_opts/explain_float.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Explain Grd Coord](common_opts/explain_grd_coord.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Explain Gshhg](common_opts/explain_gshhg.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Explain Inside](common_opts/explain_inside.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Explain Refpoint](common_opts/explain_refpoint.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Explain Transparency](common_opts/explain_transparency.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt -Grid](common_opts/opt_-Grid.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Asteps](common_opts/opt_Asteps.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt B](common_opts/opt_B.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt I](common_opts/opt_I.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt J](common_opts/opt_J.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt R](common_opts/opt_R.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt R 3D](common_opts/opt_R_3D.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt U](common_opts/opt_U.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt V](common_opts/opt_V.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt X](common_opts/opt_X.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Y](common_opts/opt_Y.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt  Distunits](common_opts/opt__distunits.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt  I](common_opts/opt__i.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt  J](common_opts/opt__j.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt  R](common_opts/opt__r.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt  W](common_opts/opt__w.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt  X](common_opts/opt__x.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt A](common_opts/opt_a.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Bi](common_opts/opt_bi.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Bo](common_opts/opt_bo.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Box](common_opts/opt_box.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Compass](common_opts/opt_compass.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Di](common_opts/opt_di.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt E](common_opts/opt_e.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt F](common_opts/opt_f.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt G](common_opts/opt_g.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt H](common_opts/opt_h.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt L](common_opts/opt_l.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Map Scale](common_opts/opt_map_scale.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Mfc](common_opts/opt_mfc.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt N](common_opts/opt_n.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt O](common_opts/opt_o.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt P](common_opts/opt_p.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Pen](common_opts/opt_pen.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Q](common_opts/opt_q.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Qi](common_opts/opt_qi.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Range](common_opts/opt_range.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Rose](common_opts/opt_rose.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt S](common_opts/opt_s.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Save Fig](common_opts/opt_save_fig.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Save Grd](common_opts/opt_save_grd.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt T](common_opts/opt_t.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Opt Xy](common_opts/opt_xy.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100}
+[Use Cpt Grd](common_opts/use_cpt_grd.html)
+:::
+:::
+
+:::

@@ -1,0 +1,24 @@
+---
+title: "getgeotransform"
+---
+
+# getgeotransform
+
+**Category:** GDAL Functions
+
+Documentation for the `getgeotransform` function.
+
+## Methods
+
+```julia
+# 2 methods for generic function "getgeotransform" from GMT.Gdal:
+ [1] getgeotransform(dataset::GMT.Gdal.AbstractDataset)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:979
+ [2] getgeotransform(x::GMT.Gdal.RasterDataset, args...; kwargs...)
+     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:964
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

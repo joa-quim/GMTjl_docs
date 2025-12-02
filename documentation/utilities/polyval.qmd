@@ -1,0 +1,23 @@
+---
+title: "polyval"
+---
+
+
+```
+y = polyval(p::AbstractArray, x::Union{AbstractArray, Number})
+```
+
+Evaluates the polynomial p at each point in x. The argument p is a vector of length n+1 whose elements are the coefficients (in ascending order of powers) of an nth-degree polynomial:
+
+
+## Methods
+
+```julia
+# 1 method for generic function "polyval" from GMT:
+ [1] polyval(p::AbstractArray, x::Union{Number, AbstractArray})
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

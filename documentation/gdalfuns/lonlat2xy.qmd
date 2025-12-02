@@ -1,0 +1,38 @@
+---
+title: "lonlat2xy"
+---
+
+imresize(mat::Matrix{<:Integer}, _newdims::Union{Real, Tuple{Real, Real}, Vector{<:Real}}=Int[];
+	newdims::Union{Real, Tuple{Real, Real}, Vector{<:Real}}=Int[], method::Union{String, Symbol}="cubic") =
+	imresize(mat2img(mat), _newdims; newdims=newdims, method=method).image
+function imresize(I::GMTimage{T,N}, _newdims::Union{Real, Tuple{Real, Real}, Vector{<:Real}}=Int[];
+	newdims::Union{Real, Tuple{Real, Real}, Vector{<:Real}}=Int[], method::Union{String, Symbol}="cubic")::GMTimage{T,N} where {T,N}
+
+	@assert !isempty(_newdims) || !isempty(newdims) "Must provide new dimensions either as positional or keyword argument."
+	_new = !isempty(_newdims) ? _newdims : newdims
+	resamp = string(method)
+	!in(resamp, ("nearest", "bilinear", "cubic", "cubicspline", "lanczos", "average", "rms", "mode")) &&
+		error("Resampling method '$resamp' not recognized. Valid methods are: nearest, bilinear, cubic, cubicspline, lanczos, average, rms, mode.")
+	pct = ""		# May become "%"
+	(eltype(_new) <: AbstractFloat) && (_new = round.(Int, _new .* 100); pct = "%")
+	opts = (length(_new) == 1) ? ["-outsize", "0", string(_new,pct), "-r", resamp] :
+	                             ["-outsize", string(_new[2],pct), string(_new[1],pct), "-r", resamp]
+	gdaltranslate(I, opts)
+end
+
+# ---------------------------------------------------------------------------------------------------
+"""
+    lonlat2xy(lonlat::Matrix{<:Real}; t_srs, s_srs="+proj=longlat +datum=WGS84")
+or
+
+    lonlat2xy(D::GMTdataset; t_srs, s_srs="+proj=longlat +datum=WGS84")
+
+Computes the forward projection from LatLon to XY in the given projection. The input is assumed to be in WGS84.
+If it isn't, pass the appropriate projection info via the `s_srs` option (PROJ4, WKT, EPSG).
+
+### Parameters
+* `lonlat`: The input data. It can be a Matrix, or a {{< gmtref GMTdataset type=gmttype >}} (or vector of it)
+* `t_srs`:  The destiny projection system. This can be a PROJ4, a WKT string or EPSG code
+
+### Returns
+A Matrix if input is a Matrix or a GMTdadaset if input had that type

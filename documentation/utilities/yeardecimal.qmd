@@ -1,0 +1,32 @@
+---
+title: "yeardecimal"
+---
+
+
+```
+yeardecimal(date)
+```
+
+Convert a Date or DateTime or a string representation of them to decimal years, or vice-versa. That is, convert from decimal year to DateTime.
+
+### Example
+
+```
+yeardecimal(now())
+```
+
+
+## Methods
+
+```julia
+# 4 methods for generic function "yeardecimal" from GMT:
+ [1] yeardecimal(years::Real)
+ [2] yeardecimal(dtm::Union{DateTime, Vector{DateTime}})
+ [3] yeardecimal(dtm::Union{Date, Vector{Date}})
+ [4] yeardecimal(dtm::Union{String, Vector{String}})
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

@@ -1,0 +1,25 @@
+---
+title: "lazinfo"
+---
+
+
+```
+lazinfo(fname::AbstractString; veronly=false)
+```
+
+Prints information about the LAS file `fname`. If that file is a grid, report the usual grid header info.
+
+  * `veronly`: If true, prints only the laszip library version number.
+
+
+## Methods
+
+```julia
+# 1 method for generic function "lazinfo" from GMT.Laszip:
+ [1] lazinfo(fname::AbstractString; veronly)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

@@ -1,0 +1,21 @@
+---
+title: "logspace"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `logspace` function.
+
+## Methods
+
+```julia
+# 2 methods for generic function "logspace" from GMT:
+ [1] logspace(start, stop, length)
+ [2] logspace(start, stop)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

@@ -1,0 +1,21 @@
+---
+title: "nanstd"
+---
+
+
+**Category:** Utilities
+
+Documentation for the `nanstd` function.
+
+## Methods
+
+```julia
+# 2 methods for generic function "nanstd" from GMT:
+ [1] nanstd(x, y)
+ [2] nanstd(x)
+```
+
+## See Also
+
+- [Alphabetical Function List](../alphabetical.html)
+- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

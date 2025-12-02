@@ -1,0 +1,331 @@
+---
+title: "Gallery"
+---
+
+# GMT.jl Gallery
+
+Classic GMT examples ported to Julia. Each example demonstrates specific GMT.jl capabilities.
+
+::: {.grid}
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 01**](gallery/ex01.html)
+[![](gallery/tillelogo_ex01.jpg){.card-img-top}](gallery/ex01.html)
+Contour maps
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 02**](gallery/ex02.html)
+[![](gallery/tillelogo_ex02.jpg){.card-img-top}](gallery/ex02.html)
+Image presentations
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 03**](gallery/ex03.html)
+[![](gallery/tillelogo_ex03.jpg){.card-img-top}](gallery/ex03.html)
+Spectral estimation and xy-plots
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 04**](gallery/ex04.html)
+[![](gallery/tillelogo_ex04.png){.card-img-top}](gallery/ex04.html)
+A 3-D perspective mesh plot
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 05**](gallery/ex05.html)
+[![](gallery/tillelogo_ex05.jpg){.card-img-top}](gallery/ex05.html)
+A 3-D illuminated surface (in bw)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 06**](gallery/ex06.html)
+[![](gallery/tillelogo_ex06.jpg){.card-img-top}](gallery/ex06.html)
+Plotting of histograms
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 07**](gallery/ex07.html)
+[![](gallery/tillelogo_ex07.jpg){.card-img-top}](gallery/ex07.html)
+A simple location map
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 08**](gallery/ex08.html)
+[![](gallery/tillelogo_ex08.jpg){.card-img-top}](gallery/ex08.html)
+A 3-D histogram
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 09**](gallery/ex09.html)
+[![](gallery/tillelogo_ex09.jpg){.card-img-top}](gallery/ex09.html)
+Time-series along tracks
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 10**](gallery/ex10.html)
+[![](gallery/tillelogo_ex10.jpg){.card-img-top}](gallery/ex10.html)
+A geographical bar graph plot
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 12**](gallery/ex12.html)
+[![](gallery/tillelogo_ex12.jpg){.card-img-top}](gallery/ex12.html)
+Optimal triangulation of data
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 13**](gallery/ex13.html)
+[![](gallery/tillelogo_ex13.jpg){.card-img-top}](gallery/ex13.html)
+Plotting of vector fields
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 14**](gallery/ex14.html)
+[![](gallery/tillelogo_ex14.jpg){.card-img-top}](gallery/ex14.html)
+Gridding of data and trend surfaces
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 15**](gallery/ex15.html)
+[![](gallery/tillelogo_ex15.jpg){.card-img-top}](gallery/ex15.html)
+Gridding, contouring, and masking of unconstrained areas
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 16**](gallery/ex16.html)
+[![](gallery/tillelogo_ex16.jpg){.card-img-top}](gallery/ex16.html)
+Gridding of data, continued
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 17**](gallery/ex17.html)
+[![](gallery/tillelogo_ex17.jpg){.card-img-top}](gallery/ex17.html)
+Images clipped by coastlines
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 18**](gallery/ex18.html)
+[![](gallery/tillelogo_ex18.jpg){.card-img-top}](gallery/ex18.html)
+Volumes and Spatial Selections
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 19**](gallery/ex19.html)
+[![](gallery/tillelogo_ex19.jpg){.card-img-top}](gallery/ex19.html)
+Color patterns on maps
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 20**](gallery/ex20.html)
+[![](gallery/tillelogo_ex20.jpg){.card-img-top}](gallery/ex20.html)
+Custom plot symbols
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 21**](gallery/ex21.html)
+[![](gallery/tillelogo_ex21.jpg){.card-img-top}](gallery/ex21.html)
+Time-series of RedHat stock price
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 22**](gallery/ex22.html)
+[![](gallery/tillelogo_ex22.jpg){.card-img-top}](gallery/ex22.html)
+World-wide seismicity of last month
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 23**](gallery/ex23.html)
+[![](gallery/tillelogo_ex23.jpg){.card-img-top}](gallery/ex23.html)
+All great-circle paths lead to Rome
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 24**](gallery/ex24.html)
+[![](gallery/tillelogo_ex24.jpg){.card-img-top}](gallery/ex24.html)
+Data selection based on geospatial criteria
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 25**](gallery/ex25.html)
+[![](gallery/tillelogo_ex25.jpg){.card-img-top}](gallery/ex25.html)
+Global distribution of antipodes
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 26**](gallery/ex26.html)
+[![](gallery/tillelogo_ex26.jpg){.card-img-top}](gallery/ex26.html)
+General vertical perspective projection
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 27**](gallery/ex27.html)
+[![](gallery/tillelogo_ex27.jpg){.card-img-top}](gallery/ex27.html)
+Plotting Sandwell/Smith Mercator img grids
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 28**](gallery/ex28.html)
+[![](gallery/tillelogo_ex28.jpg){.card-img-top}](gallery/ex28.html)
+Mixing UTM and geographic data sets
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 29**](gallery/ex29.html)
+[![](gallery/tillelogo_ex29.jpg){.card-img-top}](gallery/ex29.html)
+Gridding spherical surface data using splines
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 30**](gallery/ex30.html)
+[![](gallery/tillelogo_ex30.jpg){.card-img-top}](gallery/ex30.html)
+Trigonometric functions plotted in graph mode
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 33**](gallery/ex33.html)
+[![](gallery/tillelogo_ex33.jpg){.card-img-top}](gallery/ex33.html)
+Stacking automatically generated cross-profiles
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 34**](gallery/ex34.html)
+[![](gallery/tillelogo_ex34.jpg){.card-img-top}](gallery/ex34.html)
+Using country polygons for plotting and shading
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 35**](gallery/ex35.html)
+[![](gallery/tillelogo_ex35.jpg){.card-img-top}](gallery/ex35.html)
+Spherical triangulation and distance calculations
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 36**](gallery/ex36.html)
+[![](gallery/tillelogo_ex36.jpg){.card-img-top}](gallery/ex36.html)
+Spherical gridding using Renka's algorithms
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 40**](gallery/ex40.html)
+[![](gallery/tillelogo_ex40.jpg){.card-img-top}](gallery/ex40.html)
+Line simplification
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 41**](gallery/ex41.html)
+[![](gallery/tillelogo_ex41.jpg){.card-img-top}](gallery/ex41.html)
+Legend with tables
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 42**](gallery/ex42.html)
+[![](gallery/tillelogo_ex42.jpg){.card-img-top}](gallery/ex42.html)
+Antarctica and stereographic data
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 44**](gallery/ex44.html)
+[![](gallery/tillelogo_ex44.jpg){.card-img-top}](gallery/ex44.html)
+Map insets
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 45**](gallery/ex45.html)
+[![](gallery/tillelogo_ex45.jpg){.card-img-top}](gallery/ex45.html)
+Trend modeling
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 46**](gallery/ex46.html)
+[![](gallery/tillelogo_ex46.jpg){.card-img-top}](gallery/ex46.html)
+Day-light terminators and other sunlight parameters
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Example 48**](gallery/ex48.html)
+[![](gallery/tillelogo_ex48.jpg){.card-img-top}](gallery/ex48.html)
+Line networks, map embellishments, and curved titles
+:::
+:::
+
+:::
