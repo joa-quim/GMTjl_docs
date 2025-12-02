@@ -1,0 +1,177 @@
+# GMT Remote Datasets 
+
+A remote data set is a data set that is stored on one or more remote servers. It may be a single grid
+file or a collection of subset tiles making up a larger grid. They are not distributed with GMT or
+installed during the installation procedures. GMT offers several remote global data grids that you
+can access via our remote file mechanism. The first time you access one of these files, GMT will
+download the file (or a subset tile) from the selected GMT server and save it to the server directory
+under your GMT user directory [~/.gmt]. From then on we read the local file from there.
+
+We have processed and reformatted publicly available global data sets (grids and images) and
+standardized their file names. In GMT, you may access such data (or a subset only by using the
+``region`` option) by specifying the special name
+
+    ``@remote_name_rru[_reg]``
+
+Please refer to the [GMT page](https://docs.generic-mapping-tools.org/dev/datasets/remote-data.html#currently-available-remote-data-sets)
+for details of what is the `remote`, `name`, `rru` and `reg` parts of the name. Another very important
+aspect is that given the file sizes of the higher resolution versions (can reach out 41 GB), grids with
+resolutions higher or equal "5m" (five arc-minutes) are tilled to minimize the amount of necessary download data.
+
+But in order to simplify accessing
+these data sets we have a helper function, {{< gmtref remotegrid >}}, that facilitates the name composability.
+For example, ``remotegrid("relief", res="6m")`` returns the string``"@earth_relief_06m"`` that can be passed
+to modules that create images (``viz``, {{< gmtref grdimage >}}, {{< gmtref gmtread >}}, {{< gmtref grdcut >}}, {{< gmtref grdcontour >}}, etc..)
+
+The examples in next pages show the available dataset and use the ``remotegrid`` function to compose their names
+but your, ofc, free to use the full dataset name if you feel comfortable with it.
+
+::: {.grid}
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[IGPP Earth Relief](/tutorials/remote_datasets/relief/relief/)
+[![](/tutorials/remote_datasets/relief/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/relief/relief/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[EGM2008 Earth Geoid](/tutorials/remote_datasets/geoid/geoid/)
+[![](/tutorials/remote_datasets/geoid/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/geoid/geoid/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[Seafloor Crustal Age](/tutorials/remote_datasets/age/age/)
+[![](/tutorials/remote_datasets/age/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/age/age/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[GSHHG Earth Mask](/tutorials/remote_datasets/mask/mask/)
+[![](/tutorials/remote_datasets/mask/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/mask/mask/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[GSHHG Earth Distace to Shoreline](/tutorials/remote_datasets/dist/dist/)
+[![](/tutorials/remote_datasets/dist/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/dist/dist/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[World Digital Magnetic Anomaly Map](/tutorials/remote_datasets/wdmam/wdmam/)
+[![](/tutorials/remote_datasets/wdmam/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/wdmam/wdmam/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[IGPP Earth Free-Air Anomaly](/tutorials/remote_datasets/faa/faa/)
+[![](/tutorials/remote_datasets/faa/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/faa/faa/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[IGPP Earth West-East Defections](/tutorials/remote_datasets/edefl/edefl/)
+[![](/tutorials/remote_datasets/edefl/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/edefl/edefl/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[IGPP Earth South-North Defections](/tutorials/remote_datasets/ndefl/ndefl/)
+[![](/tutorials/remote_datasets/ndefl/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/ndefl/ndefl/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[IGPP Earth Vertical Gravity Gradient](/tutorials/remote_datasets/vgg/vgg/)
+[![](/tutorials/remote_datasets/vgg/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/vgg/vgg/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[IGPP Earth Free-Air Anomaly Error](/tutorials/remote_datasets/faa_err/faa_err/)
+[![](/tutorials/remote_datasets/faa_err/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/faa_err/faa_err/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[GEBCO Earth Relief](/tutorials/remote_datasets/gebco/gebco/)
+[![](/tutorials/remote_datasets/gebco/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/gebco/gebco/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[CNES Earth Mean Sea Surface](/tutorials/remote_datasets/mss/mss/)
+[![](/tutorials/remote_datasets/mss/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/mss/mss/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[CNES Earth Mean Dynamic Topography](/tutorials/remote_datasets/mdt/mdt/)
+[![](/tutorials/remote_datasets/mdt/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/mdt/mdt/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[Earth Magnetic Anomaly Model (EMAG2)](/tutorials/remote_datasets/mag/mag/)
+[![](/tutorials/remote_datasets/mag/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/mag/mag/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[NASA Earth Day/Night Images](/tutorials/remote_datasets/daynight/daynight/)
+[![](/tutorials/remote_datasets/daynight/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/daynight/daynight/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[NASA Mars Relief](/tutorials/remote_datasets/mars/mars/)
+[![](/tutorials/remote_datasets/mars/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/mars/mars/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[USGS Mercury Relief](/tutorials/remote_datasets/mercury/mercury/)
+[![](/tutorials/remote_datasets/mercury/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/mercury/mercury/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[USGS Moon Relief](/tutorials/remote_datasets/moon/moon/)
+[![](/tutorials/remote_datasets/moon/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/moon/moon/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[USGS Pluto Relief](/tutorials/remote_datasets/pluto/pluto/)
+[![](/tutorials/remote_datasets/pluto/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/pluto/pluto/)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[USGS Venus Relief](/tutorials/remote_datasets/venus/venus/)
+[![](/tutorials/remote_datasets/venus/tilelogo.jpg){.card-img-top}](/tutorials/remote_datasets/venus/venus/)
+:::
+:::
+
+:::

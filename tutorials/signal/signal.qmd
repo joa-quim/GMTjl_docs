@@ -1,0 +1,56 @@
+# Signal processing examples 
+
+Some examples of using GMT to do time series signal processing.
+
+::: {.grid}
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[Autocorr and periods I](/tutorials/signal/autocorr_periodic/autocorr_periodic.html)
+[![](/tutorials/signal/autocorr_periodic/tilelogo.png){.card-img-top}](/tutorials/signal/autocorr_periodic/autocorr_periodic.html)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[Autocorr and periods II](/tutorials/signal/autocorr_chloro/autocorr_chloro.html)
+[![](/tutorials/signal/autocorr_chloro/tilelogo.png){.card-img-top}](/tutorials/signal/autocorr_chloro/autocorr_chloro.html)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[Smooth a Tide Record](/tutorials/signal/tide_smooth/tide_smooth.html)
+[![](/tutorials/signal/tide_smooth/tilelogo.jpg){.card-img-top}](/tutorials/signal/tide_smooth/tide_smooth.html)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[Clean Outliers](/tutorials/signal/clean_outliers/clean_outliers.html)
+[![](/tutorials/signal/clean_outliers/tilelogo.png){.card-img-top}](/tutorials/signal/clean_outliers/clean_outliers.html)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[Simple FFT](/tutorials/signal/fft_ex1/fft_ex1.html)
+[![](/tutorials/signal/fft_ex1/tilelogo.png){.card-img-top}](/tutorials/signal/fft_ex1/fft_ex1.html)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[Tide components, FFT](/tutorials/signal/fft_tide/fft_tide.html)
+[![](/tutorials/signal/fft_tide/tilelogo.jpg){.card-img-top}](/tutorials/signal/fft_tide/fft_tide.html)
+:::
+:::
+
+:::{.g-col-12 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[Keeling curve](/tutorials/signal/keeling/keeling.html)
+[![](/tutorials/signal/keeling/tilelogo.jpg){.card-img-top}](/tutorials/signal/keeling/keeling.html)
+:::
+:::
+
+:::

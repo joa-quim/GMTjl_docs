@@ -1,0 +1,152 @@
+<style>
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.card-title {
+  margin-top: 0.5rem;
+  display: block;
+}
+</style>
+
+::: {.grid}
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Frames Layout**](examples/frames/frames.qmd){.card-title .stretched-link}
+[![](examples/GMT_Defaults_1a.png){.card-img-top}](examples/frames/frames.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Plot Examples**](examples/plotting_functions/index.html){.card-title .stretched-link}
+[![](examples/symbols.png){.card-img-top}](examples/plotting_functions/index.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Projections**](examples/projections/index.html){.card-title .stretched-link}
+[![](examples/GMT_sinus_int.png){.card-img-top}](examples/projections/index.html)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Color maps**](examples/CPTs/01_cpt_hinge.qmd){.card-title .stretched-link}
+[![](examples/GMT_CPTscale.png){.card-img-top}](examples/CPTs/01_cpt_hinge.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Images**](examples/images/01_grdimage.qmd){.card-title .stretched-link}
+[![](examples/ex04.png){.card-img-top}](examples/images/01_grdimage.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Contours**](examples/contours/01_contour_examples.qmd){.card-title .stretched-link}
+[![](examples/color-contour.png){.card-img-top}](examples/contours/01_contour_examples.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Arrows**](examples/arrows/10_arrows.qmd){.card-title .stretched-link}
+[![](examples/icon.png){.card-img-top}](examples/arrows/10_arrows.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Legends**](examples/legends/01_legends.qmd){.card-title .stretched-link}
+[![](examples/legend_tille.png){.card-img-top}](examples/legends/01_legends.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Choropleth Maps**](examples/choropleths/choro_examples.qmd){.card-title .stretched-link}
+[![](assets/choro1_dcw.png){.card-img-top}](examples/choropleths/choro_examples.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Ternary Plots**](examples/ternary/ternary_examples.qmd){.card-title .stretched-link}
+[![](examples/ternary3.png){.card-img-top}](examples/ternary/ternary_examples.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Subplots**](examples/subplot/01_subplots.qmd){.card-title .stretched-link}
+[![](examples/tictactoe.png){.card-img-top}](examples/subplot/01_subplots.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Themes**](examples/themes/01_themes.qmd){.card-title .stretched-link}
+[![](examples/themes_tille.png){.card-img-top}](examples/themes/01_themes.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Miscellaneous**](examples/misc/buffer.qmd){.card-title .stretched-link}
+[![](examples/buffer3.png){.card-img-top}](examples/misc/buffer.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Embellishments**](examples/embellish/01_mapscale.qmd){.card-title .stretched-link}
+[![](examples/rose.png){.card-img-top}](examples/embellish/01_mapscale.qmd)
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-3}
+::: {.card .h-100}
+[**Art**](examples/art/art_examples.qmd){.card-title .stretched-link}
+[![](examples/flower.png){.card-img-top}](examples/art/art_examples.qmd)
+:::
+:::
+
+:::

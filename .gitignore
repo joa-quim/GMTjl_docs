@@ -1,0 +1,38 @@
+# Quarto build outputs
+_site/
+_freeze/
+/.quarto/
+
+# Backup files
+*.backup
+*.bak
+*~
+*.manual
+
+# Temporary files
+*.tmp
+/tmp/
+nul
+
+# Julia temporary files
+.DS_Store
+Manifest.toml
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+gmt.history
+gmt.conf
+
+# Thumbnails and temporary images
+*_thumb.png.bak
+
+# Node modules if any
+node_modules/
+package-lock.json
+
+**/*.quarto_ipynb

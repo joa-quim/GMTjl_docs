@@ -1,0 +1,743 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - comp_other_pkgs.qmd
+    - Interoperability.qmd
+    - documentation.qmd
+    - documentation/general.qmd
+    - documentation/general/introduction.qmd
+    - documentation/general/quick_learn.qmd
+    - documentation/general/modules.qmd
+    - documentation/general/monolitic.qmd
+    - documentation/general/types.qmd
+    - documentation/modules.qmd
+    - documentation/extensions.qmd
+    - documentation/common_features.qmd
+    - documentation/common_features/arrows_control.qmd
+    - documentation/common_features/color.qmd
+    - documentation/common_features/decorated.qmd
+    - documentation/common_features/fonts.qmd
+    - documentation/common_features/justify.qmd
+    - documentation/common_features/pens.qmd
+    - documentation/common_features/symbols.qmd
+    - documentation/common_features/themes.qmd
+    - documentation/common_features/units.qmd
+    - documentation/common_opts.qmd
+    - documentation/alphabetical.qmd
+    - documentation/modules/backtracker.qmd
+    - documentation/modules/band.qmd
+    - documentation/modules/bar.qmd
+    - documentation/modules/bar3.qmd
+    - documentation/modules/basemap.qmd
+    - documentation/modules/biplot.qmd
+    - documentation/modules/blockmean.qmd
+    - documentation/modules/blockmedian.qmd
+    - documentation/modules/blockmode.qmd
+    - documentation/modules/boxplot.qmd
+    - documentation/modules/bubblechart.qmd
+    - documentation/modules/clip.qmd
+    - documentation/modules/coast.qmd
+    - documentation/modules/colorbar.qmd
+    - documentation/modules/contour.qmd
+    - documentation/modules/contourf.qmd
+    - documentation/modules/cornerplot.qmd
+    - documentation/modules/coupe.qmd
+    - documentation/modules/dimfilter.qmd
+    - documentation/modules/earthregions.qmd
+    - documentation/modules/earthtide.qmd
+    - documentation/modules/ecdfplot.qmd
+    - documentation/modules/events.qmd
+    - documentation/modules/feather.qmd
+    - documentation/modules/flexure.qmd
+    - documentation/modules/fill_between.qmd
+    - documentation/modules/filter1d.qmd
+    - documentation/modules/fitcircle.qmd
+    - documentation/modules/gmt2kml.qmd
+    - documentation/modules/gmtbinstats.qmd
+    - documentation/modules/gmtconnect.qmd
+    - documentation/modules/gmtconvert.qmd
+    - documentation/modules/gmtgravmag3d.qmd
+    - documentation/modules/gmtisf.qmd
+    - documentation/modules/gmtmath.qmd
+    - documentation/modules/gmtselect.qmd
+    - documentation/modules/gmtset.qmd
+    - documentation/modules/gmtsimplify.qmd
+    - documentation/modules/gmtspatial.qmd
+    - documentation/modules/gmtsplit.qmd
+    - documentation/modules/gpsgridder.qmd
+    - documentation/modules/gravfft.qmd
+    - documentation/modules/gravmag3d.qmd
+    - documentation/modules/gravprisms.qmd
+    - documentation/modules/grd2cpt.qmd
+    - documentation/modules/grd2kml.qmd
+    - documentation/modules/grd2xyz.qmd
+    - documentation/modules/grdclip.qmd
+    - documentation/modules/grdcontour.qmd
+    - documentation/modules/grdcut.qmd
+    - documentation/modules/grdedit.qmd
+    - documentation/modules/grdfft.qmd
+    - documentation/modules/grdfill.qmd
+    - documentation/modules/grdfilter.qmd
+    - documentation/modules/grdflexure.qmd
+    - documentation/modules/grdgradient.qmd
+    - documentation/modules/grdgravmag3d.qmd
+    - documentation/modules/grdhisteq.qmd
+    - documentation/modules/grdimage.qmd
+    - documentation/modules/grdinfo.qmd
+    - documentation/modules/grdlandmask.qmd
+    - documentation/modules/grdmask.qmd
+    - documentation/modules/grdmath.qmd
+    - documentation/modules/grdpaste.qmd
+    - documentation/modules/grdpmodeler.qmd
+    - documentation/modules/grdproject.qmd
+    - documentation/modules/grdredpol.qmd
+    - documentation/modules/grdrotater.qmd
+    - documentation/modules/grdsample.qmd
+    - documentation/modules/grdspotter.qmd
+    - documentation/modules/grdtrack.qmd
+    - documentation/modules/grdtrend.qmd
+    - documentation/modules/grdvector.qmd
+    - documentation/modules/grdview.qmd
+    - documentation/modules/grdvolume.qmd
+    - documentation/modules/greenspline.qmd
+    - documentation/modules/hband.qmd
+    - documentation/modules/histogram.qmd
+    - documentation/modules/hotspotter.qmd
+    - documentation/modules/image.qmd
+    - documentation/modules/img2grd.qmd
+    - documentation/modules/inset.qmd
+    - documentation/modules/legend.qmd
+    - documentation/modules/lines.qmd
+    - documentation/modules/magref.qmd
+    - documentation/modules/makecpt.qmd
+    - documentation/modules/mapproject.qmd
+    - documentation/modules/marginalhist.qmd
+    - documentation/modules/mask.qmd
+    - documentation/modules/meca.qmd
+    - documentation/modules/mgd77convert.qmd
+    - documentation/modules/mgd77track.qmd
+    - documentation/modules/movie.qmd
+    - documentation/modules/nearneighbor.qmd
+    - documentation/modules/originater.qmd
+    - documentation/modules/parallelplot.qmd
+    - documentation/modules/piechart.qmd
+    - documentation/modules/plot.qmd
+    - documentation/modules/pmodeler.qmd
+    - documentation/modules/polar.qmd
+    - documentation/modules/polespotter.qmd
+    - documentation/modules/project.qmd
+    - documentation/modules/qqplot.qmd
+    - documentation/modules/quiver.qmd
+    - documentation/modules/radar.qmd
+    - documentation/modules/rose.qmd
+    - documentation/modules/rotsmoother.qmd
+    - documentation/modules/sac.qmd
+    - documentation/modules/sample1d.qmd
+    - documentation/modules/scatter.qmd
+    - documentation/modules/scatter3.qmd
+    - documentation/modules/segy2grd.qmd
+    - documentation/modules/seismicity.qmd
+    - documentation/modules/segy.qmd
+    - documentation/modules/segyz.qmd
+    - documentation/modules/solar.qmd
+    - documentation/modules/spectrum1d.qmd
+    - documentation/modules/sphdistance.qmd
+    - documentation/modules/sphinterpolate.qmd
+    - documentation/modules/sphtriangulate.qmd
+    - documentation/modules/stairs.qmd
+    - documentation/modules/stem.qmd
+    - documentation/modules/subplot.qmd
+    - documentation/modules/surface.qmd
+    - documentation/modules/talwani2d.qmd
+    - documentation/modules/talwani3d.qmd
+    - documentation/modules/ternary.qmd
+    - documentation/modules/text.qmd
+    - documentation/modules/trend1d.qmd
+    - documentation/modules/trend2d.qmd
+    - documentation/modules/triangulate.qmd
+    - documentation/modules/triplot.qmd
+    - documentation/modules/trisurf.qmd
+    - documentation/modules/vband.qmd
+    - documentation/modules/velo.qmd
+    - documentation/modules/violins.qmd
+    - documentation/modules/wiggle.qmd
+    - documentation/modules/windbarbs.qmd
+    - documentation/modules/xyz2grd.qmd
+    - documentation/utilities/ablines.qmd
+    - documentation/utilities/anaglyph.qmd
+    - documentation/utilities/append2fig.qmd
+    - documentation/utilities/blendimg.qmd
+    - documentation/utilities/cart2pol.qmd
+    - documentation/utilities/cart2sph.qmd
+    - documentation/utilities/coastlinesproj.qmd
+    - documentation/utilities/colorzones.qmd
+    - documentation/utilities/cpt4dcw.qmd
+    - documentation/utilities/crop.qmd
+    - documentation/utilities/cube.qmd
+    - documentation/utilities/cubeplot.qmd
+    - documentation/utilities/cylinder.qmd
+    - documentation/utilities/date2doy.qmd
+    - documentation/utilities/delrows.qmd
+    - documentation/utilities/df2ds.qmd
+    - documentation/utilities/dodecahedron.qmd
+    - documentation/utilities/doy2date.qmd
+    - documentation/utilities/ecmwf.qmd
+    - documentation/utilities/ellipse3D.qmd
+    - documentation/utilities/era5time.qmd
+    - documentation/utilities/era5vars.qmd
+    - documentation/utilities/extrude.qmd
+    - documentation/utilities/findpeaks.qmd
+    - documentation/utilities/flatfv.qmd
+    - documentation/utilities/fv2fv.qmd
+    - documentation/utilities/gadm.qmd
+    - documentation/utilities/geocoder.qmd
+    - documentation/utilities/geodetic2enu.qmd
+    - documentation/utilities/getbyattrib.qmd
+    - documentation/utilities/gmtread.qmd
+    - documentation/utilities/gmtwrite.qmd
+    - documentation/utilities/graticules.qmd
+    - documentation/utilities/grid2tri.qmd
+    - documentation/utilities/gridit.qmd
+    - documentation/utilities/gunique.qmd
+    - documentation/utilities/hampel.qmd
+    - documentation/utilities/hlines.qmd
+    - documentation/utilities/icosahedron.qmd
+    - documentation/utilities/image_alpha.qmd
+    - documentation/utilities/image_cpt.qmd
+    - documentation/utilities/imagesc.qmd
+    - documentation/utilities/imshow.qmd
+    - documentation/utilities/ind2rgb.qmd
+    - documentation/utilities/info.qmd
+    - documentation/utilities/inpolygon.qmd
+    - documentation/utilities/inwhichpolygon.qmd
+    - documentation/utilities/isnodata.qmd
+    - documentation/utilities/isoutlier.qmd
+    - documentation/utilities/lazread.qmd
+    - documentation/utilities/lazwrite.qmd
+    - documentation/utilities/leepacific.qmd
+    - documentation/utilities/lelandshade.qmd
+    - documentation/utilities/linearfitxy.qmd
+    - documentation/utilities/listecmwfvars.qmd
+    - documentation/utilities/loft.qmd
+    - documentation/utilities/logo.qmd
+    - documentation/utilities/magic.qmd
+    - documentation/utilities/maregrams.qmd
+    - documentation/utilities/mat2ds.qmd
+    - documentation/utilities/mat2grid.qmd
+    - documentation/utilities/mat2img.qmd
+    - documentation/utilities/meteostat.qmd
+    - documentation/utilities/mosaic.qmd
+    - documentation/utilities/octahedron.qmd
+    - documentation/utilities/ODE2ds.qmd
+    - documentation/utilities/orbits.qmd
+    - documentation/utilities/parkergrav.qmd
+    - documentation/utilities/parkermag.qmd
+    - documentation/utilities/pastplates.qmd
+    - documentation/utilities/pca.qmd
+    - documentation/utilities/pcolor.qmd
+    - documentation/utilities/plotgrid.qmd
+    - documentation/utilities/plotlinefit.qmd
+    - documentation/utilities/plotyy.qmd
+    - documentation/utilities/polygonlevels.qmd
+    - documentation/utilities/rasterzones.qmd
+    - documentation/utilities/regiongeog.qmd
+    - documentation/utilities/remotegrid.qmd
+    - documentation/utilities/replicant.qmd
+    - documentation/utilities/rescale.qmd
+    - documentation/utilities/revolve.qmd
+    - documentation/utilities/sealand.qmd
+    - documentation/utilities/slicecube.qmd
+    - documentation/utilities/sph2cart.qmd
+    - documentation/utilities/sphere.qmd
+    - documentation/utilities/stackgrids.qmd
+    - documentation/utilities/stereonet.qmd
+    - documentation/utilities/streamlines.qmd
+    - documentation/utilities/surf2fv.qmd
+    - documentation/utilities/tetrahedron.qmd
+    - documentation/utilities/theme.qmd
+    - documentation/utilities/torus.qmd
+    - documentation/utilities/uniqueind.qmd
+    - documentation/utilities/vecangles.qmd
+    - documentation/utilities/vlines.qmd
+    - documentation/utilities/weather.qmd
+    - documentation/utilities/whereami.qmd
+    - documentation/utilities/wmsinfo.qmd
+    - documentation/utilities/wmsread.qmd
+    - documentation/utilities/wmstest.qmd
+    - documentation/utilities/worldrectangular.qmd
+    - documentation/utilities/worldrectcoast.qmd
+    - documentation/utilities/worldrectgrid.qmd
+    - documentation/utilities/xyzw2cube.qmd
+    - documentation/utilities/zonal_stats.qmd
+    - documentation/utilities/arrows.qmd
+    - documentation/utilities/autocor.qmd
+    - documentation/utilities/autocov.qmd
+    - documentation/utilities/bezier.qmd
+    - documentation/utilities/circfit.qmd
+    - documentation/utilities/circlepts.qmd
+    - documentation/utilities/conv.qmd
+    - documentation/utilities/cubeslice.qmd
+    - documentation/utilities/decorated.qmd
+    - documentation/utilities/ds2df.qmd
+    - documentation/utilities/earthregions.qmd
+    - documentation/utilities/eulermat.qmd
+    - documentation/utilities/fields.qmd
+    - documentation/utilities/fileparts.qmd
+    - documentation/utilities/flipdim.qmd
+    - documentation/utilities/fliplr.qmd
+    - documentation/utilities/flipud.qmd
+    - documentation/utilities/Gantijoin.qmd
+    - documentation/utilities/Gcrossjoin.qmd
+    - documentation/utilities/getprovider.qmd
+    - documentation/utilities/getregion.qmd
+    - documentation/utilities/Ginnerjoin.qmd
+    - documentation/utilities/Gleftjoin.qmd
+    - documentation/utilities/Gouterjoin.qmd
+    - documentation/utilities/Grightjoin.qmd
+    - documentation/utilities/groupby.qmd
+    - documentation/utilities/Gsemijoin.qmd
+    - documentation/utilities/ind2bool.qmd
+    - documentation/utilities/isclockwise.qmd
+    - documentation/utilities/ISOtime2unix.qmd
+    - documentation/utilities/kmeans.qmd
+    - documentation/utilities/lasread.qmd
+    - documentation/utilities/laswrite.qmd
+    - documentation/utilities/lazinfo.qmd
+    - documentation/utilities/linspace.qmd
+    - documentation/utilities/logspace.qmd
+    - documentation/utilities/lowess.qmd
+    - documentation/utilities/mad.qmd
+    - documentation/utilities/makeDCWs.qmd
+    - documentation/utilities/mapsize2region.qmd
+    - documentation/utilities/mbgetdata.qmd
+    - documentation/utilities/mbimport.qmd
+    - documentation/utilities/mblevitus.qmd
+    - documentation/utilities/mbsvplist.qmd
+    - documentation/utilities/meshgrid.qmd
+    - documentation/utilities/mksymbol.qmd
+    - documentation/utilities/nanmean.qmd
+    - documentation/utilities/nanstd.qmd
+    - documentation/utilities/okada.qmd
+    - documentation/utilities/peaks.qmd
+    - documentation/utilities/piechart.qmd
+    - documentation/utilities/pol2cart.qmd
+    - documentation/utilities/polyfit.qmd
+    - documentation/utilities/polyval.qmd
+    - documentation/utilities/pow.qmd
+    - documentation/utilities/qqplot.qmd
+    - documentation/utilities/quadbounds.qmd
+    - documentation/utilities/quadkey.qmd
+    - documentation/utilities/quiver.qmd
+    - documentation/utilities/radar.qmd
+    - documentation/utilities/randinpolygon.qmd
+    - documentation/utilities/resetGMT.qmd
+    - documentation/utilities/rotate.qmd
+    - documentation/utilities/scatter3.qmd
+    - documentation/utilities/seismicity.qmd
+    - documentation/utilities/sortslicesperm.qmd
+    - documentation/utilities/spatialjoin.qmd
+    - documentation/utilities/spinmat.qmd
+    - documentation/utilities/squeeze.qmd
+    - documentation/utilities/stats.qmd
+    - documentation/utilities/tern2cart.qmd
+    - documentation/utilities/terramar.qmd
+    - documentation/utilities/texture_img.qmd
+    - documentation/utilities/tic.qmd
+    - documentation/utilities/toc.qmd
+    - documentation/utilities/togglemask.qmd
+    - documentation/utilities/translate.qmd
+    - documentation/utilities/trisurf.qmd
+    - documentation/utilities/upGMT.qmd
+    - documentation/utilities/vband.qmd
+    - documentation/utilities/vector_attrib.qmd
+    - documentation/utilities/vizpdf.qmd
+    - documentation/utilities/VSdisp.qmd
+    - documentation/utilities/whittaker.qmd
+    - documentation/utilities/xcorr.qmd
+    - documentation/utilities/xcov.qmd
+    - documentation/utilities/yeardecimal.qmd
+    - documentation/utilities/zonal_statistics.qmd
+    - documentation/utilities/zscores.qmd
+    - documentation/gdalfuns.qmd
+    - documentation/gdalfuns/arccircle.qmd
+    - documentation/gdalfuns/arcellipse.qmd
+    - documentation/gdalfuns/boundary.qmd
+    - documentation/gdalfuns/buffer.qmd
+    - documentation/gdalfuns/buffergeo.qmd
+    - documentation/gdalfuns/centroid.qmd
+    - documentation/gdalfuns/circgeo.qmd
+    - documentation/gdalfuns/concavehull.qmd
+    - documentation/gdalfuns/contains.qmd
+    - documentation/gdalfuns/convexhull.qmd
+    - documentation/gdalfuns/crosses.qmd
+    - documentation/gdalfuns/delaunay.qmd
+    - documentation/gdalfuns/difference.qmd
+    - documentation/gdalfuns/disjoint.qmd
+    - documentation/gdalfuns/distance.qmd
+    - documentation/gdalfuns/dither.qmd
+    - documentation/gdalfuns/envelope.qmd
+    - documentation/gdalfuns/envelope3d.qmd
+    - documentation/gdalfuns/epsg2proj.qmd
+    - documentation/gdalfuns/epsg2wkt.qmd
+    - documentation/gdalfuns/equals.qmd
+    - documentation/gdalfuns/fillnodata.qmd
+    - documentation/gdalfuns/gd2gmt.qmd
+    - documentation/gdalfuns/gdaldem.qmd
+    - documentation/gdalfuns/gdalread.qmd
+    - documentation/gdalfuns/gdalshade.qmd
+    - documentation/gdalfuns/gdaltranslate.qmd
+    - documentation/gdalfuns/gdalwarp.qmd
+    - documentation/gdalfuns/gdalwrite.qmd
+    - documentation/gdalfuns/geod.qmd
+    - documentation/gdalfuns/geodesic.qmd
+    - documentation/gdalfuns/geodesicarea.qmd
+    - documentation/gdalfuns/geomarea.qmd
+    - documentation/gdalfuns/geomlength.qmd
+    - documentation/gdalfuns/gmt2gd.qmd
+    - documentation/gdalfuns/intersection.qmd
+    - documentation/gdalfuns/intersects.qmd
+    - documentation/gdalfuns/invgeod.qmd
+    - documentation/gdalfuns/lonlat2xy.qmd
+    - documentation/gdalfuns/loxodrome.qmd
+    - documentation/gdalfuns/loxodrome_direct.qmd
+    - documentation/gdalfuns/loxodrome_inverse.qmd
+    - documentation/gdalfuns/ogr2ogr.qmd
+    - documentation/gdalfuns/overlaps.qmd
+    - documentation/gdalfuns/pointalongline.qmd
+    - documentation/gdalfuns/polygonize.qmd
+    - documentation/gdalfuns/polyunion.qmd
+    - documentation/gdalfuns/proj2wkt.qmd
+    - documentation/gdalfuns/setproj.qmd
+    - documentation/gdalfuns/simplify.qmd
+    - documentation/gdalfuns/symdifference.qmd
+    - documentation/gdalfuns/touches.qmd
+    - documentation/gdalfuns/within.qmd
+    - documentation/gdalfuns/wkt2proj.qmd
+    - documentation/gdalfuns/xy2lonlat.qmd
+    - documentation/solids.qmd
+    - documentation/imgproc.qmd
+    - documentation/imgproc/binarize.qmd
+    - documentation/imgproc/bwareaopen.qmd
+    - documentation/imgproc/bwconncomp.qmd
+    - documentation/imgproc/bwdist.qmd
+    - documentation/imgproc/bwhitmiss.qmd
+    - documentation/imgproc/bwperim.qmd
+    - documentation/imgproc/bwskell.qmd
+    - documentation/imgproc/cc2bw.qmd
+    - documentation/imgproc/fillsinks.qmd
+    - documentation/imgproc/graydist.qmd
+    - documentation/imgproc/imbothat.qmd
+    - documentation/imgproc/imclose.qmd
+    - documentation/imgproc/imcomplement.qmd
+    - documentation/imgproc/imdilate.qmd
+    - documentation/imgproc/imerode.qmd
+    - documentation/imgproc/imfill.qmd
+    - documentation/imgproc/imfilter.qmd
+    - documentation/imgproc/imhdome.qmd
+    - documentation/imgproc/imhmax.qmd
+    - documentation/imgproc/imhmin.qmd
+    - documentation/imgproc/immorphgrad.qmd
+    - documentation/imgproc/imopen.qmd
+    - documentation/imgproc/imrankfilter.qmd
+    - documentation/imgproc/imreconstruct.qmd
+    - documentation/imgproc/imregionalmax.qmd
+    - documentation/imgproc/imregionalmin.qmd
+    - documentation/imgproc/imsegment.qmd
+    - documentation/imgproc/imsobel.qmd
+    - documentation/imgproc/imtophat.qmd
+    - documentation/imgproc/isodata.qmd
+    - documentation/imgproc/padarray.qmd
+    - documentation/imgproc/rgb2gray.qmd
+    - documentation/imgproc/rgb2lab.qmd
+    - documentation/imgproc/rgb2ycbcr.qmd
+    - documentation/imgproc/strel.qmd
+    - examples.qmd
+    - gallery.qmd
+    - gallery/ex01.qmd
+    - gallery/ex02.qmd
+    - gallery/ex03.qmd
+    - gallery/ex04.qmd
+    - gallery/ex05.qmd
+    - gallery/ex06.qmd
+    - gallery/ex07.qmd
+    - gallery/ex08.qmd
+    - gallery/ex09.qmd
+    - gallery/ex10.qmd
+    - gallery/ex12.qmd
+    - gallery/ex13.qmd
+    - gallery/ex14.qmd
+    - gallery/ex15.qmd
+    - gallery/ex16.qmd
+    - gallery/ex17.qmd
+    - gallery/ex18.qmd
+    - gallery/ex19.qmd
+    - gallery/ex20.qmd
+    - gallery/ex21.qmd
+    - gallery/ex22.qmd
+    - gallery/ex23.qmd
+    - gallery/ex24.qmd
+    - gallery/ex25.qmd
+    - gallery/ex26.qmd
+    - gallery/ex27.qmd
+    - gallery/ex28.qmd
+    - gallery/ex29.qmd
+    - gallery/ex30.qmd
+    - gallery/ex33.qmd
+    - gallery/ex34.qmd
+    - gallery/ex35.qmd
+    - gallery/ex36.qmd
+    - gallery/ex40.qmd
+    - gallery/ex41.qmd
+    - gallery/ex42.qmd
+    - gallery/ex44.qmd
+    - gallery/ex45.qmd
+    - gallery/ex46.qmd
+    - gallery/ex48.qmd
+    - tutorials.qmd
+    - tutorials/blender_shading/blender_rt.qmd
+    - tutorials/choropleths/choropleths.qmd
+    - tutorials/coast/coastlines.qmd
+    - tutorials/insets/insets.qmd
+    - tutorials/Landsat8/histogram_stretch.qmd
+    - tutorials/longest_sail/longestsail.qmd
+    - tutorials/mosaics/mosaics.qmd
+    - tutorials/remote_datasets/remote_datasets.qmd
+    - tutorials/signal/signal.qmd
+    - tutorials/signal/autocorr_chloro/autocorr_chloro.qmd
+    - tutorials/signal/autocorr_periodic/autocorr_periodic.qmd
+    - tutorials/signal/clean_outliers/clean_outliers.qmd
+    - tutorials/signal/fft_ex1/fft_ex1.qmd
+    - tutorials/signal/fft_tide/fft_tide.qmd
+    - tutorials/signal/keeling/keeling.qmd
+    - tutorials/signal/tide_smooth/tide_smooth.qmd
+    - tutorials/texture_shading/texture.qmd
+    - tutorials/vector_shp/vector_shp.qmd
+    - geophysics.qmd
+    - geophysics/seismicity/01_focalmec.qmd
+    - geophysics/seismicity/global_seis.qmd
+    - geophysics/seismicity/ThreeD_vp_vs.qmd
+    - geophysics/earthtides/01_earthtides.qmd
+    - geophysics/weather/01_weather.qmd
+    - examples/frames/frames.qmd
+    - examples/plotting_functions/index.qmd
+    - examples/plotting_functions/01_lines.qmd
+    - examples/plotting_functions/02_1filledlines.qmd
+    - examples/plotting_functions/02_2stairs.qmd
+    - examples/plotting_functions/02_2stems.qmd
+    - examples/plotting_functions/02_plotyy.qmd
+    - examples/plotting_functions/035_radars.qmd
+    - examples/plotting_functions/03_bars.qmd
+    - examples/plotting_functions/040_scatter.qmd
+    - examples/plotting_functions/05_1_stats.qmd
+    - examples/plotting_functions/05_2_biplots.qmd
+    - examples/plotting_functions/05_error_bars.qmd
+    - examples/plotting_functions/06_spirals.qmd
+    - examples/plotting_functions/07_symbols.qmd
+    - examples/plotting_functions/08_rectangles.qmd
+    - examples/plotting_functions/10_histograms.qmd
+    - examples/plotting_functions/50_plot3.qmd
+    - examples/projections/index.qmd
+    - examples/projections/01_hello.qmd
+    - examples/projections/02_proj_examples.qmd
+    - examples/projections/best_rectangular.qmd
+    - examples/projections/ex28.qmd
+    - examples/projections/leepacific.qmd
+    - examples/projections/spilhaus.qmd
+    - examples/projections/stereonet.qmd
+    - examples/CPTs/01_cpt_hinge.qmd
+    - examples/images/01_grdimage.qmd
+    - examples/contours/01_contour_examples.qmd
+    - examples/arrows/10_arrows.qmd
+    - examples/legends/01_legends.qmd
+    - examples/choropleths/choro_examples.qmd
+    - examples/ternary/ternary_examples.qmd
+    - examples/subplot/01_subplots.qmd
+    - examples/themes/01_themes.qmd
+    - examples/misc/buffer.qmd
+    - examples/embellish/01_mapscale.qmd
+    - examples/art/art_examples.qmd
+    - examples/arrows/11_feathers.qmd
+    - examples/contours/02_polar_contours.qmd
+    - examples/embellish/02_roses.qmd
+    - examples/embellish/03_insets.qmd
+    - examples/images/01b_grdview.qmd
+    - examples/images/01c_funs3d.qmd
+    - examples/images/02_pcolor.qmd
+    - examples/images/03_hexbin.qmd
+    - examples/images/04_triplot.qmd
+    - examples/images/05_wms.qmd
+    - examples/misc/cube_sides.qmd
+    - examples/misc/gadm.qmd
+    - examples/misc/mix_paper_geog.qmd
+    - examples/misc/orbits.qmd
+    - examples/plotting_functions.qmd
+    - examples/projections.qmd
+website:
+  navbar:
+    background: primary
+    logo: assets/GMTjl_logo.png
+    favicon: assets/GMTjl_logo.png
+    title: false
+    collapse-below: lg
+    right:
+      - text: "Home"
+        file: index.qmd    
+      - text: "Documentation"
+        menu:
+          - text: "Overview"
+            file: documentation.qmd
+          - text: "---"
+          - text: "GMT Modules"
+            file: documentation/modules.qmd
+          - text: "GMT.jl Types"
+            file: documentation/general/types.qmd
+          - text: "GMT.jl Extensions"
+            file: documentation/extensions.qmd
+          - text: "GDAL Functions"
+            file: documentation/gdalfuns.qmd
+          - text: "Solids Functions"
+            file: documentation/solids.qmd
+          - text: "Image Processing"
+            file: documentation/imgproc.qmd
+          - text: "Common Features"
+            file: documentation/common_features.qmd
+          - text: "Alphabetical List"
+            file: documentation/alphabetical.qmd
+      - text: "Examples"
+        file: examples.qmd
+      - text: "Gallery (GMT Gallery)"
+        menu:
+          - text: "Overview"
+            file: gallery.qmd
+          - text: "---"
+          - text: "(1) Contour maps"
+            file: gallery/ex01.html
+          - text: "(2) Image presentations"
+            file: gallery/ex02.html
+          - text: "(3) Spectral estimation and xy-plots"
+            file: gallery/ex03.html
+          - text: "(4) "
+            file: gallery/ex04.html
+          - text: "(5) A 3-D illuminated surface"
+            file: gallery/ex05.html
+          - text: "(6) Plotting of histograms"
+            file: gallery/ex06.html
+          - text: "(7) A simple location map "
+            file: gallery/ex07.html
+          - text: "(8) A 3-D histogram"
+            file: gallery/ex08.html
+          - text: "(9) Time-series along tracks"
+            file: gallery/ex09.html
+          - text: "(10) A geographical bar graph plot"
+            file: gallery/ex10.html
+          - text: "(11) "
+            file: gallery/ex11.html
+          - text: "(12) Optimal triangulation of data"
+            file: gallery/ex12.html
+          - text: "(13) Plotting of vector fields"
+            file: gallery/ex13.html
+          - text: "(14) Gridding of data and trend surfaces"
+            file: gallery/ex14.html
+          - text: "(15) Gridding, contouring, and masking of unconstrained areas"
+            file: gallery/ex15.html
+          - text: "(16) Gridding of data, continued"
+            file: gallery/ex16.html
+          - text: "(17) Images clipped by coastlines"
+            file: gallery/ex17.html
+          - text: "(18) Volumes and Spatial Selections"
+            file: gallery/ex18.html
+          - text: "(19) Color patterns on maps"
+            file: gallery/ex19.html
+          - text: "(20) Custom plot symbols"
+            file: gallery/ex20.html
+          - text: "(21) Time-series of RedHat stock price"
+            file: gallery/ex21.html
+          - text: "(22) "
+            file: gallery/ex22.html
+          - text: "(23) "
+            file: gallery/ex23.html
+          - text: "(24) "
+            file: gallery/ex24.html
+          - text: "(25) "
+            file: gallery/ex25.html
+          - text: "(26) "
+            file: gallery/ex26.html
+          - text: "(27) "
+            file: gallery/ex27.html
+          - text: "(28) "
+            file: gallery/ex28.html
+          - text: "(29) "
+            file: gallery/ex29.html
+          - text: "(30) "
+            file: gallery/ex30.html
+      - text: "Tutorials"
+        menu:
+          - text: "Overview"
+            file: tutorials.qmd
+          - text: "---"
+          - text: "ISC seismicity"
+            file: tutorials/ISC/isc.jl.html
+          - text: "Landsat 8/9"
+            file: tutorials/Landsat8/histogram_stretch.html
+          - text: "Coastlines"
+            file: tutorials/coast/coastlines.html
+          - text: "US Choropleths"
+            file: tutorials/choropleths/choropleths.html
+          - text: "@dlakelan choropleths"
+            file: tutorials/dlakelan/GMTMaps.html
+          - text: "Longest Sail"
+            file: tutorials/longest_sail/longestsail.html
+          - text: "Geospatial vector"
+            file: tutorials/vector_shp/vector_shp.html
+          - text: "Texture Shading"
+            file: tutorials/texture_shading/texture.html
+          - text: "Mosaics"
+            file: tutorials/mosaics/mosaics.html
+          - text: "Insets"
+            file: tutorials/insets/insets.html
+          - text: "Remote Grids"
+            file: tutorials/remote_datasets/remote_datasets.html
+          - text: "Blender"
+            file: tutorials/blender_shading/blender_rt.html
+          - text: "Signal"
+            file: tutorials/signal/signal.html
+      - text: "Geophysics"
+        menu:
+          - text: "Overview"
+            file: geophysics.qmd
+          - text: "---"
+          - text: "Seismicity"
+            file: geophysics/seismicity/global_seis.qmd
+          - text: "Earth Tides"
+            file: geophysics/earthtides/01_earthtides.qmd
+          - text: "Weather Data"
+            file: geophysics/weather/01_weather.qmd
+      - text: "Help"
+        menu:
+          - text: "Report a Bug"
+            icon: "bug"
+            href: "https://github.com/GenericMappingTools/GMT.jl/issues"
+          - text: "Ask a Question"
+            icon: "chat-right-text"
+            href: "https://forum.generic-mapping-tools.org/c/questions/5"
+execute:
+  error: true
+  warning: true
+  freeze: auto  # Cache results, only re-execute when source changes
+  #debug: true   # Show execution timing
+
+format:
+  html:
+    theme: cosmo
+    css: custom.css
+    include-after-body: card-hover.js
+    favicon: assets/GMTjl_logo.png
+    toc: true
+    toc-depth: 2
+    code-copy: true
+    fig-width: 4
+    fig-height: 4
+    #out-width: 25%
+    fig-dpi: 200
