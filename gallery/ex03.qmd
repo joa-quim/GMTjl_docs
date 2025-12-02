@@ -19,7 +19,6 @@ for short wavelengths and that the coherency between the two signals improves dr
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 # First, we use "fitcircle" to find the parameters of a great circle
 # most closely fitting the x,y points in "sat_03.txt":

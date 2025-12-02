@@ -17,7 +17,6 @@ transect using grdtrack. The bottom panel compares the gridded (solid line) and 
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 plot("@Table_5_11.txt", limits=(0,7,0,7), frame=(axes=:WSNe, annot=2, ticks=1),
      marker=:circle, ms=0.15, fill=:black, figsize=(8,8), yshift=17)

@@ -11,7 +11,6 @@ all the bathymetry measurements from Vema cruise 3206. Our complete figure was m
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 subplot(grid=(2,1), autolabel=(Anchor=:TL, offset=0.8), margins=1, panel_size=(15,9))
 	histogram!("@v3206_06.txt", limits=(-6000,0,0,30), pen=1, yaxis=(label=:Frequency, suffix=" %"),

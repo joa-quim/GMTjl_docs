@@ -18,7 +18,6 @@ between the profile and the label:
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 wiggle("@tracks_09.txt", limits=(185,250,-68,-42), proj=:Mercator, figscale=0.27,
        frame=(axes=:WSne, annot=10, ticks=5, fill=[240 255 240]), G="+red -G-blue",

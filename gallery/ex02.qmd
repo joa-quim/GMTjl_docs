@@ -12,7 +12,6 @@ corner of region. In our case we choose (160, 20) and (220, 30) as the corners. 
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 gmtset(FONT_TITLE=30, MAP_ANNOT_OBLIQUE=0)
 g_cpt = makecpt(color=:rainbow, T=(-2,14,2))

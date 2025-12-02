@@ -10,7 +10,6 @@ topography. We also add an arrow pointing north and some text. The first part of
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 makecpt(cmap=(255,100), range=(-10,10,10), no_bg=true);
 grdcontour("@HI_geoid_04.nc", region=(195,210,18,25), view=(60,30), cont=1,

@@ -34,7 +34,6 @@ Again, we use subplot to set up and place the four panels, and place the colorba
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 gmtbegin()
 	subplot(grid=(2,2), panel_size=(8,0), region=(-0.2,6.6,-0.2,6.6), figscale=1, axes=:wesn, row_axes=(left=true, row_title=true), col_axes=:bottom, margins=0.1, title="Gridding of Data")

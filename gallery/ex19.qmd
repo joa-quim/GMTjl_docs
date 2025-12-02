@@ -7,7 +7,6 @@ GMT supports color patterns and this example gives a few cases of how to use thi
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 Glat = gmt("grdmath -Rd -I1 -r Y COSD 2 POW =")
 Glon = gmt("grdmath -Rd -I1 -r X =")

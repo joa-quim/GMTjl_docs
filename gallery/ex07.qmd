@@ -13,7 +13,6 @@ available maps 1. We create the final location map with the following script:
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 coast(region=(-50,0,-10,20), water=:lightblue, land="P300/26:FtanBdarkbrown",
       res=:low, shore=:thinnest, frame=(annot=10,), proj=:Mercator, figsize=18,

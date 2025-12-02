@@ -20,7 +20,6 @@ to the geoid grid. See [Of Colors and Color Legends] to learn more about CPTs an
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 Cgeoid = grd2cpt("@india_geoid.nc");
 Cgray  = makecpt(cmap=150, range="-10000,10000", nobg=true);

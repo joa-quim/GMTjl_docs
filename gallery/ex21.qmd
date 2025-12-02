@@ -24,7 +24,6 @@ Finally, we want to prefix prices with the `$` symbol to indicate the currency. 
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 gmtbegin()
 gmtset(FORMAT_DATE_IN="dd-o-yy", FORMAT_DATE_MAP=:o, FONT_ANNOT_PRIMARY="+10p",

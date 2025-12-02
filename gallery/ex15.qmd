@@ -15,7 +15,6 @@ on the map with [plot]. This point was extracted from the grid files using [grdi
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 ship_d = gmtread("@ship_15.txt")
 region = gmtinfo(ship_d, inc=1)

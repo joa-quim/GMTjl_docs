@@ -14,7 +14,6 @@ volcano symbol and [plot]. We do something similar with the bulls eye symbols. W
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 coast(region=:global360, xaxis=(annot=60,), yaxis=(annot=30,), title="Hotspot Islands and Hot Cities",
       land=:darkgreen, water=:lightblue, area=5000, proj=:Win, figsize=15)

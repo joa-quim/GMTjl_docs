@@ -10,7 +10,6 @@ in separate windows. A [text] call to place a header finishes the plot
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 gmtset(FONT_HEADING="40p,Times-Italic",)
 Gz = gmt("grdmath -R-2/2/-2/2 -I0.1 X Y R2 NEG EXP X MUL =");

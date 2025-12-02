@@ -12,7 +12,6 @@ the numbers and in the shade surrounding the legend. Our script that produces Fi
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 coast(region=:global, shore=:faint, land=:wheat, ocean=:azure2, area=5000,
       view=(200,40), proj=(name=:PlateCarree, center=(0,37.5)))

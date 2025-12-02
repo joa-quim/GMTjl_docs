@@ -14,7 +14,6 @@ is presented in Figure 18 which also shows the automatic labeling offered by [su
 
 ```{julia}
 using GMT, Printf
-GMT.resetGMT() # hide
 
 pratt = [-142.65 56.25 400]
 

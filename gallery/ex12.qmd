@@ -11,7 +11,6 @@ and [makecpt]). The script becomes:
 
 ```{julia}
 using GMT
-GMT.resetGMT() # hide
 
 table_5 = gmtread("@Table_5_11.txt")    # The data used in this example
 T = gmtinfo(table_5, nearest_multiple=(dz=25, col=2))
