@@ -38,7 +38,7 @@ Each slice has a label indicating its size as a percentage of the whole pie or a
 
 -----------
 This module is a subset of `plot`. So not all (fine) controlling parameters are not listed here. For the
-finest control, user should consult the \myreflink{plot} module.
+finest control, user should consult the {{< gmtref plot >}} module.
 
 
 Examples
@@ -46,27 +46,21 @@ Examples
 
 A partial piechart
 
-\begin{examplefig}{}
-```julia
+```{julia}
 using GMT
+
 piechart([0.2 0.4 0.1], show=true)
 ```
-\end{examplefig}
 
-\begin{examplefig}{}
-```julia
-using GMT
+```{julia}
 piechart([1 2 3 4], show=true)
 ```
-\end{examplefig}
 
 
-\begin{examplefig}{}
-```julia
-using GMT
+```{julia}
 piechart([1,2,3,4], explode=2, labels=("A","B","C","D"), labelstyle="namepercent", show=true)
 ```
-\end{examplefig}
+
 ```{julia}
 #| echo: false
 #| output: asis

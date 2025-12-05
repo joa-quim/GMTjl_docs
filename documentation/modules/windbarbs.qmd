@@ -38,12 +38,12 @@ Optional Arguments
     The grid files contain polar (r, theta) components instead of Cartesian (x, y) [Default is Cartesian components].
     This option is valid only when the input files are 2-D grids.
 
-\textinput{common_opts/opt_B}
+{{< include ../common_opts/opt_B.md >}}
 
-\textinput{common_opts/use_cpt_grd}
+{{< include ../common_opts/use_cpt_grd.md >}}
 
 - **G** or **fill** : -- *fill=fill*\
-    Sets color or shade for wind barb interiors (see \myreflink{Fill color/pattern}) [Default is no fill].
+    Sets color or shade for wind barb interiors (see {{< gmtref "Fill color/pattern" >}}) [Default is no fill].
 
 - **I** or **inc** or **increment** or **spacing** : -- *inc=x_inc* **|** *inc=(x_inc, y_inc)* **|** *inc="x""multx"["/multy"]*\
     Only plot wind barbs at nodes every *x\_inc*, *y\_inc* apart (must be multiples of original grid spacing).
@@ -52,7 +52,7 @@ Optional Arguments
     10 nodes in *x* and 5 nodes in *y*. **_NOTE_**: by default we estimate good values so that the arrows do no
     overlap so you may start by jumping this option unless some fine control is desired.
 
-\textinput{common_opts/opt_J}
+{{< include ../common_opts/opt_J.md >}}
 
 - **N** or **noclip** or **no\_clip** : *noclip=true*\
     Do NOT clip wind barbs at map boundaries [Default will clip].
@@ -71,8 +71,8 @@ Optional Arguments
        [default], **e**nd, or **c**enter.
     - **speed** - Set the wind speed which corresponds to a long barb [default 5].
     - **width** - Set the *width* of wind barbs.
- 
-\textinput{common_opts/opt_R}
+
+{{< include ../common_opts/opt_R.md >}}
 
 - **T** or **sign_scale** : -- *sign_scale=true*\
     Means the azimuths of Cartesian data sets should be adjusted according to the
@@ -80,25 +80,25 @@ Optional Arguments
     be used to convert vector azimuths in cases when a negative scale is used in
     one of both directions (e.g., positive down).
 
-\textinput{common_opts/opt_U}
+{{< include ../common_opts/opt_U.md >}}
 
-\textinput{common_opts/opt_V}
+{{< include ../common_opts/opt_V.md >}}
 
-\textinput{common_opts/opt_pen}
+{{< include ../common_opts/opt_pen.md >}}
 
-\textinput{common_opts/opt_X}
+{{< include ../common_opts/opt_X.md >}}
 
-\textinput{common_opts/opt_Y}
+{{< include ../common_opts/opt_Y.md >}}
 
 - **Z** or **azimuth** : -- *azimuth=true*\
     The theta grid provided contains azimuths rather than directions (implies `polar=true`).
     This option is valid only when the input files are 2-D grids.
 
-\textinput{common_opts/opt_f}
+{{< include ../common_opts/opt_f.md >}}
 
-\textinput{common_opts/opt_p}
+{{< include ../common_opts/opt_p.md >}}
 
-\textinput{common_opts/opt_t}
+{{< include ../common_opts/opt_t.md >}}
 
 Examples
 --------
@@ -117,15 +117,13 @@ and only plot every 3rd node in either direction, try:
 windbarb("comp_x.nc", "comp_y.nc", inc="x3", proj=:guess, barbs=(len=0.25, justify=:c), show=true)
 ```
 
-\begin{examplefig}{}
-```julia
+```{julia}
 using GMT
 
 ecmwf(:forecast, var=["10u", "10v"], R="IHO23", prefix="vel")
 windbarbs("vel_10u.grd", "vel_10v.grd", barbs=(length=0.25, width=0.15),
           inc="x10", coast=true, proj=:guess, show=true)
 ```
-\end{examplefig}
 
 ```{julia}
 #| echo: false
@@ -137,5 +135,4 @@ GMT.doc_source_links("windbarbs")
 See Also
 --------
 
-
-\myreflink{grdcontour}, \myreflink{grdvector}
+{{< gmtref grdcontour >}}, {{< gmtref grdvector >}}

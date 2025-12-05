@@ -15,7 +15,7 @@ polygon if `A` is a vector.
 
 -----------
 This module is a subset of `plot` to make it simpler to draw stair plots. So not all (fine)
-controlling parameters are not listed here. For the finest control, user should consult the \myreflink{plot} module.
+controlling parameters are not listed here. For the finest control, user should consult the {{< gmtref plot >}} module.
 
 Parameters
 ----------
@@ -42,50 +42,47 @@ use just `fill=true`. Other options are to use:
     The default is to paint polygons with a transparency of 70%. For other transparency values pass in a
     vector of transparencies (between [0-1] or ]1-100]) via this option.
 
-- For fine the lines settings use the same options as in the \myreflink{plot} module. Nemely `lw` or `lt` for
+- For fine the lines settings use the same options as in the {{< gmtref plot >}} module. Nemely `lw` or `lt` for
     controling the line thickness, `lc` for line color, `ls` for line styles, etc...
 
-\textinput{common_opts/opt_B}
+{{< include ../common_opts/opt_B.md >}}
 
-\textinput{common_opts/opt_J}
+{{< include ../common_opts/opt_J.md >}}
 
-\textinput{common_opts/opt_R}
+{{< include ../common_opts/opt_R.md >}}
 
-\textinput{common_opts/opt_mfc}
+{{< include ../common_opts/opt_mfc.md >}}
 
-\textinput{common_opts/opt_pen}
+{{< include ../common_opts/opt_pen.md >}}
 
-\textinput{common_opts/opt_U}
+{{< include ../common_opts/opt_U.md >}}
 
-\textinput{common_opts/opt_V}
+{{< include ../common_opts/opt_V.md >}}
 
-\textinput{common_opts/opt_X}
+{{< include ../common_opts/opt_X.md >}}
 
-\textinput{common_opts/opt_Y}
+{{< include ../common_opts/opt_Y.md >}}
 
-\textinput{common_opts/opt_save_fig}
+{{< include ../common_opts/opt_save_fig.md >}}
 
 Examples
 --------
 
 Create a 
 
-\begin{examplefig}{}
-```julia
+```{julia}
 using GMT
+
 radar([0.5 0.5 0.6 0.9 0.77; 0.6 0.5 0.8 0.2 0.9], show=true, marker=:circ, fill=true)
 ```
-\end{examplefig}
 
 Plot 
 
-\begin{examplefig}{}
-```julia
-using GMT
+```{julia}
 radar([10.5 20.5 30.6 40.9 46], axeslimts=[15, 25, 50, 90, 50], annotall=true, marker=:circ, fill=true, 
       labels=["Spoons","Forks","Knifes","Dishes","Oranges"], show=1)
 ```
-\end{examplefig}
+
 ```{julia}
 #| echo: false
 #| output: asis

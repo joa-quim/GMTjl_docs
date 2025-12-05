@@ -24,7 +24,7 @@ multiple variables for `yvar` and one only for `xvar`.
 
 -----------
 This module is a subset of `plot` to make it simpler to draw stem plots. So not all (fine) controlling
-parameters are not listed here. For the finest control, user should consult the \myreflink{plot} module.
+parameters are not listed here. For the finest control, user should consult the {{< gmtref plot >}} module.
 
 Parameters
 ----------
@@ -35,60 +35,58 @@ Parameters
 - **nobaseline** : -- *nobaseline=true*\
     If `nobaseline=true` do not paint the horizontal baseline from which the stems start.
 
-\textinput{common_opts/opt_B}
+{{< include ../common_opts/opt_B.md >}}
 
-\textinput{common_opts/opt_J}
+{{< include ../common_opts/opt_J.md >}}
 
-\textinput{common_opts/opt_R}
+{{< include ../common_opts/opt_R.md >}}
 
-\textinput{common_opts/opt_mfc}
+{{< include ../common_opts/opt_mfc.md >}}
 
-\textinput{common_opts/opt_pen}
+{{< include ../common_opts/opt_pen.md >}}
 
-\textinput{common_opts/opt_U}
+{{< include ../common_opts/opt_U.md >}}
 
-\textinput{common_opts/opt_V}
+{{< include ../common_opts/opt_V.md >}}
 
-\textinput{common_opts/opt_X}
+{{< include ../common_opts/opt_X.md >}}
 
-\textinput{common_opts/opt_Y}
+{{< include ../common_opts/opt_Y.md >}}
 
-\textinput{common_opts/opt_save_fig}
+{{< include ../common_opts/opt_save_fig.md >}}
 
 Examples
 --------
 
 Create a stem plot of 50 data values between −2π and 2π. 
 
-\begin{examplefig}{}
-```julia
+```{julia}
 using GMT
+
 Y = linspace(-2*pi,2*pi,50);
 stem(Y, show=true)
 ```
-\end{examplefig}
 
 
 The same but now specify the set of x values for the stem plot. 
 
-\begin{examplefig}{}
-```julia
+```{julia}
 using GMT
+
 Y = linspace(-2*pi,2*pi,50);
 stem([Y Y], show=true)
 ```
-\end{examplefig}
 
 
 Two of them and with some variations.
 
-\begin{examplefig}{}
-```julia
+```{julia}
 using GMT
+
 Y = linspace(-2*pi,2*pi,50);
 stem(Y,[Y -Y], multicol=true, fill=true, ms="10p", nobaseline=true, ls=:DashDot, show=true)
 ```
-\end{examplefig}
+
 ```{julia}
 #| echo: false
 #| output: asis

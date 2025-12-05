@@ -18,7 +18,7 @@ A common used alias to this form is the `qqnorm` function.
 
 -----------
 This module is a subset of `plot` to make it simpler to draw stair plots. So not all (fine)
-controlling parameters are not listed here. For the finest control, user should consult the \myreflink{plot} module.
+controlling parameters are not listed here. For the finest control, user should consult the {{< gmtref plot >}} module.
 
 Parameters
 ----------
@@ -31,46 +31,42 @@ Parameters
 
 	Broadly speaking, `qqline=:identity` is useful to see if x and y follow the same distribution, whereas `qqline=:fit` and `qqline=:fitrobust` are useful to see if the distribution of y can be obtained from the distribution of x via an affine transformation.
 
-- For fine the lines settings use the same options as in the \myreflink{plot} module. Nemely `lw` or `lt` for
+- For fine the lines settings use the same options as in the {{< gmtref plot >}} module. Nemely `lw` or `lt` for
     controling the line thickness, `lc` for line color, `ls` for line styles, etc...
 
-\textinput{common_opts/opt_B}
+{{< include ../common_opts/opt_B.md >}}
 
-\textinput{common_opts/opt_J}
+{{< include ../common_opts/opt_J.md >}}
 
-\textinput{common_opts/opt_R}
+{{< include ../common_opts/opt_R.md >}}
 
-\textinput{common_opts/opt_mfc}
+{{< include ../common_opts/opt_mfc.md >}}
 
-\textinput{common_opts/opt_pen}
+{{< include ../common_opts/opt_pen.md >}}
 
-\textinput{common_opts/opt_U}
+{{< include ../common_opts/opt_U.md >}}
 
-\textinput{common_opts/opt_V}
+{{< include ../common_opts/opt_V.md >}}
 
-\textinput{common_opts/opt_X}
+{{< include ../common_opts/opt_X.md >}}
 
-\textinput{common_opts/opt_Y}
+{{< include ../common_opts/opt_Y.md >}}
 
-\textinput{common_opts/opt_save_fig}
+{{< include ../common_opts/opt_save_fig.md >}}
 
 Examples
 --------
 
-\begin{examplefig}{}
-```julia
+```{julia}
 using GMT
+
 qqplot(randn(100), randn(100), show=true)
 ```
-\end{examplefig}
 
 
-\begin{examplefig}{}
-```julia
-using GMT
+```{julia}
 qqplot(randn(100), show=true)
 ```
-\end{examplefig}
 
 ```{julia}
 #| echo: false

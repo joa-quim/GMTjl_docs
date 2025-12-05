@@ -37,7 +37,7 @@ Parameters
 
 - **fill** or **color**\
    Select color or pattern for filling of symbols [Default is *lightblue*]. It can take the form of a string,
-   a vector or a tuple of colors. See \myreflink{Setting color} for extend color selection (including color
+   a vector or a tuple of colors. See {{< gmtref "Setting color" >}} for extend color selection (including color
    map generation). When more than one band is requested the bands colors are assigned
    by cycling through the colors given in this option. This means that a 3 bands and a `fill=[:red, :blue]` will plot
    first and third band in red and second in blue.
