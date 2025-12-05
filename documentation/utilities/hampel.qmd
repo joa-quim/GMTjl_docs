@@ -91,3 +91,9 @@ scatter!(y, ms="2p", mc=:green, MarkerEdgeColor=true, label="Hampel filter", sho
 using GMT
 GMT.doc_source_links("hampel")
 ```
+
+## See Also
+
+{{< gmtref lowess >}}, {{< gmtref whittaker >}}
+
+[Alphabetical Function List](../alphabetical.html)

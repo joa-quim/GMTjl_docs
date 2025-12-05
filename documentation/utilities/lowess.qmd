@@ -19,14 +19,15 @@ Compute the smooth of a scatterplot of `y` against `x` using robust locally weig
 
 # Example
 
-```julia
+```{julia}
+using GMT
+
 x = sort(10 .* rand(100))
 y = sin.(x) .+ 0.5 * rand(100)
 ys = lowess(x, y, span=0.2)
 scatter(x, y)
-plot!(x, ys)
+plot!(x, ys, show=true)
 ```
-
 
 
 ```{julia}
@@ -38,5 +39,6 @@ GMT.doc_source_links("lowess")
 
 ## See Also
 
-- [Alphabetical Function List](../alphabetical.html)
-- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)
+{{< gmtref whittaker >}}, {{< gmtref hampel >}}
+
+[Alphabetical Function List](../alphabetical.html)
