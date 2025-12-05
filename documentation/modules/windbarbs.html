@@ -557,25 +557,37 @@ Set PDF transparency level for an overlay, in (0-100] percent range. [Default is
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">windbarb</span>(<span class="st">"r.nc"</span>, <span class="st">"theta.nc"</span>, polar<span class="op">=</span><span class="cn">true</span>, barbs<span class="op">=</span>(len<span class="op">=</span><span class="fl">0.25</span>, justify<span class="op">=:</span>c), show<span class="op">=</span><span class="cn">true</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>To plot a geographic data sets given the files comp_x.nc and comp_y.nc, and only plot every 3rd node in either direction, try:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">windbarb</span>(<span class="st">"comp_x.nc"</span>, <span class="st">"comp_y.nc"</span>, inc<span class="op">=</span><span class="st">"x3"</span>, proj<span class="op">=:</span>guess, barbs<span class="op">=</span>(len<span class="op">=</span><span class="fl">0.25</span>, justify<span class="op">=:</span>c), show<span class="op">=</span><span class="cn">true</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div id="84e4ebcf" class="cell" data-execution_count="1">
+<div id="8a871d50" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">GMT</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ecmwf</span>(<span class="op">:</span>forecast, var<span class="op">=</span>[<span class="st">"10u"</span>, <span class="st">"10v"</span>], R<span class="op">=</span><span class="st">"IHO23"</span>, prefix<span class="op">=</span><span class="st">"vel"</span>)</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">windbarbs</span>(<span class="st">"vel_10u.grd"</span>, <span class="st">"vel_10v.grd"</span>, barbs<span class="op">=</span>(length<span class="op">=</span><span class="fl">0.25</span>, width<span class="op">=</span><span class="fl">0.15</span>),</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>          inc<span class="op">=</span><span class="st">"x10"</span>, coast<span class="op">=</span><span class="cn">true</span>, proj<span class="op">=:</span>guess, show<span class="op">=</span><span class="cn">true</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
+<div class="cell-output cell-output-error">
 <div class="ansi-escaped-output">
-<pre><span class="ansi-cyan-fg ansi-bold">[ </span><span class="ansi-cyan-fg ansi-bold">Info: </span>Downloading 10u and saving to vel_10u.grd
+<pre>RequestError: HTTP/1.1 404 Not Found while requesting https://data.ecmwf.int/forecasts/20251205/12z/ifs/0p25/oper/20251205120000-0h-oper-fc.index
 
-<span class="ansi-cyan-fg ansi-bold">[ </span><span class="ansi-cyan-fg ansi-bold">Info: </span>Downloading 10v and saving to vel_10v.grd
-</pre>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="windbarbs_files/figure-html/cell-2-output-2.png" class="img-fluid figure-img"></p>
-</figure>
+Stacktrace:
+  [1] <span class="ansi-bold">#3</span>
+<span class="ansi-bright-black-fg">    @</span> <span class="ansi-bright-black-fg">C:\programs\Julia-1.10\share\julia\stdlib\v1.10\Downloads\src\</span><span style="text-decoration:underline" class="ansi-bright-black-fg">Downloads.jl:271</span><span class="ansi-bright-black-fg"> [inlined]</span>
+  [2] <span class="ansi-bold">open</span><span class="ansi-bold">(</span><span class="ansi-bright-black-fg">f</span>::Downloads.var"#3#4"<span class="ansi-bright-black-fg">{Nothing, Vector{Pair{String, String}}, Float64, Nothing, Bool, Nothing, Nothing, String}</span>, <span class="ansi-bright-black-fg">args</span>::String; <span class="ansi-bright-black-fg">kwargs</span>::@Kwargs<span class="ansi-bright-black-fg">{write::Bool, lock::Bool}</span><span class="ansi-bold">)</span>
+<span class="ansi-bright-black-fg">    @</span> <span class="ansi-bright-black-fg">Base</span> <span class="ansi-bright-black-fg">.\</span><span style="text-decoration:underline" class="ansi-bright-black-fg">io.jl:396</span>
+  [3] <span class="ansi-bold">open_nolock</span>
+<span class="ansi-bright-black-fg">    @</span> <span class="ansi-bright-black-fg">C:\programs\Julia-1.10\share\julia\stdlib\v1.10\ArgTools\src\</span><span style="text-decoration:underline" class="ansi-bright-black-fg">ArgTools.jl:35</span><span class="ansi-bright-black-fg"> [inlined]</span>
+  [4] <span class="ansi-bold">arg_write</span><span class="ansi-bold">(</span><span class="ansi-bright-black-fg">f</span>::Function, <span class="ansi-bright-black-fg">arg</span>::String<span class="ansi-bold">)</span>
+<span class="ansi-bright-black-fg">    @</span> <span class="ansi-magenta-fg">ArgTools</span> <span class="ansi-bright-black-fg">C:\programs\Julia-1.10\share\julia\stdlib\v1.10\ArgTools\src\</span><span style="text-decoration:underline" class="ansi-bright-black-fg">ArgTools.jl:103</span>
+  [5] <span class="ansi-bold">#download#2</span>
+<span class="ansi-bright-black-fg">    @</span> <span class="ansi-bright-black-fg">C:\programs\Julia-1.10\share\julia\stdlib\v1.10\Downloads\src\</span><span style="text-decoration:underline" class="ansi-bright-black-fg">Downloads.jl:258</span><span class="ansi-bright-black-fg"> [inlined]</span>
+  [6] <span class="ansi-bold">download</span>
+<span class="ansi-bright-black-fg">    @</span> <span class="ansi-bright-black-fg">C:\programs\Julia-1.10\share\julia\stdlib\v1.10\Downloads\src\</span><span style="text-decoration:underline" class="ansi-bright-black-fg">Downloads.jl:247</span><span class="ansi-bright-black-fg"> [inlined]</span>
+  [7] <span class="ansi-bold">ecmwf_fc</span><span class="ansi-bold">(</span>; <span class="ansi-bright-black-fg">filename</span>::String, <span class="ansi-bright-black-fg">levlist</span>::String, <span class="ansi-bright-black-fg">kw</span>::@Kwargs<span class="ansi-bright-black-fg">{dryrun::Bool, var::Vector{String}, R::String, prefix::String}</span><span class="ansi-bold">)</span>
+<span class="ansi-bright-black-fg">    @</span> <span class="ansi-cyan-fg">GMT</span> <span class="ansi-bright-black-fg">C:\Users\j\.julia\dev\GMT\src\extras\</span><span style="text-decoration:underline" class="ansi-bright-black-fg">weather.jl:423</span>
+  [8] <span class="ansi-bold">ecmwf_fc</span>
+<span class="ansi-bright-black-fg">    @</span> <span class="ansi-bright-black-fg">C:\Users\j\.julia\dev\GMT\src\extras\</span><span style="text-decoration:underline" class="ansi-bright-black-fg">weather.jl:315</span><span class="ansi-bright-black-fg"> [inlined]</span>
+  [9] <span class="ansi-bold">ecmwf</span><span class="ansi-bold">(</span><span class="ansi-bright-black-fg">source</span>::Symbol; <span class="ansi-bright-black-fg">filename</span>::String, <span class="ansi-bright-black-fg">cb</span>::Bool, <span class="ansi-bright-black-fg">dataset</span>::String, <span class="ansi-bright-black-fg">params</span>::String, <span class="ansi-bright-black-fg">key</span>::String, <span class="ansi-bright-black-fg">url</span>::String, <span class="ansi-bright-black-fg">wait</span>::Float64, <span class="ansi-bright-black-fg">levlist</span>::String, <span class="ansi-bright-black-fg">region</span>::String, <span class="ansi-bright-black-fg">format</span>::String, <span class="ansi-bright-black-fg">dryrun</span>::Bool, <span class="ansi-bright-black-fg">verbose</span>::Bool, <span class="ansi-bright-black-fg">kw</span>::@Kwargs<span class="ansi-bright-black-fg">{var::Vector{String}, R::String, prefix::String}</span><span class="ansi-bold">)</span>
+<span class="ansi-bright-black-fg">    @</span> <span class="ansi-cyan-fg">GMT</span> <span class="ansi-bright-black-fg">C:\Users\j\.julia\dev\GMT\src\extras\</span><span style="text-decoration:underline" class="ansi-bright-black-fg">weather.jl:189</span>
+ [10] top-level scope
+<span class="ansi-bright-black-fg">    @</span> <span style="text-decoration:underline" class="ansi-bright-black-fg">In[2]:3</span></pre>
 </div>
 </div>
 </div>
@@ -593,6 +605,7 @@ Set PDF transparency level for an overlay, in (0-100] percent range. [Default is
 <section id="see-also" class="level2">
 <h2 class="anchored" data-anchor-id="see-also">See Also</h2>
 <p><a href="../..\documentation/modules/grdcontour.html">grdcontour</a>, <a href="../..\documentation/modules/grdvector.html">grdvector</a></p>
+<p><a href="../alphabetical.html">Alphabetical Function List</a></p>
 
 
 </section>

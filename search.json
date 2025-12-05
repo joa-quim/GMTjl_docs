@@ -1792,6 +1792,13 @@
     "text": "Source Code\nThis function has multiple methods:\n\ntrisurf(G::Union{String, GMTgrid}, G2; first, thickness, isbase, downsample, ratio, bottom, wall_only, top_only, geog, kw...) - triangulate.jl:187\ntrisurf(G::Union{String, GMTgrid}; ...) - triangulate.jl:187\ntrisurf(in::Union{GDtype, Matrix}; first, gdal, kw...) - triangulate.jl:166"
   },
   {
+    "objectID": "documentation/utilities/trisurf.html#see-also",
+    "href": "documentation/utilities/trisurf.html#see-also",
+    "title": "trisurf",
+    "section": "See also",
+    "text": "See also\nAlphabetical Function List"
+  },
+  {
     "objectID": "documentation/utilities/togglemask.html",
     "href": "documentation/utilities/togglemask.html",
     "title": "togglemask",
@@ -3000,14 +3007,7 @@
     "href": "documentation/utilities/plotlinefit.html#examples",
     "title": "plotlinefit",
     "section": "Examples",
-    "text": "Examples\nplotlinefit(D, band_ab=true, band_ci=true, legend=true, show=1)"
-  },
-  {
-    "objectID": "documentation/utilities/plotlinefit.html#see-also",
-    "href": "documentation/utilities/plotlinefit.html#see-also",
-    "title": "plotlinefit",
-    "section": "See Also",
-    "text": "See Also\nlinearfitxy, plot"
+    "text": "Examples\nusing GMT\n\nplotlinefit(D, band_ab=true, band_ci=true, legend=true, show=1)"
   },
   {
     "objectID": "documentation/utilities/plotlinefit.html#source-code",
@@ -3015,6 +3015,13 @@
     "title": "plotlinefit",
     "section": "Source Code",
     "text": "Source Code\nThis function has multiple methods:\n\nplotlinefit(D::GMTdataset; first, grp, kw...) - linefit.jl:218\nplotlinefit(m::Matrix{&lt;:Real}; first, grp, kw...) - linefit.jl:217\nplotlinefit(D::Vector{&lt;:GMTdataset}; first, kw...) - linefit.jl:177"
+  },
+  {
+    "objectID": "documentation/utilities/plotlinefit.html#see-also",
+    "href": "documentation/utilities/plotlinefit.html#see-also",
+    "title": "plotlinefit",
+    "section": "See Also",
+    "text": "See Also\nlinearfitxy, plot\nAlphabetical Function List"
   },
   {
     "objectID": "documentation/utilities/pcolor.html",
@@ -3973,7 +3980,7 @@
     "href": "documentation/modules/wiggle.html#see-also",
     "title": "wiggle",
     "section": "See Also",
-    "text": "See Also\nfilter1d, [psbasemap], gmtsplit"
+    "text": "See Also\nfilter1d, psbasemap, gmtsplit"
   },
   {
     "objectID": "documentation/modules/velo.html",
@@ -4529,18 +4536,18 @@
     "text": "Examples\nA scatter of ten points plotted as black cubes of 7 points size using the default perspective of 200,30\n\nusing GMT\nscatter3(rand(10,10,3), zsize=4, marker=:cube, mc=:darkgreen, show=true)"
   },
   {
-    "objectID": "documentation/modules/scatter3.html#see-also",
-    "href": "documentation/modules/scatter3.html#see-also",
-    "title": "scatter3",
-    "section": "See also",
-    "text": "See also\nThe GMT man page"
-  },
-  {
     "objectID": "documentation/modules/scatter3.html#source-code",
     "href": "documentation/modules/scatter3.html#source-code",
     "title": "scatter3",
     "section": "Source Code",
     "text": "Source Code\nThis function has multiple methods:\n\nscatter3(cmd0::String; ...) - plot.jl:413\nscatter3(cmd0::String, arg1; kw...) - plot.jl:413\nscatter3(f1::Function, f2::Function, f3::Function, range_t; first, kw...) - plot.jl:431\nscatter3(f1::Function, f2::Function, f3::Function; ...) - plot.jl:431\nscatter3(f1::Function, f2::Function; ...) - plot.jl:426\nscatter3(f1::Function, f2::Function, range_t; first, kw...) - plot.jl:426\nscatter3(arg1::AbstractArray, arg2::AbstractArray, arg3::AbstractArray; kw...) - plot.jl:419\nscatter3(; ...) - plot.jl:413\nscatter3(arg; kw...) - plot.jl:416"
+  },
+  {
+    "objectID": "documentation/modules/scatter3.html#see-also",
+    "href": "documentation/modules/scatter3.html#see-also",
+    "title": "scatter3",
+    "section": "See also",
+    "text": "See also"
   },
   {
     "objectID": "documentation/modules/sample1d.html",
@@ -4627,6 +4634,13 @@
     "text": "Source Code\nThis function has multiple methods:\n\nradar(cmd0::String; kwargs...) - plot.jl:1316\nradar(arg1; kwargs...) - plot.jl:1317"
   },
   {
+    "objectID": "documentation/modules/radar.html#see-also",
+    "href": "documentation/modules/radar.html#see-also",
+    "title": "radar",
+    "section": "See also",
+    "text": "See also\nAlphabetical Function List"
+  },
+  {
     "objectID": "documentation/modules/qqplot.html",
     "href": "documentation/modules/qqplot.html",
     "title": "qqplot",
@@ -4655,6 +4669,13 @@
     "text": "Source Code\nThis function has multiple methods:\n\nqqplot(x; qqline, first, kwargs...) - statplots.jl:953\nqqplot(x, y; qqline, first, kwargs...) - statplots.jl:905"
   },
   {
+    "objectID": "documentation/modules/qqplot.html#see-also",
+    "href": "documentation/modules/qqplot.html#see-also",
+    "title": "qqplot",
+    "section": "See also",
+    "text": "See also\nAlphabetical Function List"
+  },
+  {
     "objectID": "documentation/modules/polespotter.html",
     "href": "documentation/modules/polespotter.html",
     "title": "polespotter",
@@ -4681,6 +4702,13 @@
     "title": "piechart",
     "section": "Source Code",
     "text": "Source Code\nView the source code for this function."
+  },
+  {
+    "objectID": "documentation/modules/piechart.html#see-also",
+    "href": "documentation/modules/piechart.html#see-also",
+    "title": "piechart",
+    "section": "See also",
+    "text": "See also\nAlphabetical Function List"
   },
   {
     "objectID": "documentation/modules/originater.html",
@@ -6577,7 +6605,7 @@
     "href": "documentation/modules/colorbar.html#examples",
     "title": "colorbar",
     "section": "Examples",
-    "text": "Examples\nTo plot a horizontal color scale (12 cm long; 0.5 cm wide) at the reference point (8,1) (paper coordinates) with justification at top center and automatic annotation interval, do\n    makecpt(range=(-200,1000,100), cmap=:rainbow)\n    colorbar(pos=(paper=true, anchor=(8,1), size=(12,0.5), justify=:TC, horizontal=true),\n            frame=(annot=:auto, ticks=:auto, xlabel=\"topography\", ylabel=:km), show=true)\nTo append a vertical color scale (7.5 cm long; 1.25 cm wide) to the right of a plot that is 6 inch wide and 4 inch high, using illumination, and show back- and foreground colors, and annotating every 5 units, we provide the reference point and select the left-mid anchor point via\n    colorbar(pos=(paper=true, anchor=\"6.5i/2i\", justify=(:LM,\"2i\"), size=(7.5,1.2), triangles=true),\n            cmap=:geo, shade=true, xaxis=(annot=1000, label=:BATHYMETRY), ylabel=:m, show=1)\nTo overlay a horizontal color scale (10 centimeters long and default width) above a Mercator map produced by a previous call, ensuring a 2 cm offset from the map frame, use\n    colorbar!(region=(0,10,0,10), pos=(justify=:CT, width=10, offset=(0,2), horizontal=true), cmap=\"colors.cpt\", show=1)\nShow automatic placement of color bars when selecting a side mid-point.\n\nusing GMT\n\nC = makecpt(cmap=:jet, range=(0,100));\nbasemap(region=(0,30,0,45), frame=(axes=:wsne, annot=:auto, ticks=:auto))\ncolorbar!(position=(inside=true, anchor=:BC), xaxis=(annot=:auto, ticks=:auto),\n          box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(outside=true, anchor=:BC), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(inside=true, anchor=:TC), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(outside=true, anchor=:TC), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(inside=true, anchor=:ML), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(outside=true, anchor=:ML), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(inside=true, anchor=:MR), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(anchor=:MR,), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C, show=true)"
+    "text": "Examples\nTo plot a horizontal color scale (12 cm long; 0.5 cm wide) at the reference point (8,1) (paper coordinates) with justification at top center and automatic annotation interval, do\n\nusing GMT\n\nmakecpt(range=(-200,1000,100), cmap=:rainbow)\ncolorbar(pos=(paper=true, anchor=(8,1), size=(12,0.5), justify=:TC, horizontal=true),\n        frame=(annot=:auto, ticks=:auto, xlabel=\"topography\", ylabel=:km), show=true)\n\n\n\n\n\n\n\n\nTo append a vertical color scale (7.5 cm long; 1.25 cm wide) to the right of a plot that is 6 inch wide and 4 inch high, using illumination, and show back- and foreground colors, and annotating every 5 units, we provide the reference point and select the left-mid anchor point via\n\ncolorbar(pos=(paper=true, anchor=\"6.5i/2i\", justify=(:LM,\"2i\"), size=(7.5,1.2), triangles=true),\n        cmap=:geo, shade=true, xaxis=(annot=1000, label=:BATHYMETRY), ylabel=:m, show=1)\n\n\n\n\n\n\n\n\nTo overlay a horizontal color scale (10 centimeters long and default width) above a Mercator map produced by a previous call, ensuring a 2 cm offset from the map frame, use\n\ncolorbar!(region=(0,10,0,10), pos=(justify=:CT, width=10, offset=(0,2), horizontal=true), cmap=\"colors.cpt\", show=1)\n\npsscale [ERROR]: GMT_Read_Data: File not found: colors.cpt\n\n\n\nSomething went wrong when calling the module. GMT error number = 16\n\nStacktrace:\n  [1] error(s::String)\n    @ Base .\\error.jl:35\n  [2] gmt(cmd::String, args::Nothing)\n    @ GMT C:\\Users\\j\\.julia\\dev\\GMT\\src\\gmt_main.jl:166\n  [3] finish_PS_module(d::Dict{Symbol, Any}, cmd::Vector{String}, opt_extra::String, K::Bool, O::Bool, finish::Bool, args::Nothing)\n    @ GMT C:\\Users\\j\\.julia\\dev\\GMT\\src\\common_options.jl:4505\n  [4] finish_PS_module\n    @ C:\\Users\\j\\.julia\\dev\\GMT\\src\\common_options.jl:4429 [inlined]\n  [5] prep_and_call_finish_PS_module\n    @ C:\\Users\\j\\.julia\\dev\\GMT\\src\\common_options.jl:4419 [inlined]\n  [6] prep_and_call_finish_PS_module\n    @ C:\\Users\\j\\.julia\\dev\\GMT\\src\\common_options.jl:4418 [inlined]\n  [7] colorbar(arg1::Nothing; first::Bool, kwargs::@Kwargs{region::NTuple{4, Int64}, pos::@NamedTuple{justify::Symbol, width::Int64, offset::Tuple{Int64, Int64}, horizontal::Bool}, cmap::String, show::Int64})\n    @ GMT C:\\Users\\j\\.julia\\dev\\GMT\\src\\psscale.jl:53\n  [8] colorbar\n    @ C:\\Users\\j\\.julia\\dev\\GMT\\src\\psscale.jl:50 [inlined]\n  [9] colorbar!\n    @ C:\\Users\\j\\.julia\\dev\\GMT\\src\\psscale.jl:94 [inlined]\n [10] top-level scope\n    @ In[4]:1\n\n\n\nShow automatic placement of color bars when selecting a side mid-point.\n\nC = makecpt(cmap=:jet, range=(0,100));\nbasemap(region=(0,30,0,45), frame=(axes=:wsne, annot=:auto, ticks=:auto))\ncolorbar!(position=(inside=true, anchor=:BC), xaxis=(annot=:auto, ticks=:auto),\n          box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(outside=true, anchor=:BC), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(inside=true, anchor=:TC), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(outside=true, anchor=:TC), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(inside=true, anchor=:ML), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(outside=true, anchor=:ML), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(inside=true, anchor=:MR), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C)\ncolorbar!(position=(anchor=:MR,), box=(pen=(0.25,:red),), ylabel=\"@.C\", cmap=C, show=true)"
   },
   {
     "objectID": "documentation/modules/colorbar.html#source-code",
@@ -7417,7 +7445,7 @@
     "href": "documentation/modules/bar.html#examples",
     "title": "bar",
     "section": "Examples",
-    "text": "Examples\nA simple bar plot with 10 bars and automatic limits.\n\nusing GMT\nbar(rand(10), show=true)\n\n\n\n\n\n\n\n\nA bar group with selected colors and transparency.\n\nusing GMT\nbar([0. 1 2 3; 1 2 3 4], fillalpha=[0.3 0.5 0.7], fill=[\"red\" \"green\" \"blue\"], show=true)\n\n\n\n\n\n\n\n\nA bar group with bars filled with patterns.\n    bar([0 1 2 3; 1 2 3 4], fill=(1,2,3), show=1)\nA bar group with error bars\n\nusing GMT\nbar([0. 1 2 3; 1 2 3 4], error_bars=(y=[0.1 0.2 0.33; 0.2 0.3 0.4],), show=true)\n\n\n\n\n\n\n\n\nA waterfall chart.\n\nusing GMT\nbar([1 2 3 0 -1 -2 0], stacked=:water, connector=true, bargap=25,\n    xticks=(:A, :B, :C, :Partial, :D, :E, :Total), show=true)"
+    "text": "Examples\nA simple bar plot with 10 bars and automatic limits.\n\nusing GMT\n\nbar(rand(10), show=true)\n\n\n\n\n\n\n\n\nA bar group with selected colors and transparency.\n\nbar([0. 1 2 3; 1 2 3 4], fillalpha=[0.3 0.5 0.7], fill=[\"red\" \"green\" \"blue\"], show=true)\n\n\n\n\n\n\n\n\nA bar group with bars filled with patterns.\n\nbar([0 1 2 3; 1 2 3 4], fill=(1,2,3), show=1)\n\n\n\n\n\n\n\n\nA bar group with error bars\n\nbar([0. 1 2 3; 1 2 3 4], error_bars=(y=[0.1 0.2 0.33; 0.2 0.3 0.4],), show=true)\n\n\n\n\n\n\n\n\nA waterfall chart.\n\nbar([1 2 3 0 -1 -2 0], stacked=:water, connector=true, bargap=25,\n    xticks=(:A, :B, :C, :Partial, :D, :E, :Total), show=true)"
   },
   {
     "objectID": "documentation/modules/bar.html#see-also",
@@ -7459,7 +7487,7 @@
     "href": "documentation/modules/basemap.html#non-geographical-projections",
     "title": "basemap",
     "section": "Non-geographical Projections",
-    "text": "Non-geographical Projections\n\nLinear x-y plot\nTo make a linear x/y frame with all axes, but with only left and bottom axes annotated, using xscale = yscale = 1 cm per unit, ticking every 1 unit and annotating every 2, and using xlabel = “Distance” and ylabel = “No of samples”, use\n\nusing GMT\nbasemap(region=(0,9,0,5), figscale=1,\n        frame=(axes=:WeSn, annot=2, ticks=1, xlabel=:Distance, ylabel=\"No of samples\"), show=true)\n\n\n\n\n\n\n\n\n\n\nLog-log plot\nTo make a log-log frame with only the left and bottom axes, where the x-axis is 25 cm and annotated every 1-2-5 and the y-axis is 15 cm and annotated every power of 10 but has tick-marks every 0.1, run\n\nusing GMT\n    basemap(region=(1,10000,1e20,1e25), figsize=(25,15), proj=:logxy, frame=(axes=:WS,),\n    xaxis=(annot=2, label=:Wavelength),\n    yaxis=(annot=1, ticks=3, label=:Power, scale=:pow), show=1)\n\n\n\n\n\n\n\n\n\n\nPower axes\nTo design an axis system to be used for a depth-sqrt(age) plot with depth positive down, ticked and annotated every 500m, and ages (in millions of years) annotated at 1 My, 4 My, 9 My etc., use\n\nusing GMT\n    # This still fails to generate the intended GMT command. (maybe let scale=\"pow0.5\")\n    #basemap(region=(0,100,0,5000), figscale=(1,-0.001), xaxis=(annot=1, label=\"Crustal age\", scale=:pow), yaxis=(annot=500, label=:Depth), show=true)\n    basemap(region=(0,100,0,5000), frame=\"x1p+l\\\"Crustal age\\\" y500+lDepth\", proj=\"x1cp0.5/-0.001c\", show=true)\n\n\n\n\n\n\n\n\n\n\nPolar (theta,r) plot\nFor a base map for use with polar coordinates, where the radius from 0 to 1000 should correspond to 5 cm and with gridlines and ticks intervals automatically determined, use\n\nusing GMT\n    basemap(region=(0,360,0,1000), figsize=10, frame=:afg, proj=:polar, show=true)"
+    "text": "Non-geographical Projections\n\nLinear x-y plot\nTo make a linear x/y frame with all axes, but with only left and bottom axes annotated, using xscale = yscale = 1 cm per unit, ticking every 1 unit and annotating every 2, and using xlabel = “Distance” and ylabel = “No of samples”, use\n\nusing GMT\n\nbasemap(region=(0,9,0,5), figscale=1,\n        frame=(axes=:WeSn, annot=2, ticks=1, xlabel=:Distance, ylabel=\"No of samples\"), show=true)\n\n\n\n\n\n\n\n\n\n\nLog-log plot\nTo make a log-log frame with only the left and bottom axes, where the x-axis is 25 cm and annotated every 1-2-5 and the y-axis is 15 cm and annotated every power of 10 but has tick-marks every 0.1, run\n\nusing GMT\n\nbasemap(region=(1,10000,1e20,1e25), figsize=(25,15), proj=:logxy, frame=(axes=:WS,),\nxaxis=(annot=2, label=:Wavelength),\nyaxis=(annot=1, ticks=3, label=:Power, scale=:pow), show=1)\n\n\n\n\n\n\n\n\n\n\nPower axes\nTo design an axis system to be used for a depth-sqrt(age) plot with depth positive down, ticked and annotated every 500m, and ages (in millions of years) annotated at 1 My, 4 My, 9 My etc., use\n\nusing GMT\n    # This still fails to generate the intended GMT command. (maybe let scale=\"pow0.5\")\n    #basemap(region=(0,100,0,5000), figscale=(1,-0.001), xaxis=(annot=1, label=\"Crustal age\", scale=:pow), yaxis=(annot=500, label=:Depth), show=true)\nbasemap(region=(0,100,0,5000), frame=\"x1p+l\\\"Crustal age\\\" y500+lDepth\", proj=\"x1cp0.5/-0.001c\", show=true)\n\n\n\n\n\n\n\n\n\n\nPolar (theta,r) plot\nFor a base map for use with polar coordinates, where the radius from 0 to 1000 should correspond to 5 cm and with gridlines and ticks intervals automatically determined, use\n\nusing GMT\nbasemap(region=(0,360,0,1000), figsize=10, frame=:afg, proj=:polar, show=true)"
   },
   {
     "objectID": "documentation/modules/basemap.html#cylindrical-map-projections",
@@ -7704,7 +7732,7 @@
     "href": "documentation/modules/contour.html#examples",
     "title": "contour",
     "section": "Examples",
-    "text": "Examples\nTo make a raw contour plot from the remote file Table_5.11.txt and draw the contours every 25 and annotate every 50, using the default Cartesian projection, try\n\nusing GMT\ncontour(\"@Table_5_11.txt\", pen=:thin, contour=25, annot=50, show=true)\n\n\n\n\n\n\n\n\nTo use the same data but only contour the values 750 and 800, use\n\nusing GMT\ncontour(\"@Table_5_11.txt\", annot=[750,800], pen=0.5, show=true)\n\n\n\n\n\n\n\n\nTo create a color plot of the numerical temperature solution obtained on a triangular mesh whose node coordinates and temperatures are stored in temp.xyz and mesh arrangement is given by the file mesh.ijk, using the colors in temp.cpt, run\n    contour(\"temp.xyz\", index=\"mesh.ijk\", region=(0,150,0,100), figscale=0.25,\n            cmap=\"temp.cpt\", labels=true, pen=0.25, show=true)\nTo save the triangulated 100-m contour lines in topo.txt and separate them into multisegment files (one for each contour level), try\n    contour(\"topo.txt\", contour=100, dump=\"contours_%.0f.txt\")"
+    "text": "Examples\nTo make a raw contour plot from the remote file Table_5.11.txt and draw the contours every 25 and annotate every 50, using the default Cartesian projection, try\n\nusing GMT\ncontour(\"@Table_5_11.txt\", pen=:thin, contour=25, annot=50, show=true)\n\n\n\n\n\n\n\n\nTo use the same data but only contour the values 750 and 800, use\n\nusing GMT\ncontour(\"@Table_5_11.txt\", annot=[750,800], pen=0.5, show=true)\n\n\n\n\n\n\n\n\nTo create a color plot of the numerical temperature solution obtained on a triangular mesh whose node coordinates and temperatures are stored in temp.xyz and mesh arrangement is given by the file mesh.ijk, using the colors in temp.cpt, run\n\ncontour(\"temp.xyz\", index=\"mesh.ijk\", region=(0,150,0,100), figscale=0.25,\n        cmap=\"temp.cpt\", labels=true, pen=0.25, show=true)\n\ngmtread [ERROR]: Cannot find file temp.xyz\ngmtread [ERROR]: Cannot find file temp.xyz\ngmtread [ERROR]: File temp.xyz not found\n[Session GMT (0)]: Error returned from GMT API: GMT_FILE_NOT_FOUND (16)\n\n\n\nSomething went wrong when calling the module. GMT error number = 16\n\nStacktrace:\n [1] error(s::String)\n   @ Base .\\error.jl:35\n [2] gmt(::String)\n   @ GMT C:\\Users\\j\\.julia\\dev\\GMT\\src\\gmt_main.jl:166\n [3] read_data(d::Dict{Symbol, Any}, fname::String, cmd::String, arg::Nothing, opt_R::String, is3D::Bool, get_info::Bool)\n   @ GMT C:\\Users\\j\\.julia\\dev\\GMT\\src\\common_options.jl:3656\n [4] contour_helper(cmd0::String, arg1::Nothing, O::Bool, K::Bool, d::Dict{Symbol, Any})\n   @ GMT C:\\Users\\j\\.julia\\dev\\GMT\\src\\pscontour.jl:99\n [5] #contour_helper#936\n   @ C:\\Users\\j\\.julia\\dev\\GMT\\src\\pscontour.jl:82 [inlined]\n [6] contour_helper\n   @ C:\\Users\\j\\.julia\\dev\\GMT\\src\\pscontour.jl:80 [inlined]\n [7] #contour#932\n   @ C:\\Users\\j\\.julia\\dev\\GMT\\src\\pscontour.jl:75 [inlined]\n [8] top-level scope\n   @ In[4]:1\n\n\n\nTo save the triangulated 100-m contour lines in topo.txt and separate them into multisegment files (one for each contour level), try\n    contour(\"topo.txt\", contour=100, dump=\"contours_%.0f.txt\")"
   },
   {
     "objectID": "documentation/modules/contour.html#references",
@@ -8754,7 +8782,7 @@
     "href": "documentation/modules/grdfilter.html#see-also",
     "title": "grdfilter",
     "section": "See Also",
-    "text": "See Also\nGMT.jl related functions: - grdfft - Filtering in frequency domain - grdmath - Grid calculator operations - grdproject - Map projection transformations - grdsample - Resampling grids - grdgradient - Gradient calculations"
+    "text": "See Also\ngrdfft, {{&lt; scatter grdmath &gt;}}, {{&lt; scatter grdproject &gt;}}, {{&lt; scatter grdsample &gt;}}, {{&lt; scatter grdgradient &gt;}}"
   },
   {
     "objectID": "documentation/modules/grdfilter.html#references",
@@ -9310,18 +9338,18 @@
     "text": "Examples\nTo draw a histogram of the data v3206_06.txt containing seafloor depths, using a 250 meter bin width, center bars, and draw bar outline, use:\n\nusing GMT\nhistogram(\"@v3206_06.txt\", bin=250, center=true, pen=\"0.5p\", show=true)\n\n\n\n\n\n\n\n\nIf you know the distribution of your data, you may explicitly specify range and scales. E.g., to plot a histogram of the y-values (2nd column) in the file errors.xy using a 1 meter bin width, plot from -10 to +10 meters @ 0.75 cm/m, annotate every 2 m and 100 counts, and use black bars, run:\n    histogram(\"errors.xy\", bin=1, region=(-10,10,0,0), J=\"xc/0.01c\",\n              xaxis=(annot=2,label=:Error), yaxis=(annot=100, label=:Counts), fill=:black, incol=1) \nSince no y-range was specified, histogram will calculate ymax in even increments of 100.\nTo plot the histogram of a Landsat image, pick good bounds for contrast enhancement and show them\nI = gmtread(\"landsat.tif\")\nhistogram(I, zoom=true, show=true);"
   },
   {
-    "objectID": "documentation/modules/histogram.html#see-also",
-    "href": "documentation/modules/histogram.html#see-also",
-    "title": "histogram",
-    "section": "See also",
-    "text": "See also\nThe GMT man page"
-  },
-  {
     "objectID": "documentation/modules/histogram.html#source-code",
     "href": "documentation/modules/histogram.html#source-code",
     "title": "histogram",
     "section": "Source Code",
     "text": "Source Code\nThis function has multiple methods:\n\nhistogram(cmd0::String; kwargs...) - pshistogram.jl:73\nhistogram(arg1; kwargs...) - pshistogram.jl:74"
+  },
+  {
+    "objectID": "documentation/modules/histogram.html#see-also",
+    "href": "documentation/modules/histogram.html#see-also",
+    "title": "histogram",
+    "section": "See also",
+    "text": "See also"
   },
   {
     "objectID": "documentation/modules/image.html",
@@ -9608,7 +9636,7 @@
     "href": "documentation/modules/meca.html#examples",
     "title": "meca",
     "section": "Examples",
-    "text": "Examples\n[focal_mechanisms]\nPlot focal mechanisms using Aki-Richards convention:\n\nusing GMT\n\n# Create focal mechanism data  \nD = mat2ds([0.0 5.0 0.0 0 90 0 5 0 0], [\"Right Strike Slip\"])\n\n# Plot with fixed size beachballs\nmeca(D, region=(-1,4,1,6), proj=:Mercator, aki=2.5, fill=:black, show=true)\n\n\n\n\n\n\n\n\nPlot using Global CMT convention with depth-based coloring:\n# Background map\ngrdimage(\"@earth_relief\", region=[-74,-59,5,15], proj=:guess, figsize=10, shade=true)\ncoast!(shorelines=true, borders=((type=1, pen=0.8),(type=2, pen=0.1)))\n\n# Focal mechanisms with offsets\nmeca!(\"focal_data.txt\", CMT=(scale=0.4, font=6), offset=true, fill=:black, show=true)\nPlot multiple mechanisms with varying types:\n\nusing GMT\n\n# Right lateral strike slip\nD1 = mat2ds([0.0 5.0 0.0 0 90 0 5 0 0], [\"Right Strike Slip\"])\nmeca(D1, region=(-1,4,1,6), proj=:Mercator, aki=2.5, fill=:black)\n\n# Thrust fault\nD2 = mat2ds([0.0 3.5 0.0 0 45 90 5 0 0], [\"Thrust\"])\nmeca!(D2, aki=2.5, fill=:black)\n\n# Normal fault\nD3 = mat2ds([0.0 2.0 0.0 0 45 -90 5 0 0], [\"Normal\"])  \nmeca!(D3, aki=2.5, fill=:black, show=true)"
+    "text": "Examples\nPlot focal mechanisms using Aki-Richards convention:\n\nusing GMT\n\n# Create focal mechanism data  \nD = mat2ds([0.0 5.0 0.0 0 90 0 5 0 0], [\"Right Strike Slip\"])\n\n# Plot with fixed size beachballs\nmeca(D, region=(-1,4,1,6), proj=:Mercator, aki=2.5, fill=:black, show=true)\n\n\n\n\n\n\n\n\nPlot using Global CMT convention with depth-based coloring:\n# Background map\ngrdimage(\"@earth_relief\", region=[-74,-59,5,15], proj=:guess, figsize=10, shade=true)\ncoast!(shorelines=true, borders=((type=1, pen=0.8),(type=2, pen=0.1)))\n\n# Focal mechanisms with offsets\nmeca!(\"focal_data.txt\", CMT=(scale=0.4, font=6), offset=true, fill=:black, show=true)\nPlot multiple mechanisms with varying types:\n\nusing GMT\n\n# Right lateral strike slip\nD1 = mat2ds([0.0 5.0 0.0 0 90 0 5 0 0], [\"Right Strike Slip\"])\nmeca(D1, region=(-1,4,1,6), proj=:Mercator, aki=2.5, fill=:black)\n\n# Thrust fault\nD2 = mat2ds([0.0 3.5 0.0 0 45 90 5 0 0], [\"Thrust\"])\nmeca!(D2, aki=2.5, fill=:black)\n\n# Normal fault\nD3 = mat2ds([0.0 2.0 0.0 0 45 -90 5 0 0], [\"Normal\"])  \nmeca!(D3, aki=2.5, fill=:black, show=true)\n\n\n\n\n\n\n\n\n\nusing GMT\n\npsmeca([0.0 3.0 0.0 0 45 90 5 0 0], aki=true, fill=:black, region=(-1,4,0,6), proj=:Merc, show=1)\n\n\n\n\n\n\n\n\nThe same but add a Label\n\npsmeca(mat2ds([0.0 3.0 0.0 0 45 90 5 0 0], [\"Thrust\"]), aki=true, fill=:black, region=(-1,4,0,6), proj=:Merc, show=1)"
   },
   {
     "objectID": "documentation/modules/meca.html#references",
@@ -9629,7 +9657,7 @@
     "href": "documentation/modules/meca.html#see-also",
     "title": "meca",
     "section": "See Also",
-    "text": "See Also\ncoupe, [polar], velo"
+    "text": "See Also\ncoupe, polar, velo\nAlphabetical Function List"
   },
   {
     "objectID": "documentation/modules/mgd77track.html",
@@ -9751,6 +9779,13 @@
     "text": "Source Code\nThis function has multiple methods:\n\nplot(cmd0::String; ...) - plot.jl:140\nplot(cmd0::String, arg1; kw...) - plot.jl:140\nplot(arg1::Number, arg2::Number; kw...) - plot.jl:144\nplot(f::Function; ...) - plot.jl:129\nplot(f1::Function, f2::Function; ...) - plot.jl:135\nplot(f::Function, range_x; first, kw...) - plot.jl:129\nplot(f1::Function, f2::Function, range_t; first, kw...) - plot.jl:135\nplot(; ...) - plot.jl:140\nplot(arg1, arg2; kw...) - plot.jl:142\nplot(arg1; first, kw...) - plot.jl:101"
   },
   {
+    "objectID": "documentation/modules/plot.html#see-also",
+    "href": "documentation/modules/plot.html#see-also",
+    "title": "plot",
+    "section": "See Also",
+    "text": "See Also\nplot3, scatter, lines, bar\nAlphabetical Function List"
+  },
+  {
     "objectID": "documentation/modules/polar.html",
     "href": "documentation/modules/polar.html",
     "title": "polar",
@@ -9867,7 +9902,7 @@
     "href": "documentation/modules/quiver.html#see-also",
     "title": "quiver",
     "section": "See Also",
-    "text": "See Also\ngrdcontour, plot"
+    "text": "See Also\ngrdcontour, plot\nAlphabetical Function List"
   },
   {
     "objectID": "documentation/modules/rose.html",
@@ -9902,7 +9937,7 @@
     "href": "documentation/modules/rose.html#examples",
     "title": "rose",
     "section": "Examples",
-    "text": "Examples\nTo plot a half circle rose diagram of the data in the remote data file azimuth_lengths.txt (containing pairs of (azimuth, length in meters)), using a 5 degree bin sector width, on a circle of diameter = 10 cm, using a light blue shading, try:\n\nusing GMT\n    rose(\"@azimuth_lengths.txt\", yx=true, sectors=5, no_scale=true, labels=true,\n         fill=:lightblue, region=(0,1,0,180), xaxis=(annot=true, ticks=true, label=\"Fault length\"),\n         yaxis=(grid=30,), norm=true, show=true)\n\n\n\n\n\n\n\n\nTo plot a full circle wind rose diagram of the data in the file lines.r_az, on a circle of diameter = 10 cm, grid going out to radius = 500 units in steps of 100 with a 45 degree sector interval, using a solid pen (width = 0.5 point, and shown in landscape [Default] orientation, use:\n    rose(\"lines.az_r\", region=(0,500,0,360), xaxis=(grid=100,), yaxis=(grid=45,),\n         title=\"Windrose diagram\", pen=0.5, show=true)\nRedo the same plot but this time add orange vector heads to each direction (with nominal head size 0.5 cm but this will be reduced linearly for lengths less than 1 cm) and save the plot, use:\n    rose(\"lines.az_r\", region=(0,500,0,360), xaxis=(grid=100,), yaxis=(grid=45,),\n         title=\"Windrose diagram\", pen=0.5, vector_params=\"0.5c+e+gorange+n1c\", show=true)"
+    "text": "Examples\nTo plot a half circle rose diagram of the data in the remote data file azimuth_lengths.txt (containing pairs of (azimuth, length in meters)), using a 5 degree bin sector width, on a circle of diameter = 10 cm, using a light blue shading, try:\n\nusing GMT\n    rose(\"@azimuth_lengths.txt\", yx=true, sectors=5, no_scale=true, labels=true,\n         fill=:lightblue, region=(0,1,0,180), xaxis=(annot=true, ticks=true, label=\"Fault length\"),\n         yaxis=(grid=30,), norm=true, show=true)\n\n\n\n\n\n\n\n\nTo plot a full circle wind rose diagram of the data in the file lines.r_az, on a circle of diameter = 10 cm, grid going out to radius = 500 units in steps of 100 with a 45 degree sector interval, using a solid pen width = 0.5 point, and shown in landscape [Default] orientation, use:\n    rose(\"lines.az_r\", region=(0,500,0,360), xaxis=(grid=100,), yaxis=(grid=45,),\n         title=\"Windrose diagram\", pen=0.5, show=true)\nRedo the same plot but this time add orange vector heads to each direction (with nominal head size 0.5 cm but this will be reduced linearly for lengths less than 1 cm) and save the plot, use:\n    rose(\"lines.az_r\", region=(0,500,0,360), xaxis=(grid=100,), yaxis=(grid=45,),\n         title=\"Windrose diagram\", pen=0.5, vector_params=\"0.5c+e+gorange+n1c\", show=true)"
   },
   {
     "objectID": "documentation/modules/rose.html#bugs",
@@ -10133,7 +10168,7 @@
     "href": "documentation/modules/sphtriangulate.html#examples",
     "title": "sphtriangulate",
     "section": "Examples",
-    "text": "Examples\nTo create a spherical triangulation from the remote data set hotspots.txt and then plot it on a sphere, try:\n\nusing GMT\n    D = sphtriangulate(\"@hotspots.txt\", voronoi=:d, arcs=true)\n    imshow(D, region=:global, proj=:guess, frame=:afg, pen=3)\n\n\n\n\n\n\n\n\nTo triangulate the points in the file testdata.txt, and make a Voronoi diagram via plot, use\n    D = sphtriangulate(\"testdata.txt\", voronoi=:v)\n    plot(D, region=:global, proj=(name=:ortho, center=(30,30)), pen=1, frame=:ag, show=true)\nTo compute the optimal Delaunay triangulation network based on the multiple segment file globalnodes.txt and save the area of each triangle in the header record, try\n    D = sphtriangulate(\"globalnodes.txt\", voronoi=:d, area=true)"
+    "text": "Examples\nTo create a spherical triangulation from the remote data set hotspots.txt and then plot it on a sphere, try:\n\nusing GMT\nD = sphtriangulate(\"@hotspots.txt\", voronoi=:d, arcs=true)\nimshow(D, region=:global, proj=:guess, frame=:afg, pen=3)\n\n\n\n\n\n\n\n\nTo triangulate the points in the file testdata.txt, and make a Voronoi diagram via plot, use\n    D = sphtriangulate(\"testdata.txt\", voronoi=:v)\n    plot(D, region=:global, proj=(name=:ortho, center=(30,30)), pen=1, frame=:ag, show=true)\nTo compute the optimal Delaunay triangulation network based on the multiple segment file globalnodes.txt and save the area of each triangle in the header record, try\n    D = sphtriangulate(\"globalnodes.txt\", voronoi=:d, area=true)"
   },
   {
     "objectID": "documentation/modules/sphtriangulate.html#notes",
@@ -10511,7 +10546,7 @@
     "href": "documentation/modules/windbarbs.html#examples",
     "title": "windbarbs",
     "section": "Examples",
-    "text": "Examples\nTo draw the wind field given by the files r.nc and theta.nc on a barb plot with 0.25 cm length and centered on the node locations, run:\nwindbarb(\"r.nc\", \"theta.nc\", polar=true, barbs=(len=0.25, justify=:c), show=true)\nTo plot a geographic data sets given the files comp_x.nc and comp_y.nc, and only plot every 3rd node in either direction, try:\nwindbarb(\"comp_x.nc\", \"comp_y.nc\", inc=\"x3\", proj=:guess, barbs=(len=0.25, justify=:c), show=true)\n\nusing GMT\n\necmwf(:forecast, var=[\"10u\", \"10v\"], R=\"IHO23\", prefix=\"vel\")\nwindbarbs(\"vel_10u.grd\", \"vel_10v.grd\", barbs=(length=0.25, width=0.15),\n          inc=\"x10\", coast=true, proj=:guess, show=true)\n\n\n[ Info: Downloading 10u and saving to vel_10u.grd\n\n[ Info: Downloading 10v and saving to vel_10v.grd"
+    "text": "Examples\nTo draw the wind field given by the files r.nc and theta.nc on a barb plot with 0.25 cm length and centered on the node locations, run:\nwindbarb(\"r.nc\", \"theta.nc\", polar=true, barbs=(len=0.25, justify=:c), show=true)\nTo plot a geographic data sets given the files comp_x.nc and comp_y.nc, and only plot every 3rd node in either direction, try:\nwindbarb(\"comp_x.nc\", \"comp_y.nc\", inc=\"x3\", proj=:guess, barbs=(len=0.25, justify=:c), show=true)\n\nusing GMT\n\necmwf(:forecast, var=[\"10u\", \"10v\"], R=\"IHO23\", prefix=\"vel\")\nwindbarbs(\"vel_10u.grd\", \"vel_10v.grd\", barbs=(length=0.25, width=0.15),\n          inc=\"x10\", coast=true, proj=:guess, show=true)\n\n\nRequestError: HTTP/1.1 404 Not Found while requesting https://data.ecmwf.int/forecasts/20251205/12z/ifs/0p25/oper/20251205120000-0h-oper-fc.index\n\nStacktrace:\n  [1] #3\n    @ C:\\programs\\Julia-1.10\\share\\julia\\stdlib\\v1.10\\Downloads\\src\\Downloads.jl:271 [inlined]\n  [2] open(f::Downloads.var\"#3#4\"{Nothing, Vector{Pair{String, String}}, Float64, Nothing, Bool, Nothing, Nothing, String}, args::String; kwargs::@Kwargs{write::Bool, lock::Bool})\n    @ Base .\\io.jl:396\n  [3] open_nolock\n    @ C:\\programs\\Julia-1.10\\share\\julia\\stdlib\\v1.10\\ArgTools\\src\\ArgTools.jl:35 [inlined]\n  [4] arg_write(f::Function, arg::String)\n    @ ArgTools C:\\programs\\Julia-1.10\\share\\julia\\stdlib\\v1.10\\ArgTools\\src\\ArgTools.jl:103\n  [5] #download#2\n    @ C:\\programs\\Julia-1.10\\share\\julia\\stdlib\\v1.10\\Downloads\\src\\Downloads.jl:258 [inlined]\n  [6] download\n    @ C:\\programs\\Julia-1.10\\share\\julia\\stdlib\\v1.10\\Downloads\\src\\Downloads.jl:247 [inlined]\n  [7] ecmwf_fc(; filename::String, levlist::String, kw::@Kwargs{dryrun::Bool, var::Vector{String}, R::String, prefix::String})\n    @ GMT C:\\Users\\j\\.julia\\dev\\GMT\\src\\extras\\weather.jl:423\n  [8] ecmwf_fc\n    @ C:\\Users\\j\\.julia\\dev\\GMT\\src\\extras\\weather.jl:315 [inlined]\n  [9] ecmwf(source::Symbol; filename::String, cb::Bool, dataset::String, params::String, key::String, url::String, wait::Float64, levlist::String, region::String, format::String, dryrun::Bool, verbose::Bool, kw::@Kwargs{var::Vector{String}, R::String, prefix::String})\n    @ GMT C:\\Users\\j\\.julia\\dev\\GMT\\src\\extras\\weather.jl:189\n [10] top-level scope\n    @ In[2]:3"
   },
   {
     "objectID": "documentation/modules/windbarbs.html#source-code",
@@ -10525,7 +10560,7 @@
     "href": "documentation/modules/windbarbs.html#see-also",
     "title": "windbarbs",
     "section": "See Also",
-    "text": "See Also\ngrdcontour, grdvector"
+    "text": "See Also\ngrdcontour, grdvector\nAlphabetical Function List"
   },
   {
     "objectID": "documentation/utilities/ablines.html",
