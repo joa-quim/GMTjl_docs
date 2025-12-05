@@ -586,7 +586,7 @@ Save the figure with the <code>figname=name.ext</code> where <code>ext</code> ch
 <section id="examples" class="level2">
 <h2 class="anchored" data-anchor-id="examples">Examples</h2>
 <p>Decorated curve with blue stars</p>
-<div id="b974050e" class="cell" data-execution_count="1">
+<div id="8241c410" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>xy <span class="op">=</span> <span class="fu">gmt</span>(<span class="st">"gmtmath -T0/180/1 T SIND 4.5 ADD"</span>);</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(xy, axes<span class="op">=:</span>af, pen<span class="op">=</span>(<span class="fl">1</span>,<span class="op">:</span>red), decorated<span class="op">=</span>(dist<span class="op">=</span>(<span class="fl">2.5</span>,<span class="fl">0.25</span>), symbol<span class="op">=:</span>star,</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>      symbsize<span class="op">=</span><span class="fl">1</span>, pen<span class="op">=</span>(<span class="fl">0.5</span>,<span class="op">:</span>green), fill<span class="op">=:</span>blue, dec2<span class="op">=</span><span class="cn">true</span>), show<span class="op">=</span><span class="cn">true</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>

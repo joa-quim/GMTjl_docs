@@ -492,8 +492,20 @@ window.Quarto = {
 <p>The triangulation is defined by the points in a Mx3 matrix or a GMTdataset with data x, y, z in the 3 first columns. The triangles are computed with a Delaunay triangulation done internaly. Since this is a <code>plot3d</code> <em>avatar</em> all options in this function are those of the <code>plot3d</code> program.</p>
 <section id="example" class="level3">
 <h3 class="anchored" data-anchor-id="example">Example</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>    x,y,z <span class="op">=</span> <span class="fu">peaks</span>(N<span class="op">=</span><span class="fl">45</span>, grid<span class="op">=</span><span class="cn">false</span>);</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">trisurf</span>([x[<span class="op">:</span>] y[<span class="op">:</span>] z[<span class="op">:</span>]], pen<span class="op">=</span><span class="fl">0.5</span>, show<span class="op">=</span><span class="cn">true</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Create a set of 3-D points and plot the surface defined by the triangulation.</p>
+<div id="46be490e" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">GMT</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>x,y,z <span class="op">=</span> <span class="fu">peaks</span>(N<span class="op">=</span><span class="fl">45</span>, grid<span class="op">=</span><span class="cn">false</span>);</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">trisurf</span>([x[<span class="op">:</span>] y[<span class="op">:</span>] z[<span class="op">:</span>]], pen<span class="op">=</span><span class="fl">0.5</span>, show<span class="op">=</span><span class="cn">true</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="trisurf_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <pre><code>trisurf(G, G2=nothing; bottom=false, downsample=0, isbase=false, ratio=0.01,
         thickness=0.0, wall_only=false, top_only=false, geog=false, kw...)</code></pre>
 <p>Short form for the sequence <span class="math inline">\(D = grid2tri(...)\)</span> followed by <span class="math inline">\(viz(D)\)</span>. See the documentation of <span class="math inline">\(grid2tri\)</span> for more details.</p>
