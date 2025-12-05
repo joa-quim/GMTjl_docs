@@ -1514,9 +1514,8 @@ Programs for creating maps, plots, charts, and other visualizations.
 
 :::{.g-col-6 .g-col-sm-6 .g-col-md-4 .g-col-lg-2}
 ::: {.card .h-100}
-[arrows](utilities/arrows.html)
-
-[![](modules/assets/arrows_logo.jpg){.card-img-top}](utilities/arrows.html)
+[arrows](modules/arrows.html)
+[![](modules/assets/arrows_logo.jpg){.card-img-top}](modules/arrows.html)
 
 ::: {.card-body}
 Plot arrow fields.

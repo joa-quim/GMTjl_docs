@@ -25,7 +25,66 @@ project:
     - documentation/common_features/themes.qmd
     - documentation/common_features/units.qmd
     - documentation/common_opts.qmd
+    - documentation/common_opts/auto_legend_info.qmd
+    - documentation/common_opts/common_opts.qmd
+    - documentation/common_opts/contour_notes.qmd
+    - documentation/common_opts/create_cpt.qmd
+    - documentation/common_opts/explain_Acoast.qmd
+    - documentation/common_opts/explain_Ccontours.qmd
+    - documentation/common_opts/explain_F_box.qmd
+    - documentation/common_opts/explain_fft.qmd
+    - documentation/common_opts/explain_float.qmd
+    - documentation/common_opts/explain_grd_coord.qmd
+    - documentation/common_opts/explain_gshhg.qmd
+    - documentation/common_opts/explain_inside.qmd
+    - documentation/common_opts/explain_refpoint.qmd
+    - documentation/common_opts/explain_transparency.qmd
+    - documentation/common_opts/opt__distunits.qmd
+    - documentation/common_opts/opt__i.qmd
+    - documentation/common_opts/opt__j.qmd
+    - documentation/common_opts/opt__r.qmd
+    - documentation/common_opts/opt__w.qmd
+    - documentation/common_opts/opt__x.qmd
+    - documentation/common_opts/opt_a.qmd
+    - documentation/common_opts/opt_Asteps.qmd
+    - documentation/common_opts/opt_B.qmd
+    - documentation/common_opts/opt_bi.qmd
+    - documentation/common_opts/opt_bo.qmd
+    - documentation/common_opts/opt_box.qmd
+    - documentation/common_opts/opt_compass.qmd
+    - documentation/common_opts/opt_di.qmd
+    - documentation/common_opts/opt_e.qmd
+    - documentation/common_opts/opt_f.qmd
+    - documentation/common_opts/opt_g.qmd
+    - documentation/common_opts/opt_-Grid.qmd
+    - documentation/common_opts/opt_h.qmd
+    - documentation/common_opts/opt_I.qmd
+    - documentation/common_opts/opt_J.qmd
+    - documentation/common_opts/opt_l.qmd
+    - documentation/common_opts/opt_map_scale.qmd
+    - documentation/common_opts/opt_mfc.qmd
+    - documentation/common_opts/opt_n.qmd
+    - documentation/common_opts/opt_o.qmd
+    - documentation/common_opts/opt_p.qmd
+    - documentation/common_opts/opt_pen.qmd
+    - documentation/common_opts/opt_q.qmd
+    - documentation/common_opts/opt_qi.qmd
+    - documentation/common_opts/opt_R.qmd
+    - documentation/common_opts/opt_R_3D.qmd
+    - documentation/common_opts/opt_range.qmd
+    - documentation/common_opts/opt_rose.qmd
+    - documentation/common_opts/opt_s.qmd
+    - documentation/common_opts/opt_save_fig.qmd
+    - documentation/common_opts/opt_save_grd.qmd
+    - documentation/common_opts/opt_t.qmd
+    - documentation/common_opts/opt_U.qmd
+    - documentation/common_opts/opt_V.qmd
+    - documentation/common_opts/opt_X.qmd
+    - documentation/common_opts/opt_xy.qmd
+    - documentation/common_opts/opt_Y.qmd
+    - documentation/common_opts/use_cpt_grd.qmd
     - documentation/alphabetical.qmd
+    - documentation/modules/arrows.qmd
     - documentation/modules/backtracker.qmd
     - documentation/modules/band.qmd
     - documentation/modules/bar.qmd
@@ -271,7 +330,6 @@ project:
     - documentation/utilities/worldrectgrid.qmd
     - documentation/utilities/xyzw2cube.qmd
     - documentation/utilities/zonal_stats.qmd
-    - documentation/utilities/arrows.qmd
     - documentation/utilities/autocor.qmd
     - documentation/utilities/autocov.qmd
     - documentation/utilities/bezier.qmd
