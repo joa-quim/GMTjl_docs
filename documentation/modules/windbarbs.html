@@ -65,6 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/GMTjl_logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -431,24 +432,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#windbarbs" id="toc-windbarbs" class="nav-link active" data-scroll-target="#windbarbs">windbarbs</a>
-  <ul class="collapse">
-  <li><a href="#required-arguments" id="toc-required-arguments" class="nav-link" data-scroll-target="#required-arguments">Required Arguments</a></li>
+  <li><a href="#required-arguments" id="toc-required-arguments" class="nav-link active" data-scroll-target="#required-arguments">Required Arguments</a></li>
   <li><a href="#optional-arguments" id="toc-optional-arguments" class="nav-link" data-scroll-target="#optional-arguments">Optional Arguments</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  <li><a href="#source-code" id="toc-source-code" class="nav-link" data-scroll-target="#source-code">Source Code</a></li>
   <li><a href="#see-also" id="toc-see-also" class="nav-link" data-scroll-target="#see-also">See Also</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">windbarbs</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="windbarbs" class="level1">
-<h1>windbarbs</h1>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">windbarbs</span>(u, v; kwargs<span class="op">...</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Plot wind barb field from two component grids with the <em>x</em> and <em>y</em> components of the wind field.</p>
 <table class="caption-top table">
@@ -520,12 +533,21 @@ The theta grid provided contains azimuths rather than directions (implies <code>
 <p>To plot a geographic data sets given the files comp_x.nc and comp_y.nc, and only plot every 3rd node in either direction, try:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">windbarb</span>(<span class="st">"comp_x.nc"</span>, <span class="st">"comp_y.nc"</span>, inc<span class="op">=</span><span class="st">"x3"</span>, proj<span class="op">=:</span>guess, barbs<span class="op">=</span>(len<span class="op">=</span><span class="fl">0.25</span>, justify<span class="op">=:</span>c), show<span class="op">=</span><span class="cn">true</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
+<section id="source-code" class="level2">
+<h2 class="anchored" data-anchor-id="source-code">Source Code</h2>
+<p>This function has multiple methods:</p>
+<ul>
+<li><a href="https://github.com/GenericMappingTools/GMT.jl/blob/master/src/windbarbs/windbarbs.jl#L25"><code>windbarbs(cmd0::String; first, kwargs...)</code></a> - windbarbs.jl:25</li>
+<li><a href="https://github.com/GenericMappingTools/GMT.jl/blob/master/src/windbarbs/windbarbs.jl#L25"><code>windbarbs(; ...)</code></a> - windbarbs.jl:25</li>
+<li><a href="https://github.com/GenericMappingTools/GMT.jl/blob/master/src/windbarbs/windbarbs.jl#L26"><code>windbarbs(arg1; first, kwargs...)</code></a> - windbarbs.jl:26</li>
+<li><a href="https://github.com/GenericMappingTools/GMT.jl/blob/master/src/windbarbs/windbarbs.jl#L50"><code>windbarbs(arg1::Union{String, GMTgrid}, arg2::Union{String, GMTgrid}; first, kwargs...)</code></a> - windbarbs.jl:50</li>
+</ul>
+</section>
 <section id="see-also" class="level2">
 <h2 class="anchored" data-anchor-id="see-also">See Also</h2>
 <p>, </p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -760,7 +782,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/joa-quim\.github\.io\/GMTjl_docs\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

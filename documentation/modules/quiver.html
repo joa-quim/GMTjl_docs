@@ -65,6 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/GMTjl_logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -431,27 +432,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#quiver" id="toc-quiver" class="nav-link active" data-scroll-target="#quiver">quiver</a>
-  <ul class="collapse">
-  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link active" data-scroll-target="#description">Description</a></li>
   <li><a href="#required-arguments" id="toc-required-arguments" class="nav-link" data-scroll-target="#required-arguments">Required Arguments</a></li>
   <li><a href="#optional-arguments" id="toc-optional-arguments" class="nav-link" data-scroll-target="#optional-arguments">Optional Arguments</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
   <li><a href="#vector-scaling-and-unit-effects" id="toc-vector-scaling-and-unit-effects" class="nav-link" data-scroll-target="#vector-scaling-and-unit-effects">Vector scaling and unit effects</a></li>
   <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  <li><a href="#source-code" id="toc-source-code" class="nav-link" data-scroll-target="#source-code">Source Code</a></li>
   <li><a href="#see-also" id="toc-see-also" class="nav-link" data-scroll-target="#see-also">See Also</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">quiver</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="quiver" class="level1">
-<h1>quiver</h1>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">quiver</span>(compx, compy; kwargs<span class="op">...</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>or </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">quiver</span>(X, Y, U, V; kwargs<span class="op">...</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -516,12 +529,20 @@ The theta grid provided contains azimuths rather than directions (implies <code>
 <h2 class="anchored" data-anchor-id="notes">Notes</h2>
 <p>Be aware that using <strong>inc</strong> may lead to aliasing unless your grid is smoothly varying over the new length increments. It is generally better to filter your grids and resample at a larger grid increment and use these grids instead of the originals.</p>
 </section>
+<section id="source-code" class="level2">
+<h2 class="anchored" data-anchor-id="source-code">Source Code</h2>
+<p>This function has multiple methods:</p>
+<ul>
+<li><a href="https://github.com/GenericMappingTools/GMT.jl/blob/master/src/grdvector.jl#L186"><code>grdvector(arg1::Matrix{&lt;:Real}, arg2::Matrix{&lt;:Real}; kw...)</code></a> - grdvector.jl:186</li>
+<li><a href="https://github.com/GenericMappingTools/GMT.jl/blob/master/src/grdvector.jl#L58"><code>grdvector(arg1, arg2; first, kwargs...)</code></a> - grdvector.jl:58</li>
+<li><a href="https://github.com/GenericMappingTools/GMT.jl/blob/master/src/grdvector.jl#L188"><code>grdvector(arg1::Matrix{&lt;:Real}, arg2::Matrix{&lt;:Real}, arg3::Matrix{&lt;:Real}, arg4::Matrix{&lt;:Real}; kw...)</code></a> - grdvector.jl:188</li>
+</ul>
+</section>
 <section id="see-also" class="level2">
 <h2 class="anchored" data-anchor-id="see-also">See Also</h2>
 <p>, </p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -756,7 +777,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/joa-quim\.github\.io\/GMTjl_docs\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
