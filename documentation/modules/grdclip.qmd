@@ -70,7 +70,9 @@ using GMT
 GMT.doc_source_links("grdclip")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdfill >}},
 {{< gmtref grdlandmask >}},

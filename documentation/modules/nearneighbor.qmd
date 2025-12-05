@@ -154,7 +154,9 @@ using GMT
 GMT.doc_source_links("nearneighbor")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref blockmean >}},
 {{< gmtref blockmedian >}},

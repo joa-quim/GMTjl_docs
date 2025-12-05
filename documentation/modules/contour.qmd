@@ -183,7 +183,9 @@ using GMT
 GMT.doc_source_links("contour")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdcontour >}},
 {{< gmtref grdimage >}},

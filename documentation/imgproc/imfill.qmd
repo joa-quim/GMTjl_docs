@@ -51,6 +51,8 @@ using GMT
 GMT.doc_source_links("imfill")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref fillsinks >}}, {{< gmtref binarize >}}

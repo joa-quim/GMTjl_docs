@@ -169,7 +169,9 @@ using GMT
 GMT.doc_source_links("filter1d")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref sample1d >}},
 {{< gmtref gmtsplit >}}

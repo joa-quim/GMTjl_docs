@@ -46,6 +46,8 @@ using GMT
 GMT.doc_source_links("imrankfilter")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref imdilate >}}, {{< gmtref imerode >}}, {{< gmtref imopen >}}, {{< gmtref imclose >}}

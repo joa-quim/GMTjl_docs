@@ -200,7 +200,9 @@ using GMT
 GMT.doc_source_links("magref")
 ```
 
-\1
+See Also
+--------
+
 
 [mgd77track]
 

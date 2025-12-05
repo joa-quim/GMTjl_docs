@@ -137,6 +137,8 @@ using GMT
 GMT.doc_source_links("grdlandmask")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdclip >}}, {{< gmtref mask >}}, {{< gmtref clip >}}, {{< gmtref coast >}}

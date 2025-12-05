@@ -146,6 +146,8 @@ using GMT
 GMT.doc_source_links("grdinfo")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grd2cpt >}}, {{< gmtref grd2xyz >}}, {{< gmtref grdedit >}}

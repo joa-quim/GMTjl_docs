@@ -51,6 +51,8 @@ using GMT
 GMT.doc_source_links("triplot")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref sphtriangulate >}}, {{< gmtref triangulate >}}, {{< gmtref trisurf >}}, {{< gmtref plot >}}

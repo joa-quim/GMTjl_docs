@@ -34,6 +34,8 @@ using GMT
 GMT.doc_source_links("strel")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref imdilate >}}, {{< gmtref imerode >}}, {{< gmtref imclose >}}, {{< gmtref imopen >}}

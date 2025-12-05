@@ -159,7 +159,9 @@ using GMT
 GMT.doc_source_links("gravmag3d")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdgravmag3d >}}, {{< gmtref gravprisms >}}, talwani2d, talwani3d, {{< gmtref triangulate >}}
 

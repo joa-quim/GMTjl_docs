@@ -199,6 +199,8 @@ using GMT
 GMT.doc_source_links("rose")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref histogram >}}

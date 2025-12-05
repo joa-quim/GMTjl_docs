@@ -155,7 +155,9 @@ using GMT
 GMT.doc_source_links("trend2d")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdtrend >}}, {{< gmtref trend1d >}}
 

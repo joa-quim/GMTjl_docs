@@ -28,6 +28,8 @@ using GMT
 GMT.doc_source_links("imbothat")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref imdilate >}}, {{< gmtref imerode >}}, {{< gmtref imopen >}}, {{< gmtref imtophat >}}

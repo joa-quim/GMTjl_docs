@@ -131,7 +131,9 @@ using GMT
 GMT.doc_source_links("gmtconnect")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref gmtsimplify >}},
 {{< gmtref gmtspatial >}},

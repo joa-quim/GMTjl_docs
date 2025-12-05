@@ -45,6 +45,8 @@ using GMT
 GMT.doc_source_links("imhmin")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref imhdome >}}, {{< gmtref imhmax >}}

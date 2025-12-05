@@ -100,6 +100,8 @@ using GMT
 GMT.doc_source_links("grdtrend")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdfft >}}, {{< gmtref grdfilter >}}, {{< gmtref grdmath >}}

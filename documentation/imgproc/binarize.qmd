@@ -14,6 +14,7 @@ Ibw = binarize(I::GMTimage, threshold::Vector{Int}; band::Int=1, revert::Bool=fa
 Convert an image to a binary image (black-and-white) using a threshold.
 
 ### Args
+
 - `I::GMTimage`: input image of type UInt8.
 
 - `threshold`: A number in the range [0 255]. If the default (0) is kept and the keyword
@@ -25,6 +26,7 @@ Convert an image to a binary image (black-and-white) using a threshold.
    this second form, the `threshold` keyword does not exist.
 
 ### Kwargs
+
 - `band`: If the `I` image has more than one band, use `band` to specify which one to binarize.
    By default the first band is used.
 
@@ -36,12 +38,12 @@ Convert an image to a binary image (black-and-white) using a threshold.
 - `revert`: If `true`, values below the threshold are set to 255, and values >= the threshold are set to 0.
 
 ### Return
+
 A new {{< gmtref GMTimage type=gmttype >}}.
 
 
 Example
 -------
-
 
 ```{julia}
 using GMT
@@ -63,6 +65,6 @@ using GMT
 GMT.doc_source_links("binarize")
 ```
 
-\1
+## See Also
 
 {{< gmtref imcomplement >}}

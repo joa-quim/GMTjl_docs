@@ -159,7 +159,9 @@ using GMT
 GMT.doc_source_links("grd2kml")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref gmt2kml >}},
 {{< gmtref grdgradient >}},

@@ -118,6 +118,8 @@ using GMT
 GMT.doc_source_links("clip")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref basemap >}}

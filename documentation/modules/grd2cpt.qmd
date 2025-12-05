@@ -211,7 +211,9 @@ using GMT
 GMT.doc_source_links("grd2cpt")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdhisteq >}}, {{< gmtref grdinfo >}}, {{< gmtref makecpt >}}
 

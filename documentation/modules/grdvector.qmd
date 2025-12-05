@@ -218,6 +218,8 @@ using GMT
 GMT.doc_source_links("grdvector")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdcontour >}}, {{< gmtref plot >}}

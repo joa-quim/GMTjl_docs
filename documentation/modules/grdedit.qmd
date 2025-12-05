@@ -139,7 +139,9 @@ using GMT
 GMT.doc_source_links("grdedit")
 ```
 
-\1
+See Also
+--------
+
 
 :doc:`grd2xyz`,
 :doc:`grdfill`,

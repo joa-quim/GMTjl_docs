@@ -186,7 +186,9 @@ using GMT
 GMT.doc_source_links("triangulate")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref greenspline >}},
 {{< gmtref nearneighbor >}},

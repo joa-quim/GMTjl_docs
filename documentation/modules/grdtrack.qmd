@@ -277,7 +277,9 @@ using GMT
 GMT.doc_source_links("grdtrack")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref gmtconvert >}},
 {{< gmtref text >}},

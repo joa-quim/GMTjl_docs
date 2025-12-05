@@ -104,6 +104,8 @@ using GMT
 GMT.doc_source_links("seismicity")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref plot >}}, {{< gmtref coast >}}, {{< gmtref legend >}}

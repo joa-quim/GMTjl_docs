@@ -230,7 +230,9 @@ using GMT
 GMT.doc_source_links("spectrum1d")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdfft >}}
 

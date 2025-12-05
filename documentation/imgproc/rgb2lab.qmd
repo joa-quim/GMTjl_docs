@@ -58,6 +58,8 @@ using GMT
 GMT.doc_source_links("rgb2lab")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref rgb2ycbcr >}}

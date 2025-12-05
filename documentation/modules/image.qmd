@@ -154,6 +154,8 @@ using GMT
 GMT.doc_source_links("image")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref legend >}}, {{< gmtref colorbar >}}, {{< gmtref plot >}}, [psconvert]

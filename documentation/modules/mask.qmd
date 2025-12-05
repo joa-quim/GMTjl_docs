@@ -196,6 +196,8 @@ using GMT
 GMT.doc_source_links("mask")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdmask >}}, {{< gmtref surface >}}, {{< gmtref basemap >}}, {{< gmtref clip >}}

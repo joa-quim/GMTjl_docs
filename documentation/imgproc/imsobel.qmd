@@ -48,6 +48,8 @@ using GMT
 GMT.doc_source_links("imsobel")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref imfill >}}, {{< gmtref bwskell >}}, {{< gmtref imerode >}}, {{< gmtref imfilter >}}

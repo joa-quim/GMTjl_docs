@@ -277,7 +277,9 @@ using GMT
 GMT.doc_source_links("makecpt")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grd2cpt >}}
 

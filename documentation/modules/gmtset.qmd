@@ -55,7 +55,9 @@ using GMT
 GMT.doc_source_links("gmtset")
 ```
 
-\1
+See Also
+--------
+
 
 [gmt.conf](https://docs.generic-mapping-tools.org/dev/gmt.conf.html),
 {{< gmtref gmtdefaults >}}, {{< gmtref gmtget >}}

@@ -49,6 +49,8 @@ using GMT
 GMT.doc_source_links("bwperim")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref imdilate >}}, {{< gmtref imerode >}}, {{< gmtref strel >}}

@@ -166,6 +166,8 @@ using GMT
 GMT.doc_source_links("grd2xyz")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdedit >}}, {{< gmtref grdconvert >}}, {{< gmtref xyz2grd >}}

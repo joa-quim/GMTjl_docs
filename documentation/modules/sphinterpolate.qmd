@@ -116,7 +116,9 @@ using GMT
 GMT.doc_source_links("sphinterpolate")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref greenspline >}},
 {{< gmtref nearneighbor >}},

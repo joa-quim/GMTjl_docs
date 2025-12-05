@@ -134,6 +134,8 @@ using GMT
 GMT.doc_source_links("windbarbs")
 ```
 
-\1
+See Also
+--------
+
 
 \myreflink{grdcontour}, \myreflink{grdvector}

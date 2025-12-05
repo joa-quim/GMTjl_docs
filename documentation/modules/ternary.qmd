@@ -142,6 +142,8 @@ using GMT
 GMT.doc_source_links("ternary")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref plot >}}

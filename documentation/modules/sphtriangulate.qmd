@@ -128,7 +128,9 @@ using GMT
 GMT.doc_source_links("sphtriangulate")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref triangulate >}}, {{< gmtref sphdistance >}}
 

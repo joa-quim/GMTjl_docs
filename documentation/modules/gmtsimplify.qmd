@@ -110,7 +110,9 @@ using GMT
 GMT.doc_source_links("gmtsimplify")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref gmtconnect >}},
 {{< gmtref gmtconvert >}},

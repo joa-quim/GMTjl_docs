@@ -132,7 +132,9 @@ using GMT
 GMT.doc_source_links("grdgravmag3d")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref gravmag3d >}}, {{< gmtref gravprism >}}, {{< gmtref talwani2d >}}, {{< gmtref talwani3d >}}
 

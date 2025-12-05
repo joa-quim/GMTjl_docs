@@ -269,6 +269,8 @@ using GMT
 GMT.doc_source_links("gravprisms")
 ```
 
-\1
+See Also
+--------
+
 
 [gravmag3d], {{< gmtref grdgravmag3d >}}, grdseamount, talwani2d, talwani3d

@@ -158,7 +158,9 @@ using GMT
 GMT.doc_source_links("wiggle")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref filter1d >}},
 [psbasemap],

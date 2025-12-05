@@ -111,6 +111,8 @@ using GMT
 GMT.doc_source_links("marginalhist")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref cornerplot >}}, {{< gmtref plot >}}, [binstats], {{< gmtref histogram >}}

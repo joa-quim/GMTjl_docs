@@ -98,7 +98,9 @@ using GMT
 GMT.doc_source_links("grdfill")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdcut >}},
 {{< gmtref grdclip >}},

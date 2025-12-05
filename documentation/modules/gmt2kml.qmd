@@ -288,6 +288,8 @@ using GMT
 GMT.doc_source_links("gmt2kml")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grd2kml >}}, [kml2gmt], [psconvert]

@@ -52,7 +52,9 @@ using GMT
 GMT.doc_source_links("grdpaste")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdblend >}},
 {{< gmtref grdclip >}},

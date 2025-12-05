@@ -230,7 +230,9 @@ using GMT
 GMT.doc_source_links("sample1d")
 ```
 
-\1
+See Also
+--------
+
 
 `gmt.conf`,
 {{< gmtref greenspline >}},

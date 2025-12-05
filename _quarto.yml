@@ -575,10 +575,10 @@ project:
     - examples/plotting_functions.qmd
     - examples/projections.qmd
 website:
+  favicon: assets/GMTjl_logo.png
   navbar:
     background: primary
     logo: assets/GMTjl_logo.png
-    favicon: assets/GMTjl_logo.png
     title: false
     collapse-below: lg
     right:

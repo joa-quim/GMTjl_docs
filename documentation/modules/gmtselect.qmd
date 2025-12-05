@@ -237,7 +237,9 @@ using GMT
 GMT.doc_source_links("gmtselect")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref gmtconvert >}},
 {{< gmtref gmtsimplify >}},

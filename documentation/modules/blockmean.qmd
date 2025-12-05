@@ -124,7 +124,9 @@ using GMT
 GMT.doc_source_links("blockmean")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref blockmedian >}}
 {{< gmtref blockmode >}}

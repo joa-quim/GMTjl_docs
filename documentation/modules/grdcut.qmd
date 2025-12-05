@@ -162,7 +162,9 @@ using GMT
 GMT.doc_source_links("grdcut")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdclip >}},
 {{< gmtref grdfill >}},

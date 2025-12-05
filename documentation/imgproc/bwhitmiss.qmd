@@ -49,6 +49,8 @@ using GMT
 GMT.doc_source_links("bwhitmiss")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref imdilate >}}, {{< gmtref imerode >}}

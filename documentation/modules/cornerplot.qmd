@@ -90,6 +90,8 @@ using GMT
 GMT.doc_source_links("cornerplot")
 ```
 
-\1
+See Also
+--------
+
 
 [binstats], {{< gmtref histogram >}}, {{< gmtref marginalhist >}}, {{< gmtref plot >}}

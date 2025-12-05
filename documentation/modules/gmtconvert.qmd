@@ -293,7 +293,9 @@ using GMT
 GMT.doc_source_links("gmtconvert")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref gmtinfo >}},
 {{< gmtref gmtselect >}}

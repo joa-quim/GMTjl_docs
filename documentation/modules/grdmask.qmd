@@ -160,7 +160,9 @@ using GMT
 GMT.doc_source_links("grdmask")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref grdlandmask >}},
 {{< gmtref grdclip >}},

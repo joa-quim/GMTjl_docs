@@ -128,6 +128,8 @@ using GMT
 GMT.doc_source_links("earthregions")
 ```
 
-\1
+See Also
+--------
+
 
 {{< gmtref coast >}}, {{< gmtref mosaic >}}
