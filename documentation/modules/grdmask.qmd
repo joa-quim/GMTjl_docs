@@ -29,14 +29,14 @@ Required Arguments
 - *table*\
     One or more data tables holding a number of data columns.
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 Optional Arguments
 ------------------
 
-{{< include ../common_opts/opt_Asteps.md >}}
+{{< include ../common_opts/opt_Asteps.qmd >}}
 
 - **C** or **clobber** : -- *clobber=:f|l|o|u*\
     Clobber mode: Selects the polygon whose *z*-value will determine the grid nodes. Choose from
@@ -45,7 +45,7 @@ Optional Arguments
     for the polygon with the uppermost *z*-value [Default is **o**]. **Note**: Does not apply to
     **search_radius**. For polygon *z*-values, see **out_edge_in**.
 
-{{< include ../common_opts/opt_-Grid.md >}}
+{{< include ../common_opts/opt_-Grid.qmd >}}
 
 - **N** or **out\_edge\_in** : -- *out\_edge\_in=values* **|** *out\_edge\_in="z|Z|p|Pvalues"*\
     Sets the *out/edge/in* that will be assigned to nodes that are *out*side the polygons,
@@ -71,39 +71,39 @@ Optional Arguments
     that only the cell where point lies is masked, **search_radius="1c"** masks one cell beyond
     that (i.e. makes a 3x3 neighborhood), and so on.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_a.md >}}
+{{< include ../common_opts/opt_a.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_g.md >}}
+{{< include ../common_opts/opt_g.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt__j.md >}}
+{{< include ../common_opts/opt__j.qmd >}}
 
-{{< include ../common_opts/opt_n.md >}}
+{{< include ../common_opts/opt_n.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt__r.md >}}
+{{< include ../common_opts/opt__r.qmd >}}
 
-{{< include ../common_opts/opt__w.md >}}
+{{< include ../common_opts/opt__w.qmd >}}
 
-{{< include ../common_opts/opt__x.md >}}
+{{< include ../common_opts/opt__x.qmd >}}
 
-{{< include ../common_opts/opt__distunits.md >}}
+{{< include ../common_opts/opt__distunits.qmd >}}
 
-{{< include ../common_opts/explain_inside.md >}}
+{{< include ../common_opts/explain_inside.qmd >}}
 
 Notes
 -----

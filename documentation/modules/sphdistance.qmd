@@ -18,9 +18,9 @@ Reads one or more data files (or standard input) containing lon, lat coordinates
 - **G** or **save** or **outgrid** or **outfile** : -- *outgrid=name*\
    Output grid file name. Note that this is optional and to be used only when saving the result directly on disk. Otherwise, just use the `G = sphdistance(...)` form.
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 ## Optional Arguments
 
@@ -45,25 +45,25 @@ Reads one or more data files (or standard input) containing lon, lat coordinates
 - **Q** or **voronoi** : -- *voronoi=file*\
    Append the name of a file with pre-calculated Voronoi polygons in the format written by {{< gmtref sphtriangulate >}}. This bypasses the memory- and time-consuming triangularization [Default performs Delaunay triangulation on input data to set up the Voronoi polygons].
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt_qi.md >}}
+{{< include ../common_opts/opt_qi.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt__j.md >}}
+{{< include ../common_opts/opt__j.qmd >}}
 
-{{< include ../common_opts/opt_r.md >}}
+{{< include ../common_opts/opt_r.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
 
 ## Notes

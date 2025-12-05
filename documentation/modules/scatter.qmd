@@ -19,13 +19,13 @@ There are no required arguments but
 Optional Arguments
 ------------------
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
-{{< include ../common_opts/opt_mfc.md >}}
+{{< include ../common_opts/opt_mfc.qmd >}}
 
 - **zcolor** or **markerz** or **mz** : -- *zcolor=xx* **|** *zcolor=true*\
    Take the vector `xx` (same size as number os points in data) and interpolate the current color scale to paint the
@@ -44,11 +44,11 @@ Optional Arguments
    selection allows also to specify a variable symbol size. All it's need for this is that the keyword's value
    be an array with the same number of elements as the number of data points. 
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 
 Examples

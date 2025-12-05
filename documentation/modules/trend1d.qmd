@@ -66,7 +66,7 @@ Optional Arguments
     between 0 and 1. See remarks section. Note that the model terms are added in the order they
     were given in **model** so you should place the most important terms first.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **weights** : -- *weights=true* **|** *weights="+s|+w"*\
     Weights are supplied in input column 4. Do a weighted least squares fit [or start with
@@ -74,29 +74,29 @@ Optional Arguments
     uncertainties (one sigma) and create weights as 1/sigma^2, or use the weights as read
     (**+w**) [Default reads only the first 2 columns].
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_bo.md >}}
+{{< include ../common_opts/opt_bo.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_g.md >}}
+{{< include ../common_opts/opt_g.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt_s.md >}}
+{{< include ../common_opts/opt_s.qmd >}}
 
-{{< include ../common_opts/opt__w.md >}}
+{{< include ../common_opts/opt__w.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
 Remarks
 -------

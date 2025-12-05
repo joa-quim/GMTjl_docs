@@ -190,7 +190,7 @@ G = grdfilter(grid, filter="g100", D=4, nans="p")
 G = grdfilter(grid, F="m600", D=4, N="r")
 ```
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 ### `region` or `R`
 Specify the output region (sub-region of input).

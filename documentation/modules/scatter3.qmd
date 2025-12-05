@@ -11,13 +11,13 @@ finer control, user should consult the `plot` module.
 Parameters
 ----------
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R_3D.md >}}
+{{< include ../common_opts/opt_R_3D.qmd >}}
 
-{{< include ../common_opts/opt_mfc.md >}}
+{{< include ../common_opts/opt_mfc.qmd >}}
 
 - **S** or **symbol** or **marker** or **Marker** or **shape** : --  Default is `cube` with size of 7 points
    - *symbol=symbol string*\
@@ -32,9 +32,9 @@ Parameters
    selection allows also to specify a variable symbol size. All it's need for this is that the keywrd's value
    be an array with the same number of elements as the number of data points. 
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------

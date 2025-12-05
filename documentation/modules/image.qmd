@@ -31,7 +31,7 @@ Required Arguments
 Optional Arguments
 ------------------
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **D** or **pos** or **position** : -- *pos=(map=true, inside=true, outside=true, norm=true, paper=true, anchor=XX, dpi=XX, width=XX, justify=code, repeat=n, offset=XX)*\
     Sets reference point on the map for the image using one of four coordinate systems:
@@ -55,7 +55,7 @@ Optional Arguments
     use **replicate=nx** or **replicate=(nx,ny)** to replicate the image *nx* times horizontally and
     *ny* times vertically. If *ny* is omitted, it will be identical to *nx* [Default is 1/1].
 
-{{< include ../common_opts/opt_box.md >}}
+{{< include ../common_opts/opt_box.qmd >}}
 
 - **G** or **bitcolor** or **bit_color** or **bit_bg|fg|alpha** : -- *bit_bg=color* **|** *bit_fg=color* **|** *bit_alpha=color* **|** *bitcolor=color[+b|+f|+t]* \
     Change certain pixel values to another color or make them transparent. For 1-bit images you can
@@ -69,25 +69,25 @@ Optional Arguments
    Invert 1-bit image before plotting. This is what is done when you use **G=:P** to invert patterns
    in other GMT plotting programs. Ignored if used with color images.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **M** or **monochrome** : -- *monochrome=true*\
     Convert color image to monochrome grayshades using the (television) YIQ-transformation.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 For perspective **view**, optionally append *zmin,zmax*.
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
 Notes
 -----

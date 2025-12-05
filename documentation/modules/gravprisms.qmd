@@ -39,9 +39,9 @@ Required Arguments
     Density contrasts can be given in $kg/m^3$ or $g/cm^3$. **Note**: If **prisms** is used then
     no *table* will be read.
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 Optional Arguments
 ------------------
@@ -81,7 +81,7 @@ Optional Arguments
     ``geoid`` (geoid; optionally append average latitude for normal gravity reference value [Default is
     mid-grid (or mid-profile if **track** is used)]) or ``vgrad`` (vertical gravity gradient).
 
-{{< include ../common_opts/opt_-Grid.md >}}
+{{< include ../common_opts/opt_-Grid.qmd >}}
 
 **H** or **radial_rho** : -- *radial_rho=(height=?, lowhigh=(rho_l, rho_h), boost=?, pressure_rho=?, power=?)*\
     Set reference seamount parameters for an *ad-hoc* variable radial density function with depth. Give
@@ -120,7 +120,7 @@ Optional Arguments
     Give name of the top surface grid for a layer we wish to approximate with prisms, or give a
     constant *z*-level.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 **-W** or **hvar_rho** or **avedens** : -- *hvar_rho=fname|grid*\
     Give name of an output grid with spatially varying, vertically-averaged prism densities created
@@ -131,27 +131,27 @@ Optional Arguments
     levels. If the latter is used then this grid determines the output grid region as well [0]. **Note**:
     the positive *z*-direction is up.
 
-{{< include ../common_opts/opt_bo.md >}}
+{{< include ../common_opts/opt_bo.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
    Geographic grids (dimensions of longitude, latitude) will be converted to
    meters via a "Flat Earth" approximation using the current ellipsoid parameters.
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
-{{< include ../common_opts/opt__r.md >}}
+{{< include ../common_opts/opt__r.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
-{{< include ../common_opts/opt__distunits.md >}}
+{{< include ../common_opts/opt__distunits.qmd >}}
 
 
 Examples

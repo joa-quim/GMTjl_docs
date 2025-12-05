@@ -69,9 +69,9 @@ Columns: lon, lat, depth, T_value, T_azim, T_plunge, N_value, N_azim, N_plunge, 
      When automatic depth range selection is in effect we consider the size of the symbols so that no
      symbol close to the depth limits will be clipped.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **convention** : *Convention-specific options*\
    Selects the input convention and symbol size. Choose from:
@@ -98,7 +98,7 @@ Columns: lon, lat, depth, T_value, T_azim, T_plunge, N_value, N_azim, N_plunge, 
 
 ## Optional Arguments
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **C** or **color** or **cmap** : -- *cmap=cpt*\
    Give a CPT to determine compressive quadrant fill based on depth (3rd column).
@@ -159,32 +159,32 @@ Columns: lon, lat, depth, T_value, T_azim, T_plunge, N_value, N_azim, N_plunge, 
    the nodal planes and the circumference. For non-double couple mechanisms, **nodal=0** option overlays
    best double couple transparently.
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **pen** : -- *pen=pen*\
    Set pen attributes for text string or default pen attributes for fault plane edges. [Default: 0.25p,black,solid].
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
 
 ## Data Column Order

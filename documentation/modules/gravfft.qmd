@@ -67,7 +67,7 @@ Optional Arguments
     - **east** = East deflections of the vertical (micro-radian).
     - **north** = North deflections of the vertical (micro-radian).
 
-{{< include ../common_opts/opt_save_grd.md >}}
+{{< include ../common_opts/opt_save_grd.qmd >}}
 
 - **I** or **admitt** : -- *admitt=(wavelengths=true, km=true, coherence=true, tadmitt=true, elastic=true)*\
     Use *ingrid2* and *ingrid1* (a grid with topography/bathymetry) to estimate admittance or
@@ -80,7 +80,7 @@ Optional Arguments
     **tadmitt** writes a fourth column with "loading from below" theoretical admittance, and
     **elastic** writes a fourth column with "elastic plate" theoretical admittance.
 
-{{< include ../common_opts/explain_fft.md >}}
+{{< include ../common_opts/explain_fft.qmd >}}
 
 - **Q** or **flex_topo** : -- *flex_topo=true*\
     Return/saves out a grid with the flexural topography (with z positive up) whose average depth was set
@@ -110,9 +110,9 @@ Optional Arguments
     Moho [and swell] average compensation depths (in meters positive down – the depth). For the "load from
     top" model you only have to provide `zm`, but for the "loading from below" don't forget to supply also `zl`.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
 Grid Distance Units
 -------------------

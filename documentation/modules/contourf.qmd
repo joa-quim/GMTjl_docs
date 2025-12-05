@@ -43,7 +43,7 @@ Optional Arguments
    [Default is no annotations]. Use *annot=(disable=true,)* to disable all annotations implied by **cont**.
    Alternatively do *annot=(single=true, int=val)* to plot *val* as a single contour. The optional *labelinfo* controls the specifics of the label formatting and consists of a named tuple with the following control arguments [Label formatting]
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **C** or **cont** or **contour** or **contours** or **levels** : -- *cont=cont\_int*\
    The contours to be drawn may be specified in one of two possible ways:
@@ -72,7 +72,7 @@ Optional Arguments
    The required argument controls the placement of labels along the quoted lines. Choose among five
    controlling algorithms as explained in [Label formatting]
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **Q** or **cut** : -- *cut=np* **|** *cut=length&unit[+z]*\
    Do not draw contours with less than *np* number of points [Draw all contours]. Alternatively, give
@@ -80,7 +80,7 @@ Optional Arguments
    coordinates) or **C** for plot length units in current plot units after projecting the coordinates.
    Optionally, append **+z** to exclude the zero contour.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **smooth** : -- *smooth=smoothfactor*\
    Resample the contour lines at roughly every (*gridbox\_size/smoothfactor*) interval.
@@ -107,9 +107,9 @@ Optional Arguments
    given direction. The *azimuth* (in degrees) gives the illumination direction (default is 315 degrees,
    i.e., NW). Tanaka contours are a bit slow to compute so avoid using this option with large grids.
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **pen** : -- *pen=(annot=true, contour=true, pen=pen, colored=true, cline=true, ctext=true)*\
    ``annot=true`` if present, means to annotate contours or ``contour=true`` for regular contours [Default].
@@ -118,15 +118,15 @@ Optional Arguments
    the pen setting. This option may be repeated, for example to separate contour and annotated contours settings.
    For that the syntax changes to use a Tuple of NamedTuples, *e.g.*  ``pen=((annot=true, contour=true, pen=pen), (annot=true, contour=true, pen=pen))``. If the modifier ``pen=(cline=true,)`` is used then the color of the contour lines are taken from the CPT (see **cont**). If instead ``pen=(ctext=true,)`` is appended then the color from the cpt file is applied to the contour annotations. Select ``pen=(colored=true,)`` for both effects.
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------

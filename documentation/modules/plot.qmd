@@ -27,9 +27,9 @@ Selecting both a **symbol** and a **pen** plots a line and add the sybols at the
 Parameters
 ----------
 
-{{< include ../common_opts/opt_Asteps.md >}}
+{{< include ../common_opts/opt_Asteps.qmd >}}
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **bg** or **background** : -- *bg=imagename* **|** *bg=funname|img|grd* **|** *bg=(..., colormap)*\
    Fills the plotting canvas with a backround image. That image may come from a file (*e.g.* **bg="cute.png"**) or
@@ -75,15 +75,15 @@ Parameters
     - **segments=true** : Segment headers are honored so each segment is a group; the group reference point is reset to the first point of each incoming segment [Default].
     - **segments_reset=true** : Same as **segments=true**, but the group reference point is reset after each record to the previous point (this method is only available with the **refpoint=true** scheme). Instead of the codes **ignore_hdr**, **single_group**, **segments**, **segments_reset** you may append the coordinates of a **anchor=(x,y)** which will serve as a fixed external reference point for all groups.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **Jz** or **JZ** or **zscale** or **zsize** (*for* **plot3d** *only*) : -- *zscale=scale* **|** *zsize=size*\
    Set z-axis scaling or or z-axis size. `zsize=size` sets the size to the fixed value *size*
    (for example *zsize=10* or *zsize=4i*). `zscale=scale` sets the vertical scale to UNIT/z-unit.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
-{{< include ../common_opts/opt_mfc.md >}}
+{{< include ../common_opts/opt_mfc.qmd >}}
 
 - **hexbin** : -- *hexbin=true*\
    Make a 2D hexagonal binning plot of points _xy_ that have been processed by `binstats(xy, tiling=:hex, stats=...)`.
@@ -222,13 +222,13 @@ Parameters
    Take the vector `xx` (same size as number os points in data) and interpolate the current color scale to paint the
    symbols based on that colr scale. The form `zcolor=true` is equivant to *zcolor=1:npoints*
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
 - **Z** or **level** : *level=vec* **|** *level=(data=vec, outline=true, nofill=true)* **|** *level="att=???"*\
    Instead of specifying a symbol or polygon fill and outline color via **markercolor** and **pen**, give both a value
@@ -241,7 +241,7 @@ Parameters
    outlines with default color (black). This option is particularly useful to make choropleth maps. Note, options
    **fill** and **pen** may overlap with this option.
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Units
 -----
@@ -254,10 +254,24 @@ Examples
 Decorated curve with blue stars
 
 ```{julia}
+using GMT
+
 xy = gmt("gmtmath -T0/180/1 T SIND 4.5 ADD");
 lines(xy, axes=:af, pen=(1,:red), decorated=(dist=(2.5,0.25), symbol=:star,
-      symbsize=1, pen=(0.5,:green), fill=:blue, dec2=true), show=true)
+      ms=1, pen=(0.5,:green), fill=:blue, dec2=true), show=true)
 ```
+
+### Other examples using `plot` (and its _avatars_)
+
+::: {.grid}
+::: {.g-col-6 .g-col-md-4 .g-col-lg-2}
+::: {.card .h-100}
+[**Plot Examples**](/examples/plotting_functions/index.html){.card-title .stretched-link}
+[![](/examples/symbols.png){.card-img-top}](/examples/plotting_functions/index.html)
+:::
+:::
+:::
+
 ```{julia}
 #| echo: false
 #| output: asis

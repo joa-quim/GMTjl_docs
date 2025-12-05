@@ -50,7 +50,7 @@ Optional Arguments
 - **I** or **shade** : -- *shade=true* **|** *shade=max\_intens* **|** *shade=(low\_i,high\_i)*\
     Add illumination effects. Optionally, set the range of intensities from - to **shade=max\_intens**. If not specified, 1 is used. Alternatively, use **shade=(low,high)** intensities to specify an asymmetric range [Default is no illumination].
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **L** or **equal** or **equal\_size** : -- *equal=true* **|** *equal=(range=true, gap=val)*\
     Gives equal-sized color rectangles. Default scales rectangles according to the z-range in the CPT (Also see **zfile**). If set, any equal interval annotation set with **frame** will be ignored. If **equal=(gap=val,)** is appended and the CPT is discrete we will center each annotation on each rectangle, using the lower boundary z-value for the annotation. If **equal=(range=true,)** is prepended we annotate the interval range instead. If **shade** is used then each rectangle will have its constant color modified by the specified intensity.
@@ -64,26 +64,26 @@ Optional Arguments
 - **Q** or **log** : -- *log=true*\
     Select logarithmic scale and power of ten annotations. All z-values in the CPT will be converted to p = log10(z) and only integer p values will be annotated using the 10^p format [Default is linear scale].
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **nolines** or **appearance** : -- *nolines=true*\
     Do not separate different color intervals with black grid lines.
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **scale** : -- *scale=true*\
     Multiply all *z*-values in the CPT by the provided *scale*. By default the CPT is used as is.
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
 - **Z** or **zfile** : *zfile="file"*\
     File with colorbar-width per color entry. By default, width of entry is scaled to color range, i.e., z = 0-100 gives twice the width as z = 100-150 (Also see **equal**).
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------

@@ -37,13 +37,13 @@ Required Arguments (1st method)
 - *table*\
     One or more data tables holding a number of data columns.
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
-{{< include ../common_opts/opt_R_3D.md >}}
+{{< include ../common_opts/opt_R_3D.qmd >}}
 
 Required Arguments (2nd method)
 -------------------------------
@@ -55,7 +55,7 @@ Required Arguments (2nd method)
 Optional Arguments
 ------------------
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **C** or **endclip** or **end_clip_path** : -- *endclip=true*\
     Mark end of existing clip path. No input file is needed. Also supply **xshift** and **yshift**
@@ -103,39 +103,39 @@ Optional Arguments
 - `touches`: For the grid/image method, include all cells/pixels that are touched by the polygons. The default is
   to include only the cells whose centers that are inside the polygons.
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt__r.md >}}
+{{< include ../common_opts/opt__r.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
-{{< include ../common_opts/opt__w.md >}}
+{{< include ../common_opts/opt__w.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
-{{< include ../common_opts/opt__distunits.md >}}
+{{< include ../common_opts/opt__distunits.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------

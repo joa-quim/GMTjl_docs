@@ -29,11 +29,11 @@ For syntax compatibility with other Julia plotting packages `vband` and `hband` 
 Parameters
 ----------
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **fill** or **color**\
    Select color or pattern for filling of symbols [Default is *lightblue*]. It can take the form of a string,
@@ -51,7 +51,7 @@ Parameters
    given in this option. This means that the number of bands and of transparencies may be different.
 
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------

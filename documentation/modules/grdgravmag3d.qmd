@@ -63,7 +63,7 @@ Optional Arguments
     can no longer be assumed to be constant we can set variable inclinations and declinations via IGRF.
     Set any of **mag_params="+i|+n"** to do that.
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
 - **L** or **level** or **reference_level** : -- *z_obs=0*\
     Sets level of observation [Default = 0]. That is the height (z) at which anomalies are computed.
@@ -76,14 +76,14 @@ Optional Arguments
 
       - *pad="west/east/south/north"* Same syntax as **region**.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **radius** : -- *radius=30*\
     Set search radius in km (valid only in the two grids mode OR when **thickness**) [Default = 30 km].
     This option serves to speed up the computation by not computing the effect of prisms that
     are further away than *radius* from the current node.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **Z** or **level** or **reference_level** : -- *level="b|t"* **|** *level=(bottom=true | top=true)*\
     level of reference plane [Default = 0]. Use this option when the triangles describe a non-closed
@@ -91,9 +91,9 @@ Optional Arguments
     the water depth to compute a Bouguer anomaly. Use **level=:b** or **level=:t** to close the body
     at its bottom (for example, to compute the effect of a dome) or at its top (to compute the effect of a *spoon*).
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt__x.md >}}
+{{< include ../common_opts/opt__x.qmd >}}
 
 Grid Distance Units
 -------------------

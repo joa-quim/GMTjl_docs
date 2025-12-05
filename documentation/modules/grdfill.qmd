@@ -31,23 +31,23 @@ Optional Arguments
     where (*n,m*) are the node dimensions of the grid]), or
     **s** for bicubic spline (optionally append a *tension* parameter [no tension]).
 
-{{< include ../common_opts/opt_save_grd.md >}}
+{{< include ../common_opts/opt_save_grd.qmd >}}
 
 - **N** or **nodata** or **hole** : -- *nodata=true* **|** *nodata=value*\
     Sets the node value used to identify a point as a member of a hole [Default is NaN].
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **L** or **list** : -- *list=true* **|** *list=:p*\
     Just list the rectangular subregions west east south north of each hole.
     No grid fill takes place. Optionally, use **list=:p**
     to instead write closed polygons for all subregions.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/explain_grd_coord.md >}}
+{{< include ../common_opts/explain_grd_coord.qmd >}}
 
 Examples
 --------

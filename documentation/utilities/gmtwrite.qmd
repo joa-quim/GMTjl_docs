@@ -36,13 +36,13 @@ Parameters
 - `datatype`: When saving with GDAL we can specify the data type from "u8|u16|i16|u32|i32|float32" where ‘i’ and ‘u’ denote
   signed and unsigned integers respectively.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_bo.md >}}
+{{< include ../common_opts/opt_bo.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
 Examples
 --------

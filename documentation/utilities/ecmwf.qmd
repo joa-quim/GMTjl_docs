@@ -122,7 +122,7 @@ Download forecast data
    variables as separate files. The names of those files are the same as the variable names with the .grib2 extension.
    NOTE: Not specifying a variable will download the entire forecast grib file for each forecast step selected with the `step` option.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - `root`: The root URL of the CDS ERA5 dataset. Default is "https://data.ecmwf.int/forecasts".
 

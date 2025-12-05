@@ -34,7 +34,7 @@ Required Arguments
 - *table*\
     One or more data tables holding a number of data columns.
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
 Optional Arguments
 ------------------
@@ -53,7 +53,7 @@ Optional Arguments
     This is the final convergence limit at the desired grid spacing; for intermediate
     (coarser) grids the effective convergence limit is divided by the grid spacing multiplier.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
     Select the data map projection. This projection is only used to add a referencing info
     to the grid formats that support it. E.g., netCDF, GeoTIFF, and others supported by GDAL.
 
@@ -65,7 +65,7 @@ Optional Arguments
     *z*-values or you wish to override those with a constant z-value, then append
     **+z**level to the filename. If no value is given then we default to 0.
 
-{{< include ../common_opts/opt_-Grid.md >}}
+{{< include ../common_opts/opt_-Grid.qmd >}}
 
 - **Ll** or **lower** and **Lu** or **upper** : -- *lower=??* **|** *upper=??*\
     Impose limits on the output solution. **??** in **lower=??** sets the lower bound. It can
@@ -116,7 +116,7 @@ Optional Arguments
     **tension=b...** to set boundary tension. If you do not prepend **i** or **b**, both will
     be set to the same value. [Default = 0 for both gives minimum curvature solution.]
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **log** : -- *log=true* **|** *log=logfile*\
     Write convergence information to *logfile* [Default is *surface_log.txt*].
@@ -135,31 +135,31 @@ Optional Arguments
     in each cell as strongly advised. `preproc=true` will use ``blockmean``. To use any of the other two,
     pass its name as value. *e.g.* `preproc="blockmedian"`.
 
-{{< include ../common_opts/opt_a.md >}}
+{{< include ../common_opts/opt_a.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_g.md >}}
+{{< include ../common_opts/opt_g.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt__r.md >}}
+{{< include ../common_opts/opt__r.qmd >}}
 
-{{< include ../common_opts/opt__w.md >}}
+{{< include ../common_opts/opt__w.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
-{{< include ../common_opts/opt__distunits.md >}}
+{{< include ../common_opts/opt__distunits.qmd >}}
 
 
 Examples

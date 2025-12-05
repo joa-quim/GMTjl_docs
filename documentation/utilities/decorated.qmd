@@ -27,7 +27,7 @@ decorated=(dist="5c", symbol=:circle, size="0.3c", dec2=true)
 
 For complete documentation including all placement methods and formatting options, see [Line decorations](../common_features/decorated.html).
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 ```{julia}
 #| echo: false

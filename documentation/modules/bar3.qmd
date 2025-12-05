@@ -18,13 +18,13 @@ controlling parameters are listed here. For a finer control, user should consult
 Parameters
 ----------
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R_3D.md >}}
+{{< include ../common_opts/opt_R_3D.qmd >}}
 
-{{< include ../common_opts/opt_mfc.md >}}
+{{< include ../common_opts/opt_mfc.qmd >}}
 
 - **bar**\
    column (3-D) extending from base to *z*. By default, base is 0 and the bar widths are 0.85 of the width in
@@ -57,9 +57,9 @@ Parameters
    or
      - *bar=(width=xx,unit=xx,base=xx,height=xx,nbands=xx)*  (or *Nbands=xx* for last element)
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------

@@ -23,9 +23,9 @@ Required Arguments
     A data table holding *z* or *x, y, z* values. The *x, y, z* triplets do not have to
     be sorted. One-column *z* tables must be sorted and the **flags** option must be set.
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 Optional Arguments
 ------------------
@@ -45,13 +45,13 @@ Optional Arguments
     netCDF grids. Remember also that PROJ syntax can be used directly in **proj**. This referencing will be
     recognized by GDAL and increasingly also by GMT.
 
-{{< include ../common_opts/opt_-Grid.md >}}
+{{< include ../common_opts/opt_-Grid.qmd >}}
 
 - **S** or **swap** : -- *swap=true* **|** *swap=zfile*\
     Swap the byte-order of the *z* table input only. No grid is produced. You
     must also supply the **flags** option. The output is return to Julia or written to *zfile*
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **Z** or **flags** : -- *flags=flags*\
     Read a 1-column table. This assumes that all the nodes are present and sorted according to specified ordering
@@ -83,28 +83,28 @@ Optional Arguments
     to have a single value, while the former can handle multiple values per record but can only parse regular
     floating point values. Translate incoming *z*-values via the **-i**0 option and needed modifiers.
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 [Default is 3 input columns]. This option only applies to *x, y, z* input files; see **flags** for *z* tables.
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt__r.md >}}
+{{< include ../common_opts/opt__r.qmd >}}
 
-{{< include ../common_opts/opt__w.md >}}
+{{< include ../common_opts/opt__w.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
-{{< include ../common_opts/explain_grd_coord.md >}}
+{{< include ../common_opts/explain_grd_coord.qmd >}}
 
 Swapping Limitations
 --------------------

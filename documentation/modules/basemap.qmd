@@ -14,9 +14,9 @@ and the user may specify separate tick-mark intervals for boundary annotation, t
 gridlines. A simple map scale (**map_scale**) or directional rose (**rose**) may also be plotted.
 At least one of the options [frame], **map_scale**, or **rose** must be specified.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **A** or **polygon** : *polygon=true* or *polygon=fname*\
     No plotting is performed. Instead, we determine the geographical coordinates of the polygon outline
@@ -25,29 +25,29 @@ At least one of the options [frame], **map_scale**, or **rose** must be specifie
     parameter. The coordinates are return in a {{< gmtref GMTdataset type=gmttype >}} or written to *fname* if a file
     name is specified.
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
-{{< include ../common_opts/opt_box.md >}}
+{{< include ../common_opts/opt_box.qmd >}}
 
-{{< include ../common_opts/opt_map_scale.md >}}
+{{< include ../common_opts/opt_map_scale.qmd >}}
 
-{{< include ../common_opts/opt_rose.md >}}
+{{< include ../common_opts/opt_rose.qmd >}}
 
-{{< include ../common_opts/opt_compass.md >}}
+{{< include ../common_opts/opt_compass.qmd >}}
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
 Examples
 --------

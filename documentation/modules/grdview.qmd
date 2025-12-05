@@ -19,7 +19,7 @@ The **region** option can be used to select a map region larger or smaller than 
 Required Arguments
 ------------------
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **Jz** or **JZ** or *zscale* or *zsize* : *zscale=scale* **|** *zsize=size*\
    Set z-axis scaling or or z-axis size. ``zsize=size`` sets the size to the fixed value *size*
@@ -28,7 +28,7 @@ Required Arguments
 Optional Arguments
 ------------------
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **C** or **color** or **cmap** : -- *color=cpt*\
    Where *cpt* is a *{{< gmtref GMTcpt type=gmttype >}}* type or a cpt file name. Alternatively, supply the name of a GMT color master
@@ -95,7 +95,7 @@ Optional Arguments
 
   - Specify ``nan\_alpha=true``, same as ``image=true`` but will make nodes with ``z = NaN`` transparent, using the colormasking feature in PostScript Level 3.
 
-{{< include ../common_opts/opt_R_3D.md >}}
+{{< include ../common_opts/opt_R_3D.qmd >}}
 
 - **S** or **smooth** : -- *smooth=smoothfactor*\
    Used to resample the contour lines at roughly every (*gridbox\_size/smoothfactor*) interval.
@@ -107,9 +107,9 @@ Optional Arguments
    to draw the tile outlines. If the default pen is not to your liking, use ``outlines=pen``
    (see [Pen attributes]). As this option produces a flat surface it cannot be combined with -JZ or -Jz.
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **pen** or **pens**\
   
@@ -123,17 +123,17 @@ Optional Arguments
   - **pens=(facade=true, pen)**\
      Sets the pen attributes used for the facade. [Default: width = 0.25p, color = black, style = solid]. You must also select **plane** for the facade outline to be drawn.
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_n.md >}}
+{{< include ../common_opts/opt_n.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------

@@ -61,12 +61,12 @@ Optional Arguments
     - Append **Roman=true** for uppercase Roman numerals [Arabic numerals].
     - Append **vertical=true** to increase tag numbers vertically down columns [horizontally across rows].
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **C** or **clearance** : -- *clearance=val* **|** *clearance=(left=val, right=val, bott=val, bottom=val, top=val))*\
     Reserve a space of dimension *val* between the margin and the subplot on the specified side, using *side* values from **left=val**, **right=val**, **bottom=val**, or **top=val**. No *side* means all sides. Can specify more than one side. Such space will be left untouched by the main map plotting but can be accessed by modules that plot scales, bars, text, etc. Settings specified under **begin** directive apply to all subplots, while settings under **set** only apply to the selected (active) subplot. **Note**: Common options **xshift** and **yshift** are not available during subplots; use **clearance** instead.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **M** or **margins** : -- *margins=val*\
     This is margin space that is added *between* neighboring subplots (i.e., the interior margins) *in addition*
@@ -77,7 +77,7 @@ Optional Arguments
     the margins for the two opposing sides (e.g., east plus west or south plus north margins) [Default is
     half the primary annotation font size, giving the full annotation font size as the default gap].
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **SC** or **col_axes** or **colaxes** or **sharex** : -- *col\_axes=(top="", bott="", bottom="", label="", grid=pen))*\
 - **SR** or **row_axes** or **rowaxes** or **sharey** : -- *row\_axes=(left="", right="", label="", parallel="", row\_title="t", top\_row\_title="", grid=pen))*\
@@ -145,11 +145,11 @@ Synopsis (end mode)
 This command finalizes the current subplot, including any placement of tags, and updates the gmt.history to reflect the dimensions and linear projection required to draw the entire figure outline. This allows subsequent commands, such as colorbar, to use **pos=...** to place bars with
 reference to the complete figure dimensions. We also reset the current plot location to where it was prior to the subplot. The keyword **:end** just finishes the plot silently whislst with **:show** the plot is displayed automatically.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
 Examples
 --------

@@ -9,4 +9,4 @@
         A two elements tuple with azimuth and elevation
      - *view=true*\
         To propagate the viewpoint used in a previous module (makes sense only in ``bar3!``)
-   More at \[perspective](../common_opts/opt_p.html)
+   More at [perspective](../common_opts/opt_p.qmd)

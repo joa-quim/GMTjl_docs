@@ -29,11 +29,11 @@ Required Arguments
 Optional Arguments
 ------------------
 
-{{< include ../common_opts/opt_-Grid.md >}}
+{{< include ../common_opts/opt_-Grid.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
 Examples
 --------

@@ -32,7 +32,7 @@ Parameters
     the z-value in the fourth column. Additional fields are shifted over by one column (optional size
     would be 5th rather than 4th field, etc.).
 
-{{< include ../common_opts/opt_mfc.md >}}
+{{< include ../common_opts/opt_mfc.qmd >}}
 
 - **J** or **proj** or **projection** : -- *proj=width*\
     The only valid projection is linear plot with specified ternary width.
@@ -53,7 +53,7 @@ Parameters
     Do NOT clip symbols that fall outside map border [Default plots points
     whose coordinates are strictly inside the map border only].
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **marker** or **symbol** : -- *symbol=(symb=name, size=val, unit=unity)* or *marker|Marker|shape=name*, *markersize|MarkerSize|ms|size=val*\
     Plot individual symbols in a ternary diagram. If **marker** is not given then we will instead
@@ -82,39 +82,39 @@ Other than the above options, the `kwargs` input accepts still the following opt
     Set it to `true` to indicate that positive axes directions be clock-wise
     [Default lets the a, b, c axes be positive in a counter-clockwise direction].
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_pen.md >}}
+{{< include ../common_opts/opt_pen.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_g.md >}}
+{{< include ../common_opts/opt_g.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt_s.md >}}
+{{< include ../common_opts/opt_s.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
 Examples
 --------

@@ -23,9 +23,9 @@ Optional Arguments
   [Default is no annotations]. Use *annot=(disable=true,)* to disable all annotations implied by **cont**.
   Alternatively do *annot=(single=true, int=val)* to plot *val* as a single contour. The optional *labelinfo* controls the specifics of the label formatting and consists of a named tuple with the following control arguments [Label formatting]
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
-{{< include ../common_opts/explain_Ccontours.md >}}
+{{< include ../common_opts/explain_Ccontours.qmd >}}
 
 - **D** or **dump** : -- *dump=fname*\
   Dump contours as data line segments; no plotting takes place. Append filename template which may contain
@@ -45,7 +45,7 @@ Optional Arguments
   The required argument controls the placement of labels along the quoted lines. Choose among five
   controlling algorithms as explained in [Placement methods]
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **L** or *range* : *-- range=(low,high)* **|** *range=:n|:p|:N|:P*\
   Limit range: Do not draw contours for data values below *low* or above *high*.  Alternatively,
@@ -63,7 +63,7 @@ Optional Arguments
   coordinates) or **C** for plot length units in current plot units after projecting the coordinates.
   Optionally, append **+z** to exclude the zero contour.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **smooth** : -- *smooth=smoothfactor*\
   Used to resample the contour lines at roughly every (*gridbox\_size/smoothfactor*) interval.
@@ -93,17 +93,17 @@ Optional Arguments
   (Numbers in **annot**, **cont**, **range** refer to values after this scaling has occurred.) Use ``periodic=true``
   to indicate that this grid file contains z-values that are periodic in 360 degrees (e.g., phase data, angular distributions) and that special precautions must be taken when determining 0-contours.
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_pen.md >}}
+{{< include ../common_opts/opt_pen.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------

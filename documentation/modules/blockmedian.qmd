@@ -22,9 +22,9 @@ Required Arguments
     3 (or 4, see **weights**) column data table file (or binary, see **binary_in**) holding (*x,y,z[,w]*)
     data values, where [ *w*] is an optional weight for the data.
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 Optional Arguments
 ------------------
@@ -54,7 +54,7 @@ Optional Arguments
     option names can not be repeated (not yet imlemented).
     For `extend=:s` we expect input records of the form *x,y,z[,w],sid*, where *sid* is an unsigned integer source id.
 
-{{< include ../common_opts/opt_save_grd.md >}}
+{{< include ../common_opts/opt_save_grd.qmd >}}
 
 - **Q** or **quick** : -- *quick=true*\
     (Quicker) Finds median z and (x,y) at that the median z [Default finds median x, median y independent of z].
@@ -63,7 +63,7 @@ Optional Arguments
 - **T** or **quantile** : -- *quantile=val*\
     Sets the quantile of the distribution to be returned [Default is 0.5 which returns the median z]. Here, 0 < val < 1.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **weights** : -- *weights=:i* **|** *weights=:o* **|** *weights="i+s"* **|** *weights="i|o+s|+w"*\
     Weighted modifier[s]. Unweighted input and output have 3 columns *x,y,z*; Weighted i/o has 4 columns *x,y,z,w*.
@@ -73,29 +73,29 @@ Optional Arguments
     actually uncertainties (one sigma) then append the string **+s** (as in **weights="i+s"**) and we compute
     weight = 1/sigma. Otherwise (or via **+w**) we use the weights directly.
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_bo.md >}}
+{{< include ../common_opts/opt_bo.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt__r.md >}}
+{{< include ../common_opts/opt__r.qmd >}}
 
-{{< include ../common_opts/opt__w.md >}}
+{{< include ../common_opts/opt__w.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
 
 Examples

@@ -38,9 +38,9 @@ Optional Arguments
     The grid files contain polar (r, theta) components instead of Cartesian (x, y) [Default is Cartesian components].
     This option is valid only when the input files are 2-D grids.
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
-{{< include ../common_opts/use_cpt_grd.md >}}
+{{< include ../common_opts/use_cpt_grd.qmd >}}
 
 - **G** or **fill** : -- *fill=fill*\
     Sets color or shade for wind barb interiors (see {{< gmtref "Fill color/pattern" >}}) [Default is no fill].
@@ -52,7 +52,7 @@ Optional Arguments
     10 nodes in *x* and 5 nodes in *y*. **_NOTE_**: by default we estimate good values so that the arrows do no
     overlap so you may start by jumping this option unless some fine control is desired.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **N** or **noclip** or **no\_clip** : *noclip=true*\
     Do NOT clip wind barbs at map boundaries [Default will clip].
@@ -72,7 +72,7 @@ Optional Arguments
     - **speed** - Set the wind speed which corresponds to a long barb [default 5].
     - **width** - Set the *width* of wind barbs.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **T** or **sign_scale** : -- *sign_scale=true*\
     Means the azimuths of Cartesian data sets should be adjusted according to the
@@ -80,25 +80,25 @@ Optional Arguments
     be used to convert vector azimuths in cases when a negative scale is used in
     one of both directions (e.g., positive down).
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_pen.md >}}
+{{< include ../common_opts/opt_pen.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
 - **Z** or **azimuth** : -- *azimuth=true*\
     The theta grid provided contains azimuths rather than directions (implies `polar=true`).
     This option is valid only when the input files are 2-D grids.
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
 Examples
 --------

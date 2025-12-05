@@ -27,7 +27,7 @@ A **{{< gmtref GMTgrid type=gmttype >}}** or a grid file name of a 2-D gridded d
 - **L** or **base_level** or **baselevel** : -- *base_level=val*\
    Also compute the area, volume and mean height from *base* up to the contour. If no **cont** is given then we compute the area and volume below the surface and above *base* [Default base is contour].
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **unit** : -- *unit=:letter*\
    For geographical grids, append a unit from **e|f|k|M|n|u**. Default calculates areas and volumes based upon a spherical Earth using great circle distances.
@@ -35,18 +35,18 @@ A **{{< gmtref GMTgrid type=gmttype >}}** or a grid file name of a 2-D gridded d
 - **T** or **find\_max** or **findmax**: -- *find\_max=:c* **|** *find\_max=:h*\
    Determine the single contour that maximized the average height (volume/area). Select **find\_max=:c** to use the maximum curvature of heights versus contour value rather than the contour with the maximum height to pick the best contour value [Default is **:h**].
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **Z** or **scale** : -- *scale=fact* **|** *scale=(fact,shift)*\
    Optionally subtract *shift* before scaling data by *fact*. [Default is no scaling]. (Numbers with units are not supported).
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
 ## Notes
 

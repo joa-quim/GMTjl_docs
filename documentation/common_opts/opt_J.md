@@ -1,2 +1,0 @@
-- **J** or **proj** or **projection** : -- *proj=<parameters>*\
-   Select map projection. More at \[proj](../common_opts/opt_J.html)

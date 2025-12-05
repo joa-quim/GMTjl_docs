@@ -45,9 +45,9 @@ Arguments
     For example, **C=e,v**, will write 2 grids. One with east and other with the vertical components.
     If **outgrid** is set but not **components** then the default is to compute the vertical component.
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **T** or **range** : -- *range=(min,max,inc[,"+n"])*  **|** *range=[list]* **|** *range=file*\
     Make evenly spaced time-steps from *min* to *max* by *inc*. Append **+n** to indicate *inc* is the number
@@ -58,15 +58,15 @@ Arguments
     thus then **location** becomes mandatory. When `grid(s)` and **range**, only first time T series is considered.
     Finally, dates may range from 1901 through 2099.
 
-{{< include ../common_opts/opt_bo.md >}}
+{{< include ../common_opts/opt_bo.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
-{{< include ../common_opts/opt_r.md >}}
+{{< include ../common_opts/opt_r.qmd >}}
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 
 Examples

@@ -28,26 +28,26 @@ The 2-D gridded data set to be contoured.
 Optional Arguments
 ------------------
 
-{{< include ../common_opts/opt_save_grd.md >}}
+{{< include ../common_opts/opt_save_grd.qmd >}}
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **T** or **toggle** : *toggle=true*\
    Translate between grid and pixel registration; if the input is grid-registered, the output will be
    pixel-registered and vice-versa. This is a *destructive* grid change; see 
    [Switching registrations](https://docs.generic-mapping-tools.org/dev/reference/options.html#switch-registrations).
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_n.md >}}
+{{< include ../common_opts/opt_n.qmd >}}
 
-{{< include ../common_opts/opt__r.md >}}
+{{< include ../common_opts/opt__r.qmd >}}
 
-{{< include ../common_opts/opt__x.md >}}
+{{< include ../common_opts/opt__x.qmd >}}
 
 
 Grid Values Precision

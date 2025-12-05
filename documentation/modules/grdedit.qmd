@@ -42,7 +42,7 @@ Optional Arguments
     - **flip=:v** will flip the grid vertically (top-to-bottom).
     Incompatible with the other options (except **outgrid**).
 
-{{< include ../common_opts/opt_-Grid.md >}}
+{{< include ../common_opts/opt_-Grid.qmd >}}
 Normally, **grdedit** will overwrite the existing grid with the modified grid.
     Use this option to write the modified grid to the file *outgrid* instead.
 
@@ -56,7 +56,7 @@ Normally, **grdedit** will overwrite the existing grid with the modified grid.
     Use a Mx3 matrix with *x,y,z* values (or read them from file "tablename") and replace the corresponding
     nodal values in the grid with these values.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **wrap** : -- *wrap=true*\
     For global, geographical grids only. Grid values will be shifted longitudinally according to the
@@ -68,21 +68,21 @@ Normally, **grdedit** will overwrite the existing grid with the modified grid.
     y-increments whereas pixel-registered grids will have their domain shrunk by the same amount. This is a
     *non-destructive* grid change; see [Switching registrations](https://docs.generic-mapping-tools.org/latest/reference/options.html#switch-registrations).
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/explain_grd_coord.md >}}
+{{< include ../common_opts/explain_grd_coord.qmd >}}
 
 Examples
 --------

@@ -47,13 +47,13 @@ Optional Arguments
     Compute and return the difference (input data - trend). The form **diff="diff.grd"**
     writes the resul to to the file *diff.grd*.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **T** or **trend** : -- *trend=true* **|** *trend="trend.grd"*\
     Compute and return the fitted trend. The form **trend="trend.grd"**
     writes the resul to to the file *trend.grd*.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 **-W** or **weights** : -- *weights="weight.grd[+s]"*\
     If *weight.grd* exists, it will be read and used to solve a weighted

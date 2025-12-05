@@ -129,9 +129,9 @@ Mathematical operations on grids in the spectral domain
 - **S** or **scale** : -- *scale=factor* **|** *scale=:d*\
     Multiply each element by *factor* in the space domain (after the frequency domain operations). [Default is 1.0]. Alternatively, append **:d** to convert deflection of vertical to micro-radians.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
 ## Grid Distance Units
 

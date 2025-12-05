@@ -40,7 +40,7 @@ Optional Arguments
     features to the chosen reference surface. [By default the tiles are clamped
     to the sea surface or ground].
 
-{{< include ../common_opts/use_cpt_grd.md >}}
+{{< include ../common_opts/use_cpt_grd.qmd >}}
 
 - **E** or **url** : -- *url=URL*\
     Instead of hosting all files on your computer, you may prepend a remote site URL. Then,
@@ -80,7 +80,7 @@ Optional Arguments
 - **T** or **title** : --*title=XXX*\
     Sets the title of the top-level document (i.e., its description).
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **contours** : -- *contours="cfile|pen[+sscale/limit]"*\
     Supply a file with records each holding a contour value and a contour pen.
@@ -93,9 +93,9 @@ Optional Arguments
     lower level. Contours with scaled pen widths < *limit* [0.1] points are skipped (except
     for pen widths that exactly equal 0 or "faint"). Use **+s** to change these values.
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_n.md >}}
+{{< include ../common_opts/opt_n.qmd >}}
 
 Quadtree building
 -----------------

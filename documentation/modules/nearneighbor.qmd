@@ -54,13 +54,13 @@ Required Arguments
     3 [or 4, see **weights**] column data from file or {{< gmtref GMTdataset type=gmttype >}} holding (*x,y,z*[,*w*]) data values.
     If no file is specified, **nearneighbor** will read from standard input.
 
-{{< include ../common_opts/opt_-Grid.md >}}
+{{< include ../common_opts/opt_-Grid.qmd >}}
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **search_radius** : -- *search_radius=rad*\
     Sets the *search_radius* that determines which data points are considered
@@ -72,7 +72,7 @@ Optional Arguments
 - **E** or **empty** : -- *empty=??*\
     Set the value assigned to empty nodes [NaN].
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **N** or **sectors** or **nn** or **nearest** : -- *sectors=n_sectors* **|** *sectors=(n=n\_sectors, min\_sectors=n_min)*\
     The circular search area centered on each node is divided into *n_sectors* sectors.
@@ -88,33 +88,33 @@ Optional Arguments
     Input data have a 4th column containing observation point weights. These are multiplied
     with the geometrical weight factor to determine the actual weights used in the calculations.
 
-{{< include ../common_opts/opt_a.md >}}
+{{< include ../common_opts/opt_a.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_g.md >}}
+{{< include ../common_opts/opt_g.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_n.md >}}
+{{< include ../common_opts/opt_n.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt__r.md >}}
+{{< include ../common_opts/opt__r.qmd >}}
 
-{{< include ../common_opts/opt__w.md >}}
+{{< include ../common_opts/opt__w.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
-{{< include ../common_opts/opt__distunits.md >}}
+{{< include ../common_opts/opt__distunits.qmd >}}
 
 Examples
 --------

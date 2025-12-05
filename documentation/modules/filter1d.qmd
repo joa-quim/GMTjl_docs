@@ -96,39 +96,39 @@ Optional Arguments
     0 and 1. If ( (abs(n_left - n_right)) / (n_left + n_right) ) >
     *factor*, then no output will be given at this point [Default does not check Symmetry].
 
-{{< include ../common_opts/opt_range.md >}}
+{{< include ../common_opts/opt_range.qmd >}}
 
 - **cumdist** or **cumsum** : -- *cumdist=true*\
     Compute the cumulative distance along the input line. Note that for this the first two columns must
     contain the spatial coordinates and the accumulated distance is appended after last column of the table.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_a.md >}}
+{{< include ../common_opts/opt_a.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_bo.md >}}
+{{< include ../common_opts/opt_bo.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_g.md >}}
+{{< include ../common_opts/opt_g.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt__j.md >}}
+{{< include ../common_opts/opt__j.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
 [units]
 

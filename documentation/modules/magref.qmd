@@ -108,7 +108,7 @@ Optional Arguments
 - **G** or **geocentric** : -- *geocentric=true*\
     Specifies that coordinates are geocentric [geodetic].
 
-{{< include ../common_opts/opt_I.md >}}
+{{< include ../common_opts/opt_I.qmd >}}
 
 - **L** or **external** : -- *external=(all\_input=true, total|T=true, X=true, Y=true, Z=true, mag\_i=true, iono\_p=true, iono\_i=true, poloidal=true)*\
     Computes J field vectors from certain external sources.
@@ -123,7 +123,7 @@ Optional Arguments
     - **3** or **iono_i=true** means Induced ionospheric field.
     - **4** or **poloidal=true** means Poloidal field.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **Sc** or **core_coef** : -- *core_coef=(low,high)*\
     Limits the wavelengths of the core field contribution to the band
@@ -133,15 +133,15 @@ Optional Arguments
     Limits the wavelengths of the lithosphere field contribution to the
     band indicated by the low and high spherical harmonic order [14/65].
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
 Time Settings
 -------------

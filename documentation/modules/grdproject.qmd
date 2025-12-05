@@ -32,13 +32,13 @@ The **region** option can be used to select a map region larger or smaller than 
 *ingrid*
 :   2-D binary grid file to be projected. Can be a file name, or {{< gmtref GMTgrid type=gmttype >}} object.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 ## Optional Arguments
 
-{{< include ../common_opts/opt_-Grid.md >}}
+{{< include ../common_opts/opt_-Grid.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **C** or **center** : -- *center=true* **|** *center=(dx, dy)* **|** *center="dx/dy"*\
     Let projected coordinates be relative to projection center [Default is relative to lower left corner]. Optionally, add offsets in the projected units to be added (or subtracted when **inverse** is set) to (from) the projected coordinates, such as false eastings and northings for particular projection zones [0/0].
@@ -78,13 +78,13 @@ The **region** option can be used to select a map region larger or smaller than 
 - **M** or **projected_unit** : -- *projected_unit=:c* **|** *projected_unit=:i* **|** *projected_unit=:p*\
     Append **:c**, **:i**, or **:p** to indicate that cm, inch, or point should be the projected measure unit [Default is set by PROJ\_LENGTH\_UNIT in gmt.conf]. Cannot be used with **scaling**.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt__j.md >}}
+{{< include ../common_opts/opt__j.qmd >}}
 
-{{< include ../common_opts/opt_n.md >}}
+{{< include ../common_opts/opt_n.qmd >}}
 
 
 

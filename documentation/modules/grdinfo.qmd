@@ -98,7 +98,7 @@ Optional Arguments
     min/max by reading the matrix, or use **:c** for conditionally doing so if the header
     information does not contain a valid *v* range.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **T** or **minmax** : -- *minmax=true* **|** *minmax="[dv][+a[alpha]][+s]"*\
     Determine min and max data value. If *dv* is provided then we first round these values off to
@@ -110,13 +110,13 @@ Optional Arguments
     append **+s**. We report the result via the text string **-Tvmin/vmax** or **-Tvmin/vmax/dv**
     (if *dv* was given) as expected by {{< gmtref makecpt >}}.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
 Examples
 --------

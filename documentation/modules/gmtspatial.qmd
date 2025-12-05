@@ -112,7 +112,7 @@ Geospatial operations on points, lines and polygons
 - **T** or **truncate** : -- *truncate=true* **|** *truncate=polygon\_file*\
     Truncate polygons and lines against the specified polygon, possibly resulting in open polygons. If no argument is given, we create a clipping polygon from **region** which then is required. Note that when the **region** clipping is in effect we will also look for polygons of length 4 or 5 that exactly match the **region** clipping polygon.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **extend** : -- *extend=dist* **|** *extend=(dist=val, unit="k", modifiers...)*\
     Extend all segments with a new first and last point such that these points are *dist* away from their neighbor point in the direction implied by the two points at each end of the segment. For geographic data you may append a unit. To give separate distances for the two ends, give *distf/distl* instead. Available modifiers:
@@ -124,29 +124,29 @@ Geospatial operations on points, lines and polygons
 - **a** or **aspatial** : -- *aspatial=??*\
     Control how aspatial data are handled in GMT during input and output. [More at aspatial]
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_g.md >}}
+{{< include ../common_opts/opt_g.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt__j.md >}}
+{{< include ../common_opts/opt__j.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt_s.md >}}
+{{< include ../common_opts/opt_s.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
 ## Units
 

@@ -17,9 +17,9 @@ You can make four different geodetic symbols: Rotational wedges, velocity error 
 ### Data Input
 - **Table data**: Provide data as a file name, a {{< gmtref GMTdataset type=gmttype >}}, a matrix, or any tabular data format.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 ### **S?**
     Selects the meaning of the columns in the data file and the figure to be plotted. In all cases, the scales are in data units per length unit and sizes are in length units (default length unit is controlled by `PROJ_LENGTH_UNIT` unless **c**, **i**, or **p** is appended).
@@ -82,7 +82,7 @@ You can make four different geodetic symbols: Rotational wedges, velocity error 
 - **A** or **arrow** or **arrows** : -- *arrow=parameters*\
     Modify vector parameters. For vector heads, append vector head size [Default is 9p]. See [Vector Attributes](@ref vector-attributes) for specifying additional attributes.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **C** or **color** or **cmap** : -- *cmap=cpt*\
     Give a CPT and let symbol color normally set by **G** be determined from the magnitude. See **Z** for other selections.
@@ -117,16 +117,16 @@ You can make four different geodetic symbols: Rotational wedges, velocity error 
 - **N** or **no_clip** or **noclip** : -- *no_clip=true*\
     Do not skip symbols that fall outside the frame boundary specified by **region**. [Default plots symbols inside frame only].
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 ### **W** or **pen** : *[pen][+c[f|l]]*
     Set pen attributes for velocity arrows, ellipse circumference and fault plane edges. [Defaults: width = 0.25p, color = black, style = solid]. If the modifier **+cl** is appended then the color of the pen are updated from the CPT (see **C**). If instead modifier **+cf** is appended then the color from the cpt file is applied to symbol fill only [Default]. Use just **+c** to set both pen and fill color.
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
 ### **Z** or **colorbar_quantity** : *[m|e|n|u][+e]*
     Select the quantity that will be used with the CPT given via **C** to set the fill color. Choose from:
@@ -137,27 +137,27 @@ You can make four different geodetic symbols: Rotational wedges, velocity error 
     
     To instead use the corresponding error estimates (i.e., vector or rotation uncertainty) to lookup the color and paint the error ellipse or wedge instead, append **+e**.
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_g.md >}}
+{{< include ../common_opts/opt_g.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
 ## Vector Attributes
 

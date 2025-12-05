@@ -23,9 +23,9 @@ Required Arguments
 - *table*\
     One or more data tables holding a number of data columns.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 
 Optional Arguments
@@ -36,9 +36,9 @@ Optional Arguments
   [Default is no annotations]. Use *annot=(disable=true,)* to disable all annotations implied by **cont**.
   Alternatively do *annot=(single=true, int=val)* to plot *val* as a single contour. The optional *labelinfo* controls the specifics of the label formatting and consists of a named tuple with the following control arguments [Label formatting]
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
-{{< include ../common_opts/explain_Ccontours.md >}}
+{{< include ../common_opts/explain_Ccontours.qmd >}}
 
 - **D** or **dump** : -- *dump=fname*\
   Dump contours as data line segments; no plotting takes place. Append filename template which may contain
@@ -91,48 +91,48 @@ Optional Arguments
   label strings with a comma (*e.g.*, *labels="lo,hi"*). If a file is given by **cont**, and **ticks** is set,
   then only contours marked with upper case C or A will have tick marks [and annotations]. 
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_pen.md >}}
+{{< include ../common_opts/opt_pen.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_bo.md >}}
+{{< include ../common_opts/opt_bo.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_g.md >}}
+{{< include ../common_opts/opt_g.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
 Normally, the annotated contour is selected for the legend. You can select the regular contour instead, or both of them, by considering the *label* to be of the format [*annotcontlabel*][/*contlabel*]. If either label contains a slash (/) character then use | as the separator for the two labels instead.
 .. include:: explain_-l.rst_
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_s.md >}}
+{{< include ../common_opts/opt_s.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
-{{< include ../common_opts/opt__distunits.md >}}
+{{< include ../common_opts/opt__distunits.qmd >}}
 
 Examples
 --------
@@ -149,6 +149,7 @@ To use the same data but only contour the values 750 and 800, use
 
 ```{julia}
 using GMT
+
 contour("@Table_5_11.txt", annot=[750,800], pen=0.5, show=true)
 ```
 
@@ -156,7 +157,7 @@ To create a color plot of the numerical temperature solution obtained on a trian
 whose node coordinates and temperatures are stored in temp.xyz and mesh arrangement is given
 by the file mesh.ijk, using the colors in temp.cpt, run
 
-```{julia}
+```julia
 contour("temp.xyz", index="mesh.ijk", region=(0,150,0,100), figscale=0.25,
         cmap="temp.cpt", labels=true, pen=0.25, show=true)
 ```
@@ -168,9 +169,9 @@ them into multisegment files (one for each contour level), try
     contour("topo.txt", contour=100, dump="contours_%.0f.txt")
 ```
 
-{{< include ../common_opts/contour_notes.md >}}
+{{< include ../common_opts/contour_notes.qmd >}}
 
-{{< include ../common_opts/auto_legend_info.md >}}
+{{< include ../common_opts/auto_legend_info.qmd >}}
 
 ```{julia}
 #| echo: false

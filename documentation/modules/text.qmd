@@ -57,7 +57,7 @@ Optional Arguments
 - **A** or **azimuth** or **azim** : -- *azimuth=true*\
     Angles are given as azimuths; convert them to directions using the current projection. 
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **C** or **clearance** : -- *clearance=true* **|** *clearance=(margin=(dx,dy), round=true, concave=true, convex=true)*\
     Adjust the clearance between the text and the surrounding box [15%]. Only used if
@@ -110,7 +110,7 @@ Optional Arguments
     the text and then use the text dimensions (and **clearance**) to build clip paths and turn clipping on. This clipping
     can then be turned off later with `clip` **C**. To *not* plot the text but activate clipping, use **fill=:C** instead.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **L** or **list** : -- *list=true*\
     Lists the font-numbers and font-names available, then exits.
@@ -133,50 +133,50 @@ Optional Arguments
 - **Q** or **change\_case** : -- *change\_case=:lower* **|** *change\_case=:upper*\
     Change all text to either **change\_case=:lower** or **change\_case=:upper** case [Default leaves all text as is].
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **shade** : *shade=true* **|** *shade=(dx,dy)* **|** *shade=shade*\
     Plot an offset background shaded region beneath the text box. Here, *(dx,dy)* indicates the shift relative to
     the text box in points [4p, 4p] and *shade* sets the fill color to use for shading [gray50]. Requires the
     **fill** option.
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **pen** : -- *pen=pen*\
     Sets the pen used to draw a rectangle around the text string (see **clearance**) [Default is width = default,
     color = black, style = solid].
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
 - **Z** or **threeD** : -- *threeD=true*\
     For 3-D projections: expect each item to have its own level given in the 3rd column, and **noclip**
     is implicitly set. (Not implemented for paragraph mode). 
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
-{{< include ../common_opts/opt_a.md >}}
+{{< include ../common_opts/opt_a.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/explain_transparency.md >}}
+{{< include ../common_opts/explain_transparency.qmd >}}
 
-{{< include ../common_opts/opt__w.md >}}
+{{< include ../common_opts/opt__w.qmd >}}
 
-{{< include ../common_opts/opt_xy.md >}}
+{{< include ../common_opts/opt_xy.qmd >}}
 
 Limitations
 -----------

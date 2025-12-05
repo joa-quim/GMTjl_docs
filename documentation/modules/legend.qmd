@@ -42,7 +42,7 @@ font size [1.1].
 Optional Arguments
 ------------------
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **C** or **clearance** : -- *clearance=(dx,dy)*\
    Sets the clearance between the legend frame and the internal items [4p/4p].
@@ -56,14 +56,14 @@ Optional Arguments
    - `rounded=true` to draw rounded rectangular borders instead, with a *6p* corner radius. You can override this radius by using another value instead of *true* (default is **6p**).
    - `shadded=true` or `shadded=(dx,dy)` or `shadded=shade` to draw an offset background shaded region. Here, *dx/dy* indicates the shift relative to the foreground frame [*4p/-4p*]and *shade* sets the fill style to use for shading ("gray50").
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **M** or **source** \
    Modern mode only: Read both (1) the hidden auto-generated legend information file created by plotting-modules'
    **legend** option (warning: **not** this **legend** module) and (2) additional information from input file(s)
    given on the command line [hidden file only].
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **S** or **scale** : *scale=val*\
    Scale all symbol sizes by a common *scale*.
@@ -71,19 +71,19 @@ Optional Arguments
 - **T** or **leg_file** : *leg_file=fname*\
    Modern mode only: Write hidden legend specification file to *fname*.
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
 Legend Codes
 ------------
@@ -203,7 +203,7 @@ different record types are recognized, and the syntax for each of these records 
    start and stop of a vertical line (so **vline** must follow **hline**).  If no horizontal line is desired simply
    give **-** as `pen` to **hline**.
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 The function `GMT.mk_legend(kwargs...)` can be used to generate the hard core GMT *Legend Codes*, which in turn can be
 written to a file and feed to this module as input. It can also be used in debug to check that the appropriate

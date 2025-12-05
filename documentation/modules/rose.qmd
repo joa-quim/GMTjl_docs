@@ -27,7 +27,7 @@ Optional Arguments
     Gives the sector width in degrees for sector and rose diagram. [Default 0 means windrose diagram].
     Append **+r** (an forcedly give argument as a string) to draw rose diagram instead of sector diagram.
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
     Remember that "x" here is radial distance and "y" is azimuth. The ylabel may be used to plot a figure caption.
     The scale bar length is determined by the radial gridline spacing.
 
@@ -106,17 +106,17 @@ Optional Arguments
     degree directions [Default]. We compensate by counting each record twice: First as *azimuth* and second
     as *azimuth + 180*.  Ignored if range is given as -90/90 or 0/180.
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **pen=pen**\
     Set pen attributes for sector outline or rose plot [Default is no outline]. Use **pen="'v'pen"** to change 
     pen used to draw vector (requires **vectors**) [Default is same as sector outline].
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
 - **Z** or **scale** : -- *scale=:u* **|** *scale=scale*\
     Multiply the data radii by *scale*. E.g., use **scale=0.001** to convert your data from m to km. To exclude
@@ -125,27 +125,27 @@ Optional Arguments
 - **yx** : -- *yx=true*\
     Input file has (*azimuth,radius*) pairs rather than the expected (*radius,azimuth*).
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_e.md >}}
+{{< include ../common_opts/opt_e.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_s.md >}}
+{{< include ../common_opts/opt_s.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
-{{< include ../common_opts/opt__w.md >}}
+{{< include ../common_opts/opt__w.qmd >}}
 
 Examples
 --------

@@ -76,13 +76,13 @@ Specify data type (with *type*=true, e.g. `img=true`). Choose among:
 - `convert`: In case that both the `region` and `proj` options are used, this option (any value will do)
   can be used to request that the grid be converted to the new projection defined by `proj`.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_bi.md >}}
+{{< include ../common_opts/opt_bi.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
 Examples
 --------

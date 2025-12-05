@@ -39,7 +39,7 @@ Optional Arguments
     no output will result and a warning is issued. **Note**: For directives **:x** and **:y**
     we find the nearest column or row, respectively.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **T** or **stl** or **STL** : -- *STL=true* **|** *STL=[:b][base]*\
     Write STL triangulation for 3-D printing to standard output. By default we write an STL ASCII file.
@@ -49,7 +49,7 @@ Optional Arguments
     Optionally, append a lower *base* other than the grid's minimum value [Default]. **Note**: The grid must be free
     of NaN values. If your grid contains NaNs then we automatically replace these with the minimum value in the grid.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **weight** : -- *weight=true* **|** *weight=:a[+uunit]* **|** *weight=weight*\
     Write out *x,y,z,w*, where *w* is the supplied *weight* (or 1 if not supplied) [Default writes
@@ -91,21 +91,21 @@ Optional Arguments
 - **name** or **save** : -- *save="file"*\
    Save data to disk *file* with **save="file"**.
 
-{{< include ../common_opts/opt_bo.md >}}
+{{< include ../common_opts/opt_bo.qmd >}}
 
-{{< include ../common_opts/opt_di.md >}}
+{{< include ../common_opts/opt_di.qmd >}}
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
-{{< include ../common_opts/opt_q.md >}}
+{{< include ../common_opts/opt_q.qmd >}}
 
-{{< include ../common_opts/opt_s.md >}}
+{{< include ../common_opts/opt_s.qmd >}}
 
-{{< include ../common_opts/opt__distunits.md >}}
+{{< include ../common_opts/opt__distunits.qmd >}}
 
 Non-equidistant x/y Coordinates
 -------------------------------

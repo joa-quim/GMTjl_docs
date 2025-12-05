@@ -25,9 +25,9 @@ Required Arguments
 
 *ingrid* : -- A grid file name or a {{< gmtref GMTgrid type=gmttype >}}
 
-{{< include ../common_opts/opt_-Grid.md >}}
+{{< include ../common_opts/opt_-Grid.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 Optional Arguments
 ------------------
@@ -54,7 +54,7 @@ Optional Arguments
     Use the NamedTuple way to say `invert=true` to invert that and set all nodes inside the polygon to NaN
     instead. Optionally, add `crop2cutline=true` to crop the grid region to reflect the bounding box of the polygon.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **N** or **extend** : -- *extend=true* **|** *extend=nodata*\
     Allow grid to be extended if new **region** exceeds existing boundaries.
@@ -65,7 +65,7 @@ Optional Arguments
     region so that all grid nodes on or inside the circle are contained in the subset. If **+n** is appended
     (and hence all arg must be a string) we set all nodes outside the circle to NaN.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **Z** or **range** : -- *z_subregion=true* **|** *range=(min,max)* **|** *range="min/max|+n|N|r"*\
     Determine a new rectangular region so that all nodes *outside* this region are also outside the given
@@ -78,9 +78,9 @@ Optional Arguments
     surrounded by rows and/or columns that are all NaNs, append **+N** to strip off such columns before
     (optionally) considering the range of the core subset for further reduction of the area.
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
 
-{{< include ../common_opts/opt__distunits.md >}}
+{{< include ../common_opts/opt__distunits.qmd >}}
 
 Examples
 --------

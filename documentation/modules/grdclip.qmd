@@ -22,9 +22,9 @@ range of data values is required, or for reclassification of data values.
 Optional Arguments
 ------------------
 
-{{< include ../common_opts/opt_-Grid.md >}}
+{{< include ../common_opts/opt_-Grid.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **Sa** or **above** or **high** : -- above="high/above", **|** *above=(high,above)*\
     Set all data[i] > *high* to *above*.
@@ -45,7 +45,7 @@ Optional Arguments
     to repeat an **S?** option, which we cannot do because we can't repeat the *kwargs* key names.
     Example usage: `G2 = grdclip(G, S="a5/6 -Sb2/2 -Si3/4/3.5")`
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 Examples
 --------

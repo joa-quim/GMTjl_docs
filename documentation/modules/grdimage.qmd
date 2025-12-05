@@ -32,7 +32,7 @@ The **region** option can be used to select a map region larger or smaller than 
 Required Arguments
 ------------------
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 Optional Arguments
 ------------------
@@ -48,9 +48,9 @@ Optional Arguments
    write a GeoTiff image if the GMT projection syntax translates into a PROJ4 syntax, otherwise a plain tiff
    file is produced. (2) Any vector elements will be lost.
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
-{{< include ../common_opts/use_cpt_grd.md >}}
+{{< include ../common_opts/use_cpt_grd.qmd >}}
 
 - **clim** : -- *clim=(z_min,z_max)* **|** *clim=:zscale*\
    When doing an automatic colorization (*i.e.*, when a colormap is not provided explicitly), limit the automatic
@@ -122,23 +122,23 @@ Optional Arguments
     Make grid nodes with z = NaN transparent. If input is an image *alpha\_color* picks one color (default is
     black) and makes it transparent (requires GMT6.2 and above).
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_n.md >}}
+{{< include ../common_opts/opt_n.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------

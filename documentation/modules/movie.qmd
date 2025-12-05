@@ -180,7 +180,7 @@ Optional Arguments
     Make sure the script uses the same positioning (i.e., **X Y**) as the main script so that the layers will stack
     correctly. Alternatively, *foreground* can be a *PostScript* plot layer of dimensions exactly matching the canvas size.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **workdir** : -- *name="prefix"*\
     By default, all temporary files and frame PNG file are created in the subdirectory *prefix* set via **name**.
@@ -195,7 +195,7 @@ Optional Arguments
     If your *mainscript* and all input scripts via **titlepage**, **includefile**, and **fore|background** should
     be deleted as well then append **s**.
 
-{{< include ../common_opts/opt__x.md >}}
+{{< include ../common_opts/opt__x.qmd >}}
 
 Parameters
 ----------

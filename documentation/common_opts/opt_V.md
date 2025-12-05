@@ -1,2 +1,0 @@
-- **V** or *verbose* : -- *verbose=true* **|** *verbose=level*\
-   Select verbosity level. More at \[verbose](../common_opts/opt_V.html)

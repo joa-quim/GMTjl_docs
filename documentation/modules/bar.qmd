@@ -14,13 +14,13 @@ column holds always the coordinates).
 Parameters
 ----------
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
-{{< include ../common_opts/opt_mfc.md >}}
+{{< include ../common_opts/opt_mfc.qmd >}}
 
 - *bar*\
    Vertical bar extending from base to *y*. By default, base is 0 and the bar widths are 0.8 of the width in
@@ -68,7 +68,7 @@ Parameters
    option. Bar colors (three for the waterfall type) are controlled with the `fill` option but default values
    are provided. See example below.
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------

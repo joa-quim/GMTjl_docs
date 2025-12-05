@@ -22,13 +22,13 @@ painted and no land fill is set then the land-areas will be transparent. A map p
 
 - **J** or **proj** or **projection** : -- *proj=<parameters>*\
    Select map projection. More at ` ` [proj]
-<!-- {{< include ../common_opts/opt_J.md >}} -->
+<!-- {{< include ../common_opts/opt_J.qmd >}} -->
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
-{{< include ../common_opts/explain_Acoast.md >}}
+{{< include ../common_opts/explain_Acoast.qmd >}}
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **C** or **river\_fill** : -- *river\_fill=fill* **|** *river\_fill=(lake=true, river\_lake=true, fill=fill)*\
    Set the shade, color, or pattern for lakes and river-lakes [Default is the fill chosen for "wet" areas (*water*)]. Optionally, specify separate fills by using **river\_fill=(lake=true, fill=fill)** for lakes and **river\_fill=(river\_lake=true, fill=fill)** for river-lakes. To repeate the **river\_fill** option use a tuple of tuples.
@@ -71,7 +71,7 @@ painted and no land fill is set then the land-areas will be transparent. A map p
    Return the region corresponding to the code/list-of-codes passed in as argument. The code(s) are the same
    as in the **DCW** option above.
 
-{{< include ../common_opts/opt_box.md >}}
+{{< include ../common_opts/opt_box.qmd >}}
 
 - **G** or **land** : -- *land=fill*\
    Select filling (see [Fill color/pattern]) "dry" areas. Append the shade, color, or pattern.
@@ -101,7 +101,7 @@ painted and no land fill is set then the land-areas will be transparent. A map p
       i = All intermittent rivers (5-7)
       c = All canals (8-10)
 
-{{< include ../common_opts/opt_map_scale.md >}}
+{{< include ../common_opts/opt_map_scale.qmd >}}
 
 - **M** or **dump** : -- *dump=true*\
    Dumps a single multisegment ASCII (or binary, see **-bo**) file to standard output. No plotting occurs. Specify one of **DCW**, **rivers**, **borders** or **shore**. Note: if **dump** is used with **DCW** then **region** or the **+r** modifier to **DCW** are not required as we automatically determine the region given the selected geographic entities.
@@ -122,13 +122,13 @@ painted and no land fill is set then the land-areas will be transparent. A map p
 - **S** or **water** or **ocean** : -- *water=fill*\
    Select filling of "wet" areas. Append the shade, color, or pattern;  [Default is no fill].
 
-{{< include ../common_opts/opt_rose.md >}}
+{{< include ../common_opts/opt_rose.qmd >}}
 
-{{< include ../common_opts/opt_compass.md >}}
+{{< include ../common_opts/opt_compass.qmd >}}
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **shore** or **shorelines** or **coast** or **coastlines** : -- *shore=pen* **|** *shore=(level=lev, pen=pen)*\
    Draw shorelines [the Default]. Append pen attributes (see [Pen attributes]) [Defaults: width = default,
@@ -145,15 +145,15 @@ painted and no land fill is set then the land-areas will be transparent. A map p
    {{< gmtref grdrack >}} at the locations of the coastline. This is particularly useful if one wants to drape a coastline
    on top of a {{< gmtref grdview >}} plot.
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_p.md >}}
+{{< include ../common_opts/opt_p.qmd >}}
 
-{{< include ../common_opts/opt_t.md >}}
+{{< include ../common_opts/opt_t.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------
@@ -169,7 +169,7 @@ coast(proj=:Mercator, DCW=((country="GB,IT,FR", fill=:blue, pen=(0.25,:red)),
                            (country="ES,PT,GR", fill=:yellow)), show=true)
 ```
 
-{{< include ../common_opts/explain_gshhg.md >}}
+{{< include ../common_opts/explain_gshhg.qmd >}}
 ```{julia}
 #| echo: false
 #| output: asis

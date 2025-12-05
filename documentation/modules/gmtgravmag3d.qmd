@@ -69,7 +69,7 @@ Required Arguments (not all)
 
       - *sphere,rad/z_center[/x0/y0/npts/n_slices]* Sphere of radius *rad* and center at depth *z_center*
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **Tv** or **index** : -- *index=vert_file* **|** *index=D*\
     Gives name of a vertex file defining a closed surface. The file formats correspond to the output
@@ -106,7 +106,7 @@ Optional Arguments
     This option serves to speed up the computation by not computing the effect of prisms that
     are further away than *radius* from the current node.
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 **Z** or **level** or **reference_level** : -- *level=0*\
     level of reference plane [Default = 0]. Use this option when the triangles describe a non-closed
@@ -118,17 +118,17 @@ Optional Arguments
     This option is needed when indices are 1-based, as likely is the case when bodies may have been
     created in Julia.
 
-{{< include ../common_opts/opt_f.md >}}
+{{< include ../common_opts/opt_f.qmd >}}
    Geographic grids (dimensions of longitude, latitude) will be converted to
    meters via a "Flat Earth" approximation using the current ellipsoid parameters.
 
-{{< include ../common_opts/opt_h.md >}}
+{{< include ../common_opts/opt_h.qmd >}}
 
-{{< include ../common_opts/opt__i.md >}}
+{{< include ../common_opts/opt__i.qmd >}}
 
-{{< include ../common_opts/opt_o.md >}}
+{{< include ../common_opts/opt_o.qmd >}}
 
-{{< include ../common_opts/opt__r.md >}}
+{{< include ../common_opts/opt__r.qmd >}}
 
 Grid Distance Units
 -------------------

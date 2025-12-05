@@ -14,7 +14,7 @@ There are no required arguments but either *sun* or *terminators* must be select
 Optional Arguments
 ------------------
 
-{{< include ../common_opts/opt_B.md >}}
+{{< include ../common_opts/opt_B.qmd >}}
 
 - **C** or **format** : *format=true*\
    Formats the report selected by *sun=??* using tab-separated fields on a single line. The
@@ -39,7 +39,7 @@ Optional Arguments
    *date=date* in ISO format, e.g, *date="2000-04-25"* to compute sun parameters for this date. If necessary,
    add another element with the time zone via *TZ=tzone*.
 
-{{< include ../common_opts/opt_J.md >}}
+{{< include ../common_opts/opt_J.qmd >}}
 
 - **M** or **dump** : *dump=true*\
     Write terminator(s) as a multisegment file to standard output. No plotting occurs.
@@ -48,7 +48,7 @@ Optional Arguments
    Invert the sense of what is inside and outside the terminator. Only used with clipping (*G=:c*) and
    cannot be used together with **axes**.
 
-{{< include ../common_opts/opt_R.md >}}
+{{< include ../common_opts/opt_R.qmd >}}
 
 - **T** or **terminators** : *terminators="d|c|n|a"* **|** *terminators=(term="d|c|n|a", date=date)* **|** *terminators=(term="d|c|n|a", date=date), TZ=tzone)*\
    Plot (or dump; see *dump*) one or more terminators defined via the **dcna** flags. Where: **d** means
@@ -57,18 +57,18 @@ Optional Arguments
    *date="2000-04-25"* to know where the day-night was at that date. If necessary, add another element with
    the time zone via *TZ=tzone*. 
 
-{{< include ../common_opts/opt_U.md >}}
+{{< include ../common_opts/opt_U.qmd >}}
 
-{{< include ../common_opts/opt_V.md >}}
+{{< include ../common_opts/opt_V.qmd >}}
 
 - **W** or **pen** : *pen=pen*\
    Set pen attributes for lines or the outline of symbols [Defaults: width = default, color = black, style = solid].
 
-{{< include ../common_opts/opt_X.md >}}
+{{< include ../common_opts/opt_X.qmd >}}
 
-{{< include ../common_opts/opt_Y.md >}}
+{{< include ../common_opts/opt_Y.qmd >}}
 
-{{< include ../common_opts/opt_save_fig.md >}}
+{{< include ../common_opts/opt_save_fig.qmd >}}
 
 Examples
 --------
