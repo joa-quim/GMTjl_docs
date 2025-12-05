@@ -170,6 +170,7 @@ To make a CPT with z-values from -200 to 200, with discrete color changes every 
 
 ```{julia}
 using GMT
+
 C = makecpt(cmap=:polar, range=(-200,200,25))
 imshow(C, horizontal=true)
 ```
@@ -186,48 +187,36 @@ To use the GEBCO look-alike CPT with its default range for bathymetry and save t
     makecpt(cmap=:gebco, write="my_gebco.cpt")
 ```
 
-or simply use -Cgebco directly in the application that needs the color table. To create a 24-level color table suitable
+or simply use `gebco` directly in the application that needs the color table. To create a 24-level color table suitable
 for plotting the depths in the remote data table v3206_06.txt (with lon, lat, depths), run
 
 ```{julia}
-#| echo: true
-#| output: true
-using GMT
 C = makecpt("@v3206_06.txt", cmap=:gebco, nlevels=24)
 imshow(C, horizontal=true)
 ```
 
-To use the gebco color table but reverse the z-values so it can be used for positive depth values, try
+To use the `gebco` color table but reverse the z-values so it can be used for positive depth values, try
 
-```julia
-    makecpt(cmap=:gebco, reverse=:z)
+```{julia}
+viz(makecpt(cmap=:gebco, reverse=:z), horizontal=true)
 ```
 
 To make a custom discrete color table for depth of seismicity, using red color for hypocenters between 0 and 100 km,
 green for 100-300 km, and blue for deep (300-1000 km) earthquakes, use
 
 ```{julia}
-#| echo: true
-#| output: true
-using GMT
 imshow(makecpt(cmap=(:red,:green,:blue), range=[0,100,300,1000], no_bg=true), horizontal=true)
 ```
 
 To make a discrete CPT from white to blue as z goes from 3 to 10, try
 
 ```{julia}
-#| echo: true
-#| output: true
-using GMT
 imshow(makecpt(cmap="white,blue", range=(3,10)), horizontal=true)
 ```
 
 And to get a continuous CPT, use the option `continuous=true`.
 
 ```{julia}
-#| echo: true
-#| output: true
-using GMT
 imshow(makecpt(cmap="white,blue", range=(3,10), continuous=true), horizontal=true)
 ```
 
@@ -236,31 +225,31 @@ To make a wrapped (cyclic) CPT from the turbo table over the interval 0 to 500, 
 z-units so that we always get a color regardless of the *z* value, try
 
 ```{julia}
-#| echo: true
-#| output: true
-using GMT
 imshow(makecpt(cmap=:turbo, range=(0,500), wrap=:w), horizontal=true)
 ```
 
 To show the ``turbo`` color table.
 
 ```{julia}
-#| echo: true
-#| output: true
-using GMT
 imshow(:turbo, horizontal=true)
 ```
 
 To make a categorical CPT with string keys instead of numerical lookup values, try:
 
 ```{julia}
-#| echo: true
-#| output: true
-using GMT
 C = makecpt(cmap=:categorical, range="wood,water,gold")
 imshow(C, B=:none, horizontal=true)
 ```
 
+### See more uses of cmaps
+
+::: {.grid}
+::: {.g-col-6 .g-col-lg-2}
+::: {.card .h-100}
+[**Color maps**](/examples/CPTs/01_cpt_hinge.qmd){.card-title .stretched-link}
+[![](/examples/GMT_CPTscale.png){.card-img-top}](/examples/CPTs/01_cpt_hinge.qmd)
+:::
+:::
 
 Bugs
 ----
@@ -277,12 +266,6 @@ using GMT
 GMT.doc_source_links("makecpt")
 ```
 
-See Also
---------
-
-
-{{< gmtref grd2cpt >}}
-
 References
 ----------
 
@@ -290,3 +273,10 @@ Crameri, F., (2018). Scientific colour-maps. Zenodo. http://doi.org/10.5281/zeno
 
 Crameri, F. (2018), Geodynamic diagnostics, scientific visualisation and StagLab 3.0,
 *Geosci. Model Dev.*, 11, 2541-2562, doi:10.5194/gmd-11-2541-2018.
+
+See Also
+--------
+
+{{< gmtref grd2cpt >}}
+
+[Alphabetical Function List](../alphabetical.html)
