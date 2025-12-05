@@ -61,6 +61,7 @@ arrows([0 8.2 0 3], limits=(-2,4,0,9), arrow=(len=2,stop=1,shape=0.5,fill=:red),
 [![](/examples/icon.png){.card-img-top}](/examples/arrows/10_arrows.qmd)
 :::
 :::
+:::
 
 ```{julia}
 #| echo: false

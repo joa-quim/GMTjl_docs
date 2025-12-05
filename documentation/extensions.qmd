@@ -6,6 +6,10 @@ title: "GMT.jl Extensions"
 .grid {
   gap: 3px;
 }
+
+.card > p:first-child {
+  text-align: center;
+}
 </style>
 
 GMT.jl provides additional high-level plotting functions and data access utilities that extend GMT's core capabilities with Julia-specific features.

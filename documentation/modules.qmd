@@ -6,6 +6,10 @@ title: "GMT Modules"
 .grid {
   gap: 3px; /* Define o espaçamento entre os cartões */
 }
+
+.card > p:first-child {
+  text-align: center;
+}
 </style>
 
 Complete reference documentation for all GMT plotting and processing modules.

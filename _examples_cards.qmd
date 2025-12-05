@@ -39,6 +39,7 @@
 .card-title {
   margin-top: 0.5rem;
   display: block;
+  text-align: center;
 }
 </style>
 
