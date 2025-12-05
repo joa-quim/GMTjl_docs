@@ -517,12 +517,7 @@ GMT.doc_source_links("grdfilter")
 
 ## See Also
 
-GMT.jl related functions:
-- `grdfft` - Filtering in frequency domain
-- `grdmath` - Grid calculator operations
-- `grdproject` - Map projection transformations
-- `grdsample` - Resampling grids
-- `grdgradient` - Gradient calculations
+{{< gmtref grdfft >}}, {{< scatter grdmath >}}, {{< scatter grdproject >}}, {{< scatter grdsample >}}, {{< scatter grdgradient >}}
 
 ## References
 

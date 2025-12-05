@@ -338,7 +338,7 @@ GMT.doc_source_links("mapproject")
 
 ## See Also
 
-[project](https://www.generic-mapping-tools.org/GMTjl_doc/documentation/modules/project/)
+{{< gmtref project >}}
 
 ## References
 

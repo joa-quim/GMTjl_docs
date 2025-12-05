@@ -97,18 +97,21 @@ See full GMT docs at [`meca`](http://docs.generic-mapping-tools.org/latest/suppl
 
     Swap 1st and 2nd column on input and/or output.
 
-Example: Plot a focal mechanism using the Aki & Richards convention 
+## Examples
 
-```julia
-    psmeca([0.0 3.0 0.0 0 45 90 5 0 0], aki=true, fill=:black, region=(-1,4,0,6), proj=:Merc, show=1)
+Plot a focal mechanism using the Aki & Richards convention 
+
+```{julia}
+using GMT
+
+psmeca([0.0 3.0 0.0 0 45 90 5 0 0], aki=true, fill=:black, region=(-1,4,0,6), proj=:Merc, show=1)
 ```
 
 The same but add a Label
 
-```julia
-    psmeca(mat2ds([0.0 3.0 0.0 0 45 90 5 0 0], ["Thrust"]), aki=true, fill=:black, region=(-1,4,0,6), proj=:Merc, show=1)
+```{julia}
+psmeca(mat2ds([0.0 3.0 0.0 0 45 90 5 0 0], ["Thrust"]), aki=true, fill=:black, region=(-1,4,0,6), proj=:Merc, show=1)
 ```
-
 
 
 ```{julia}
@@ -120,5 +123,6 @@ GMT.doc_source_links("psmeca")
 
 ## See Also
 
-- [Alphabetical Function List](../alphabetical.html)
-- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)
+{{< gmtref coupe >}}, {{< gmtref polar >}}, {{< gmtref velo >}}
+
+[Alphabetical Function List](../alphabetical.html)

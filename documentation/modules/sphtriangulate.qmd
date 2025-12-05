@@ -91,8 +91,8 @@ then plot it on a sphere, try:
 
 ```{julia}
 using GMT
-    D = sphtriangulate("@hotspots.txt", voronoi=:d, arcs=true)
-    imshow(D, region=:global, proj=:guess, frame=:afg, pen=3)
+D = sphtriangulate("@hotspots.txt", voronoi=:d, arcs=true)
+imshow(D, region=:global, proj=:guess, frame=:afg, pen=3)
 ```
 
 

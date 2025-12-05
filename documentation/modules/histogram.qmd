@@ -159,15 +159,13 @@ To plot the histogram of a Landsat image, pick good bounds for contrast enhancem
 I = gmtread("landsat.tif")
 histogram(I, zoom=true, show=true);
 ```
-
-See also
---------
-
-The [`GMT man page`](http://docs.generic-mapping-tools.org/latest/histogram.html)
-
 ```{julia}
 #| echo: false
 #| output: asis
 using GMT
 GMT.doc_source_links("histogram")
 ```
+
+See also
+--------
+

@@ -89,3 +89,8 @@ radar([10.5 20.5 30.6 40.9 46], axeslimts=[15, 25, 50, 90, 50], annotall=true, m
 using GMT
 GMT.doc_source_links("radar")
 ```
+
+See also
+--------
+
+[Alphabetical Function List](../alphabetical.html)

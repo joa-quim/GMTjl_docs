@@ -24,14 +24,11 @@ Other than the above options you can use most of the {{< gmtref plot >}} options
 Examples
 --------
 
-```julia-repl
+```julia
+using GMT
+
 plotlinefit(D, band_ab=true, band_ci=true, legend=true, show=1)
 ```
-
-See Also
---------
-
-{{< gmtref linearfitxy >}}, {{< gmtref plot >}}
 
 ```{julia}
 #| echo: false
@@ -39,3 +36,10 @@ See Also
 using GMT
 GMT.doc_source_links("plotlinefit")
 ```
+
+See Also
+--------
+
+{{< gmtref linearfitxy >}}, {{< gmtref plot >}}
+
+[Alphabetical Function List](../alphabetical.html)

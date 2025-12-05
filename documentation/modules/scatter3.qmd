@@ -46,14 +46,13 @@ using GMT
 scatter3(rand(10,10,3), zsize=4, marker=:cube, mc=:darkgreen, show=true)
 ```
 
-See also
---------
-
-The [`GMT man page`](http://docs.generic-mapping-tools.org/latest/plot.html)
-
 ```{julia}
 #| echo: false
 #| output: asis
 using GMT
 GMT.doc_source_links("scatter3")
 ```
+
+See also
+--------
+

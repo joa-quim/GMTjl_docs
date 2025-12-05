@@ -91,33 +91,31 @@ Examples
 To plot a horizontal color scale (12 cm long; 0.5 cm wide) at the reference point (8,1)
 (paper coordinates) with justification at top center and automatic annotation interval, do
 
-```julia
-    makecpt(range=(-200,1000,100), cmap=:rainbow)
-    colorbar(pos=(paper=true, anchor=(8,1), size=(12,0.5), justify=:TC, horizontal=true),
-            frame=(annot=:auto, ticks=:auto, xlabel="topography", ylabel=:km), show=true)
+```{julia}
+using GMT
+
+makecpt(range=(-200,1000,100), cmap=:rainbow)
+colorbar(pos=(paper=true, anchor=(8,1), size=(12,0.5), justify=:TC, horizontal=true),
+        frame=(annot=:auto, ticks=:auto, xlabel="topography", ylabel=:km), show=true)
 ```
 
 To append a vertical color scale (7.5 cm long; 1.25 cm wide) to the right of a plot that is 6 inch wide and 4 inch high, using illumination, and show back- and foreground colors, and annotating every 5 units, we provide the reference point and select the left-mid anchor point via
 
-```julia
-    colorbar(pos=(paper=true, anchor="6.5i/2i", justify=(:LM,"2i"), size=(7.5,1.2), triangles=true),
-            cmap=:geo, shade=true, xaxis=(annot=1000, label=:BATHYMETRY), ylabel=:m, show=1)
+```{julia}
+colorbar(pos=(paper=true, anchor="6.5i/2i", justify=(:LM,"2i"), size=(7.5,1.2), triangles=true),
+        cmap=:geo, shade=true, xaxis=(annot=1000, label=:BATHYMETRY), ylabel=:m, show=1)
 ```
 
 To overlay a horizontal color scale (10 centimeters long and default width) above a
 Mercator map produced by a previous call, ensuring a 2 cm offset from the map frame, use
 
-```julia
-    colorbar!(region=(0,10,0,10), pos=(justify=:CT, width=10, offset=(0,2), horizontal=true), cmap="colors.cpt", show=1)
+```{julia}
+colorbar!(region=(0,10,0,10), pos=(justify=:CT, width=10, offset=(0,2), horizontal=true), cmap="colors.cpt", show=1)
 ```
 
 Show automatic placement of color bars when selecting a side mid-point.
 
 ```{julia}
-#| echo: true
-#| output: true
-using GMT
-
 C = makecpt(cmap=:jet, range=(0,100));
 basemap(region=(0,30,0,45), frame=(axes=:wsne, annot=:auto, ticks=:auto))
 colorbar!(position=(inside=true, anchor=:BC), xaxis=(annot=:auto, ticks=:auto),

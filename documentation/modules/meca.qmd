@@ -156,8 +156,6 @@ Columns: lon, lat, depth, T_value, T_azim, T_plunge, N_value, N_azim, N_plunge, 
 
 ## Examples
 
-[focal_mechanisms]
-
 Plot focal mechanisms using Aki-Richards convention:
 
 ```{julia}
@@ -199,6 +197,18 @@ D3 = mat2ds([0.0 2.0 0.0 0 45 -90 5 0 0], ["Normal"])
 meca!(D3, aki=2.5, fill=:black, show=true)
 ```
 
+```{julia}
+using GMT
+
+psmeca([0.0 3.0 0.0 0 45 90 5 0 0], aki=true, fill=:black, region=(-1,4,0,6), proj=:Merc, show=1)
+```
+
+The same but add a Label
+
+```{julia}
+psmeca(mat2ds([0.0 3.0 0.0 0 45 90 5 0 0], ["Thrust"]), aki=true, fill=:black, region=(-1,4,0,6), proj=:Merc, show=1)
+```
+
 ## References
 
 Aki, K., & Richards, P. G. (1980). *Quantitative seismology: theory and methods*. San Francisco: W. H. Freeman.
@@ -218,4 +228,6 @@ GMT.doc_source_links("meca")
 
 ## See Also
 
-{{< gmtref coupe >}}, [polar], {{< gmtref velo >}}
+{{< gmtref coupe >}}, {{< gmtref polar >}}, {{< gmtref velo >}}
+
+[Alphabetical Function List](../alphabetical.html)

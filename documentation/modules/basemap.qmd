@@ -68,9 +68,8 @@ axes annotated, using xscale = yscale = 1 cm per unit, ticking every 1 unit and
 annotating every 2, and using xlabel = "Distance" and ylabel = "No of samples", use
 
 ```{julia}
-#| echo: true
-#| output: true
 using GMT
+
 basemap(region=(0,9,0,5), figscale=1,
         frame=(axes=:WeSn, annot=2, ticks=1, xlabel=:Distance, ylabel="No of samples"), show=true)
 ```
@@ -82,12 +81,11 @@ x-axis is 25 cm and annotated every 1-2-5 and the y-axis is 15 cm and
 annotated every power of 10 but has tick-marks every 0.1, run
 
 ```{julia}
-#| echo: true
-#| output: true
 using GMT
-    basemap(region=(1,10000,1e20,1e25), figsize=(25,15), proj=:logxy, frame=(axes=:WS,),
-    xaxis=(annot=2, label=:Wavelength),
-    yaxis=(annot=1, ticks=3, label=:Power, scale=:pow), show=1)
+
+basemap(region=(1,10000,1e20,1e25), figsize=(25,15), proj=:logxy, frame=(axes=:WS,),
+xaxis=(annot=2, label=:Wavelength),
+yaxis=(annot=1, ticks=3, label=:Power, scale=:pow), show=1)
 ```
 
 ### Power axes
@@ -96,12 +94,10 @@ To design an axis system to be used for a depth-sqrt(age) plot with depth positi
 annotated every 500m, and ages (in millions of years) annotated at 1 My, 4 My, 9 My etc., use
 
 ```{julia}
-#| echo: true
-#| output: true
 using GMT
     # This still fails to generate the intended GMT command. (maybe let scale="pow0.5")
     #basemap(region=(0,100,0,5000), figscale=(1,-0.001), xaxis=(annot=1, label="Crustal age", scale=:pow), yaxis=(annot=500, label=:Depth), show=true)
-    basemap(region=(0,100,0,5000), frame="x1p+l\"Crustal age\" y500+lDepth", proj="x1cp0.5/-0.001c", show=true)
+basemap(region=(0,100,0,5000), frame="x1p+l\"Crustal age\" y500+lDepth", proj="x1cp0.5/-0.001c", show=true)
 ```
 
 ### Polar (theta,r) plot
@@ -110,10 +106,8 @@ For a base map for use with polar coordinates, where the radius from 0 to 1000 s
 correspond to 5 cm and with gridlines and ticks intervals automatically determined, use
 
 ```{julia}
-#| echo: true
-#| output: true
 using GMT
-    basemap(region=(0,360,0,1000), figsize=10, frame=:afg, proj=:polar, show=true)
+basemap(region=(0,360,0,1000), figsize=10, frame=:afg, proj=:polar, show=true)
 ```
 
 Cylindrical Map Projections

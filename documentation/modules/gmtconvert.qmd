@@ -296,6 +296,4 @@ GMT.doc_source_links("gmtconvert")
 See Also
 --------
 
-
-{{< gmtref gmtinfo >}},
-{{< gmtref gmtselect >}}
+{{< gmtref gmtinfo >}}, {{< gmtref gmtselect >}}

@@ -141,8 +141,6 @@ To make a raw contour plot from the remote file Table_5.11.txt and draw the
 contours every 25 and annotate every 50, using the default Cartesian projection, try
 
 ```{julia}
-#| echo: true
-#| output: true
 using GMT
 contour("@Table_5_11.txt", pen=:thin, contour=25, annot=50, show=true)
 ```
@@ -150,8 +148,6 @@ contour("@Table_5_11.txt", pen=:thin, contour=25, annot=50, show=true)
 To use the same data but only contour the values 750 and 800, use
 
 ```{julia}
-#| echo: true
-#| output: true
 using GMT
 contour("@Table_5_11.txt", annot=[750,800], pen=0.5, show=true)
 ```
@@ -160,9 +156,9 @@ To create a color plot of the numerical temperature solution obtained on a trian
 whose node coordinates and temperatures are stored in temp.xyz and mesh arrangement is given
 by the file mesh.ijk, using the colors in temp.cpt, run
 
-```julia
-    contour("temp.xyz", index="mesh.ijk", region=(0,150,0,100), figscale=0.25,
-            cmap="temp.cpt", labels=true, pen=0.25, show=true)
+```{julia}
+contour("temp.xyz", index="mesh.ijk", region=(0,150,0,100), figscale=0.25,
+        cmap="temp.cpt", labels=true, pen=0.25, show=true)
 ```
 
 To save the triangulated 100-m contour lines in topo.txt and separate
@@ -185,7 +181,6 @@ GMT.doc_source_links("contour")
 
 See Also
 --------
-
 
 {{< gmtref grdcontour >}},
 {{< gmtref grdimage >}},

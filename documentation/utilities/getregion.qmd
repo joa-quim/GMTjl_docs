@@ -22,4 +22,4 @@ GMT.doc_source_links("getregion")
 
 ## See Also
 
-- [Alphabetical Function List](../alphabetical.html)
+[Alphabetical Function List](../alphabetical.html)

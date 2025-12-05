@@ -162,6 +162,4 @@ See Also
 --------
 
 
-{{< gmtref filter1d >}},
-[psbasemap],
-{{< gmtref gmtsplit >}}
+{{< gmtref filter1d >}}, {{< gmtref psbasemap >}}, {{< gmtref gmtsplit >}}
