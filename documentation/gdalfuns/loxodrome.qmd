@@ -29,3 +29,10 @@ A {{< gmtref GMTdataset type=gmttype >}} when the input is {{< gmtref GMTdataset
 ## Example: Compute an loxodrome between points (0,0) and (30,50) discretized at 100 km steps.
 
     loxo = loxodrome([0 0; 30 50], step=100, unit=:k);
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("loxodrome")
+```

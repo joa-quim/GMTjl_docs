@@ -37,3 +37,10 @@ See Also
 --------
 
 {{< gmtref ecmwf >}}, {{< gmtref era5time >}}, {{< gmtref era5vars >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("listecmwfvars")
+```

@@ -8,12 +8,12 @@ title: "importEPSG"
 
 Documentation for the `importEPSG` function.
 
-## Methods
 
-```julia
-# 1 method for generic function "importEPSG" from GMT.Gdal:
- [1] importEPSG(code::Integer; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1893
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("importEPSG")
 ```
 
 ## See Also

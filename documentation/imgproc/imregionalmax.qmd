@@ -315,6 +315,13 @@ println("Number of regional maxima regions: $n_regions")
 
 ---
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imregionalmax")
+```
+
 ## See Also
 
 {{< gmtref imregionalmin >}}, {{< gmtref imhmax >}}, [watershed], {{< gmtref imreconstruct >}}, {{< gmtref bwareaopen >}}, {{< gmtref bwdist >}}

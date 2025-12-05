@@ -21,12 +21,12 @@ Icube = grays2cube(Cb, Cr, a, b; names=["Cb", "Cr", "a", "b"]);
 ```
 
 
-## Methods
 
-```julia
-# 1 method for generic function "grays2cube" from GMT:
- [1] grays2cube(layers::GMTimage{UInt8, 2}...; names, save)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\utils_types.jl:2204
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grays2cube")
 ```
 
 ## See Also

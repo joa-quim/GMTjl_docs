@@ -33,3 +33,9 @@ must be equal to the number of `azimuth`.
 Compute two lines starting at (0,0) with lengths 111100 & 50000, heading at 15 and 45 degrees.
 
     dest, = geod([0., 0], [15., 45], [[0, 10000, 50000, 111100.], [0., 50000]])[1]
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("geod")
+```

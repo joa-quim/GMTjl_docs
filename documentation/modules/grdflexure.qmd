@@ -10,3 +10,10 @@ To use it, you will need to use the {{< gmtref monolithic type=general text="Mon
 
 Please open a [Feature Request](https://github.com/GenericMappingTools/GMT.jl/issues) if you would like
 to see this module ported to the long verbose syntax, or better yet, consider contributing the port yourself!
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdflexure")
+```

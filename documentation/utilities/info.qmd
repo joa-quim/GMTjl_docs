@@ -32,3 +32,10 @@ info(any)`
 ```
 
 Runs ``show(stdout, "text/plain", any)`` which prints all elements of `any`. Good for printing the entire vector or matrix.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("info")
+```

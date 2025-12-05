@@ -67,3 +67,9 @@ using GMT
 piechart([1,2,3,4], explode=2, labels=("A","B","C","D"), labelstyle="namepercent", show=true)
 ```
 \end{examplefig}
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("piechart")
+```

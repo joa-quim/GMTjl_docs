@@ -18,6 +18,13 @@ Check the GMT.jl source for implementation details.
 
 The `bwdist_idx` function Return both distance transform and indices.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("bwdist_idx")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

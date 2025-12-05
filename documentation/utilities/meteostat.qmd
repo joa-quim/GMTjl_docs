@@ -67,3 +67,10 @@ See Also
 --------
 
 {{< gmtref weather >}}, {{< gmtref ecmwf >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("viz")
+```

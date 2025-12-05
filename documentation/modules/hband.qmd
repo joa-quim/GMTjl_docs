@@ -5,3 +5,9 @@
 ```
 
 Please see this function documentation in {{< gmtref vband >}}
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("hband")
+```

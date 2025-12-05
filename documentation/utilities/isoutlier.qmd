@@ -49,3 +49,10 @@ x = -50.0:50;	y = x / 50 .+ 3 .+ 0.25 * rand(length(x));
 y[[30,50,60]] = [4,-3,6];	# Add 3 outliers
 findall(isoutlier([x y], width=9))
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("findall")
+```

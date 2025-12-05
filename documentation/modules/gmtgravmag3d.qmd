@@ -152,8 +152,14 @@ viz(G, colorbar=true)
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gravmag3d")
+```
+
+\1
 
 {{< gmtref grdgravmag3d >}}, {{< gmtref gravprisms >}}, talwani2d, talwani3d, {{< gmtref triangulate >}}
 

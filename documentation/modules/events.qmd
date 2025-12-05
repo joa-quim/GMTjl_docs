@@ -6,13 +6,12 @@ title: "events"
 
 Documentation for the `events` function.
 
-## Methods
 
-```julia
-# 3 methods for generic function "events" from GMT:
- [1] events(cmd0::String; ...)
- [2] events(; ...)
- [3] events(cmd0::String, arg1; kwargs...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("events")
 ```
 
 ## See Also

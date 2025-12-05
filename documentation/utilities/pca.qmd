@@ -51,3 +51,10 @@ Gpca = pca(G::GMTgrid; DT::DataType=Float32, npc=0) -> GMTgrid{DT}
 
 This method takes a {{< gmtref GMTgrid type=gmttype >}} cube and returns another grid, of type `DT` (``Float32`` by default), with principal
 components in decreasing order of explained variance.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pca")
+```

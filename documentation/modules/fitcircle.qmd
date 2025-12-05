@@ -113,8 +113,14 @@ hemisphere great circle pole location using the `L2` norm, try
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("fitcircle")
+```
+
+\1
 
 {{< gmtref gmtvector >}},
 {{< gmtref project >}},

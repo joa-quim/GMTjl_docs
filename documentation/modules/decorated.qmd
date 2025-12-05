@@ -8,14 +8,12 @@ title: "decorated"
 
 Documentation for the `decorated` function.
 
-## Methods
 
-```julia
-# 2 methods for generic function "decorated" from GMT:
- [1] decorated(; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\common_options.jl:3421
- [2] decorated(nt::NamedTuple)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\common_options.jl:3420
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("decorated")
 ```
 
 ## See Also

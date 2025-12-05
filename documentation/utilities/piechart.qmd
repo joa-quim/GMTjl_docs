@@ -38,3 +38,10 @@ Each slice has a label indicating its size as a percentage of the whole pie or a
 ```julia
 piechart([1,2,3,4], explode=2, labels=("A","B","C","D"), labelstyle="namepercent", show=true)
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("piechart")
+```

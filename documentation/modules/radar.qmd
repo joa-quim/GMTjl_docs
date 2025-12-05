@@ -86,3 +86,9 @@ radar([10.5 20.5 30.6 40.9 46], axeslimts=[15, 25, 50, 90, 50], annotall=true, m
       labels=["Spoons","Forks","Knifes","Dishes","Oranges"], show=1)
 ```
 \end{examplefig}
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("radar")
+```

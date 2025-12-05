@@ -23,3 +23,10 @@ The blending method is the one explained in https://gis.stackexchange.com/questi
 
 Returns ``nothing`` if `new` option has not been used or a {{< gmtref GMTimage type=gmttype >}}, either RGB or indexed
 depending on the options used.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("blendimg!")
+```

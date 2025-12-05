@@ -45,12 +45,12 @@ found in your local data or cache dirs.
     Select verbosity level, which will send progress reports to stderr.
 
 
-## Methods
 
-```julia
-# 1 method for generic function "gmtwhich" from GMT:
- [1] gmtwhich(cmd0::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtwhich.jl:27
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtwhich")
 ```
 
 ## See Also

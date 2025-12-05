@@ -18,12 +18,12 @@ Find out if points `x,y` are inside a bounding box.
 `true` for points inside the bounding box and `false` for those outside
 
 
-## Methods
 
-```julia
-# 1 method for generic function "inbbox" from GMT:
- [1] inbbox(x::Real, y::Real, bbox)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\spatial_funs.jl:637
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("inbbox")
 ```
 
 ## See Also

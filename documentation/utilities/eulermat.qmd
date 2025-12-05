@@ -10,12 +10,12 @@ R = eulermat(a) -> Matrix{Float64}
 Compute the Euler rotation matrix that rotates by angles `a` (in degrees) about the x, y and z axes.
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "eulermat" from GMT:
- [1] eulermat(; rx, ry, rz)
- [2] eulermat(a)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("eulermat")
 ```
 
 ## See Also

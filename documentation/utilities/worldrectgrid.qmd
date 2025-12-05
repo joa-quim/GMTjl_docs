@@ -37,3 +37,10 @@ See Also
 
 {{< gmtref coastlinesproj >}}, {{< gmtref graticules >}}, [plotgrid!], {{< gmtref worldrectangular >}}, {{< gmtref worldrectcoast >}},
 [Best rectangular world map projection]
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("worldrectgrid")
+```

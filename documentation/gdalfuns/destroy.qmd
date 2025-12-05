@@ -8,44 +8,12 @@ title: "destroy"
 
 Documentation for the `destroy` function.
 
-## Methods
 
-```julia
-# 17 methods for generic function "destroy" from GMT.Gdal:
-  [1] destroy(geomdefn::GMT.Gdal.IGeomFieldDefnView)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1190
-  [2] destroy(feature::GMT.Gdal.Feature)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1156
-  [3] destroy(fielddefn::GMT.Gdal.IFieldDefnView)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1185
-  [4] destroy(geomdefn::GMT.Gdal.GeomFieldDefn)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1178
-  [5] destroy(fielddefn::GMT.Gdal.FieldDefn)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1172
-  [6] destroy(layer::GMT.Gdal.IFeatureLayer)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1146
-  [7] destroy(featuredefn::GMT.Gdal.FeatureDefn)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1161
-  [8] destroy(featuredefn::GMT.Gdal.IFeatureDefnView)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1152
-  [9] destroy(obj::GMT.Gdal.CoordTransform)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1127
- [10] destroy(drv::GMT.Gdal.Driver)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1115
- [11] destroy(spref::GMT.Gdal.AbstractSpatialRef)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1123
- [12] destroy(geom::GMT.Gdal.AbstractGeometry)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1167
- [13] destroy(dataset::GMT.Gdal.AbstractDataset)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1119
- [14] destroy(band::GMT.Gdal.IRasterBand)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1136
- [15] destroy(x::GMT.Gdal.RasterDataset, args...; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:964
- [16] destroy(band::GMT.Gdal.AbstractRasterBand)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1132
- [17] destroy(layer::GMT.Gdal.AbstractFeatureLayer)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1142
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("destroy")
 ```
 
 ## See Also

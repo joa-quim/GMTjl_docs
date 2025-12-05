@@ -171,3 +171,10 @@ See Also
 --------
 
 {{< gmtref slicecube >}}, {{< gmtref xyzw2cube >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("cubeplot")
+```

@@ -27,3 +27,9 @@ Args:
 Compute the distance and azimuth beyween points (0,0) and (5,5)
 
     dist, azim = loxodrome_inverse(0,0,5,5)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("loxodrome_direct")
+```

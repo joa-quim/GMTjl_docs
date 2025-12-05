@@ -54,7 +54,13 @@ grdimage!(Ic, figsize=6, xshift=6, show=true)
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imcomplement")
+```
+
+\1
 
 {{< gmtref binarize >}}

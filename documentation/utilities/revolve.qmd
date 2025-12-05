@@ -57,3 +57,9 @@ See Also
 --------
 
 {{< gmtref extrude >}}, {{< gmtref flatfv >}}, {{< gmtref fv2fv >}}, {{< gmtref loft >}}, {{< gmtref grid2tri >}}, {{< gmtref surf2fv >}}
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("revolve")
+```

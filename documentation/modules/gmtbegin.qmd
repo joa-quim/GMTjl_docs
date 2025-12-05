@@ -15,14 +15,12 @@ As an alternative use 'fmt' as a string or symbol containing the format (ps, pdf
 By default name="GMTplot" and fmt="ps"
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "gmtbegin" from GMT:
- [1] gmtbegin(name::String; fmt, verbose)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtbegin.jl:12
- [2] gmtbegin(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtbegin.jl:12
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtbegin")
 ```
 
 ## See Also

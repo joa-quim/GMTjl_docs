@@ -20,11 +20,12 @@ The *insitu* version `translate!()` does it in-place.
   * `dx, dy, dz`: The amount of offset to apply to the x, y and z  FV.verts components.
 
 
-## Methods
 
-```julia
-# 1 method for generic function "translate" from GMT:
- [1] translate(FV::GMTfv; dx, dy, dz, insitu)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("translate")
 ```
 
 ## See Also

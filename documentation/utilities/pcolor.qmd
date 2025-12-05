@@ -116,3 +116,10 @@ See Also
 --------
 
 {{< gmtref grdview >}}, {{< gmtref plot >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pcolor")
+```

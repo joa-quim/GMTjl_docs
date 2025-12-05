@@ -262,6 +262,13 @@ For velocity ellipses, the confidence parameter controls the size of the uncerta
 
 Kurt L. Feigl, Department of Geology and Geophysics at University of Wisconsin-Madison, Madison, Wisconsin, USA
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("velo")
+```
+
 ## See Also
 
 {{< gmtref plot >}}, {{< gmtref arrows >}}, {{< gmtref meca >}}, {{< gmtref coupe >}}

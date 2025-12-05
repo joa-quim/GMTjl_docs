@@ -34,3 +34,9 @@ I = gmtread(GMT.TESTSDIR * "assets/coins.jpg");
 level = isodata(I, band=1)
 119
 ```
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("isodata")
+```

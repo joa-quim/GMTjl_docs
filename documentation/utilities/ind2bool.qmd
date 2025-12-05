@@ -17,6 +17,13 @@ Check the GMT.jl source for implementation details.
 
 The `ind2bool` function Convert indices to boolean array.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("ind2bool")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

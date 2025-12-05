@@ -125,8 +125,14 @@ viz(G, title="Gorringe FAA", colorbar=true)
 
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdgravmag3d")
+```
+
+\1
 
 {{< gmtref gravmag3d >}}, {{< gmtref gravprism >}}, {{< gmtref talwani2d >}}, {{< gmtref talwani3d >}}
 

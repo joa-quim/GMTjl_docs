@@ -7,11 +7,12 @@ title: "tic"
 
 Documentation for the `tic` function.
 
-## Methods
 
-```julia
-# 1 method for generic function "tic" from GMT:
- [1] tic()
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("tic")
 ```
 
 ## See Also

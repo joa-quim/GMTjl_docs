@@ -5,3 +5,10 @@ doy2date(doy[, year]) -> Date
 ```
 
 Compute the date from the Day-Of-Year `doy`. If `year` is ommited we take it to mean the current year. Both `doy` and `year` can be strings or integers.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("doy2date")
+```

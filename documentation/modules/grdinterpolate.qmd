@@ -88,14 +88,12 @@ When using the `pt` or `crossection` options the default is to NOT ouput the red
 To see the full documentation type: $@? grdinterpolate$
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "grdinterpolate" from GMT:
- [1] grdinterpolate(cmd0::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\grdinterpolate.jl:62
- [2] grdinterpolate(arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\grdinterpolate.jl:63
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdinterpolate")
 ```
 
 ## See Also

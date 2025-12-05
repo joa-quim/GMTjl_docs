@@ -7,12 +7,12 @@ title: "resetGMT"
 
 Documentation for the `resetGMT` function.
 
-## Methods
 
-```julia
-# 2 methods for generic function "resetGMT" from GMT:
- [1] resetGMT(dorestart::Bool)
- [2] resetGMT()
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("resetGMT")
 ```
 
 ## See Also

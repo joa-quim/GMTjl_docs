@@ -93,7 +93,13 @@ and reporting the progress:
              weights="hawaii_weight.nc", verbose=true)
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdtrend")
+```
+
+\1
 
 {{< gmtref grdfft >}}, {{< gmtref grdfilter >}}, {{< gmtref grdmath >}}

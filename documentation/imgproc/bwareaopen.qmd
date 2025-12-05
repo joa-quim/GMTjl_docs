@@ -76,3 +76,10 @@ grdimage!(Ic2, figsize=5, xshift=5)
 grdimage!(Ic3, figsize=5, xshift=5, show=true)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("bwareaopen")
+```

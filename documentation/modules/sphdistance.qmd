@@ -107,6 +107,13 @@ G = sphdistance("@hotspots.txt", quantity="z2", region=:global, inc=1)
 
 Renka, R. J., 1997, Algorithm 772: STRIPACK: Delaunay Triangulation and Voronoi Diagram on the Surface of a Sphere, *ACM Trans. Math. Software*, **23**(3), 416-434, [https://doi.org/10.1145/275323.275329](https://doi.org/10.1145/275323.275329).
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("sphdistance")
+```
+
 ## See Also
 
 {{< gmtref sphtriangulate >}}, {{< gmtref triangulate >}}

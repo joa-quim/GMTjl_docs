@@ -74,18 +74,12 @@ See full GMT docs at [`regress`](http://docs.generic-mapping-tools.org/latest/gm
     Swap 1st and 2nd column on input and/or output.
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "regress" from GMT:
- [1] regress(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtregress.jl:50
- [2] regress(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtregress.jl:50
- [3] regress(arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtregress.jl:61
- [4] regress(cmd0::String, arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtregress.jl:50
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtregress")
 ```
 
 ## See Also

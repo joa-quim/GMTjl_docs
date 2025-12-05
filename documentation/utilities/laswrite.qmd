@@ -31,12 +31,12 @@ To write the x,y,z data to file "lixo.laz" do:
 ```
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "lazwrite" from GMT.Laszip:
- [1] lazwrite(fname::AbstractString, G::GMTgrid{Float32, 2}; scaleX, scaleY, scaleZ, offX, offY, offZ)
- [2] lazwrite(fname::AbstractString, xyz; grd_hdr, scaleX, scaleY, scaleZ, offX, offY, offZ, layout)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("laswrite")
 ```
 
 ## See Also

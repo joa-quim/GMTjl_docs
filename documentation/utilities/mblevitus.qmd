@@ -31,12 +31,12 @@ Create a water velocity profile which is representative of the mean annual water
     Select verbosity level, which will send progress reports to stderr.
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "mblevitus" from GMT:
- [1] mblevitus(cmd0::String; kwargs...)
- [2] mblevitus(; ...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("mblevitus")
 ```
 
 ## See Also

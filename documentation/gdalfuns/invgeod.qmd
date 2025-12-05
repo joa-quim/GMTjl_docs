@@ -61,3 +61,10 @@ function invgeod(lonlat1::Matrix{<:Real}, lonlat2::Matrix{<:Real}; proj::String=
 end
 
 ## -------------------------------------------------------------------------------------------------
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("invgeod")
+```

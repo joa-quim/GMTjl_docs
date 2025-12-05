@@ -43,3 +43,10 @@ using GMT
 ecdfplot(randn(100), show=true)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("ecdfplot")
+```

@@ -25,12 +25,12 @@ From FEX contribution https://www.mathworks.com/matlabcentral/fileexchange/5557-
   * `xc`, `yc`, `R`, `err`; The center, radius and the error of the fit
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "circfit" from GMT:
- [1] circfit(x, y; taubin)
- [2] circfit(xy::Union{GMTdataset, Matrix{<:Real}}; taubin)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("circfit")
 ```
 
 ## See Also

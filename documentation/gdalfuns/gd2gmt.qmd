@@ -23,3 +23,10 @@ Or
 Or
 
    G = gd2gmt("NETCDF:AQUA_MODIS.20210228.L3m.DAY.NSST.sst.4km.NRT.nc:sst");
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gd2gmt")
+```

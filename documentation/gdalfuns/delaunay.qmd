@@ -12,3 +12,10 @@ title: "delaunay"
 * `gdataset`: Returns a GDAL IGeometry even when input is {{< gmtref GMTdataset type=gmttype >}} or Matrix
 
 Return a Delaunay triangulation of the vertices of the geometry.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("delaunay")
+```

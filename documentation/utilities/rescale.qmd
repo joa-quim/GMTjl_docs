@@ -36,3 +36,9 @@ See Also
 --------
 
 {{< gmtref imagesc >}}
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("rescale")
+```

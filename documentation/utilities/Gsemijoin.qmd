@@ -7,6 +7,13 @@ title: "Gsemijoin"
 
 Documentation for the `Gsemijoin` function.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("Gsemijoin")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

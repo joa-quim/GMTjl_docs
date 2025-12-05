@@ -5,3 +5,10 @@ title: "wkt2proj"
     wkt2proj(wkt_str::String)
 
 Convert a WKT SRS string into the PROJ4 form.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("wkt2proj")
+```

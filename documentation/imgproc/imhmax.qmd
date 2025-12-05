@@ -36,7 +36,13 @@ I = imhmax(mat2img(a), 4);
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imhmax")
+```
+
+\1
 
 {{< gmtref imhdome >}}, {{< gmtref imhmin >}}

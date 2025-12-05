@@ -73,3 +73,10 @@ See Also
 --------
 
 {{< gmtref blockmean >}}, {{< gmtref blockmedian >}}, {{< gmtref surface >}}, {{< gmtref triangulate >}}, {{< gmtref nearneighbor >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gridit")
+```

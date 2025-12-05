@@ -223,8 +223,14 @@ To use a smoothing spline on a topographic profile for a given fit parameter, tr
     sample1d("@topo_crossection.txt", range(300,500,0.1), interp=(:smooth, 0.001)) 
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("sample1d")
+```
+
+\1
 
 `gmt.conf`,
 {{< gmtref greenspline >}},

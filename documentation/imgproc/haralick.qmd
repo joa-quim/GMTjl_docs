@@ -18,6 +18,13 @@ Check the GMT.jl source for implementation details.
 
 The `haralick` function Compute Haralick texture features.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("haralick")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

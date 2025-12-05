@@ -53,3 +53,10 @@ D = maregrams(code="lgos", days=4, starttime="2025-02-01");
 viz(D, title="Tide Gauge at Lagos (Portugal)")
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("maregrams")
+```

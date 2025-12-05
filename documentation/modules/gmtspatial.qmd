@@ -214,6 +214,13 @@ If you want to plot a polygon with holes (donut polygon) from a multiple segment
 D = gmtspatial("file.txt", polygons=:h)
 ```
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtspatial")
+```
+
 ## See Also
 
 {{< gmtref gmtselect >}}, {{< gmtref gmtsimplify >}}, {{< gmtref mapproject >}}

@@ -57,3 +57,10 @@ function gdalwarp(indata, opts=String[]; dest="/vsimem/tmp", kwargs...)
 end
 
 # ---------------------------------------------------------------------------------------------------
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("fillnodata!")
+```

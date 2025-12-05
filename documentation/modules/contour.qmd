@@ -176,8 +176,14 @@ them into multisegment files (one for each contour level), try
 
 {{< include ../common_opts/auto_legend_info.md >}}
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("contour")
+```
+
+\1
 
 {{< gmtref grdcontour >}},
 {{< gmtref grdimage >}},

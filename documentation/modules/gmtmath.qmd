@@ -28,3 +28,10 @@ to coastlines. So, there is still interest in **gmtmath** but due to its nature 
 into a vebose version and for using it one must use the [Monolithic] mode.
 
 For the full manual, consult the main GMT [gmtmath manual](https://docs.generic-mapping-tools.org/dev/gmtmath.html)
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtmath")
+```

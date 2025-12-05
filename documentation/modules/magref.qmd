@@ -193,8 +193,14 @@ viz(G, coast=true, colorbar=true)
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("magref")
+```
+
+\1
 
 [mgd77track]
 

@@ -45,11 +45,19 @@ useful to use in the `mosaic` program. For that purpose, the returned BB is sore
 Examples
 --------
 
-```julia
-    geocoder("Paris, France")
+```{julia}
+using GMT
+geocoder("Paris, France")
 ```
 
 See Also
 --------
 
 {{< gmtref mosaic >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("geocoder")
+```

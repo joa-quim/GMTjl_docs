@@ -17,18 +17,12 @@ See full GMT docs at [`velo`](http://docs.generic-mapping-tools.org/latest/suppl
 ```
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "velo" from GMT:
- [1] velo(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\geodesy\psvelo.jl:12
- [2] velo(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\geodesy\psvelo.jl:12
- [3] velo(arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\geodesy\psvelo.jl:49
- [4] velo(cmd0::String, arg1; first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\geodesy\psvelo.jl:12
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("psvelo")
 ```
 
 ## See Also

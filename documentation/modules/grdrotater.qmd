@@ -67,14 +67,12 @@ imshow(Gr, plot=(data=tri_rot,))
 ```
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "grdrotater" from GMT:
- [1] grdrotater(cmd0::String; ...)
- [2] grdrotater(; ...)
- [3] grdrotater(cmd0::String, arg1; kwargs...)
- [4] grdrotater(arg1; kw...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdrotater")
 ```
 
 ## See Also

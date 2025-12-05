@@ -7,11 +7,12 @@ title: "vizpdf"
 
 Documentation for the `vizpdf` function.
 
-## Methods
 
-```julia
-# 1 method for generic function "vizpdf" from GMT:
- [1] vizpdf(args...; kwargs...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("vizpdf")
 ```
 
 ## See Also

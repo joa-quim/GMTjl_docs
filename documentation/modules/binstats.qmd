@@ -46,14 +46,12 @@ Reads arbitrarily located (x,y[,z][,w]) points (2-4 columns) and for each node i
 To see the full documentation type: $@? gmtbinstats$
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "binstats" from GMT:
- [1] binstats(fname::String; nbins, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtbinstats.jl:41
- [2] binstats(arg1; nbins, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtbinstats.jl:47
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("binstats")
 ```
 
 ## See Also

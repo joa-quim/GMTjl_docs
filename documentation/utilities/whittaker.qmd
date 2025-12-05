@@ -52,16 +52,12 @@ plot!(t, z, lc=:red, lt=1, legend="Degree 3", show=1)
 ```
 
 
-## Methods
 
-```julia
-# 6 methods for generic function "whittaker" from GMT:
- [1] whittaker(x::AbstractVecOrMat{<:Real}, y::AbstractVecOrMat{<:Real}, lambda::Real; ...)
- [2] whittaker(D::GMTdataset, lambda::Real, d::Int64; weights)
- [3] whittaker(y::AbstractVecOrMat{<:Real}, lambda, d; weights, checkedNaN)
- [4] whittaker(D::GMTdataset, lambda::Real; ...)
- [5] whittaker(y::AbstractVecOrMat{<:Real}, lambda; ...)
- [6] whittaker(x::AbstractVecOrMat{<:Real}, y::AbstractVecOrMat{<:Real}, lambda::Real, d::Int64; weights, checkedNaN)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("whittaker")
 ```
 
 ## See Also

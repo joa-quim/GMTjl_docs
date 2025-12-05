@@ -40,12 +40,12 @@ julia> quadkey([121, 97, 8], bounds=false)
 ```
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "quadkey" from GMT:
- [1] quadkey(xyz::VecOrMat{<:Int64}; bounds, geog)
- [2] quadkey(lon::Real, lat::Real, zoom::Int64; bounds, geog)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("quadkey")
 ```
 
 ## See Also

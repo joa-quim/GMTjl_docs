@@ -32,3 +32,10 @@ A GMT dataset or a vector of it (when input is Vector{GMTdataset})
 ## Example: Compute a buffer with 50000 m width
 
     D = buffergeo([0 0; 10 10; 15 20], width=50000);
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("buffergeo")
+```

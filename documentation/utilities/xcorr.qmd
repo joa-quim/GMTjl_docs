@@ -28,19 +28,14 @@ Cross-correlation measures the similarity between a vector x and shifted (lagged
   * `maxlags`: limits the lag range from `-maxlag` to `maxlag`.
 
 
-## Methods
 
-```julia
-# 6 methods for generic function "xcorr" from GMT:
- [1] xcorr(x::AbstractMatrix{<:Real}, y::AbstractMatrix{<:Real}; lags, demean, maxlags)
- [2] xcorr(x::AbstractVector{<:Real}, y::AbstractMatrix{<:Real}; lags, demean, maxlags)
- [3] xcorr(x::AbstractMatrix{<:Real}, y::AbstractVector{<:Real}; lags, demean, maxlags)
- [4] xcorr(x::AbstractVector{<:Real}, y::AbstractVector{<:Real}; demean, lags, maxlags)
- [5] xcorr(x::AbstractMatrix{<:Real}; demean, lags, maxlags)
- [6] xcorr(x::AbstractVector{<:Real}; demean, lags, maxlags)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("xcorr")
 ```
 
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)
-- [GMT.jl Documentation](https://www.generic-mapping-tools.org/GMTjl_doc/)

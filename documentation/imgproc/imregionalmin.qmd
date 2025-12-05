@@ -250,6 +250,13 @@ showfig()
 
 ---
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imregionalmin")
+```
+
 ## See Also
 
 {{< gmtref imregionalmax >}}, {{< gmtref imhmin >}}, [watershed], {{< gmtref imreconstruct >}}, {{< gmtref bwareaopen >}}

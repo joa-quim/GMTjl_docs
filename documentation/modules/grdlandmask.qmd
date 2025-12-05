@@ -130,7 +130,13 @@ viz(G)
 
 {{< include ../common_opts/explain_gshhg.md >}}
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdlandmask")
+```
+
+\1
 
 {{< gmtref grdclip >}}, {{< gmtref mask >}}, {{< gmtref clip >}}, {{< gmtref coast >}}

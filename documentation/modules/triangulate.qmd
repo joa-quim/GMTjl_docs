@@ -179,8 +179,14 @@ and vertical uncertainties and these are weighted given the local slope.
 See the *Zambo et al.* [2014] and *Zhou and Liu* [2004] references for more details.
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("triangulate")
+```
+
+\1
 
 {{< gmtref greenspline >}},
 {{< gmtref nearneighbor >}},

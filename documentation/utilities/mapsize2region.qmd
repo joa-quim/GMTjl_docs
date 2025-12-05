@@ -40,12 +40,12 @@ coast(region=opt_R, proj=opt_J, shore=true, show=true)
 ```
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "mapsize2region" from GMT:
- [1] mapsize2region(; proj, scale, clon, clat, width, height, bnds, plot)
- [2] mapsize2region(proj::String, scale::String, clon::Float64, clat::Float64, width::Float64, height::Float64, bnds)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("mapsize2region")
 ```
 
 ## See Also

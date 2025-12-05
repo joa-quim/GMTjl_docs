@@ -12,3 +12,10 @@ Returns whether the geometries intersect
 
 Determines whether two geometries intersect. If GEOS is enabled, then this is done in rigorous fashion
 otherwise `true` is returned if the envelopes (bounding boxes) of the two geometries overlap.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("intersects")
+```

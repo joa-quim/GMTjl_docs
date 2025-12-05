@@ -229,6 +229,13 @@ G2 = grdfft(G1, dfdz=true)
 G = grdfft("gravity.nc", D="-D -D", save="output.nc")
 ```
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdfft")
+```
+
 ## See Also
 
 {{< gmtref grdfilter >}}, {{< gmtref grdproject >}}

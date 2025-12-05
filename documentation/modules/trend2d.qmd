@@ -148,8 +148,14 @@ To find out how many terms (up to 10 in a robust interpolant are significant in 
     trend2d("data.xyz", model="10+r", conf_level=true, verbose=true)
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("trend2d")
+```
+
+\1
 
 {{< gmtref grdtrend >}}, {{< gmtref trend1d >}}
 

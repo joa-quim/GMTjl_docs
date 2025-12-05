@@ -286,8 +286,14 @@ To get all rows except those bad ones between rows 1000-2000, try:
     D = convert("junk.txt", q="~1000-2000")
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtconvert")
+```
+
+\1
 
 {{< gmtref gmtinfo >}},
 {{< gmtref gmtselect >}}

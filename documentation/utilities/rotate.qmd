@@ -21,12 +21,12 @@ The *insitu* version `rotate!()` does it in-place. Note: We set the `bfculling` 
   * `rx, ry, rz`: Alternative to `a`, provide one to three of those Euler angles.
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "rotate" from GMT:
- [1] rotate(FV::GMTfv, a; rx, ry, rz, insitu)
- [2] rotate(FV::GMTfv; ...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("rotate")
 ```
 
 ## See Also

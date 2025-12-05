@@ -8,22 +8,12 @@ title: "violin"
 
 Documentation for the `violin` function.
 
-## Methods
 
-```julia
-# 6 methods for generic function "violin" from GMT:
- [1] violin(data::Array{Array{Vector{T}, 1}, 1}; pos, nbins, first, bins, bandwidth, kernel, groupwidth, ccolor, kwargs...) where T
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\statplots.jl:608
- [2] violin(data::Array{<:Real, 3}; pos, nbins, first, bins, bandwidth, kernel, groupwidth, ccolor, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\statplots.jl:582
- [3] violin(data::GMTdataset; pos, first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\statplots.jl:555
- [4] violin(data::Union{AbstractMatrix{T}, Array{Vector{T}, 1}}; first, pos, nbins, bins, bandwidth, groupwidth, kernel, kwargs...) where T
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\statplots.jl:570
- [5] violin(data::Vector{<:Real}, grp::AbstractVector; first, pos, nbins, bins, bandwidth, groupwidth, kernel, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\statplots.jl:559
- [6] violin(data::Vector{<:Real}; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\statplots.jl:559
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("violin")
 ```
 
 ## See Also

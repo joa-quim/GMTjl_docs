@@ -175,3 +175,10 @@ using GMT   # Hide
 G = peaks();
 contourf(G, tanaka=true, show=true)
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("contourf")
+```

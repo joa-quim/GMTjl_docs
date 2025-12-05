@@ -109,8 +109,14 @@ it is a very brute-force yet exact comparison that is very slow for large data s
 A much quicker check involves appending a specific repeating longitude value.
 Detection of duplicates in the STRIPACK library will exit the module.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("sphinterpolate")
+```
+
+\1
 
 {{< gmtref greenspline >}},
 {{< gmtref nearneighbor >}},

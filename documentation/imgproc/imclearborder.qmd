@@ -11,12 +11,12 @@ J = imclearborder(I; conn::Int=4)
 Suppress connected components that touch the image border.
 
 
-## Methods
 
-```julia
-# 1 method for generic function "imclearborder" from GMT:
- [1] imclearborder(I; conn)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\lepto_funs.jl:1090
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imclearborder")
 ```
 
 ## See Also

@@ -27,3 +27,10 @@ And it may also contain a `options=...` argument that is equivalent to the `opti
 
 ### Returns
 A GMT grid or Image, or a GDAL dataset (or nothing if file was writen on disk).
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gdaltranslate")
+```

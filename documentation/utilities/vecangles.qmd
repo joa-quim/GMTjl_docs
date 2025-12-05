@@ -23,3 +23,10 @@ Args:
 * `ind` - A vector of Int with the order obtained by sorting the lines azimuths (when `sorted=true`).
   Apply it to `lonlat2[ind,:]` to get the point distribution order in the same way as `angles`.
   Neddless, ofc, if `sorted=false`.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("vecangles")
+```

@@ -52,3 +52,9 @@ See Also
 --------
 
 {{< gmtref extrude >}}, {{< gmtref flatfv >}}, {{< gmtref loft >}}, {{< gmtref grid2tri >}}, {{< gmtref revolve >}}, {{< gmtref surf2fv >}}
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gyroid")
+```

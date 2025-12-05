@@ -65,3 +65,10 @@ using GMT
 weather(city="Copenhagen", year=2023, variable="rain_sum", show=true)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("weather")
+```

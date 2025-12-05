@@ -324,8 +324,14 @@ rotation pole. Now, use the projected North pole and origin coordinates as the r
 and center, respectively, and project your file as in the pacific example above. This gives
 coordinates for an oblique small circle.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("project")
+```
+
+\1
 
 {{< gmtref fitcircle >}},
 {{< gmtref gmtvector >}},

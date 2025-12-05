@@ -7,12 +7,12 @@ title: "peaks"
 
 Documentation for the `peaks` function.
 
-## Methods
 
-```julia
-# 2 methods for generic function "peaks" from GMT:
- [1] peaks(n::Int64; N, grid, pixreg)
- [2] peaks(; ...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("peaks")
 ```
 
 ## See Also

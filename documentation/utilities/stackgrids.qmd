@@ -37,3 +37,10 @@ See Also
 --------
 
 {{< gmtref cubeplot >}}, {{< gmtref slicecube >}}, {{< gmtref xyzw2cube >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("stackgrids")
+```

@@ -23,3 +23,10 @@ trisurf(G, G2=nothing; bottom=false, downsample=0, isbase=false, ratio=0.01,
 ```
 
 Short form for the sequence $D = grid2tri(...)$ followed by $viz(D)$. See the documentation of $grid2tri$ for more details.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("trisurf")
+```

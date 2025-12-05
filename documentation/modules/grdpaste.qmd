@@ -45,8 +45,14 @@ then you can make outfile.nc which will be 150 - 180 and -30S - 30N by:
     G = grdpaste("file_a.nc", "file_b.nc", colinfo=:g);
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdpaste")
+```
+
+\1
 
 {{< gmtref grdblend >}},
 {{< gmtref grdclip >}},

@@ -53,7 +53,13 @@ grdimage!(Ir, figsize=8, yshift=-2.57, show=true)
 
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imreconstruct")
+```
+
+\1
 
 {{< gmtref fillsinks >}}, {{< gmtref imfill >}}

@@ -7,6 +7,13 @@ title: "Gleftjoin"
 
 Documentation for the `Gleftjoin` function.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("Gleftjoin")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

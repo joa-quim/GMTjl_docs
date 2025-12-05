@@ -110,14 +110,12 @@ The same but add a Label
 ```
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "meca" from GMT:
- [1] meca(cmd0::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\seis\psmeca.jl:77
- [2] meca(arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\seis\psmeca.jl:78
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("psmeca")
 ```
 
 ## See Also

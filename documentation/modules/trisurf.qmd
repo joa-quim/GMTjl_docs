@@ -26,3 +26,9 @@ x,y,z = GMT.peaks(N=45, grid=false);
 trisurf([x[:] y[:] z[:]], pen=0.5, show=true)
 ```
 \end{examplefig}
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("trisurf")
+```

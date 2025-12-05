@@ -117,8 +117,14 @@ The same as above but this time returns the two grids to the Julia REPL
     Z,S = blockmean("@ship_15.txt", spacing="10m", region=(-115,-105,20,30), extend=true, fields="z,s")
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("blockmean")
+```
+
+\1
 
 {{< gmtref blockmedian >}}
 {{< gmtref blockmode >}}

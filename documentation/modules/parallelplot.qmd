@@ -117,3 +117,10 @@ using GMT
 parallelplot(GMT.TESTSDIR * "iris.dat", groupvar="text", band=true, legend=true, show=true)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("parallelplot")
+```

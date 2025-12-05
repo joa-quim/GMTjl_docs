@@ -7,12 +7,12 @@ title: "fields"
 
 Documentation for the `fields` function.
 
-## Methods
 
-```julia
-# 2 methods for generic function "fields" from GMT:
- [1] fields(arg::Array)
- [2] fields(arg)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("fields")
 ```
 
 ## See Also

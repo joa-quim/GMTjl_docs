@@ -16,3 +16,10 @@ title: "scatter3"
  [8] scatter3(; ...)
  [9] scatter3(arg; kw...)
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("scatter3")
+```

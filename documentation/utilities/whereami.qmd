@@ -33,3 +33,10 @@ BoundingBox: [-8.1026, -8.1026, 37.0658, 37.0658]
 ─────┼──────────────────
    1 │ -8.1026  37.0658
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("whereami")
+```

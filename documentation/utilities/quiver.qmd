@@ -77,3 +77,10 @@ This option is ignored if **inc** is set.
     Specify the data types of input and/or output columns (time or geographical data).
 
 To see the full documentation type: $@? grdvector$
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("quiver")
+```

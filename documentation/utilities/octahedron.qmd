@@ -35,3 +35,10 @@ See Also
 --------
 
 {{< gmtref cube >}}, {{< gmtref cylinder >}}, {{< gmtref dodecahedron >}}, {{< gmtref icosahedron >}}, {{< gmtref replicant >}}, {{< gmtref sphere >}}, {{< gmtref tetrahedron >}}, {{< gmtref torus >}},  
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("octahedron")
+```

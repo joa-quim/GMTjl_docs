@@ -97,6 +97,13 @@ Wessel, P., 1998, An empirical method for optimal robust regional-residual separ
 
 Wessel, P., 2016, Regional–residual separation of bathymetry and revised estimates of Hawaii plume flux, *Geophys. J. Int.*, **204**(2), 932-947, [https://doi.org/10.1093/gji/ggv472](https://doi.org/10.1093/gji/ggv472).
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdvolume")
+```
+
 ## See Also
 
 {{< gmtref grdfilter >}}, {{< gmtref grdmask >}}

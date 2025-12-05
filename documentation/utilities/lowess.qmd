@@ -28,14 +28,12 @@ plot!(x, ys)
 ```
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "lowess" from GMT:
- [1] lowess(x::AbstractVector{T}, y::AbstractVector{T}; span, nsteps, delta) where T<:AbstractFloat
- [2] lowess(mat::Matrix{<:Real}; span, nsteps, delta)
- [3] lowess(x::AbstractVector{R}, y::AbstractVector{S}; span, nsteps, delta) where {R<:Real, S<:Real}
- [4] lowess(D::GMTdataset; span, nsteps, delta)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("lowess")
 ```
 
 ## See Also

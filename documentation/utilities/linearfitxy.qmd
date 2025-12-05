@@ -62,3 +62,10 @@ See Also
 --------
 
 {{< gmtref plotlinefit >}}, {{< gmtref plot >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("linearfitxy")
+```

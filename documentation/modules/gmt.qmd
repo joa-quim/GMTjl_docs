@@ -11,12 +11,12 @@ gmt("module_name `options`", args...)
 ```
 
 
-## Methods
 
-```julia
-# 1 method for generic function "gmt" from GMT:
- [1] gmt(cmd::String, args...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmt_main.jl:7
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmt")
 ```
 
 ## See Also

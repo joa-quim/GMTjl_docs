@@ -152,8 +152,14 @@ supplying a suitable title, and using color masking for unmapped area, try::
     grd2kml("ellice_basin.nc", shade="+d", prefix="ellice", -L512, title="Ellice Basin Bathymetry")
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grd2kml")
+```
+
+\1
 
 {{< gmtref gmt2kml >}},
 {{< gmtref grdgradient >}},

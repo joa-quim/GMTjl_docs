@@ -7,12 +7,12 @@ title: "nanmean"
 
 Documentation for the `nanmean` function.
 
-## Methods
 
-```julia
-# 2 methods for generic function "nanmean" from GMT:
- [1] nanmean(x, y)
- [2] nanmean(x)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("nanmean")
 ```
 
 ## See Also

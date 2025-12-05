@@ -7,6 +7,13 @@ title: "Ginnerjoin"
 
 Documentation for the `Ginnerjoin` function.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("Ginnerjoin")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

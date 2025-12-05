@@ -91,14 +91,12 @@ Plots grayshaded, colored, or textured land-masses [or water-masses] on maps and
 To see the full documentation type: $@? coast$
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "coast" from GMT:
- [1] coast(cmd0::String; clip, first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pscoast.jl:78
- [2] coast(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pscoast.jl:78
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pscoast")
 ```
 
 ## See Also

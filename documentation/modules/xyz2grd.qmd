@@ -124,8 +124,14 @@ scanline-oriented data raw.b, use
     G = xyz2grd("raw.b", region=(0,100,0,100), inc=1, flags=true, binary_in="3f")
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("xyz2grd")
+```
+
+\1
 
 {{< gmtref grd2xyz >}},
 {{< gmtref greenspline >}},

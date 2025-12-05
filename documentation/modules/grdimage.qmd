@@ -172,3 +172,10 @@ I = mosaic(region=(continent="AF",));   # Get a mosaic of the ~Africa region
 viz(I, clip=(continent=:AF,))           # Clip outside of the African continent.
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdimage")
+```

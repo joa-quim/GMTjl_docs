@@ -15,12 +15,12 @@ Set attributes for the current modern mode session figure.
   * 'opts' Sets one or more comma-separated options (and possibly arguments) that can be passed to psconvert when preparing this figure.
 
 
-## Methods
 
-```julia
-# 1 method for generic function "gmtfig" from GMT:
- [1] gmtfig(name::String; fmt, opts)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtbegin.jl:53
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtfig")
 ```
 
 ## See Also

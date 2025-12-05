@@ -84,3 +84,10 @@ scatter!(m, ms="2p", mc=:red, MarkerEdgeColor=true, label="Median filter")
 scatter!(y, ms="2p", mc=:green, MarkerEdgeColor=true, label="Hampel filter", show=true)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("hampel")
+```

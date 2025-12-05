@@ -70,14 +70,12 @@ Place images or EPS files on maps.
 To see the full documentation type: $@? psconvert$
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "psconvert" from GMT:
- [1] psconvert(arg1::GMT.GMTps; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psconvert.jl:72
- [2] psconvert(cmd0::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psconvert.jl:71
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("psconvert")
 ```
 
 ## See Also

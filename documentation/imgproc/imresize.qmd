@@ -18,6 +18,13 @@ Check the GMT.jl source for implementation details.
 
 The `imresize` function Resize an image.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imresize")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

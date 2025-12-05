@@ -270,8 +270,14 @@ of the listed cpt names as an output filename; hence the my_gebco.cpt in the exa
 a name, e.g., rainbow.cpt, then **makecpt** will read that file first and not look for the master CPT in the shared
 GMT directory.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("makecpt")
+```
+
+\1
 
 {{< gmtref grd2cpt >}}
 

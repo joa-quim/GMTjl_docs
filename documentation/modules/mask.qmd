@@ -189,7 +189,13 @@ viz(Ic, title="Croatia")
 
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("mask")
+```
+
+\1
 
 {{< gmtref grdmask >}}, {{< gmtref surface >}}, {{< gmtref basemap >}}, {{< gmtref clip >}}

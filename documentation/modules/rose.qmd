@@ -192,7 +192,13 @@ References
 Berens, P., 2009, CircStat: A MATLAB Toolbox for Circular Statistics, *J. Stat. Software, 31(10)*\ , 1-21.
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("rose")
+```
+
+\1
 
 {{< gmtref histogram >}}

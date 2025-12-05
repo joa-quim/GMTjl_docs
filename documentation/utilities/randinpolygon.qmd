@@ -18,12 +18,12 @@ Generate random samples inside polygons. The method used here is that of poin-in
 A GMTdatset if only one polygon was passed or a Vector{GMTaset} otherwise.
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "randinpolygon" from GMT:
- [1] randinpolygon(Din::GDtype; density, np)
- [2] randinpolygon(mat::Matrix{<:AbstractFloat}; density, np)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("randinpolygon")
 ```
 
 ## See Also

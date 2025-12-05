@@ -508,6 +508,13 @@ The distance flag (`D`) determines how grid coordinates relate to filter width:
 
 When the output grid type is netCDF, coordinates are labeled "longitude", "latitude", or "time" based on input attributes or `f`/`R` options. Time coordinates are stored as relative time since epoch (specified by `TIME_UNIT` and `TIME_EPOCH`).
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdfilter")
+```
+
 ## See Also
 
 GMT.jl related functions:

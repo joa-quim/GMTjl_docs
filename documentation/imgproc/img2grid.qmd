@@ -11,12 +11,12 @@ G = img2grid(I::GMTimage; type=eltype(I.image))
 Converts an GMTimage object to a grid. If the `type` option is not set the image data type is preserved and the array in NOT copied. Otherwise the image data is converted to the specified type and a copy is made.
 
 
-## Methods
 
-```julia
-# 1 method for generic function "img2grid" from GMT:
- [1] img2grid(I::GMTimage; type)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\utils_types.jl:2417
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("img2grid")
 ```
 
 ## See Also

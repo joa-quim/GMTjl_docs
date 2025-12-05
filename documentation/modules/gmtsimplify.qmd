@@ -103,8 +103,14 @@ This implementation of the algorithm has been kindly provided by Dr.
 Gary J. Robinson, Department of Meteorology, University of Reading, Reading, UK;
 his subroutine forms the basis for this program.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtsimplify")
+```
+
+\1
 
 {{< gmtref gmtconnect >}},
 {{< gmtref gmtconvert >}},

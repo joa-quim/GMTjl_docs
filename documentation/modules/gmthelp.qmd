@@ -8,12 +8,12 @@ title: "gmthelp"
 
 Documentation for the `gmthelp` function.
 
-## Methods
 
-```julia
-# 1 method for generic function "gmthelp" from GMT:
- [1] gmthelp(opt)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\common_options.jl:5104
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmthelp")
 ```
 
 ## See Also

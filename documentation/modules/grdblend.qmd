@@ -52,22 +52,12 @@ See full GMT docs at [`grdblend`](http://docs.generic-mapping-tools.org/latest/g
     Force pixel node registration [Default is gridline registration].
 
 
-## Methods
 
-```julia
-# 6 methods for generic function "grdblend" from GMT:
- [1] grdblend(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\grdblend.jl:42
- [2] grdblend(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\grdblend.jl:42
- [3] grdblend(cmd0::String, arg1; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\grdblend.jl:42
- [4] grdblend(arg1, arg2; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\grdblend.jl:53
- [5] grdblend(arg1; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\grdblend.jl:53
- [6] grdblend(cmd0::String, arg1, arg2; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\grdblend.jl:42
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdblend")
 ```
 
 ## See Also

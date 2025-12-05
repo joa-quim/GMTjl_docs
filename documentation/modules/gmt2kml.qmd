@@ -281,7 +281,13 @@ Segment Information
 text description*". If present, these are parsed to supply name and
 description tags, respectively, for the current feature.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmt2kml")
+```
+
+\1
 
 {{< gmtref grd2kml >}}, [kml2gmt], [psconvert]

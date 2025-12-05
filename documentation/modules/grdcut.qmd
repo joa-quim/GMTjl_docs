@@ -155,8 +155,14 @@ you append another grid format specifier). However, if your output filename has
 a .tif[f] extension then we will instead write it as a one-band geotiff.
 All geotiff output operations are done via GDAL's *gdal_translate*.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdcut")
+```
+
+\1
 
 {{< gmtref grdclip >}},
 {{< gmtref grdfill >}},

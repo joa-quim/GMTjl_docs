@@ -329,6 +329,13 @@ GMT uses ellipsoidal formulae when implemented and an ellipsoid is selected. Be 
 
 The production order for geodetic and temporal columns from `azim`, `dist`, `line_dist`, and `travel_time` is fixed (alphabetical by option). Command-line order is irrelevant. Use `outcols` to modulate the final output order.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("mapproject")
+```
+
 ## See Also
 
 [project](https://www.generic-mapping-tools.org/GMTjl_doc/documentation/modules/project/)

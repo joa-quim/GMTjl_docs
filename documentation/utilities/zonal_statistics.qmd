@@ -45,12 +45,12 @@ zonal_statistics(G, Swiss, mean)
 ```
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "zonal_statistics" from GMT:
- [1] zonal_statistics(GI::GItype, shapes::GDtype, fun::Function; touches, byfeatures, groupby)
- [2] zonal_statistics(fun::Function, GI::GItype, shapes::GDtype; touches, byfeatures, groupby)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("zonal_statistics")
 ```
 
 ## See Also

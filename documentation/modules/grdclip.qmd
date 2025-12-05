@@ -63,8 +63,14 @@ exchange 17 for 11 and all values < 10 to 0 in file classes.nc, try
     Gnew_classes = grdclip("classes.nc", S="i25/30/99, -Si35/39/55", old=(17,11), between=(10,0))
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdclip")
+```
+
+\1
 
 {{< gmtref grdfill >}},
 {{< gmtref grdlandmask >}},

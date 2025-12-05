@@ -27,7 +27,13 @@ the morphological computation, and the 0's pixels are not.
 ### Returns
 A ``Sel`` type object.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("strel")
+```
+
+\1
 
 {{< gmtref imdilate >}}, {{< gmtref imerode >}}, {{< gmtref imclose >}}, {{< gmtref imopen >}}

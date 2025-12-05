@@ -8,14 +8,12 @@ title: "getgeotransform"
 
 Documentation for the `getgeotransform` function.
 
-## Methods
 
-```julia
-# 2 methods for generic function "getgeotransform" from GMT.Gdal:
- [1] getgeotransform(dataset::GMT.Gdal.AbstractDataset)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:979
- [2] getgeotransform(x::GMT.Gdal.RasterDataset, args...; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:964
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("getgeotransform")
 ```
 
 ## See Also

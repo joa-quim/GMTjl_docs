@@ -262,7 +262,13 @@ Nagy D., Papp G., Benedek J., 2000, The gravitational potential and its derivati
 for the prism, *J. Geod., 74*, 552–560,
 `https://doi.org/10.1007/s001900000116 <https://doi.org/10.1007/s001900000116>`_.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gravprisms")
+```
+
+\1
 
 [gravmag3d], {{< gmtref grdgravmag3d >}}, grdseamount, talwani2d, talwani3d

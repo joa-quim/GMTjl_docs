@@ -126,3 +126,10 @@ References
 ----------
 
 http://geodesyworld.github.io/SOFTS/solid.htm
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("earthtide")
+```

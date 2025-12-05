@@ -34,12 +34,12 @@ List water sound velocity profiles in swath sonar data files.
     Select verbosity level, which will send progress reports to stderr.
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "mbsvplist" from GMT:
- [1] mbsvplist(cmd0::String; kwargs...)
- [2] mbsvplist(; ...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("mbsvplist")
 ```
 
 ## See Also

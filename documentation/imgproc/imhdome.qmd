@@ -23,7 +23,13 @@ value greater than t.
 A new {{< gmtref GMTimage type=gmttype >}} of the same type as `I`.
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imhdome")
+```
+
+\1
 
 {{< gmtref imhmax >}}, {{< gmtref imhmin >}}

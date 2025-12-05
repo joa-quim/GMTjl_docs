@@ -7,11 +7,12 @@ title: "pow"
 
 Documentation for the `pow` function.
 
-## Methods
 
-```julia
-# 1 method for generic function "pow" from GMT:
- [1] pow(b, e)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pow")
 ```
 
 ## See Also

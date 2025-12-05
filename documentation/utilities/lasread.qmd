@@ -38,13 +38,12 @@ To read the x,y,z,t data from file "lixo.laz" do:
 ```
 
 
-## Methods
 
-```julia
-# 3 methods for generic function "lazread" from GMT.Laszip:
- [1] lazread(s::GMT.Laszip.lasout_types)
- [2] lazread(fname::String, out::String, type::DataType, class::Int64, startstop::String, do_grid::Bool, do_img::Bool, opt_RI::String)
- [3] lazread(fname::AbstractString; out, type, class, startstop, kw...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("lasread")
 ```
 
 ## See Also

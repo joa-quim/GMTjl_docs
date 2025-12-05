@@ -8,11 +8,12 @@ p = sortslicesperm(A; dims=1, kws...)
 Like `sortslices` but return instead the indices `p` such that `A[p, :] == sortslices(A; dims=1, kws...)`
 
 
-## Methods
 
-```julia
-# 1 method for generic function "sortslicesperm" from GMT:
- [1] sortslicesperm(A::AbstractArray; dims, kws...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("sortslicesperm")
 ```
 
 ## See Also

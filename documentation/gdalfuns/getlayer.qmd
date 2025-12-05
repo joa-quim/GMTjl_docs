@@ -8,16 +8,12 @@ title: "getlayer"
 
 Documentation for the `getlayer` function.
 
-## Methods
 
-```julia
-# 3 methods for generic function "getlayer" from GMT.Gdal:
- [1] getlayer(ds::GMT.Gdal.AbstractDataset, name::AbstractString)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1914
- [2] getlayer(ds::GMT.Gdal.AbstractDataset, i::Integer)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1913
- [3] getlayer(f::Function, args...; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1801
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("getlayer")
 ```
 
 ## See Also

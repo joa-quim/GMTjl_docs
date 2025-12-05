@@ -15,12 +15,12 @@ By default the coordinates are in degrees and in the [-180 180] range. Set `do36
 Optionally, you can pass a 4-element array or tuple with the limits of the coordinates. `limits` must then contain the lon*min, lon*max, lat*min, lat*max of the region where you want to generate random points.
 
 
-## Methods
 
-```julia
-# 1 method for generic function "randgeo" from GMT:
- [1] randgeo(n; rad, limits, do360)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\spatial_funs.jl:605
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("randgeo")
 ```
 
 ## See Also

@@ -41,3 +41,10 @@ Make automatic maps of of world-wide seismicity obtained from the USGS Earthquak
     seismicity(marker=:star, size=[3 10])
     seismicity(size=(exp10, [2 12], [3 9]))
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("seismicity")
+```

@@ -8,3 +8,10 @@ title: "envelope"
 * `geom`: the geometry. This can either be a GDAL AbstractGeometry or a {{< gmtref GMTdataset type=gmttype >}} (or vector of it), or a Matrix
 
 Computes and returns the bounding envelope for this geometry.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("envelope")
+```

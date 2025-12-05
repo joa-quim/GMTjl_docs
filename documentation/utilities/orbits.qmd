@@ -51,3 +51,10 @@ See Also
 --------
 
 {{< gmtref coast >}}, [plot3]
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("orbits")
+```

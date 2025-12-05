@@ -130,3 +130,10 @@ colorbar!(position=(outside=true, anchor=:ML), box=(pen=(0.25,:red),), ylabel="@
 colorbar!(position=(inside=true, anchor=:MR), box=(pen=(0.25,:red),), ylabel="@.C", cmap=C)
 colorbar!(position=(anchor=:MR,), box=(pen=(0.25,:red),), ylabel="@.C", cmap=C, show=true)
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("colorbar")
+```

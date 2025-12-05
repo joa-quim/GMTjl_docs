@@ -48,8 +48,14 @@ size 0.25 cm, and set annotation offset to 0.2 cm
     gmtset(FONT_ANNOT_PRIMARY=(12,Helvetica), MAP_GRID_CROSS_SIZE_PRIMARY=0.2.5, MAP_ANNOT_OFFSET_PRIMARY=0.2)
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtset")
+```
+
+\1
 
 [gmt.conf](https://docs.generic-mapping-tools.org/dev/gmt.conf.html),
 {{< gmtref gmtdefaults >}}, {{< gmtref gmtget >}}

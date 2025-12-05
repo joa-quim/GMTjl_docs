@@ -270,8 +270,14 @@ using a grid spacing of 1 km on the geodesic, and output distances as well, try
     grdtrack(profile="LB/RT+i1k+d", grid="data.nc", spherical=:ellipsoidal)
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdtrack")
+```
+
+\1
 
 {{< gmtref gmtconvert >}},
 {{< gmtref text >}},

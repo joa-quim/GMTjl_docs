@@ -204,8 +204,14 @@ imshow("@earth_relief_10m_g", cmap=C)
 
 Here, cdf would be the cumulative hypsometric curve for the Earth.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grd2cpt")
+```
+
+\1
 
 {{< gmtref grdhisteq >}}, {{< gmtref grdinfo >}}, {{< gmtref makecpt >}}
 

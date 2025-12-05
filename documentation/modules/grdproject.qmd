@@ -117,6 +117,13 @@ When a spherical solution is requested or implied, we consider the currently sel
 2. Transverse Mercator (**:TransverseMercator**) and UTM (**:UTM**) will use the spherical solution when either the west or east boundary given in **region** is more than 10 degrees from the central meridian.
 3. Same for Cassini (**:Cassini**) but with a limit of only 4 degrees.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdproject")
+```
+
 ## See Also
 
 {{< gmtref mapproject >}}

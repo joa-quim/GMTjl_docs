@@ -20,22 +20,12 @@ G = gdalgrid(indata, options=String[]; dest="/vsimem/tmp", method::StrSymb="", k
 A GMTgrid or a GDAL dataset (or nothing if file was writen on disk). To force the return of a GDAL dataset use the option `gdataset=true`.
 
 
-## Methods
 
-```julia
-# 6 methods for generic function "gdalgrid" from GMT.Gdal:
- [1] gdalgrid(ds::GMT.Gdal.IDataset, opts::Vector{String}; dest, gdataset)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1676
- [2] gdalgrid(ds::GMT.Gdal.IDataset; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1676
- [3] gdalgrid(dataset::GMT.Gdal.Dataset, options::Vector{String}; dest, gdataset, save)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1666
- [4] gdalgrid(dataset::GMT.Gdal.Dataset; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1666
- [5] gdalgrid(indata; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal_tools.jl:291
- [6] gdalgrid(indata, opts::Union{String, Vector{String}}; dest, method, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal_tools.jl:291
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gdalgrid")
 ```
 
 ## See Also

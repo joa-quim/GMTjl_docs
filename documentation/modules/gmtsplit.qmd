@@ -133,7 +133,13 @@ profiles named *survey_###.txt* (when gap exceeds 100 km). Try this:
              yx=true, colinfo=:g, binary_in="3d")
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtsplit")
+```
+
+\1
 
 {{< gmtref filter1d >}}, {{< gmtref wiggle >}}

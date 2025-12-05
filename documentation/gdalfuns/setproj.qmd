@@ -9,3 +9,10 @@ a {{< gmtref GMTdataset type=gmttype >}} or an `AbstractDataset`.
 
 - `proj` Is either a Proj4 string or a WKT. Alternatively, it can also be another grid, image or dataset
          type, in which case its referencing system is copied into `type`
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("setproj")
+```

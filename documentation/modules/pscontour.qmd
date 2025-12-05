@@ -116,14 +116,12 @@ See full GMT docsat [`contour`](http://docs.generic-mapping-tools.org/latest/con
 To see the full documentation type: $@? contour$
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "contour" from GMT:
- [1] contour(cmd0::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pscontour.jl:75
- [2] contour(arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pscontour.jl:76
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pscontour")
 ```
 
 ## See Also

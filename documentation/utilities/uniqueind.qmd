@@ -5,3 +5,10 @@ ind = uniqueind(x)
 ```
 
 Return the index `ind` such that x[ind] gets the unique values of x. No sorting is done
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("uniqueind")
+```

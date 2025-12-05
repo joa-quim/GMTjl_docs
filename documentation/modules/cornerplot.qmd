@@ -83,7 +83,13 @@ cornerplot(randn(1500,3), scatter=true, marker=:cross, mec=:red, ms="3p", show=t
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("cornerplot")
+```
+
+\1
 
 [binstats], {{< gmtref histogram >}}, {{< gmtref marginalhist >}}, {{< gmtref plot >}}

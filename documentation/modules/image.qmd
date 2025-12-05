@@ -147,7 +147,13 @@ image("@vader1.png", bit_bg=:darkgray, bit_fg=:yellow,
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("image")
+```
+
+\1
 
 {{< gmtref legend >}}, {{< gmtref colorbar >}}, {{< gmtref plot >}}, [psconvert]

@@ -180,3 +180,10 @@ C = makecpt(range=(1000,4000));
 grdview(G, shade=Gint, proj=:merc, zsize=1, view=(155,25), colormap=C, surftype=:image, show=true)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdview")
+```

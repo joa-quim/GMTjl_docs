@@ -35,14 +35,12 @@ I = slicecube(I, 4)
 ```
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "slicecube" from GMT:
- [1] slicecube(GI::GItype; slice, α, angle, axis, cmap)
- [2] slicecube(G::GMTgrid{T, 3}, slice::AbstractFloat; axis, x, y) where T
- [3] slicecube(G::GMTgrid{T, 3}, slice::Union{Int64, AbstractVector{<:Int64}}; axis, x, y) where T
- [4] slicecube(I::GMTimage{T, 3}, layer::Union{Int64, AbstractVector{<:Int64}}) where T
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("cubeslice")
 ```
 
 ## See Also

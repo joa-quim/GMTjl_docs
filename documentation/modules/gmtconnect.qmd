@@ -124,8 +124,14 @@ However, **connect** will correctly add the point to the nearest segment.
 Running **connect** again on the new set of lines will eventually connect
 all lines that satisfy the criteria given in **tolerance**.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtconnect")
+```
+
+\1
 
 {{< gmtref gmtsimplify >}},
 {{< gmtref gmtspatial >}},

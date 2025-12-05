@@ -231,3 +231,10 @@ text!(join(rainbow_chars), x=1, y=0.99, font="Helvetica-Bold", show=1)
 ```
 
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("text")
+```

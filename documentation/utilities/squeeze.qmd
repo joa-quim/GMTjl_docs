@@ -10,11 +10,12 @@ Gs = squeeze(G::GMTgrid) -> GMTgrid
 Remove singleton dimension from a grid. So far only for vertical slices of 3D grids.
 
 
-## Methods
 
-```julia
-# 1 method for generic function "squeeze" from GMT:
- [1] squeeze(G::GMTgrid)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("squeeze")
 ```
 
 ## See Also

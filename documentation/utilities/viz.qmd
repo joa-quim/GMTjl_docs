@@ -34,23 +34,12 @@ julia> viz(G, zsize=6, facades=(TESTSDIR*"assets/cenora_base.jpg", TESTSDIR*"bun
 See also: [`grdimage`](@ref), [`grdview`](@ref)
 
 
-## Methods
 
-```julia
-# 13 methods for generic function "imshow" from GMT:
-  [1] imshow(arg1::GMTcpt; horizontal, kw...)
-  [2] imshow(arg1::Symbol; horizontal, kw...)
-  [3] imshow(arg1::GMT.Gdal.AbstractDataset; kw...)
-  [4] imshow(x::AbstractVector{Float64}, f::String; kw...)
-  [5] imshow(x::AbstractVector{Float64}, y::AbstractVector{Float64}, f::String; kw...)
-  [6] imshow(x::AbstractVector{Float64}, f::Function; kw...)
-  [7] imshow(x::AbstractVector{Float64}, y::AbstractVector{Float64}, f::Function; kw...)
-  [8] imshow(f::Function, x::AbstractVector{Float64}, y::AbstractVector{Float64}; kw...)
-  [9] imshow(f::Function, x::AbstractVector{Float64}; kw...)
- [10] imshow(arg1::GItype; kw...)
- [11] imshow(arg1; ...)
- [12] imshow(arg1, x::AbstractVector{Float64}; ...)
- [13] imshow(arg1, x::AbstractVector{Float64}, y::AbstractVector{Float64}; kw...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("viz")
 ```
 
 ## See Also

@@ -56,3 +56,10 @@ See Also
 --------
 
 {{< gmtref lazwrite >}}, {{< gmtref gmtread >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("lazread")
+```

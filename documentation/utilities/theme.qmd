@@ -38,3 +38,10 @@ Note: Except `save` and `reset`, the changes operated by the `kwargs` are tempor
 an image is `show`(n) or saved.
 
 This function can be called alone, e.g. `theme("dark")` or as an option in the {{< gmtref plot >}} module.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("theme")
+```

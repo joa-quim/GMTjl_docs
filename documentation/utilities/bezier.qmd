@@ -62,6 +62,13 @@ D = bezier(mat2ds([30. -15; 30 45; -30 45; -30 -15], proj4="geog"));
 D = bezier(mat2ds([30. -15; 30 45; -30 45; -30 -15; -20 -25], proj4="geog"), firstcurve=false);
 ```
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("bezier")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

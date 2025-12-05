@@ -8,14 +8,12 @@ title: "readraster"
 
 Documentation for the `readraster` function.
 
-## Methods
 
-```julia
-# 2 methods for generic function "readraster" from GMT.Gdal:
- [1] readraster(s::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1554
- [2] readraster(args...; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1555
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("readraster")
 ```
 
 ## See Also

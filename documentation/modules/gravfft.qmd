@@ -280,7 +280,13 @@ Wessel. P., 2001, Global distribution of seamounts inferred from gridded Geosat/
 J. Geophys. Res., 106(B9), 19,431–19,441,
 `https://doi.org/10.1029/2000JB000083 <https://doi.org/10.1029/2000JB000083>`_
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gravfft")
+```
+
+\1
 
 {{< gmtref parkergrav >}}, {{< gmtref grdfft >}}, {{< gmtref grdproject >}}

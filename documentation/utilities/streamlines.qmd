@@ -78,3 +78,10 @@ See Also
 
 {{< gmtref plot >}}, [plot3],
 [streamlines](https://www.generic-mapping-tools.org/GMTjl_doc/examples/contours/01_contour_examples/#streamlines)
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("streamlines")
+```

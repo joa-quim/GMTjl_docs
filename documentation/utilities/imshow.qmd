@@ -58,3 +58,10 @@ See Also
 --------
 
 {{< gmtref grdimage >}}, {{< gmtref grdview >}}, {{< gmtref plot >}}, [plot3]
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imshow")
+```

@@ -7,6 +7,13 @@ title: "Grightjoin"
 
 Documentation for the `Grightjoin` function.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("Grightjoin")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

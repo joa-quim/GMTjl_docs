@@ -97,3 +97,9 @@ See also
 --------
 
 {{< gmtref vlines >}}, {{< gmtref hlines >}}
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("vband")
+```

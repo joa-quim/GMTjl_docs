@@ -84,3 +84,10 @@ I = anaglyph("@earth_relief_30s", R="-175.8/-171/-23/-14", view3d=true)
 viz(I)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("viz")
+```

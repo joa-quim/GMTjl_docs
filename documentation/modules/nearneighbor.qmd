@@ -147,8 +147,14 @@ contain at least one value:
     G = nearneighbor("geoid.xyz", region=(0,360,-90,90), inc=1, -Lg search_radius="200k", sectors=4)
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("nearneighbor")
+```
+
+\1
 
 {{< gmtref blockmean >}},
 {{< gmtref blockmedian >}},

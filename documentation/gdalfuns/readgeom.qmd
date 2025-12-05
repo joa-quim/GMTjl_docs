@@ -28,14 +28,12 @@ D = readgeom(wkt::Vector{String})
 Return a vector of GMTdatasets from a vector of WKT strings.
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "readgeom" from GMT:
- [1] readgeom(wkt::Vector{String})
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal_utils.jl:1132
- [2] readgeom(wkt::String; gdataset)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal_utils.jl:1123
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("readgeom")
 ```
 
 ## See Also

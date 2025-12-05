@@ -28,17 +28,12 @@ If x is a vector, return a vector of the same length as lags. If x is a matrix, 
 The output is not normalized. See `xcorr` for a function with normalization.
 
 
-## Methods
 
-```julia
-# 7 methods for generic function "xcov" from GMT:
- [1] xcov(x::AbstractMatrix{<:Real}; demean, lags, maxlags)
- [2] xcov(x::AbstractVector{<:Real}; demean, lags, maxlags)
- [3] xcov(x::AbstractVecOrMat{<:Real}; demean, lags, maxlags)
- [4] xcov(x::AbstractMatrix{<:Real}, y::AbstractMatrix{<:Real}; lags, demean, maxlags)
- [5] xcov(x::AbstractVector{<:Real}, y::AbstractMatrix{<:Real}; lags, demean, maxlags)
- [6] xcov(x::AbstractMatrix{<:Real}, y::AbstractVector{<:Real}; lags, demean, maxlags)
- [7] xcov(x::AbstractVector{<:Real}, y::AbstractVector{<:Real}; demean, lags, maxlags)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("xcov")
 ```
 
 ## See Also

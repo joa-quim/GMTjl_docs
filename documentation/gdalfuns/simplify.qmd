@@ -12,3 +12,10 @@ Compute a simplified geometry.
 
 ### Keywords
 * `gdataset`: Returns a GDAL IGeometry even when input is {{< gmtref GMTdataset type=gmttype >}} or Matrix
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("simplify")
+```

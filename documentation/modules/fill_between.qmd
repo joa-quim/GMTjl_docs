@@ -109,7 +109,13 @@ fill_between([theta y2], 0.0, white=true, lt=1, ls=:dash, show=true)
 
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("fill_between")
+```
+
+\1
 
 {{< gmtref plot >}}

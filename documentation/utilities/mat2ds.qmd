@@ -137,3 +137,10 @@ See Also
 --------
 
 {{< gmtref mat2grid >}}, {{< gmtref mat2img >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("mat2ds")
+```

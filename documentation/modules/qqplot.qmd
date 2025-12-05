@@ -71,3 +71,10 @@ using GMT
 qqplot(randn(100), show=true)
 ```
 \end{examplefig}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("qqplot")
+```

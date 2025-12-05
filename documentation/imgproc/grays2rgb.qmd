@@ -20,16 +20,12 @@ Irgb = grays2rgb(I1,I2,I3)
 ```
 
 
-## Methods
 
-```julia
-# 3 methods for generic function "grays2rgb" from GMT:
- [1] grays2rgb(bandR::Matrix{UInt8}, bandG::Matrix{UInt8}, bandB::Matrix{UInt8})
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\utils_types.jl:2180
- [2] grays2rgb(bandR::GMTimage{UInt8, 2}, bandG::GMTimage{UInt8, 2}, bandB::GMTimage{UInt8, 2})
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\utils_types.jl:2174
- [3] grays2rgb(bandR::Matrix{UInt8}, bandG::Matrix{UInt8}, bandB::Matrix{UInt8}, GI::Union{Nothing, GItype})
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\utils_types.jl:2180
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grays2rgb")
 ```
 
 ## See Also

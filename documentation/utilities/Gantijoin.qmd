@@ -7,6 +7,13 @@ title: "Gantijoin"
 
 Documentation for the `Gantijoin` function.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("Gantijoin")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

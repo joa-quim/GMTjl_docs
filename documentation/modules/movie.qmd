@@ -483,3 +483,10 @@ ffmpeg -i top.mp4 -i bottom.mp4 -filter_complex vstack=inputs=2 four_movies.mp4
 ```
 
 For more information on such manipulations, see the FFmpeg documentation.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("movie")
+```

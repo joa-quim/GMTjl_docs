@@ -101,3 +101,10 @@ using GMT
 vvv = [[randn(50), randn(30)], [randn(40), randn(48), randn(45)], [randn(35), randn(43)]];
 violin(vvv, fill=true, boxplot=true, separator=(:red, :dash), scatter=true, outliers=true, show=true)
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("violin")
+```

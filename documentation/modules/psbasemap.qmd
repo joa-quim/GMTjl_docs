@@ -69,12 +69,12 @@ Plot base maps and frames.
 To see the full documentation type: $@? basemap$
 
 
-## Methods
 
-```julia
-# 1 method for generic function "basemap" from GMT:
- [1] basemap(; first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psbasemap.jl:45
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("psbasemap")
 ```
 
 ## See Also

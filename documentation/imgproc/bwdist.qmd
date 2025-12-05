@@ -179,6 +179,13 @@ showfig()
 
 ---
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("bwdist")
+```
+
 ## See Also
 
 {{< gmtref graydist >}}, [watershed]

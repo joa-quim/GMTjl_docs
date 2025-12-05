@@ -15,12 +15,12 @@ This GMT supplements module has not yet received the proper attention to port th
 :::
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "grdseamount" from GMT:
- [1] grdseamount(cmd0::String; kwargs...)
- [2] grdseamount(arg1; kwargs...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdseamount")
 ```
 
 ## See Also

@@ -73,3 +73,10 @@ using GMT
 bubblechart(1:50, rand(50), size=(exp10, [2,40]), fill=:blue, alpha=50, aspect="1:1", show=1)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("bubblechart")
+```

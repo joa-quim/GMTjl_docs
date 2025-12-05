@@ -23,3 +23,10 @@ Tools to analyze and visualize DEMs.
 
 ### Returns
 A GMT grid or Image, or a GDAL dataset (or nothing if file was writen on disk).
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gdaldem")
+```

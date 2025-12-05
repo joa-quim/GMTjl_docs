@@ -1,3 +1,10 @@
 # grdhisteq
 
 Not yet
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdhisteq")
+```

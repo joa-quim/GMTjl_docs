@@ -109,20 +109,12 @@ Other than the above options, the `kwargs` input accepts still the following opt
   * `clockwise`: - Set it to `true` to indicate that positive axes directions be clock-wise                [Default lets the a, b, c axes be positive in a counter-clockwise direction].
 
 
-## Methods
 
-```julia
-# 5 methods for generic function "ternary" from GMT:
- [1] ternary(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1662
- [2] ternary(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1662
- [3] ternary(arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1763
- [4] ternary(cmd0::String, arg1; first, image, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1662
- [5] ternary(kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1765
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("psternary")
 ```
 
 ## See Also

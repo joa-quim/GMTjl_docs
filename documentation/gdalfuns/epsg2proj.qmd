@@ -5,3 +5,10 @@ title: "epsg2proj"
     epsg2proj(code::Integer)
 
 Convert a EPSG code into the PROJ4 form.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("epsg2proj")
+```

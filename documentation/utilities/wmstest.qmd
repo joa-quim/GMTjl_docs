@@ -45,3 +45,10 @@ See Also
 --------
 
 {{< gmtref wmsinfo >}}, {{< gmtref wmsread >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("wmstest")
+```

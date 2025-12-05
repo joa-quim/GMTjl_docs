@@ -30,16 +30,12 @@ Computes the smoothed kernel probability density estimate of a two-column matrix
 ```
 
 
-## Methods
 
-```julia
-# 3 methods for generic function "density" from GMT:
- [1] density(D::GMTdataset, x, y; weights, bandwidth, showbw)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\statplots.jl:154
- [2] density(data, x, y; weights, bandwidth, showbw, verbose)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\statplots.jl:106
- [3] density(x; first, nbins, bins, bandwidth, kernel, printbw, horizontal, extend, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\statplots.jl:35
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("density")
 ```
 
 ## See Also

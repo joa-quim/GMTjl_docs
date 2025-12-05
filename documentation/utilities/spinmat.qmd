@@ -10,11 +10,12 @@ R = spinmat(theta, n) -> Matrix{Float64}
 Compute the rotation matrix that rotates by angle `theta` (in degrees) about the vector `n`.
 
 
-## Methods
 
-```julia
-# 1 method for generic function "spinmat" from GMT:
- [1] spinmat(theta, n)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("spinmat")
 ```
 
 ## See Also

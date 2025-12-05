@@ -32,3 +32,10 @@ function gdaltranslate(indata, opts=String[]; dest="/vsimem/tmp", kwargs...)
 	helper_run_GDAL_fun(gdaltranslate, indata, dest, opts, "", kwargs...)
 end
 # ---------------------------------------------------------------------------------------------------
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gdalwarp")
+```

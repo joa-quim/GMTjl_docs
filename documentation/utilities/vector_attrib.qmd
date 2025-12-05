@@ -7,14 +7,12 @@ title: "vector_attrib"
 
 Documentation for the `vector_attrib` function.
 
-## Methods
 
-```julia
-# 4 methods for generic function "vector_attrib" from GMT:
- [1] vector_attrib(; kwargs...)
- [2] vector_attrib(d::Dict)
- [3] vector_attrib(t::NamedTuple)
- [4] vector_attrib(d::Dict, lixo)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("vector_attrib")
 ```
 
 ## See Also

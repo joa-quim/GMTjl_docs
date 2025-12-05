@@ -8,32 +8,12 @@ title: "getproj"
 
 Documentation for the `getproj` function.
 
-## Methods
 
-```julia
-# 11 methods for generic function "getproj" from GMT.Gdal:
-  [1] getproj(epsg::Int64; proj4, wkt)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1482
-  [2] getproj(name::AbstractString; proj4, wkt, epsg)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1475
-  [3] getproj(F::Vector{<:GMTfv}; proj4, wkt, epsg)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1515
-  [4] getproj(D::Vector{<:GMTdataset}; proj4, wkt, epsg)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1513
-  [5] getproj(D::GMTdataset; proj4, wkt, epsg)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1512
-  [6] getproj(F::GMTfv; proj4, wkt, epsg)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1514
-  [7] getproj(I::GMTimage; proj4, wkt, epsg)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1511
-  [8] getproj(G::GMTgrid; proj4, wkt, epsg)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1510
-  [9] getproj(ds::GMT.Gdal.AbstractDataset)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1473
- [10] getproj(x::GMT.Gdal.RasterDataset, args...; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:964
- [11] getproj(layer::GMT.Gdal.AbstractFeatureLayer)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1474
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("getproj")
 ```
 
 ## See Also

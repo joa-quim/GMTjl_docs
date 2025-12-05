@@ -211,7 +211,13 @@ Be aware that using **inc** may lead to aliasing unless your grid is smoothly va
 length increments.  It is generally better to filter your grids and resample at a larger grid
 increment and use these grids instead of the originals.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdvector")
+```
+
+\1
 
 {{< gmtref grdcontour >}}, {{< gmtref plot >}}

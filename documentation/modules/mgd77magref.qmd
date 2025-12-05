@@ -20,16 +20,12 @@ To see the full documentation type: $@? magref$
 ```
 
 
-## Methods
 
-```julia
-# 3 methods for generic function "magref" from GMT:
- [1] magref(; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\mgd77\magref.jl:16
- [2] magref(cmd0::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\mgd77\magref.jl:14
- [3] magref(arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\mgd77\magref.jl:15
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("mgd77magref")
 ```
 
 ## See Also

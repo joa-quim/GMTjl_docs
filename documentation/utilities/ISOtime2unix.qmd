@@ -23,11 +23,12 @@ t = ISOtime2unix("25-Apr-1974")
 ```
 
 
-## Methods
 
-```julia
-# 1 method for generic function "ISOtime2unix" from GMT:
- [1] ISOtime2unix(ts::AbstractString)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("ISOtime2unix")
 ```
 
 ## See Also

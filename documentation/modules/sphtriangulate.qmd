@@ -121,8 +121,14 @@ Also, **sphtriangulate** has a **skipdup** option to determine and exclude dupli
 but it is a very brute-force yet exact comparison that is very slow for large data sets.
 Detection of duplicates in the STRIPACK library will exit the module.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("sphtriangulate")
+```
+
+\1
 
 {{< gmtref triangulate >}}, {{< gmtref sphdistance >}}
 

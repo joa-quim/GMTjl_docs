@@ -127,7 +127,13 @@ windbarbs("vel_10u.grd", "vel_10v.grd", barbs=(length=0.25, width=0.15),
 ```
 \end{examplefig}
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("windbarbs")
+```
+
+\1
 
 \myreflink{grdcontour}, \myreflink{grdvector}

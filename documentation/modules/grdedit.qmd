@@ -132,8 +132,14 @@ selected layer will be written out if changes are requested. Likewise,
 if you have additional netCDF attributes then those will also be lost in
 any revised output.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdedit")
+```
+
+\1
 
 :doc:`grd2xyz`,
 :doc:`grdfill`,

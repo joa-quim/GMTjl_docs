@@ -104,3 +104,10 @@ Noches are also shown but this requires GMT6.5.
 using GMT
 boxplot(randn(50,6), notch=true, fill=true, outliers=(size="6p",), hbar=true, show=1)
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("boxplot")
+```

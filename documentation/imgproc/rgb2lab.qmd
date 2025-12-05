@@ -51,7 +51,13 @@ grdimage!(b, figsize=8, yshift=-3.8, show=true)
 
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("rgb2lab")
+```
+
+\1
 
 {{< gmtref rgb2ycbcr >}}

@@ -7,6 +7,13 @@ title: "ds2df"
 
 Documentation for the `ds2df` function.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("ds2df")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

@@ -37,14 +37,12 @@ This method accepts a M-by-d matrix or a $GMTdataset$ where columns represent th
 ```
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "kmeans" from GMT:
- [1] kmeans(X::Union{GMTdataset, Matrix{<:Real}}, k; seeds, maxiter, tol, raw, V)
- [2] kmeans(X::Union{GMTdataset, Matrix{<:Real}}; ...)
- [3] kmeans(I::GMTimage, k; seeds, maxiter, tol, V)
- [4] kmeans(I::GMTimage; ...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("kmeans")
 ```
 
 ## See Also

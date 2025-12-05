@@ -159,7 +159,13 @@ and where *area* reflects the size of each grid box, run:
     grd2xyz("@AFR.nc", weight="a+ue", save="AFR.txt")
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grd2xyz")
+```
+
+\1
 
 {{< gmtref grdedit >}}, {{< gmtref grdconvert >}}, {{< gmtref xyz2grd >}}

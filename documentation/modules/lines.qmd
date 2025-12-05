@@ -55,3 +55,10 @@ lines(xy, axes=:af, pen=(1,:red), decorated=(dist=(2.5,0.25), marker=:star,
       ms=1, pen=(0.5,:green), fill=:blue, dec2=true), aspect="4:2", show=true)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("lines")
+```

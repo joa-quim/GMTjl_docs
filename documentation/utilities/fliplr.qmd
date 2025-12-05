@@ -7,13 +7,12 @@ title: "fliplr"
 
 Documentation for the `fliplr` function.
 
-## Methods
 
-```julia
-# 3 methods for generic function "fliplr" from GMT:
- [1] fliplr(I::GMTimage)
- [2] fliplr(G::GMTgrid)
- [3] fliplr(A)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("fliplr")
 ```
 
 ## See Also

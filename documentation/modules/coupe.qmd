@@ -211,6 +211,13 @@ Dahlen, F. A., & Tromp, J. (1998). *Theoretical global seismology*. Princeton, N
 
 Frohlich, C. (1996). Cliff's Nodes Concerning Plotting Nodal Lines for P, SH and SV. *Seismological Research Letters*, **67**(1), 16–24, [https://doi.org/10.1785/gssrl.67.1.16](https://doi.org/10.1785/gssrl.67.1.16).
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("coupe")
+```
+
 ## See Also
 
 {{< gmtref meca >}}, [polar], {{< gmtref velo >}}

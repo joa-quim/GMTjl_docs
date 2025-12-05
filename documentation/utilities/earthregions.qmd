@@ -42,3 +42,10 @@ A $GMTgrid$ or a $GMTimage$ if `dataset` is used or $nothing$ otherwise.
 ```
 
 To see the plots produced by these examples type: $@? earthregions$
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("earthregions")
+```

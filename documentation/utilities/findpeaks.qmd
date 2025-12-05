@@ -62,3 +62,10 @@ plot(D, title="Peaks at least 0.2 units apart")
 scatter!(D[peaks,:], mc=:red, show=true)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("findpeaks")
+```

@@ -43,3 +43,10 @@ See Also
 --------
 
 {{< gmtref grdimage >}}, {{< gmtref grdview >}}, {{< gmtref rescale >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imagesc")
+```

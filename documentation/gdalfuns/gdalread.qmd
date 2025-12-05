@@ -18,3 +18,10 @@ or a GDAL dataset.
 
 ### Returns
 A GMT grid/image or a GDAL dataset
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gdalread")
+```

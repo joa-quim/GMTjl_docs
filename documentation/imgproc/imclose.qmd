@@ -41,7 +41,13 @@ grdimage!(J, figsize=7, xshift=7.1, show=true)
 
 ![](/assets/imclose_nocrash.png){width="600" .center}
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imclose")
+```
+
+### See Also
 
 {{< gmtref imdilate >}}, {{< gmtref imerode >}}, {{< gmtref imopen >}}, {{< gmtref strel >}}

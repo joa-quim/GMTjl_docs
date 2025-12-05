@@ -41,7 +41,13 @@ grdimage!(I, figsize=5, xshift=5.05, plot=(data=D, lc=:red), show=true)
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imsobel")
+```
+
+\1
 
 {{< gmtref imfill >}}, {{< gmtref bwskell >}}, {{< gmtref imerode >}}, {{< gmtref imfilter >}}

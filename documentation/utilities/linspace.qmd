@@ -6,6 +6,13 @@ title: "linspace"
 
 Documentation for the `linspace` function.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("linspace")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

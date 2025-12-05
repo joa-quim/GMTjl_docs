@@ -209,6 +209,13 @@ Frohlich, C. (1996). Cliff's Nodes Concerning Plotting Nodal Lines for P, SH and
 
 Lay, T., & Wallace, T. C. (1995). *Modern global seismology*. San Diego: Academic Press.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("meca")
+```
+
 ## See Also
 
 {{< gmtref coupe >}}, [polar], {{< gmtref velo >}}

@@ -223,8 +223,14 @@ other methods (e.g. Maximum Entropy) tend to hide where some of these trade-offs
 happening inside a "black box".
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("spectrum1d")
+```
+
+\1
 
 {{< gmtref grdfft >}}
 

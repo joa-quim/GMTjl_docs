@@ -41,12 +41,12 @@ makeDCWs("ne_10m_admin_0_countries_iso.shp.zip", name_nc="NE10m_f32.nc", float=t
 ```
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "makeDCWs" from GMT:
- [1] makeDCWs(; ...)
- [2] makeDCWs(fname; float, name_cdl, name_nc, compress, attrib, fix_RU, deltmp)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("makeDCWs")
 ```
 
 ## See Also

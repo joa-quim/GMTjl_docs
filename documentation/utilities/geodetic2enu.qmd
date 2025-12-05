@@ -15,3 +15,10 @@ Returns
 -------
 
 Three Float64 scalars or thre vectors with the cartesian ENU components
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("geodetic2enu")
+```

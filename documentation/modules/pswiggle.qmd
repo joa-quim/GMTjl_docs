@@ -97,14 +97,12 @@ See full GMT docs at [`pswiggle`](http://docs.generic-mapping-tools.org/latest/w
 To see the full documentation type: $@? pswiggle$
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "wiggle" from GMT:
- [1] wiggle(cmd0::String; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pswiggle.jl:60
- [2] wiggle(arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pswiggle.jl:61
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pswiggle")
 ```
 
 ## See Also

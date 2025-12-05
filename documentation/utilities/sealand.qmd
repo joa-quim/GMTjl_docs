@@ -52,3 +52,10 @@ See Also
 --------
 
 {{< gmtref coast >}}, {{< gmtref grdimage >}}, {{< gmtref grdview >}}, {{< gmtref plot >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("sealand")
+```

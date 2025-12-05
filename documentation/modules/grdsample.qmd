@@ -113,5 +113,11 @@ registration while keeping the same region and grid interval::
 G = grdsample("@earth_relief_05m", toggle=true);
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdsample")
+```
+
+\1

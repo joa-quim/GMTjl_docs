@@ -18,6 +18,13 @@ Check the GMT.jl source for implementation details.
 
 The `bwlabel` function Label connected components in binary image.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("bwlabel")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

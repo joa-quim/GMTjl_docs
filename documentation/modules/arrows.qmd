@@ -41,18 +41,12 @@ arrows([0 8.2 0 6], limits=(-2,4,0,9), arrow=(len=2,stop=1,shape=0.5,fill=:red),
 ```
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "arrows" from GMT:
- [1] arrows(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1005
- [2] arrows(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1005
- [3] arrows(arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1017
- [4] arrows(cmd0::String, arg1; first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:1005
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("arrows")
 ```
 
 ## See Also

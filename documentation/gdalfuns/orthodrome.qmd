@@ -37,24 +37,12 @@ mat = geodesic([0 0; 30 50], step=100, unit=:k);
 ```
 
 
-## Methods
 
-```julia
-# 7 methods for generic function "geodesic" from GMT:
- [1] geodesic(fname::String; step, unit, np, proj, epsg, longest)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\proj_utils.jl:424
- [2] geodesic(line::Matrix{<:Real}; step, unit, np, proj, epsg, longest)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\proj_utils.jl:451
- [3] geodesic(D::GMTdataset; step, unit, np, proj, epsg, longest)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\proj_utils.jl:446
- [4] geodesic(D::Vector{<:GMTdataset}; step, unit, np, proj, epsg, longest)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\proj_utils.jl:437
- [5] geodesic(ds::GMT.Gdal.AbstractDataset; step, unit, np, proj, epsg, longest)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\proj_utils.jl:434
- [6] geodesic(lon1::Real, lat1::Real, lon2::Real, lat2::Real; step, unit, np, proj, epsg, longest)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\proj_utils.jl:430
- [7] geodesic(ll1::Union{AbstractVector{<:Real}, Matrix{<:Real}}, ll2::Union{AbstractVector{<:Real}, Matrix{<:Real}}; step, unit, np, proj, epsg, longest)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\proj_utils.jl:427
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("orthodrome")
 ```
 
 ## See Also

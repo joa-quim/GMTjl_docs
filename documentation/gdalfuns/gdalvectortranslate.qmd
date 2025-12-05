@@ -19,34 +19,12 @@ ogr2ogr(indata, options=String[]; dest="/vsimem/tmp", kwargs...)
 A GMT dataset, or a GDAL dataset (or nothing if file was writen on disk).
 
 
-## Methods
 
-```julia
-# 12 methods for generic function "gdalvectortranslate" from GMT.Gdal:
-  [1] gdalvectortranslate(ds::GMT.Gdal.IDataset; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1825
-  [2] gdalvectortranslate(ds::GMT.Gdal.IDataset, opts::Vector{String}; dest, gdataset, save)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1825
-  [3] gdalvectortranslate(ds::GMT.Gdal.Dataset; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1823
-  [4] gdalvectortranslate(ds::GMT.Gdal.Dataset, opts::Vector{String}; dest, gdataset, save)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1823
-  [5] gdalvectortranslate(ds::Vector{GMTdataset}, opts::Vector{String}; dest, gdataset, save)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1829
-  [6] gdalvectortranslate(ds::Vector{GMTdataset}; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1829
-  [7] gdalvectortranslate(datasets::Vector{GMT.Gdal.Dataset}; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1812
-  [8] gdalvectortranslate(datasets::Vector{GMT.Gdal.Dataset}, options::Vector{String}; dest, gdataset, save)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1812
-  [9] gdalvectortranslate(ds::GMTdataset, opts::Vector{String}; dest, gdataset, save)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1827
- [10] gdalvectortranslate(ds::GMTdataset; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1827
- [11] gdalvectortranslate(indata, opts; dest, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal_tools.jl:319
- [12] gdalvectortranslate(indata; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal_tools.jl:319
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gdalvectortranslate")
 ```
 
 ## See Also

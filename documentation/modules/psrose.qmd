@@ -155,14 +155,12 @@ Multiply the data radii by scale.
 To see the full documentation type: $@? rose$
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "rose" from GMT:
- [1] rose(cmd0::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psrose.jl:75
- [2] rose(arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psrose.jl:76
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("psrose")
 ```
 
 ## See Also

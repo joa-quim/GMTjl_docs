@@ -12,3 +12,10 @@ Create GDAL dataset from the contents of D, which can be a {{< gmtref GMTdataset
 The `save` keyword instructs GDAL to save the contents as an OGR file. Format is determined by file estension.
 `geometry` can be a string with "polygon", where file will be converted to polygon/multipolygon depending
 on `D` is a single or a multi-segment object, or "point" to convert to a multipoint geometry.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmt2gd")
+```

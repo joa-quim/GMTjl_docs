@@ -12,14 +12,12 @@ Returns the coefficients for a polynomial p(x) of degree `n` that is the least-s
 The `xscale` parameter is useful when needing to get coeficients in different x units. For example when converting months or seconds into years.
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "polyfit" from GMT:
- [1] polyfit(x, y, n::Int64; xscale)
- [2] polyfit(D::GMTdataset, n::Int64; xscale)
- [3] polyfit(x, y; ...)
- [4] polyfit(D::GMTdataset; ...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("polyfit")
 ```
 
 ## See Also

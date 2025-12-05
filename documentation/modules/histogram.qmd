@@ -164,3 +164,10 @@ See also
 --------
 
 The [`GMT man page`](http://docs.generic-mapping-tools.org/latest/histogram.html)
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("histogram")
+```

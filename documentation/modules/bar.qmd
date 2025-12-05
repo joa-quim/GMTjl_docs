@@ -121,3 +121,9 @@ See also
 [Bar plots] examples.
 
 The [`GMT man page`](https://docs.generic-mapping-tools.org/latest/plot.html)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("bar")
+```

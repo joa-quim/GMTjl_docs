@@ -101,20 +101,12 @@ See full GMT docs at [`psmask`](http://docs.generic-mapping-tools.org/latest/mas
 To see the full documentation type: $@? mask$
 
 
-## Methods
 
-```julia
-# 5 methods for generic function "mask" from GMT:
- [1] mask(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psmask.jl:63
- [2] mask(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psmask.jl:63
- [3] mask(arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psmask.jl:97
- [4] mask(cmd0::String, arg1; first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psmask.jl:63
- [5] mask(GI::GItype, D::GDtype; touches, inverse)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psmask.jl:102
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("psmask")
 ```
 
 ## See Also

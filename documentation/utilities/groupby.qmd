@@ -12,11 +12,12 @@ Split a GMTdataset by the unique values of the column selected by `col`.
 `col` can be a column name, either as a String or a Symbol, or a column number. In any case, it must point to a column with integers (normaly a flint (Floating Point Integer)), or a string column. *i.e.,* the last column in a GMTdataset.
 
 
-## Methods
 
-```julia
-# 1 method for generic function "groupby" from GMT:
- [1] groupby(D::GMTdataset{T, 2}, cols::Union{Int64, String, Symbol}) where T<:Real
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("groupby")
 ```
 
 ## See Also

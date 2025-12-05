@@ -138,30 +138,12 @@ To draw them as straight lines, use this option.
     Save the figure with the `figname=name.ext` where `ext` chooses the figure format (e.g. figname="name.png")
 
 
-## Methods
 
-```julia
-# 10 methods for generic function "plot" from GMT:
-  [1] plot(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:140
-  [2] plot(cmd0::String, arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:140
-  [3] plot(arg1::Number, arg2::Number; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:144
-  [4] plot(f::Function; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:129
-  [5] plot(f1::Function, f2::Function; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:135
-  [6] plot(f::Function, range_x; first, kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:129
-  [7] plot(f1::Function, f2::Function, range_t; first, kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:135
-  [8] plot(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:140
-  [9] plot(arg1, arg2; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:142
- [10] plot(arg1; first, kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\plot.jl:101
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("psxy")
 ```
 
 ## See Also

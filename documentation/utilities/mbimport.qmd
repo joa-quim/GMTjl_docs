@@ -59,12 +59,12 @@ Produces a gray-shaded (or colored) map by plotting rectangles centered on each 
     Set PDF transparency level for an overlay, in (0-100] percent range. [Default is 0, i.e., opaque].
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "mbimport" from GMT:
- [1] mbimport(cmd0::String; kwargs...)
- [2] mbimport(; ...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("mbimport")
 ```
 
 ## See Also

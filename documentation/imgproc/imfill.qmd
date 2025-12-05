@@ -44,7 +44,13 @@ grdimage!(Ibw2, figsize=5, xshift=5.1, show=true)
 
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imfill")
+```
+
+\1
 
 {{< gmtref fillsinks >}}, {{< gmtref binarize >}}

@@ -11,14 +11,12 @@ gmtend(show=false, verbose=nothing)
 Ends a GMT session in modern mode and optionaly shows the figure
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "gmtend" from GMT:
- [1] gmtend(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtbegin.jl:30
- [2] gmtend(arg; show, verbose, reset)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtbegin.jl:30
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtend")
 ```
 
 ## See Also

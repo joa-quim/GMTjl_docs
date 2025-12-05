@@ -14,3 +14,10 @@ See Also
 --------
 
 {{< gmtref imagesc >}}, [image_cpt!], [image_alpha!], {{< gmtref makecpt >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("ind2rgb")
+```

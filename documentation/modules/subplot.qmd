@@ -224,3 +224,9 @@ Restriction
 -----------
 
 Currently, nesting of subplots is not implemented. With the ``geog`` projection one cannot set the fist axes to ``geog`` and the other to *whatever* because only last dimension is assigned that label. The solution to fine control here is to use the GMT syntax given as a string
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("subplot")
+```

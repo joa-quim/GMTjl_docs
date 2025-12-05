@@ -61,3 +61,10 @@ See Also
 --------
 
 {{< gmtref mat2img >}}, {{< gmtref mat2ds >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("f")
+```

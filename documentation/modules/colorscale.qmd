@@ -69,14 +69,12 @@ Plots gray scales or color scales on maps.
 To see the full documentation type: $@? colorbar$
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "colorbar" from GMT:
- [1] colorbar(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psscale.jl:50
- [2] colorbar(arg1::Union{Nothing, GMTcpt}; first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psscale.jl:50
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("colorscale")
 ```
 
 ## See Also

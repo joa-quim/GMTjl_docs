@@ -34,18 +34,12 @@ See full GMT docs at [`gmtvector`](http://docs.generic-mapping-tools.org/latest/
     Specify the vector transformation of interest.
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "gmtvector" from GMT:
- [1] gmtvector(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtvector.jl:32
- [2] gmtvector(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtvector.jl:32
- [3] gmtvector(arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtvector.jl:44
- [4] gmtvector(cmd0::String, arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gmtvector.jl:32
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtvector")
 ```
 
 ## See Also

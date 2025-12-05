@@ -42,3 +42,10 @@ See Also
 --------
 
 {{< gmtref inpolygon >}}, {{< gmtref getbyattrib >}}, {{< gmtref plot >}}, {{< gmtref triplot >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("inwhichpolygon")
+```

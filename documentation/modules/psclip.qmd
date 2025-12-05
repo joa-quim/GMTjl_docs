@@ -41,16 +41,12 @@ Reads (length,azimuth) pairs from file and plot a windclip diagram.
 To see the full documentation type: $@? clip$
 
 
-## Methods
 
-```julia
-# 3 methods for generic function "clip" from GMT:
- [1] clip(; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psclip.jl:35
- [2] clip(cmd0::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psclip.jl:30
- [3] clip(arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\psclip.jl:31
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("psclip")
 ```
 
 ## See Also

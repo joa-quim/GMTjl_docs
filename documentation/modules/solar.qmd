@@ -108,3 +108,9 @@ See also
 --------
 
 The [`GMT man page`](http://docs.generic-mapping-tools.org/latest/solar.html)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("solar")
+```

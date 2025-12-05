@@ -128,8 +128,14 @@ field_z.nc and field_s.nc, run:
     blockmode("@ship_15.txt", spacing="10m", region=(-115,-105,20,30), extend=true, save="field_%s.nc", fields="z,s")
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("blockmode")
+```
+
+\1
 
 {{< gmtref blockmean >}}
 {{< gmtref blockmedian >}}

@@ -36,18 +36,12 @@ See full GMT docs at [`kml2gmt`](http://docs.generic-mapping-tools.org/latest/km
 To see the full documentation type: $@? kml2gmt$
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "kml2gmt" from GMT:
- [1] kml2gmt(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\kml2gmt.jl:26
- [2] kml2gmt(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\kml2gmt.jl:26
- [3] kml2gmt(arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\kml2gmt.jl:35
- [4] kml2gmt(cmd0::String, arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\kml2gmt.jl:26
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("kml2gmt")
 ```
 
 ## See Also

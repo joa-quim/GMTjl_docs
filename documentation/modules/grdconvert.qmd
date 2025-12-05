@@ -8,12 +8,12 @@ title: "grdconvert"
 
 Documentation for the `grdconvert` function.
 
-## Methods
 
-```julia
-# 1 method for generic function "grdconvert" from GMT:
- [1] grdconvert(cmd0::AbstractString; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\grdconvert.jl:6
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdconvert")
 ```
 
 ## See Also

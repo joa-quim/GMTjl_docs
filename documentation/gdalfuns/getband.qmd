@@ -8,20 +8,12 @@ title: "getband"
 
 Documentation for the `getband` function.
 
-## Methods
 
-```julia
-# 5 methods for generic function "getband" from GMT.Gdal:
- [1] getband(ds::GMT.Gdal.RasterDataset, i::Integer)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1472
- [2] getband(ds::GMT.Gdal.RasterDataset)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1472
- [3] getband(dataset::GMT.Gdal.AbstractDataset, i::Integer)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1471
- [4] getband(dataset::GMT.Gdal.AbstractDataset)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1471
- [5] getband(x::GMT.Gdal.RasterDataset, args...; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:964
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("getband")
 ```
 
 ## See Also

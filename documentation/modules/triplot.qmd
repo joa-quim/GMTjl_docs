@@ -44,7 +44,13 @@ triplot(rand(5,3), lc=:red, show=true)
 
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("triplot")
+```
+
+\1
 
 {{< gmtref sphtriangulate >}}, {{< gmtref triangulate >}}, {{< gmtref trisurf >}}, {{< gmtref plot >}}

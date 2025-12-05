@@ -5,3 +5,10 @@ D = df2ds(df)
 ```
 
 Extract numeric data from a DataFrame type and return it into a {{< gmtref GMTdataset type=gmttype >}}. Works only with 'simple' DataFrames.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("df2ds")
+```

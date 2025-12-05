@@ -7,11 +7,12 @@ title: "terramar"
 
 Documentation for the `terramar` function.
 
-## Methods
 
-```julia
-# 1 method for generic function "terramar" from GMT:
- [1] terramar(f1::Function, arg1, t1::NamedTuple, f2::Function, arg2, t2::NamedTuple; kw...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("terramar")
 ```
 
 ## See Also

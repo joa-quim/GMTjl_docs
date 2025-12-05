@@ -229,8 +229,14 @@ so small that you need more decimals in the output format used. You may specify 
 places by editing the parameter `FORMAT_FLOAT_OUT` in your `gmt.conf` file prior to running the
 decimators or choose binary input and/or output using single or double precision storage.
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("surface")
+```
+
+\1
 
 {{< gmtref blockmean >}},
 {{< gmtref blockmedian >}},

@@ -26,12 +26,12 @@ Compute the coordinates of the `quadtree` quadtree. Either a single quadtree str
 ```
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "quadbounds" from GMT:
- [1] quadbounds(quadtree::Matrix{String}; geog, quadkey)
- [2] quadbounds(quadtree::String; geog, quadkey)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("quadbounds")
 ```
 
 ## See Also

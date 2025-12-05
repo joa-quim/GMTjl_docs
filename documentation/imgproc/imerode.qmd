@@ -30,9 +30,7 @@ Examples
 Erosion with a disk radius of 10, 5 and 20
 
 
-```{julia}
-using GMT
-
+```julia
 I = gmtread(TESTSDIR * "assets/chip.png");
 J1 = imerode(I, sel=strel("disk", 10));
 J2 = imerode(I, sel=strel("disk", 5));
@@ -43,9 +41,16 @@ grdimage!(J2, figsize=6, xshift=-6.1, yshift=-6.1)
 grdimage!(J3, figsize=6, xshift=6.1, show=true)
 ```
 
+![](/assets/imerode_nocrash.png){width="600" .center}
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imerode")
+```
+
+### See Also
 
 {{< gmtref imdilate >}}, {{< gmtref imopen >}}, {{< gmtref imclose >}}, {{< gmtref strel >}}

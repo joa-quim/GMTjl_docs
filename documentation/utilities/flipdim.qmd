@@ -7,11 +7,12 @@ title: "flipdim"
 
 Documentation for the `flipdim` function.
 
-## Methods
 
-```julia
-# 1 method for generic function "flipdim" from GMT:
- [1] flipdim(A, dim)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("flipdim")
 ```
 
 ## See Also

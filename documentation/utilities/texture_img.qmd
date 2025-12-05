@@ -19,11 +19,12 @@ Compute the Texture Shading calling functions from the software from Leland Brow
 A UInt8 (or 16) GMT Image
 
 
-## Methods
 
-```julia
-# 1 method for generic function "texture_img" from GMT:
- [1] texture_img(G::GMTgrid; detail, contrast, uint16, intensity)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("texture_img")
 ```
 
 ## See Also

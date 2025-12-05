@@ -13,3 +13,10 @@ Example:
 
 ### Returns
 A GMT RGB Image
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gdalshade")
+```

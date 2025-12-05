@@ -7,6 +7,13 @@ title: "Gouterjoin"
 
 Documentation for the `Gouterjoin` function.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("Gouterjoin")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

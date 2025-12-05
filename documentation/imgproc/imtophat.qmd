@@ -39,7 +39,13 @@ grdimage!(J, figsize=6, xshift=6, show=true)
 
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imtophat")
+```
+
+\1
 
 {{< gmtref imdilate >}}, {{< gmtref imerode >}}, {{< gmtref imopen >}}, {{< gmtref imbothat >}}

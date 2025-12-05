@@ -16,14 +16,12 @@ yeardecimal(now())
 ```
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "yeardecimal" from GMT:
- [1] yeardecimal(years::Real)
- [2] yeardecimal(dtm::Union{DateTime, Vector{DateTime}})
- [3] yeardecimal(dtm::Union{Date, Vector{Date}})
- [4] yeardecimal(dtm::Union{String, Vector{String}})
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("yeardecimal")
 ```
 
 ## See Also

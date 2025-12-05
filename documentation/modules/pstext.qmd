@@ -71,20 +71,12 @@ Plots text strings of variable size, font type, and orientation. Various map pro
 To see the full documentation type: $@? pstext$
 
 
-## Methods
 
-```julia
-# 5 methods for generic function "text" from GMT:
- [1] text(txt::Vector{String}; x, y, first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pstext.jl:182
- [2] text(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pstext.jl:59
- [3] text(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pstext.jl:59
- [4] text(arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pstext.jl:178
- [5] text(cmd0::String, arg1; first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pstext.jl:59
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pstext")
 ```
 
 ## See Also

@@ -7,12 +7,12 @@ title: "toc"
 
 Documentation for the `toc` function.
 
-## Methods
 
-```julia
-# 2 methods for generic function "toc" from GMT:
- [1] toc()
- [2] toc(V)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("toc")
 ```
 
 ## See Also

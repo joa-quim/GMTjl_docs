@@ -9,3 +9,10 @@ title: "disjoint"
 * `geom2`: Second geometry. AbstractGeometry if `geom1::AbstractGeometry` or a GMTdataset/Matrix if `geom1` is GMT type 
 
 Returns `true` if the geometries are disjoint.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("disjoint")
+```

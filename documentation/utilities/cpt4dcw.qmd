@@ -32,3 +32,10 @@ See Also
 --------
 
 {{< gmtref makecpt >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("cpt4dcw")
+```

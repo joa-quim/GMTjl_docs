@@ -17,12 +17,12 @@ isclockwise(poly, (1.0,0.1,0.0))
 ```
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "isclockwise" from GMT:
- [1] isclockwise(poly::Matrix{<:AbstractFloat}, view)
- [2] isclockwise(poly::Matrix{<:AbstractFloat})
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("isclockwise")
 ```
 
 ## See Also

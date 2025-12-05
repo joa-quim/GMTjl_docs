@@ -162,3 +162,10 @@ See Also
 --------
 
 {{< gmtref weather >}}, {{< gmtref era5vars >}}, {{< gmtref era5time >}}, {{< gmtref listecmwfvars >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("ecmwf")
+```

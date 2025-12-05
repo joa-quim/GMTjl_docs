@@ -121,7 +121,13 @@ viz(G, shade=true, coast=true, cmap=:earth)
 
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("earthregions")
+```
+
+\1
 
 {{< gmtref coast >}}, {{< gmtref mosaic >}}

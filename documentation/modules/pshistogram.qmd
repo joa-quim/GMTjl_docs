@@ -77,14 +77,12 @@ Examines the first data column to calculate histogram parameters based on the bi
 To see the full documentation type: $@? histogram$
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "histogram" from GMT:
- [1] histogram(cmd0::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pshistogram.jl:73
- [2] histogram(arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pshistogram.jl:74
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pshistogram")
 ```
 
 ## See Also

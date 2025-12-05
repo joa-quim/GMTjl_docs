@@ -25,3 +25,10 @@ qqplot(randn(100), randn(100), show=true)
 
 qqplot(randn(100), show=true)
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("qqplot")
+```

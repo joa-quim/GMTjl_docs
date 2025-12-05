@@ -23,12 +23,12 @@ Create an circle in 2D space (see `ellipse3D` if want a circle in the 3D space).
   * `xy`: A Mx2 matrix of points defining the circle, where M = `np`
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "circlepts" from GMT:
- [1] circlepts(; ...)
- [2] circlepts(r; center, ang1, ang2, np)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("circlepts")
 ```
 
 ## See Also

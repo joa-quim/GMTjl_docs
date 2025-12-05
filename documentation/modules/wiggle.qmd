@@ -151,8 +151,14 @@ and obtain
            fixed_azim=45, scale_bar=(refpoint=:RM, width=100, label=:nT), show=1)
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("wiggle")
+```
+
+\1
 
 {{< gmtref filter1d >}},
 [psbasemap],

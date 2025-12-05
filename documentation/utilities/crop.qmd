@@ -29,3 +29,10 @@ See Also
 --------
 
 {{< gmtref grdcut >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("crop")
+```

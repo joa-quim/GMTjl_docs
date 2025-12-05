@@ -115,3 +115,9 @@ See Also
 --------
 
 {{< gmtref gmtwrite >}}, {{< gmtref gdalread >}}
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtread")
+```

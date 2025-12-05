@@ -32,18 +32,23 @@ Example
 Illustration of opening with a structuring box of width 20
 
 
-```{julia}
-using GMT
-
+```julia
 I = gmtread(TESTSDIR * "assets/packman.png");
 J = imopen(I, sel=strel("box", 20));
 grdimage(I, figsize=7)
 grdimage!(J, figsize=7, xshift=7.1, show=true)
 ```
 
+![](/assets/imopen_nocrash.png){width="600" .center}
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imopen")
+```
+
+### See Also
 
 {{< gmtref imdilate >}}, {{< gmtref imerode >}}, {{< gmtref imclose >}}, {{< gmtref strel >}}

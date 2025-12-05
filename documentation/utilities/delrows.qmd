@@ -5,3 +5,10 @@ delrows!(A::Matrix, rows::VecOrMat)
 ```
 
 Delete the rows of Matrix `A` listed in the vector `rows`
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("delrows!")
+```

@@ -78,3 +78,10 @@ bar3(G, lw=:thinnest, color=cmap, show=true)
 See also
 --------
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("bar3")
+```

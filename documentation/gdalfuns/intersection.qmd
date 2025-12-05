@@ -19,3 +19,10 @@ The `intersects` function can be used to test if two geometries intersect.
 
 ### Returns
 A GMT dataset when input is a Matrix or a GMT type (except if `gdaset=true`), or a GDAL IGeometry otherwise
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("intersection")
+```

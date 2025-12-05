@@ -162,8 +162,14 @@ and not shorten the track, and add the distances to the file, use
 D = filter1d("track.txt", range="k+a", ends=true, filter=(:gaussian, 200))
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("filter1d")
+```
+
+\1
 
 {{< gmtref sample1d >}},
 {{< gmtref gmtsplit >}}

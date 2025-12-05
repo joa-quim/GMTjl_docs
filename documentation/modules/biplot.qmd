@@ -76,3 +76,10 @@ using GMT
 biplot(TESTSDIR * "iris.dat", figsize=6, obsnumbers=true, show=true)
 ```
 
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("biplot")
+```

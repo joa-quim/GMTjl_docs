@@ -71,18 +71,12 @@ See full GMT docs at [`legend`](http://docs.generic-mapping-tools.org/latest/leg
 To see the full documentation type: $@? legend$
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "legend" from GMT:
- [1] legend(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pslegend.jl:45
- [2] legend(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pslegend.jl:45
- [3] legend(arg1; kw...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pslegend.jl:249
- [4] legend(cmd0::String, arg1; first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pslegend.jl:45
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pslegend")
 ```
 
 ## See Also

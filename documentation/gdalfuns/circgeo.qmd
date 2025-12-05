@@ -48,3 +48,10 @@ Compute a circle about the (0,0) point with a radius of 50 km
 ```julia
     c = circgeo([0. 0], radius=50, unit=:k)
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("circgeo")
+```

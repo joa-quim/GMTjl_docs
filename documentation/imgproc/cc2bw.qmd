@@ -134,6 +134,13 @@ grdimage!(BW2, figsize=6, xshift=6.2, show=true)
 
 ---
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("cc2bw")
+```
+
 ## See Also
 
 {{< gmtref bwconncomp >}}, {{< gmtref binarize >}}

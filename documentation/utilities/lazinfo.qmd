@@ -12,11 +12,12 @@ Prints information about the LAS file `fname`. If that file is a grid, report th
   * `veronly`: If true, prints only the laszip library version number.
 
 
-## Methods
 
-```julia
-# 1 method for generic function "lazinfo" from GMT.Laszip:
- [1] lazinfo(fname::AbstractString; veronly)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("lazinfo")
 ```
 
 ## See Also

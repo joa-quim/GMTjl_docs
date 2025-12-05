@@ -7,13 +7,12 @@ title: "flipud"
 
 Documentation for the `flipud` function.
 
-## Methods
 
-```julia
-# 3 methods for generic function "flipud" from GMT:
- [1] flipud(I::GMTimage)
- [2] flipud(G::GMTgrid)
- [3] flipud(A)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("flipud")
 ```
 
 ## See Also

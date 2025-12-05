@@ -13,14 +13,12 @@ Plot cross-sections of focal mechanisms.
 See full GMT docs at [`pscoupe`](http://docs.generic-mapping-tools.org/latest/coupe.html). Essentially the same as **meca** plus **A**. Run `gmthelp(coupe)` to see the list of options.
 
 
-## Methods
 
-```julia
-# 2 methods for generic function "coupe" from GMT:
- [1] coupe(cmd0::String; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\seis\psmeca.jl:102
- [2] coupe(arg1; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\seis\psmeca.jl:103
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pscoupe")
 ```
 
 ## See Also

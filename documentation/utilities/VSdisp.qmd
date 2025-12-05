@@ -17,6 +17,13 @@ Check the GMT.jl source for implementation details.
 
 The `VSdisp` function Vertical seismic dispersion function.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("VSdisp")
+```
+
 ## See Also
 
 - [Alphabetical Function List](../alphabetical.html)

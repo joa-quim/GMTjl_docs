@@ -8,18 +8,12 @@ title: "getdriver"
 
 Documentation for the `getdriver` function.
 
-## Methods
 
-```julia
-# 4 methods for generic function "getdriver" from GMT.Gdal:
- [1] getdriver(name::AbstractString)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1469
- [2] getdriver(i::Integer)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1468
- [3] getdriver(ds::GMT.Gdal.AbstractDataset)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:1467
- [4] getdriver(x::GMT.Gdal.RasterDataset, args...; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\gdal\gdal.jl:964
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("getdriver")
 ```
 
 ## See Also

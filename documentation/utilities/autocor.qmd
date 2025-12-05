@@ -16,13 +16,12 @@ When left unspecified, the lags used are the integers from 0 to `min(size(x,1)-1
 The output is normalized by the variance of `x`, i.e. so that the lag 0 autocorrelation is 1. See [`autocov`](@ref) for the unnormalized form.
 
 
-## Methods
 
-```julia
-# 3 methods for generic function "autocor" from GMT:
- [1] autocor(x::AbstractVecOrMat{<:Real}; demean)
- [2] autocor(x::AbstractMatrix{<:Real}, lags::AbstractVector{<:Integer}; demean)
- [3] autocor(x::AbstractVector{<:Real}, lags::AbstractVector{<:Integer}; demean)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("autocor")
 ```
 
 ## See Also

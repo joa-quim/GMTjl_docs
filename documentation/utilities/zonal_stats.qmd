@@ -78,3 +78,10 @@ zonal_statistics(G, FrIt, mean, groupby="NAME")
    3 │ 103.25   Ph Italy
 ```
 The _Ph Italy_ means that Italy has an island inside it. The Vatican city.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("zonal_statistics")
+```

@@ -7,12 +7,12 @@ title: "logspace"
 
 Documentation for the `logspace` function.
 
-## Methods
 
-```julia
-# 2 methods for generic function "logspace" from GMT:
- [1] logspace(start, stop, length)
- [2] logspace(start, stop)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("logspace")
 ```
 
 ## See Also

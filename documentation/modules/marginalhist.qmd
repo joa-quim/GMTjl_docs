@@ -104,7 +104,13 @@ marginalhist(randn(2500,2), cmap=:lisbon, density=true, histkw=(fill="darkgreen@
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("marginalhist")
+```
+
+\1
 
 {{< gmtref cornerplot >}}, {{< gmtref plot >}}, [binstats], {{< gmtref histogram >}}

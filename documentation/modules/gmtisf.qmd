@@ -38,11 +38,12 @@ This GMT supplements module has not yet received the proper attention to port th
 This module can also be called via `gmtread`. *I.,e.* `gmtread("file.isf", opts...)_
 
 
-## Methods
 
-```julia
-# 1 method for generic function "gmtisf" from GMT:
- [1] gmtisf(cmd0::String; kwargs...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtisf")
 ```
 
 ## See Also

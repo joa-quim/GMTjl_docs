@@ -153,8 +153,14 @@ Same exercise, but instead compute running polygon IDs starting at 100, do
     G = grdmask("plates.gmt", region=(-40,-40,-40,-40), inc="2m", out_edge_in="p100")
 ```
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdmask")
+```
+
+\1
 
 {{< gmtref grdlandmask >}},
 {{< gmtref grdclip >}},

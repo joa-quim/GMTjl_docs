@@ -62,13 +62,12 @@ This GMT supplements module has not yet recived the proper attention to port the
 ```
 
 
-## Methods
 
-```julia
-# 3 methods for generic function "gravmag3d" from GMT:
- [1] gravmag3d(; kwargs...)
- [2] gravmag3d(cmd0::String; kwargs...)
- [3] gravmag3d(arg1; kwargs...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gravmag3d")
 ```
 
 ## See Also

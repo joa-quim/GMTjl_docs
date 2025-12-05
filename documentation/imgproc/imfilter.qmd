@@ -35,7 +35,13 @@ grdimage!(J, figsize=5, xshift=5, show=true)
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imfilter")
+```
+
+\1
 
 {{< gmtref imfill >}}, {{< gmtref bwskell >}}, {{< gmtref imerode >}}, {{< gmtref imsobel >}}

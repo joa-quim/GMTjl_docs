@@ -32,3 +32,10 @@ Create an ellipse in 2D or 3D space. Attention, this is a 2D body, not an ellips
 
 ### Returns
 A matrix of points defining the ellipse, with each row representing a point in 3D space.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("ellipse3D")
+```

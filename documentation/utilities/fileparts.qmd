@@ -7,11 +7,12 @@ title: "fileparts"
 
 Documentation for the `fileparts` function.
 
-## Methods
 
-```julia
-# 1 method for generic function "fileparts" from GMT:
- [1] fileparts(fn::String)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("fileparts")
 ```
 
 ## See Also

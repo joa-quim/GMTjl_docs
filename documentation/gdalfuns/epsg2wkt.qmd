@@ -5,3 +5,10 @@ title: "epsg2wkt"
     epsg2wkt(code::Integer, pretty::Bool=false)
 
 Convert a EPSG code into the WKT form. Use `pretty=true` to return a more human readable text.
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("epsg2wkt")
+```

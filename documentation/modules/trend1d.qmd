@@ -200,8 +200,14 @@ plot!(D, lc=:blue, show=true)
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("trend1d")
+```
+
+\1
 
 {{< gmtref gmtregress >}}, {{< gmtref grdtrend >}}, {{< gmtref trend2d >}}
 

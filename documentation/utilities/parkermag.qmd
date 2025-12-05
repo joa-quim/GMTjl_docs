@@ -90,3 +90,10 @@ See Also
 --------
 
 {{< gmtref parkergrav >}}, {{< gmtref gravfft >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("parkermag")
+```

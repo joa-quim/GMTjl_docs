@@ -97,7 +97,13 @@ seismicity()
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("seismicity")
+```
+
+\1
 
 {{< gmtref plot >}}, {{< gmtref coast >}}, {{< gmtref legend >}}

@@ -65,16 +65,12 @@ See full GMT docs at [`solar`](http://docs.generic-mapping-tools.org/latest/sola
 To see the full documentation type: $@? solar$
 
 
-## Methods
 
-```julia
-# 3 methods for generic function "solar" from GMT:
- [1] solar(cmd0::String; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pssolar.jl:42
- [2] solar(; ...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pssolar.jl:42
- [3] solar(cmd0::String, arg1; first, kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\pssolar.jl:42
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("pssolar")
 ```
 
 ## See Also

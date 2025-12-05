@@ -70,3 +70,10 @@ See Also
 --------
 
 [gdaldem], {{< gmtref makecpt >}}, {{< gmtref grd2cpt >}},
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("lelandshade")
+```

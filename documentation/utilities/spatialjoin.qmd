@@ -7,11 +7,12 @@ title: "spatialjoin"
 
 Documentation for the `spatialjoin` function.
 
-## Methods
 
-```julia
-# 1 method for generic function "spatialjoin" from GMT:
- [1] spatialjoin(D1::GMTdataset, D2::Vector{<:GMTdataset}; pred, kind, kwargs...)
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("spatialjoin")
 ```
 
 ## See Also

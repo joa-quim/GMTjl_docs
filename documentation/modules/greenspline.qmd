@@ -343,6 +343,13 @@ The series solution for **S=:q** (Wessel & Becker, 2008) is slower to compute, s
 - Wessel, P., and J. M. Becker, 2008, Interpolation using a generalized Green's function for a spherical surface spline in tension, *Geophys. J. Int*, 174, 21-28, https://doi.org/10.1111/j.1365-246X.2008.03829.x.
 - Wessel, P., 2009, A general-purpose Green's function interpolator, *Computers & Geosciences*, 35, 1247-1254, https://doi.org/10.1016/j.cageo.2008.08.012.
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("greenspline")
+```
+
 ## See Also
 
 {{< gmtref blockmean >}}, {{< gmtref blockmedian >}}, {{< gmtref blockmode >}}, {{< gmtref nearneighbor >}}, {{< gmtref sample1d >}}, {{< gmtref surface >}}, {{< gmtref triangulate >}}

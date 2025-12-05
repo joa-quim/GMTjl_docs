@@ -21,7 +21,13 @@ This transform isolates pixels that are darker than other pixels in their neighb
 A new {{< gmtref GMTimage type=gmttype >}} of the same type as `I` with the bothat applied.
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("imbothat")
+```
+
+\1
 
 {{< gmtref imdilate >}}, {{< gmtref imerode >}}, {{< gmtref imopen >}}, {{< gmtref imtophat >}}

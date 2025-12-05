@@ -19,3 +19,10 @@ If that isn't right, pass the appropriate projection info via the `t_srs` option
 
 ### Returns
 A Matrix if input is a Matrix or a GMTdadaset if input had that type
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("xy2lonlat")
+```

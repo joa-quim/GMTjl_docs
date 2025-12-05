@@ -237,6 +237,13 @@ T = graydist(I, ind)
 
 ---
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("graydist")
+```
+
 ## See Also
 
 {{< gmtref bwdist >}}, [watershed]

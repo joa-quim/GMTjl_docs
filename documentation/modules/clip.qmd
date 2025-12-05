@@ -111,7 +111,13 @@ plot("@tut_data.txt", fill=:red, marker=:circ, ms=2, region=(0,6,0,6), clip=[0 0
 ```
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("clip")
+```
+
+\1
 
 {{< gmtref basemap >}}

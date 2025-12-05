@@ -39,3 +39,9 @@ or a vector of it (when input is Vector{GMTdataset}).
 Compute an geodesic between points (0,0) and (30,50) discretized at 100 km steps.
 
     mat = geodesic([0 0; 30 50], step=100, unit=:k);
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("geodesic")
+```

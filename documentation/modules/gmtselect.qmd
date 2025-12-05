@@ -230,8 +230,14 @@ where the values are nonzero, try
 {{< include ../common_opts/explain_inside.md >}}
 
 
-See Also
---------
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtselect")
+```
+
+\1
 
 {{< gmtref gmtconvert >}},
 {{< gmtref gmtsimplify >}},

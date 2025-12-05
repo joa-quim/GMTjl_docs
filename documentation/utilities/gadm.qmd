@@ -45,3 +45,10 @@ uttar = gadm("IND", "Uttar Pradesh", children=true)
 # Names of all states of India
 gadm("IND", names=true)
 ```
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gadm")
+```

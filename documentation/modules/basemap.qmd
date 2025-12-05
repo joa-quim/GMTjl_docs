@@ -422,3 +422,10 @@ Bugs
 
 The [frame] option is somewhat complicated to explain and comprehend.
 However, it is fairly simple for most applications (see examples).
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("basemap")
+```

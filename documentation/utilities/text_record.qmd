@@ -7,17 +7,12 @@ title: "text_record"
 
 Documentation for the `text_record` function.
 
-## Methods
 
-```julia
-# 7 methods for generic function "text_record" from GMT:
- [1] text_record(text::Vector{String})
- [2] text_record(text::String, hdr::String)
- [3] text_record(text::String)
- [4] text_record(text)
- [5] text_record(text::Vector{String}, hdr::Union{String, Vector{String}})
- [6] text_record(data, text::Union{Vector{Vector{String}}, Vector{String}, String}, hdr)
- [7] text_record(data, text::Union{Vector{Vector{String}}, Vector{String}, String})
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("text_record")
 ```
 
 ## See Also

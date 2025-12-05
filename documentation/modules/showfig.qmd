@@ -14,18 +14,12 @@ Finish the PostScript file and convert&display the figure.
   * `figname`: To create a figure in local directory and with a name `figname`. If `figname` has an extension,  that is used to select the fig format. *e.g.* `figname=fig.pdf` creates a PDF file localy called 'fig.pdf'
 
 
-## Methods
 
-```julia
-# 4 methods for generic function "showfig" from GMT:
- [1] showfig(; kwargs...)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\common_options.jl:4246
- [2] showfig(d::Dict{Symbol, Any}, fname_ps::String, fname_ext::String, opt_T::String, K::Bool, fname::String)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\common_options.jl:4162
- [3] showfig(d::Dict{Symbol, Any}, fname_ps::String, fname_ext::String, opt_T::String, K::Bool)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\common_options.jl:4162
- [4] showfig(d::Dict{Symbol, Any}, fname_ps::String, fname_ext::String, opt_T::String)
-     @ C:\Users\j\.julia\packages\GMT\Td19G\src\common_options.jl:4162
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("showfig")
 ```
 
 ## See Also

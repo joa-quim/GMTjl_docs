@@ -19,3 +19,10 @@ title: "arcellipse"
 
 ### Returns
 A GMT dataset or a GDAL IGeometry
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("arcellipse")
+```

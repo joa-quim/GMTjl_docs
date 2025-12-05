@@ -29,3 +29,10 @@ See Also
 --------
 
 [image_cpt!], {{< gmtref ind2rgb >}}
+
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("image_alpha!")
+```

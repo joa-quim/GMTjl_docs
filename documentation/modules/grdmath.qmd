@@ -39,3 +39,9 @@ To create a grid with resolution 0.5x0.5 degrees with distances in km from the c
 ```julia
     G = grdmath("-RNO,IS -Dc -I.5 LDISTG =")
 ```
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("grdmath")
+```
