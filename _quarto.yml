@@ -661,6 +661,8 @@ website:
             file: documentation/imgproc.qmd
           - text: "Common Features"
             file: documentation/common_features.qmd
+          - text: "Common Options"
+            file: documentation/common_opts/common_opts.qmd
           - text: "Alphabetical List"
             file: documentation/alphabetical.qmd
       - text: "Examples"

@@ -46,7 +46,7 @@ Optional Arguments
     Needs GMT6.4 or higher.
 
 - **F** or **interp** : -- *interp=type* **|** *interp=(type, [,par], "derivative")*\
-    The default is `Akima`. You may change the default interpolant; see `GMT_INTERPOLANT` in your `gmt.conf` file.
+    The default is `Akima`. You may change the default interpolant; see [GMT_INTERPOLANT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-GMT_INTERPOLANT) in your `gmt.conf` file.
 
     Choose type from (the *interp_type=type* form):
     - **l**inear

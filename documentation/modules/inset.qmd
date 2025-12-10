@@ -56,10 +56,10 @@ Optional Arguments
     *left* and *right* or **tb=val** for both *top* and *bott*. No *side* means all sides. Alternatively, if all sides
     are to be set you can also give a pair of values separated by slashes (for setting separate horizontal and vertical
     margins), or the full set of four separate margins. Such space will be left untouched by the inset map plotting.
-    Append units as desired  (**c**m, **i**nch, or **p**oint) [Default is set by `PROJ_LENGTH_UNIT`].
+    Append units as desired  (**c**m, **i**nch, or **p**oint) [Default is set by [PROJ_LENGTH_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_LENGTH_UNIT)].
 
 - **F** or **box** : -- *box=(clearance=val, fill=color, inner=true, pen=pen, rounded=true, shaded=XX)*\
-    Without further options, draws a rectangular border around the map inset using `MAP_FRAME_PEN`. The following
+    Without further options, draws a rectangular border around the map inset using [MAP_FRAME_PEN](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_FRAME_PEN). The following
     modifiers can be appended to |-F|, with additional explanation and examples provided in the
     [The background panel](https://docs.generic-mapping-tools.org/dev/reference/features.html#background-panel)
     cookbook section:
@@ -68,7 +68,7 @@ Optional Arguments
     
     - **fill=color**, where *color* is any valid color setting (see [Setting color](../common_features/color.html)), to fill the scale panel [no fill].
     
-    - **inner=true** to draw a secondary, inner border as well. We use a uniform *gap* between borders of *2p* and the `MAP_DEFAULTS_PEN` unless other values are specified (like **inner="gap/pen"**). 
+    - **inner=true** to draw a secondary, inner border as well. We use a uniform *gap* between borders of *2p* and the [MAP_DEFAULTS_PEN](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_DEFAULTS_PEN) unless other values are specified (like **inner="gap/pen"**). 
     
     - **pen=pen**, to specify different [Pen attributes](../common_features/pens.html) attributes.
     

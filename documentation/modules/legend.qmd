@@ -9,7 +9,7 @@ Description
 
 Makes legends that can be overlaid on maps. It reads specific legend-related information from an input
 file or from a GMTdatset type.  Unless otherwise noted, annotations will be made using the primary
-annotation font and size in effect (i.e., `FONT_ANNOT_PRIMARY`)
+annotation font and size in effect (i.e., [FONT_ANNOT_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_ANNOT_PRIMARY))
 
 ![](/assets/seislegend.png){width="500" .center}
 
@@ -48,11 +48,11 @@ Optional Arguments
    Sets the clearance between the legend frame and the internal items [4p/4p].
 
 - **F** or **box** : -- *box=(clearance=val, fill=color, inner=true, pen=pen, rounded=true, shaded=XX)*\
-   Without further options, draws a rectangular border around the scale using `MAP_FRAME_PEN`; specify a different pen with `pen=pen` (see [Pen attributes]).
+   Without further options, draws a rectangular border around the scale using [MAP_FRAME_PEN](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_FRAME_PEN); specify a different pen with `pen=pen` (see [Pen attributes]).
 
    - `fill=color` where *color* is any valid color setting (see [Setting color]), to fill the scale panel [no fill].
    - `clearance=val` where *val* is either *gap* or *(xgap,ygap)*, or *(lgap,rgap,bgap,tgap)* where these items are uniform, separate in x- and y-direction, or individual side spacings between scale and border.
-   - `inner=true` to draw a secondary, inner border as well. We use a uniform *gap* between borders of *2p* and the `MAP_DEFAULTS_PEN` unless other values are specified (like `inner="gap/pen"`)
+   - `inner=true` to draw a secondary, inner border as well. We use a uniform *gap* between borders of *2p* and the [MAP_DEFAULTS_PEN](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_DEFAULTS_PEN) unless other values are specified (like `inner="gap/pen"`)
    - `rounded=true` to draw rounded rectangular borders instead, with a *6p* corner radius. You can override this radius by using another value instead of *true* (default is **6p**).
    - `shadded=true` or `shadded=(dx,dy)` or `shadded=shade` to draw an offset background shaded region. Here, *dx/dy* indicates the shift relative to the foreground frame [*4p/-4p*]and *shade* sets the fill style to use for shading ("gray50").
 
@@ -115,7 +115,7 @@ different record types are recognized, and the syntax for each of these records 
 - **D** or **hline** : *hline=(pen=`pen`, offset=`val`)*\
    The **hline** record results in a horizontal line with specified `pen` across the legend with one quarter of the
    line-spacing left blank above and below the line. Two gaps of `offset` units are left blank between the horizontal
-   line and the left and right frame sides [0]. If no pen is given we use `MAP_GRID_PEN_PRIMARY`, and if `pen` is set
+   line and the left and right frame sides [0]. If no pen is given we use [MAP_GRID_PEN_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_GRID_PEN_PRIMARY), and if `pen` is set
    to **-** then no visible line is drawn (we just remember the location as a possible start/stop point for a vertical
    line; see **vline**). To *not* add the quarter line-spacing before the line, add **-**. To *not* add the spacing
    after the line, add **+**. For no spacing at all, add **=** [Default places a quarter line-spacing both before
@@ -132,7 +132,7 @@ different record types are recognized, and the syntax for each of these records 
 
 - **H** or **header** : *header=(text=`txt`, [font=`font`])*\
    This record plots a centered text string using the specified font parameters. If `font` is not used we
-   default to size and fonttype of `FONT_TITLE`.
+   default to size and fonttype of [FONT_TITLE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_TITLE).
 
 - **I** or **image** : *image=(image=`fname`, width=`val`, justify=`code`)*\
     Place an EPS or raster image in the legend justified relative to the current point. The image `width` determines
@@ -140,7 +140,7 @@ different record types are recognized, and the syntax for each of these records 
 
 - **L** or **label** : *label=(label=`text`, justify=`code` [,font=`font`])*\
    Plots a (L)eft, (C)entered, or (R)ight-justified `text` string within a column using the specified font parameters.
-   `code` is one of :L, :C or :R. If `font` is not used we default to size and fonttype of `FONT_TITLE`
+   `code` is one of :L, :C or :R. If `font` is not used we default to size and fonttype of [FONT_TITLE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_TITLE)
 
 - **M** or **map_scale** : *map_scale=([lon=`val`,] lat|y=`val`, length=`val` [,region=?, proj=?, box=?])*\
    Place a map scale in the legend. Specify `lon lat`, the point on the map where the scale applies
@@ -173,7 +173,7 @@ different record types are recognized, and the syntax for each of these records 
 - **S** or **symbol** : *symbol=(marker=`name`, [dx_left=`val`,] size=`val` [fill=`fill`, pen=`pen`] [, dx_right, label=`text`])*\
    Plots the selected symbol with specified diameter, fill, and outline (see {{< gmtref plot >}}). The symbol is centered
    at `dx_left` from the left margin of the column, with the optional explanatory *label* starting `dx_right` from
-   the margin, printed with `FONT_ANNOT_PRIMARY`. If `dx_left` is not given then it is automatically computed from
+   the margin, printed with [FONT_ANNOT_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_ANNOT_PRIMARY). If `dx_left` is not given then it is automatically computed from
    half the largest symbol size.  If `dx_right` is not given then it is automatically computed as 1.5 times the
    largest symbol size. The `fill` can be a pen of pattern or may be specified indirectly via *z=value* and the
    color is assigned via the CPT look-up (requires a prior **cmap** code). When plotting just a symbol, without
@@ -190,7 +190,7 @@ different record types are recognized, and the syntax for each of these records 
    that as the symbol size (again, see {{< gmtref plot >}} for details on the arguments needed).
 
 - **T** or **text[xx]** : *text[xx]=`text`*\
-   One or more of these **text** records with *paragraph-text* printed with `FONT_ANNOT_PRIMARY`. To specify special
+   One or more of these **text** records with *paragraph-text* printed with [FONT_ANNOT_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_ANNOT_PRIMARY). To specify special
    positioning and typesetting arrangements, or to enter a paragraph break, use the optional **paragraph** record.
    **NOTE:** since we cannot repeat keyword names, if we want to provide several text strings we must use different
    keyword names. Hence the `text[xx]` that means we can repeat this option with `text1`, `text2`, etc...

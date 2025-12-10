@@ -1,2 +1,2 @@
 - **J** or **proj** or **projection** : -- *proj=<parameters>*\
-   Select map projection. More at [proj](../common_opts/opt_J.qmd)
+   Select map projection. More at [proj](/documentation/common_opts/common_opts.qmd#proj)

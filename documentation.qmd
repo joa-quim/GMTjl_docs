@@ -57,6 +57,13 @@ Learn about colors, pens, fonts, symbols, and other features used across GMT fun
 
 ::: {.g-col-6 .g-col-md-4}
 ::: {.card .h-100}
+### [Common Options](documentation/common_opts/common_opts.html)
+Learn about the region, proj, frame, and other common options used across GMT functions.
+:::
+:::
+
+::: {.g-col-6 .g-col-md-4}
+::: {.card .h-100}
 ### [Alphabetical List](documentation/alphabetical.html)
 Complete alphabetical listing of all 308 documented functions with quick links and category information.
 :::

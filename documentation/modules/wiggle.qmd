@@ -33,7 +33,7 @@ Required Arguments
 - **Z** or **ampscale** or **amp_scale** : -- *ampscale=??*\
     Gives anomaly scale in data-units/distance-unit. Append **c**, **i**, or **p** to indicate
     the distance unit (cm, inch, or point); if no unit is given we use the default unit that
-    is controlled by `PROJ_LENGTH_UNIT`.
+    is controlled by [PROJ_LENGTH_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_LENGTH_UNIT).
 
 Optional Arguments
 ------------------
@@ -57,7 +57,7 @@ Optional Arguments
     if `outside` is used then `justify` defaults to the mirror opposite of `refpoint`.
     Move scale label to the left side with `label_left=true` [Default is to the right of the scale].
     Use `label="The label"` to set the *z* unit label that is used in the scale label [no unit].
-    The `FONT_ANNOT_PRIMARY` is used for the font setting, while `MAP_TICK_PEN_PRIMARY`
+    The [FONT_ANNOT_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_ANNOT_PRIMARY) is used for the font setting, while [MAP_TICK_PEN_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_TICK_PEN_PRIMARY)
     is used to draw the scale bar.
 
 {{< include ../common_opts/opt_pen.qmd >}}

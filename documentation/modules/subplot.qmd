@@ -53,9 +53,9 @@ Optional Arguments
     Use **anchor** or **Anchor** **=refpoint** to specify where the tag should be placed in the subplot [TL, meaning TopLeft].
     **Note**: **anchor** sets the justification of the tag to *refpoint* (suitable for interior tags)
     while **Anchor** instead selects the mirror opposite (suitable for exterior tags).
-    - Append **clearance=dx** or **clearance=(dx,dy)** to set the clearance between the tag and a surrounding text box requested via **fill** or **pen** [3p/3p, i.e., 15% of the `FONT_TAG` size dimension].
+    - Append **clearance=dx** or **clearance=(dx,dy)** to set the clearance between the tag and a surrounding text box requested via **fill** or **pen** [3p/3p, i.e., 15% of the [FONT_TAG](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_TAG) size dimension].
     - Append **fill=color** to paint the tag's text box with *color* [no painting].
-    - Append **offset=dx** or **offset=(dx,dy)** to offset the tag's reference point in the direction implied by the justification [4p/4p, i.e., 20% of the `FONT_TAG` size].
+    - Append **offset=dx** or **offset=(dx,dy)** to offset the tag's reference point in the direction implied by the justification [4p/4p, i.e., 20% of the [FONT_TAG](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_TAG) size].
     - Append **pen=pen** to draw the outline of the tag's text box using selected *pen* [no outline].
     - Append **roman=true** to typeset your tag numbers using lowercase Roman numerals.
     - Append **Roman=true** for uppercase Roman numerals [Arabic numerals].
@@ -101,7 +101,7 @@ Optional Arguments
 
 - **T** or **title** : -- *title="Heading"*\
     While individual subplots can have titles (see **S** or **axes**), the entire figure may also have a
-    overarching *heading* [no heading]. Font is determined by setting `FONT_HEADING`.
+    overarching *heading* [no heading]. Font is determined by setting [FONT_HEADING](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_HEADING).
 
 
 Synopsis (set mode)

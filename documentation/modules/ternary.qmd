@@ -41,7 +41,7 @@ Parameters
 
 - **L** or **vertex_labels** : -- *vertex_labels="Lab1/lab2/Lab3"* **|** *vertex_labels=("Lab1", "lab2", "Lab3")*\
     Set the labels for the three diagram vertices where the component is 100% [none].
-    These are placed a distance of three times the `MAP_LABEL_OFFSET`
+    These are placed a distance of three times the [MAP_LABEL_OFFSET](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_LABEL_OFFSET)
     setting from their respective corners. To skip any one of then, specify that label as "-".
 
 - **M** or **dump** : -- *dump=true*\

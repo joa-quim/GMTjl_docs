@@ -112,8 +112,8 @@ Parameters
   as unity when using the **symbol=(symb=name,size=val,unit=unity)** form). If the symbol name is not given it will
   be read from the last column in the input data (must come from a file name or a *{{< gmtref GMTdataset type=gmttype >}}*); this cannot be used
   in conjunction with binary input (data from file). Optionally, append c, i,or p to indicate that the size information
-  in the input data is in units of cm, inch, or point, respectively [Default is `PROJ_LENGTH_UNIT`]. Note: if you
-  provide both size and symbol via the input file you must use `PROJ_LENGTH_UNIT` to indicate the unit used for the
+  in the input data is in units of cm, inch, or point, respectively [Default is [PROJ_LENGTH_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_LENGTH_UNIT)]. Note: if you
+  provide both size and symbol via the input file you must use [PROJ_LENGTH_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_LENGTH_UNIT) to indicate the unit used for the
   symbol size or append the units to the sizes in the file. If symbol sizes are expected via the third data column
   then you may convert those values to suitable symbol sizes via the **incol** mechanism.\
   You can change symbols by adding the required -S option to any of your multisegment headers (*{{< gmtref GMTdataset type=gmttype >}}* only).
@@ -181,7 +181,7 @@ Parameters
    You can use **vec\_start** and **vec\_stop** to specify separate vector specs at each end [shared specs]. See the
    [Vector Attributes] for more information. If **level** is set, then **pen=(zlevels=true)** assign pen color via
    **cmap** and the z-values obtained. Finally, if pen `color = :auto` then we will cycle through the pen colors implied by
-   `COLOR_SET` and change on a per-segmentbasis. The width, style, or transparency settings are unchanged.
+   [COLOR_SET](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-COLOR_SET) and change on a per-segmentbasis. The width, style, or transparency settings are unchanged.
 
 - **decimate** : -- *decimate=true* **|** *decimate=decfactor*\
    For very large datasets it may be convenient to decimate data before plotting. The `decimate` option decimates
@@ -246,7 +246,7 @@ Parameters
 Units
 -----
 
-For map distance unit, append unit **d** for arc degree, **m** for arc minute, and **s** for arc second, or **e** for meter [Default], **f** for foot, **k** for km, **M** for statute mile, **n** for nautical mile, and **u** for US survey foot. By default we compute such distances using a spherical approximation with great circles (**spheric\_dist=:g**). You can use **spheric\_dist=:f** to perform “Flat Earth” calculations (quicker but less accurate) or **spheric\_dist=:e** to perform exact geodesic calculations (slower but more accurate; see `PROJ_GEODESIC` for method used).
+For map distance unit, append unit **d** for arc degree, **m** for arc minute, and **s** for arc second, or **e** for meter [Default], **f** for foot, **k** for km, **M** for statute mile, **n** for nautical mile, and **u** for US survey foot. By default we compute such distances using a spherical approximation with great circles (**spheric\_dist=:g**). You can use **spheric\_dist=:f** to perform “Flat Earth” calculations (quicker but less accurate) or **spheric\_dist=:e** to perform exact geodesic calculations (slower but more accurate; see [PROJ_GEODESIC](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_GEODESIC) for method used).
 
 Examples
 --------

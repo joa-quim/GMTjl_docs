@@ -67,7 +67,7 @@ Use *Yhlabel=true* to force a horizontal label for *y*-axes (useful for very sho
 
 If the axis annotation should have a leading text prefix (e.g., dollar sign for those plots of your net worth)
 you can add *prefix="prefix"* For geographic maps the addition of degree symbols, etc. is automatic (and
-controlled by the GMT default setting [FORMAT\_GEO\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-geo-map)).
+controlled by the GMT default setting [FORMAT\_GEO\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_GEO_MAP)).
 However, for other plots you can add specific units by adding *label_unit="unit"*
 
 Annotations, ticks and grid intervals are specified with the *annot*, *ticks* and *grid* keywords, which take
@@ -86,25 +86,25 @@ The optional *annot_unit* indicates the unit of the *stride* and can be any of t
 
 - **:year**  or **:Y** (year, plot with 4 digits)
 - **:year2** or **:y** (year, plot with 2 digits)
-- **:month** or **:O** (month, plot using [FORMAT\_DATE\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-date-map))
+- **:month** or **:O** (month, plot using [FORMAT\_DATE\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_DATE_MAP))
 - **:month2** or **:o** (month, plot with 2 digits)
-- **:ISOweek** or **:U** (ISO week, plot using [FORMAT\_DATE\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-date-map))
+- **:ISOweek** or **:U** (ISO week, plot using [FORMAT\_DATE\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_DATE_MAP))
 - **:ISOweek2** or **:u** (ISO week, plot using 2 digits)
-- **Gregorian_week** or **:r** (Gregorian week, 7-day stride from start of week [TIME\_WEEK\_START](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#time-week-start))
+- **Gregorian_week** or **:r** (Gregorian week, 7-day stride from start of week [TIME\_WEEK\_START](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-TIME_WEEK_START))
 - **:ISOweekday** or **:K** (ISO weekday, plot name of day)
-- **:date** or **:D** (date, plot using [FORMAT\_DATE\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-date-map))
-- **:day_date** or **:d** (day, plot day of month 0-31 or year 1-366, via [FORMAT\_DATE\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-date-map))
-- **:day_week** or **:R** (day, same as **d**, aligned with [TIME\_WEEK\_START](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#time-week-start))
-- **:hour**    or **:H** (hour, plot using [FORMAT\_CLOCK\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-clock-map))
+- **:date** or **:D** (date, plot using [FORMAT\_DATE\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_DATE_MAP))
+- **:day_date** or **:d** (day, plot day of month 0-31 or year 1-366, via [FORMAT\_DATE\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_DATE_MAP))
+- **:day_week** or **:R** (day, same as **d**, aligned with [TIME\_WEEK\_START](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-TIME_WEEK_START))
+- **:hour**    or **:H** (hour, plot using [FORMAT\_CLOCK\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_CLOCK_MAP))
 - **:hour2**   or **:h** (hour, plot with 2 digits)
-- **:minute**  or **:M** (minute, plot using [FORMAT\_CLOCK\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-clock-map))
+- **:minute**  or **:M** (minute, plot using [FORMAT\_CLOCK\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_CLOCK_MAP))
 - **:minute2** or **:m** (minute, plot with 2 digits)
-- **:second**  or **:S** (second, plot using [FORMAT\_CLOCK\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-clock-map))
+- **:second**  or **:S** (second, plot using [FORMAT\_CLOCK\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_CLOCK_MAP))
 - **:second2** or **:s** (second, plot with 2 digits).
 
 
 Note for geographic axes **m** and **s** instead mean arc minutes and arc seconds.
-All entities that are language-specific are under control by [GMT\_LANGUAGE](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#gmt-language). 
+All entities that are language-specific are under control by [GMT\_LANGUAGE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-GMT_LANGUAGE). 
 
 For custom annotations and intervals, let *intervals* be given as **custom**=*"intfile"*, where
 *intfile* contains any number of records with *coord type* [*label*]. Here, *type* is one or more
@@ -151,35 +151,35 @@ set such annotation intervals. The format is *pi=n* or *pi=(n,m)*, for an option
 integer *n* and optional *m* fractions 2, 3, or 4.
 
 These GMT parameters can affect the appearance of the map boundary:
-[MAP\_ANNOT\_MIN\_ANGLE](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-annot-min-angle),
-[MAP\_ANNOT\_MIN\_SPACING](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-annot-min-spacing),
-[FONT\_ANNOT\_PRIMARY](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#font-annot-primary),
-[FONT\_ANNOT\_SECONDARY](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#font-annot-secondary),
-[MAP\_ANNOT\_OFFSET\_PRIMARY](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-annot-offset-primary),
-[MAP\_ANNOT\_OFFSET\_SECONDARY](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-annot-offset-secondary),
-[MAP\_ANNOT\_ORTHO](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-annot-ortho),
-[MAP\_FRAME\_AXES](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-frame-axes),
-[MAP\_DEFAULT\_PEN](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-default-pen),
-[MAP\_FRAME\_TYPE](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-frame-type),
-[FORMAT\_GEO\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-geo-map),
-[MAP\_FRAME\_PEN](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-frame-pen),
-[MAP\_FRAME\_WIDTH](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-frame-width),
-[MAP\_GRID\_CROSS\_SIZE\_PRIMARY](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-grid-cross-size-primary),
-[MAP\_GRID\_PEN\_PRIMARY](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-grid-pen-primary),
-[MAP\_GRID\_CROSS\_SIZE\_SECONDARY](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#language),
-[MAP\_GRID\_PEN\_SECONDARY](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-grid-pen-seondary),
-[FONT\_TITLE](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#font-title),
-[FONT\_LABEL](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#font-label),
-[MAP\_LINE\_STEP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-line-step),
-[MAP\_ANNOT\_OBLIQUE](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-annot-oblique),
-[FORMAT\_CLOCK\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-clock-map),
-[FORMAT\_DATE\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-date-map),
-[FORMAT\_TIME\_PRIMARY\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-time-primary-map),
-[FORMAT\_TIME\_SECONDARY\_MAP](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#format-time-secondary-map),
-[GMT\_LANGUAGE](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#gmt-language),
-[TIME\_WEEK\_START](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#time-week-start),
-[MAP\_TICK\_LENGTH\_PRIMARY](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-tick-length-primary),
-and [MAP\_TICK\_PEN\_PRIMARY](http://docs.generic-mapping-tools.org/latest/gmt.conf.html#map-tick-pen-primary)
+[MAP\_ANNOT\_MIN\_ANGLE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_ANNOT_MIN_ANGLE),
+[MAP\_ANNOT\_MIN\_SPACING](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_ANNOT_MIN_SPACING),
+[FONT\_ANNOT\_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_ANNOT_PRIMARY),
+[FONT\_ANNOT\_SECONDARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_ANNOT_SECONDARY),
+[MAP\_ANNOT\_OFFSET\_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_ANNOT_OFFSET_PRIMARY),
+[MAP\_ANNOT\_OFFSET\_SECONDARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_ANNOT_OFFSET_SECONDARY),
+[MAP\_ANNOT\_ORTHO](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_ANNOT_ORTHO),
+[MAP\_FRAME\_AXES](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_FRAME_AXES),
+[MAP\_DEFAULT\_PEN](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_DEFAULT_PEN),
+[MAP\_FRAME\_TYPE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_FRAME_TYPE),
+[FORMAT\_GEO\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_GEO_MAP),
+[MAP\_FRAME\_PEN](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_FRAME_PEN),
+[MAP\_FRAME\_WIDTH](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_FRAME_WIDTH),
+[MAP\_GRID\_CROSS\_SIZE\_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_GRID_CROSS_SIZE_PRIMARY),
+[MAP\_GRID\_PEN\_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_GRID_PEN_PRIMARY),
+[MAP\_GRID\_CROSS\_SIZE\_SECONDARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_GRID_CROSS_SIZE_SECONDARY),
+[MAP\_GRID\_PEN\_SECONDARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_GRID_PEN_SECONDARY),
+[FONT\_TITLE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_TITLE),
+[FONT\_LABEL](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_LABEL),
+[MAP\_LINE\_STEP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_LINE_STEP),
+[MAP\_ANNOT\_OBLIQUE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_ANNOT_OBLIQUE),
+[FORMAT\_CLOCK\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_CLOCK_MAP),
+[FORMAT\_DATE\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_DATE_MAP),
+[FORMAT\_TIME\_PRIMARY\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_TIME_PRIMARY_MAP),
+[FORMAT\_TIME\_SECONDARY\_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_TIME_SECONDARY_MAP),
+[GMT\_LANGUAGE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-GMT_LANGUAGE),
+[TIME\_WEEK\_START](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-TIME_WEEK_START),
+[MAP\_TICK\_LENGTH\_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_TICK_LENGTH_PRIMARY),
+and [MAP\_TICK\_PEN\_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_TICK_PEN_PRIMARY)
 
 ## Axes options table
 
@@ -392,7 +392,10 @@ settings are used, the argument to *figsize* must be in the form of strings.
 The ellipsoid used in the map projections is user-definable by editing the gmt.conf file in your home directory.
 73 commonly used ellipsoids and spheroids are currently supported, and users may also specify their own custom
 ellipsoid parameters [Default is WGS-84]. Several GMT parameters can affect the projection: *PROJ\_ELLIPSOID*,
-*GMT\_INTERPOLANT*, *PROJ\_SCALE\_FACTOR*, and *PROJ\_LENGTH\_UNIT*; see the gmt.conf man page for details.
+[GMT\_INTERPOLANT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-GMT_INTERPOLANT),
+[PROJ\_SCALE\_FACTOR](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_SCALE_FACTOR), and
+[PROJ\_LENGTH\_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_LENGTH_UNIT);
+see the gmt.conf man page for details.
 
 See [GMT Map Projections] for a list of projection examples 
 
@@ -445,8 +448,8 @@ See [GMT Map Projections] for a list of projection examples
    For example, BL/0/0 will align the lower left corner of the time
    stamp with the lower left corner of the plot [LL]. Optionally, append a
    *label*, or **c** (which will plot the command string.). The GMT
-   parameters `MAP_LOGO`, `MAP_LOGO_POS`, and
-   `FORMAT_TIME_STAMP` can affect the appearance; see the
+   parameters [MAP_LOGO](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_LOGO), [MAP_LOGO_POS](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_LOGO_POS), and
+   [FORMAT_TIME_STAMP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_TIME_STAMP) can affect the appearance; see the
    `gmt.conf` man page for details. The time string will be in the
    locale set by the environment variable **TZ** (generally local time).
 
@@ -502,7 +505,7 @@ See [GMT Map Projections] for a list of projection examples
 # Spherical distance
 
 - **j | spheric | spheric_dist** : -- *spheric=:e|:f|:g*\
-    Determine how spherical distances are calculated in modules that support this. By default (**spheric=:g**) we perform great circle distance calculations and parameters such as distance increments or radii will be compared against calculated great circle distances. To simplify and speed up calculations you can select Flat Earth mode (**spheric=:f**) which gives an approximate and fast result. Alternatively, you can select ellipsoidal (**spheric=:e**) or geodesic mode for the highest precision (and slowest calculation time). All spherical distance calculations depends on the current ellipsoid (`PROJ_ELLIPSOID`), the definition of the mean radius (`PROJ_MEAN_RADIUS`), and the specification of latitude type (`PROJ_AUX_LATITUDE`). Geodesic distance calculations is also controlled by method (`PROJ_GEODESIC`).
+    Determine how spherical distances are calculated in modules that support this. By default (**spheric=:g**) we perform great circle distance calculations and parameters such as distance increments or radii will be compared against calculated great circle distances. To simplify and speed up calculations you can select Flat Earth mode (**spheric=:f**) which gives an approximate and fast result. Alternatively, you can select ellipsoidal (**spheric=:e**) or geodesic mode for the highest precision (and slowest calculation time). All spherical distance calculations depends on the current ellipsoid ([PROJ_ELLIPSOID](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_ELLIPSOID)), the definition of the mean radius ([PROJ_MEAN_RADIUS](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_MEAN_RADIUS)), and the specification of latitude type ([PROJ_AUX_LATITUDE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_AUX_LATITUDE)). Geodesic distance calculations is also controlled by method ([PROJ_GEODESIC](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_GEODESIC)).
 
 # interp
 

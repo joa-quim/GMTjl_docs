@@ -11,7 +11,7 @@ Description
 
 Reads (length, azimuth) pairs from matrix or *file* and plot a windrose diagram. Add **incols=0** if your data only
 has azimuth values. Optionally (with **sector**), polar histograms may be drawn (sector diagram or rose diagram).
-Options include full circle and half circle plots. The outline of the windrose is drawn with the same color as `MAP_DEFAULT_PEN`.
+Options include full circle and half circle plots. The outline of the windrose is drawn with the same color as [MAP_DEFAULT_PEN](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_DEFAULT_PEN).
 
 Required Arguments
 ------------------
@@ -49,7 +49,7 @@ Optional Arguments
 
 - **F** or **no_scale** : -- *no_scale=true*\
     Do *not* draw the scale length bar [Default plots scale bar in lower right corner provided **frame**
-    is used. We use `MAP_TICK_PEN_PRIMARY` to draw the scale and label it with `FONT_ANNOT_PRIMARY`.
+    is used. We use [MAP_TICK_PEN_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_TICK_PEN_PRIMARY) to draw the scale and label it with [FONT_ANNOT_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_ANNOT_PRIMARY).
 
 - **G** or **fill**\
     Selects shade, color or pattern for filling the sectors [Default is no fill].  Note that plot will search for *fill*
@@ -66,7 +66,7 @@ Optional Arguments
 - **L** or **labels** : -- *labels=true* **|** *labels=(wlabel,elabel,slabel,nlabel)*\
     Specify labels for the 0, 90, 180, and 270 degree marks. For full-circle plot the default is
     WEST,EAST,SOUTH,NORTH and for half-circle the default is *90W,90E,-,0*. A `-` in any entry disables that label.
-    Use **labels=true** to disable all four labels. Note that the `GMT_LANGUAGE` setting will affect the words used.
+    Use **labels=true** to disable all four labels. Note that the [GMT_LANGUAGE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-GMT_LANGUAGE) setting will affect the words used.
 
 - **M** or **vector_params** : -- *vector_params=parameters*\
     Used with **vectors** to modify vector parameters. For vector heads, append vector head *size*

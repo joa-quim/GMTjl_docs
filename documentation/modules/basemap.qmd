@@ -21,7 +21,7 @@ At least one of the options [frame], **map_scale**, or **rose** must be specifie
 - **A** or **polygon** : *polygon=true* or *polygon=fname*\
     No plotting is performed. Instead, we determine the geographical coordinates of the polygon outline
     for the (possibly oblique) rectangular map domain. The plot domain must be given via [limits]
-    and [proj], with no other options allowed. The sampling interval is controlled via `MAP_LINE_STEP`
+    and [proj], with no other options allowed. The sampling interval is controlled via [MAP_LINE_STEP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_LINE_STEP)
     parameter. The coordinates are return in a {{< gmtref GMTdataset type=gmttype >}} or written to *fname* if a file
     name is specified.
 

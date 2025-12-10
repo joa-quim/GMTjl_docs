@@ -226,7 +226,7 @@ Bugs
 you run {{< gmtref blockmean >}}, {{< gmtref blockmedian >}}, or {{< gmtref blockmode >}} first. If you
 did run these decimators and still get this message it usually means that your grid spacing is
 so small that you need more decimals in the output format used. You may specify more decimal
-places by editing the parameter `FORMAT_FLOAT_OUT` in your `gmt.conf` file prior to running the
+places by editing the parameter [FORMAT_FLOAT_OUT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_FLOAT_OUT) in your `gmt.conf` file prior to running the
 decimators or choose binary input and/or output using single or double precision storage.
 
 ```{julia}

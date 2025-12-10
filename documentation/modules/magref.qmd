@@ -57,7 +57,7 @@ Optional Arguments
     **onetime=true** to set a fixed *time* that should apply to all data records [Default expects *time* to be in
     the 4th column of all records]. Finally, use **yeardec=true** to indicate that all times are specified as
     decimal years [Default is ISO _date_T_colck_ format, see
-    [TIME_EPOCH](https://docs.generic-mapping-tools.org/dev/gmt.conf.html#term-TIME_EPOCH)].\
+    [TIME_EPOCH](https://docs.generic-mapping-tools.org/dev/gmt.conf.html#term-[TIME_EPOCH](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-TIME_EPOCH))].\
     **NOTE**: This basically only applies when passing data via a file, where we have no chance to know if time
     was passed as decimar years or as a DateTime string. When passing data directly in numeric form, we try to
     guess all this for you. So, for example, you can do `magref([-28 38 0 "2001-05-01T12:00:00"], internal=...)`

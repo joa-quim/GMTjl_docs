@@ -506,7 +506,7 @@ The distance flag (`D`) determines how grid coordinates relate to filter width:
 
 ## Geographical and Time Coordinates
 
-When the output grid type is netCDF, coordinates are labeled "longitude", "latitude", or "time" based on input attributes or `f`/`R` options. Time coordinates are stored as relative time since epoch (specified by `TIME_UNIT` and `TIME_EPOCH`).
+When the output grid type is netCDF, coordinates are labeled "longitude", "latitude", or "time" based on input attributes or `f`/`R` options. Time coordinates are stored as relative time since epoch (specified by [TIME_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-TIME_UNIT) and [TIME_EPOCH](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-TIME_EPOCH)).
 
 ```{julia}
 #| echo: false

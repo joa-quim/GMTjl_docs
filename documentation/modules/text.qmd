@@ -19,7 +19,7 @@ and small caps are supported as follows: The sequence @~ toggles between the sel
 indicated with the @!<char1><char2> sequence, which will print the two characters on top of each other.
 To learn the octal codes for symbols not available on the keyboard and some accented European characters,
 see Section `Char-esc-seq` and Appendix `Chart-Octal-Codes-for-Chars` in the GMT Technical Reference and Cookbook.
-Note that `PS_CHAR_ENCODING` must be set to an extended character set in your `gmt.conf` file in order to use
+Note that [PS_CHAR_ENCODING](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PS_CHAR_ENCODING) must be set to an extended character set in your `gmt.conf` file in order to use
 the accented characters. Using the **fill** or **pen** options, a rectangle underlying the text may be plotted
 (does not work for strings with sub/super scripts, symbols, or composite characters, except in paragraph mode (**paragraph**)). 
 
@@ -62,7 +62,7 @@ Optional Arguments
 - **C** or **clearance** : -- *clearance=true* **|** *clearance=(margin=(dx,dy), round=true, concave=true, convex=true)*\
     Adjust the clearance between the text and the surrounding box [15%]. Only used if
     **pen** or **fill** are specified. Append the unit you want (**c**m, **i**nch,
-    or **p**oint); if not given we consult `PROJ_LENGTH_UNIT`) or % for a percentage
+    or **p**oint); if not given we consult [PROJ_LENGTH_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_LENGTH_UNIT)) or % for a percentage
     of the font size. Optionally, use options *round* (rounded rectangle) or, for
     **paragraph** mode only, *concave* or *convex* to set the shape of the textbox when
     using **fill** and/or **pen**. Default gets a straight rectangle.
@@ -77,7 +77,7 @@ Optional Arguments
 
 - **F** or **attrib** : -- *attrib=(angle=val, font=font, justify=code, region\_justify=code, header=true, label=true, rec\_number=first, text=text, zvalues=format)*\
     By default, text will be placed horizontally, using the primary annotation font attributes
-    (`FONT_ANNOT_PRIMARY`), and centered on the data point. Use this option to override these
+    ([FONT_ANNOT_PRIMARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_ANNOT_PRIMARY)), and centered on the data point. Use this option to override these
     defaults by specifying up to three text attributes (font, angle, and justification). Use
     **font=font** to set the font (size,fontname,color). For example **font=18** or
     **font=(18, "Helvetica-Bold", :red)**; if no font info is given then the input file must have
@@ -96,7 +96,7 @@ Optional Arguments
     select the text as the most recent segment header or segment label, respectively in a multisegment
     input file, **rec\_number=first** to use the record number (counting up from *first*), **text=text**
     to set a fixed *text* string, or **zvalues** to format incoming *z* values to a string using the
-    supplied *format* (**zvalues=""** uses `FORMAT_FLOAT_MAP`). Note: If **threeD** is in effect then
+    supplied *format* (**zvalues=""** uses [FORMAT_FLOAT_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_FLOAT_MAP)). Note: If **threeD** is in effect then
     the *z* value used for formatting is in the 4th, not 3rd column.  Exceptionally, this option can
     be broken up in its individual pieces by dropping the **attrib** keyword. 
 

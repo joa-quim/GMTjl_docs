@@ -1,2 +1,2 @@
 - **X** or **xshift** or **x_offset** : *xshift=true* **|** *xshift=x-shift* **|** *xshift=(shift=x-shift, mov="a|c|f|r")*\
-   Shift plot origin. More at [xshift](../common_opts/opt_X.qmd)
+   Shift plot origin. More at [xshift](/documentation/common_opts/common_opts.qmd#xshift)

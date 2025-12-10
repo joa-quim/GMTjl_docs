@@ -34,7 +34,7 @@ Required Arguments
     and are (with pixel dimensions given in parenthesis):
     - **uxga** (1600 x 1200), **sxga+** (1400 x 1050), **xga** (1024 x 768),
     - **svga** (800 x 600), and **dvd** (640 x 480).
-    **Note**: Your `PROJ_LENGTH_UNIT` setting determines if **movie** sets you up to work with the SI or US canvas
+    **Note**: Your [PROJ_LENGTH_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_LENGTH_UNIT) setting determines if **movie** sets you up to work with the SI or US canvas
     dimensions. Instead of a named format you can request a custom format directly by giving
     *width* **x** *height* **x** *dpu* (no spaces arround the **x**), where *dpu* is the dots-per-unit pixel density
     (pixel density is set automatically for the named formats).
@@ -129,11 +129,11 @@ Optional Arguments
     number *col* of *timefile* as label (first column is 0), while **tcol** uses word number
     *col* from the trailing text in *timefile* (first word is 0). **Note**: If you use **-Lc**
     with an absolute time column, then the format of the timestamp will depend on the two default settings
-    `FORMAT_DATE_MAP` and `FORMAT_CLOCK_MAP`. By default,
+    [FORMAT_DATE_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_DATE_MAP) and [FORMAT_CLOCK_MAP](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FORMAT_CLOCK_MAP). By default,
     both *date* and *time* are displayed (with a space between); set one of the settings to "-" to skip that component.
     Append **+cdx** [/*dy*] for the clearance between label and bounding box; only
     used if **+g** or **+p** are set. Append units **c** | **i** | **p** or % of the font size [15%].
-    Append **+f** to use a specific *font* [`FONT_TAG`].
+    Append **+f** to use a specific *font* [[FONT_TAG](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_TAG)].
     Append **+g** to fill the label bounding box with *fill* color [no fill].
     Use **+jrefpoint** to specify where the label should be plotted [TL].
     Append **+odx** [/*dy*] to offset label in direction implied by *justify*. Append units
@@ -157,7 +157,7 @@ Optional Arguments
     [TR for circular and BC for axes]. Indicators b-f can optionally add annotations if modifier **annot** is used,
     append one of **e** or **f** or **p** or **s** or **c**\ *col* or **t**\ *col* to indicate what should be annotated
     (see **label** for more information on what these are); append **font=font** to use a specific *font*
-    [`FONT_ANNOT_SECONDARY` scaled as needed]. Append **offset=dx** or **offset=(dx,dy)** to offset indicator in direction
+    [[FONT_ANNOT_SECONDARY](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-FONT_ANNOT_SECONDARY) scaled as needed]. Append **offset=dx** or **offset=(dx,dy)** to offset indicator in direction
     implied by *justify*. Append **fill=color** to set moving item fill *color* [see below for defaults]. Use **pen=pen**
     to set moving item *pen*. For corresponding static fill and pen, use **Fill** and **Pen** instead.
 
@@ -225,7 +225,7 @@ Data Files
 The movie scripts will be able to find any files present in the starting directory when **movie** was initiated,
 as well as any new files produced by *mainscript* or the optional scripts set via **fore|background**.
 No path specification is needed to access these files. Other files may
-require full paths unless their directories were already included in the `DIR_DATA` setting.
+require full paths unless their directories were already included in the [DIR_DATA](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-DIR_DATA) setting.
 
 Plotting Temporal Changes
 -------------------------
@@ -250,7 +250,7 @@ Your Canvas
 -----------
 
 As you can see from **canvas**, unless you specified a custom format you are given a canvas size that is either
-24 x 13.5 cm (16:9) or 24 x 18 cm (4:3). If your `PROJ_LENGTH_UNIT` setting is inch then the custom canvas sizes
+24 x 13.5 cm (16:9) or 24 x 18 cm (4:3). If your [PROJ_LENGTH_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_LENGTH_UNIT) setting is inch then the custom canvas sizes
 are just slightly (1.6%) larger than the corresponding SI sizes (9.6 x 5.4" or 9.6 x 7.2"); this has no effect on the
 size of the movie frames but allow us to use good sizes that work well with the *dpu* chosen.  You should compose
 your plots using the given canvas size, and **movie** will make proper conversions of the canvas to image pixel
@@ -274,13 +274,13 @@ making a HD movie using the US unit dimensions then a background pink layer woul
 basemap(region=(0,9.6,0,5.4), proj=:linear, figscale="1i", axes=(fill=:pink,), X=0, Y=0, par=(PS_MEDIA="9.6ix5.4i", figname="background.ps")
 ```
 
-Note the canvas selection via `PS_MEDIA`, the matching region and projection, and
+Note the canvas selection via [PS_MEDIA](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PS_MEDIA), the matching region and projection, and
 the zero location of the origin.
 
 Basemap Frames
 --------------
 
-Some map projections will by default draw a *fancy* map frame; this feature is under the control of `MAP_FRAME_TYPE`.
+Some map projections will by default draw a *fancy* map frame; this feature is under the control of [MAP_FRAME_TYPE](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_FRAME_TYPE).
 However, whether a *fancy* or *plain* frame is actually drawn also depends on the projection center *latitude*.
 Thus, if your movie varies the projection center latitude by changing the view, you should set the frame
 setting to *plain* as part of your setup.

@@ -51,7 +51,7 @@ Finally, **mapproject** can compute a variety of auxiliary output data from inpu
 
 - **D** or **lengthunit** : -- *lengthunit=:c* **|** *lengthunit=:i* **|** *lengthunit=:p*
   
-  Temporarily override PROJ_LENGTH_UNIT:
+  Temporarily override [PROJ_LENGTH_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-PROJ_LENGTH_UNIT):
   - `:c` - Use centimeters
   - `:i` - Use inches  
   - `:p` - Use points
@@ -164,7 +164,7 @@ Finally, **mapproject** can compute a variety of auxiliary output data from inpu
 - **Z** or **travel_time** : -- *travel_time=speed* **|** *travel_time=(speed=speed, accum=true, incr=true, iso=true, epoch=t0)*
   
   Calculate travel times along track as specified with `dist`:
-  - `travel_time=12` - Constant speed (in distance units per TIME_UNIT)
+  - `travel_time=12` - Constant speed (in distance units per [TIME_UNIT](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-TIME_UNIT))
   - Modifiers:
     - `incr=true` - Incremental travel times
     - `accum=true` - Accumulated travel times
