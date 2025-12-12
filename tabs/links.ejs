@@ -1,0 +1,8 @@
+<div class="doc-links-columns">
+<% for (const item of items) { %>
+<div class="doc-column">
+<% for (const link of item.links) { %>
+<div class="doc-link"><% if (link.href) { %><a href="<%- link.href %>"><%- link.text %></a><% } else { %><%- link.text %><% } %></div><% } %>
+</div>
+<% } %>
+</div>

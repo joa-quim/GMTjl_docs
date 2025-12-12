@@ -1,9 +1,32 @@
 ---
 pagetitle: "Welcome to GMT.jl"
-page-layout: full
+page-layout: article
 section-divs: false
 toc: false
 editor: source
+css: tabs/doc-tabs.css
+listing:
+  - id: gmt-core
+    template: tabs/links.ejs
+    contents: tabs/gmt_core.yml
+  - id: gmt-suppl
+    template: tabs/links.ejs
+    contents: tabs/gmt_suppl.yml
+  - id: gmt-avatars
+    template: tabs/links.ejs
+    contents: tabs/gmt_avatars.yml
+  - id: gmt-extensions
+    template: tabs/links.ejs
+    contents: tabs/gmt_extensions.yml
+  - id: gdal-functions
+    template: tabs/links.ejs
+    contents: tabs/gdal_functions.yml
+  - id: solids-functions
+    template: tabs/links.ejs
+    contents: tabs/solids_functions.yml
+  - id: imgproc-functions
+    template: tabs/links.ejs
+    contents: tabs/imgproc_functions.yml
 ---
 
 :::{.column-page}
@@ -12,8 +35,17 @@ editor: source
 
 
 <style>
+/* Widen the page content area by ~10% (from ~1140px to ~1250px) */
+.article-container {
+  max-width: 1250px !important;
+}
+
+body .page-columns .column-body {
+  max-width: 1250px !important;
+}
+
 /* Remove top spacing for banner */
-#quarto-content main { 
+#quarto-content main {
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
@@ -44,14 +76,14 @@ body.quarto-light main {
   width: 100%;
 }
 
-.card {
+.card:not(.link-cards .card) {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   position: relative;
   border: 1px solid rgba(0,0,0,.125);
 }
 
-.card:hover {
+.card:not(.link-cards .card):hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
@@ -152,6 +184,7 @@ body.quarto-light main {
   text-decoration: none !important;
   white-space: nowrap;
 }
+
 </style>
 
 # Welcome to GMT.jl
@@ -204,7 +237,11 @@ Use the Julia's inbuilt package manager to install GMT.
 using GMT
 ```
 
-<div style="margin-top: 0rem; margin-bottom: 0rem;">
+## Documentation
+
+{{< include tabs/_doc_tabs.qmd >}}
+
+<div style="margin-top: 1.5rem; margin-bottom: 0rem;">
 
 ::: {.grid}
 

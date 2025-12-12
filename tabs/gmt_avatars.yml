@@ -1,0 +1,76 @@
+- title: ""
+  links:
+    - text: arrows
+      href: documentation/modules/arrows.html
+    - text: band
+      href: documentation/modules/band.html
+    - text: bar
+      href: documentation/modules/bar.html
+    - text: bar3
+      href: documentation/modules/bar3.html
+    - text: biplot
+      href: documentation/modules/biplot.html
+    - text: boxplot
+      href: documentation/modules/boxplot.html
+    - text: bubblechart
+      href: documentation/modules/bubblechart.html
+
+- title: ""
+  links:
+    - text: contourf
+      href: documentation/modules/contourf.html
+    - text: cornerplot
+      href: documentation/modules/cornerplot.html
+    - text: earthregions
+      href: documentation/modules/earthregions.html
+    - text: ecdfplot
+      href: documentation/modules/ecdfplot.html
+    - text: feather
+      href: documentation/modules/feather.html
+    - text: fill_between
+      href: documentation/modules/fill_between.html
+
+- title: ""
+  links:
+    - text: hband
+      href: documentation/modules/hband.html
+    - text: lines
+      href: documentation/modules/lines.html
+    - text: marginalhist
+      href: documentation/modules/marginalhist.html
+    - text: parallelplot
+      href: documentation/modules/parallelplot.html
+    - text: piechart
+      href: documentation/modules/piechart.html
+    - text: plot
+      href: documentation/modules/plot.html
+
+- title: ""
+  links:
+    - text: qqplot
+      href: documentation/modules/qqplot.html
+    - text: quiver
+      href: documentation/modules/quiver.html
+    - text: radar
+      href: documentation/modules/radar.html
+    - text: rose
+      href: documentation/modules/rose.html
+    - text: scatter
+      href: documentation/modules/scatter.html
+    - text: scatter3
+      href: documentation/modules/scatter3.html
+
+- title: ""
+  links:
+    - text: stairs
+      href: documentation/modules/stairs.html
+    - text: stem
+      href: documentation/modules/stem.html
+    - text: triplot
+      href: documentation/modules/triplot.html
+    - text: trisurf
+      href: documentation/modules/trisurf.html
+    - text: vband
+      href: documentation/modules/vband.html
+    - text: violins
+      href: documentation/modules/violins.html

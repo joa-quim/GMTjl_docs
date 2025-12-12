@@ -119,6 +119,7 @@ project:
     - documentation/modules/gmtconvert.qmd
     - documentation/modules/gmtgravmag3d.qmd
     - documentation/modules/gmtisf.qmd
+    - documentation/modules/gmtlogo.qmd
     - documentation/modules/gmtmath.qmd
     - documentation/modules/gmtselect.qmd
     - documentation/modules/gmtset.qmd
@@ -280,7 +281,6 @@ project:
     - documentation/utilities/linearfitxy.qmd
     - documentation/utilities/listecmwfvars.qmd
     - documentation/utilities/loft.qmd
-    - documentation/utilities/logo.qmd
     - documentation/utilities/magic.qmd
     - documentation/utilities/maregrams.qmd
     - documentation/utilities/mat2ds.qmd

@@ -14,14 +14,14 @@ Parameters
 
 - `pos | position | D`: Sets reference point on the map for the image using one of four coordinate systems.
 
-- `box | F`: Without further options, draws a rectangular border around the GMT logo using `MAP_FRAME_PEN`.
-    or map rose (T)
+- `box | F`: Without further options, draws a rectangular border around the GMT logo using
+   [MAP\_FRAME\_PEN](https://docs.generic-mapping-tools.org/latest/gmt.conf.html#term-MAP_FRAME_PEN) or map rose (T)
 
 - `julia`: Create the Julia instead of the GMT logo. Provide circle diameter in centimeters
 
 - `GMTjulia`: Create the GMT Julia GMT logo. Provide circle diameter in centimeters
 
-- `kwargs`: keyword/arguments pairs as in [plot](/documentation/modules/plot.qmd#plot) module
+- `kwargs`: keyword/arguments pairs as in {{< gmtref plot >}} module
 
 
 Examples
@@ -35,8 +35,16 @@ using GMT
 logo(GMTjulia=1, show=true)
 ```
 
+```{julia}
+#| echo: false
+#| output: asis
+using GMT
+GMT.doc_source_links("gmtlogo")
+```
 
 See Also
 ---------------
 
-[plot](/documentation/modules/plot.qmd#plot)
+{{< gmtref plot >}}
+
+[Alphabetical Function List](../alphabetical.html)

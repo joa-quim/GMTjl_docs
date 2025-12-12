@@ -1,0 +1,113 @@
+::: {.hello-quarto}
+
+<ul class="nav nav-pills" id="doc-tabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="hide-tab" onclick="showDocTab('hide', this)" type="button">Hide</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="core-tab" onclick="showDocTab('core', this)" type="button">GMT Core</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="suppl-tab" onclick="showDocTab('suppl', this)" type="button">GMT Suppl</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="avatars-tab" onclick="showDocTab('avatars', this)" type="button">(Plot) Avatars</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="extensions-tab" onclick="showDocTab('extensions', this)" type="button">Extensions</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="gdal-tab" onclick="showDocTab('gdal', this)" type="button">GDAL</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="solids-tab" onclick="showDocTab('solids', this)" type="button">Solids</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="imgproc-tab" onclick="showDocTab('imgproc', this)" type="button">Img Processing</button>
+  </li>
+</ul>
+
+<script>
+function showDocTab(tabId, buttonElement) {
+  // Hide all tab panes
+  const panes = document.querySelectorAll('#doc-tabcontent > .tab-pane');
+  panes.forEach(pane => {
+    pane.classList.remove('active', 'show');
+  });
+
+  // Remove active from all buttons
+  const buttons = document.querySelectorAll('#doc-tabs .nav-link');
+  buttons.forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  // Show selected pane
+  const selectedPane = document.getElementById(tabId);
+  if (selectedPane) {
+    selectedPane.classList.add('active', 'show');
+  }
+
+  // Activate selected button
+  if (buttonElement) {
+    buttonElement.classList.add('active');
+  }
+}
+</script>
+
+<div class="tab-content" id="doc-tabcontent">
+
+<div class="tab-pane fade show active" id="hide" role="tabpanel" aria-labelledby="hide-tab">
+</div>
+
+<div class="tab-pane fade" id="core" role="tabpanel" aria-labelledby="core-tab">
+
+:::{#gmt-core}
+:::
+
+</div>
+
+<div class="tab-pane fade" id="suppl" role="tabpanel" aria-labelledby="suppl-tab">
+
+:::{#gmt-suppl}
+:::
+
+</div>
+
+<div class="tab-pane fade" id="avatars" role="tabpanel" aria-labelledby="avatars-tab">
+
+:::{#gmt-avatars}
+:::
+
+</div>
+
+<div class="tab-pane fade" id="extensions" role="tabpanel" aria-labelledby="extensions-tab">
+
+:::{#gmt-extensions}
+:::
+
+</div>
+
+<div class="tab-pane fade" id="gdal" role="tabpanel" aria-labelledby="gdal-tab">
+
+:::{#gdal-functions}
+:::
+
+</div>
+
+<div class="tab-pane fade" id="solids" role="tabpanel" aria-labelledby="solids-tab">
+
+:::{#solids-functions}
+:::
+
+</div>
+
+<div class="tab-pane fade" id="imgproc" role="tabpanel" aria-labelledby="imgproc-tab">
+
+:::{#imgproc-functions}
+:::
+
+</div>
+
+</div>
+
+:::
